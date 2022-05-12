@@ -1,0 +1,26 @@
+query SubcategoryDataBySlug($slug: String) {
+  subcategories(filters: { slug: { eq: $slug } }) {
+    data {
+      attributes {
+        title
+        slug
+        parent {
+          data {
+            attributes {
+              title
+              slug
+              parent {
+                data {
+                  attributes {
+                    title
+                    slug
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

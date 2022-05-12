@@ -1,0 +1,35 @@
+query CatalogMenu {
+  sections(filters: { showInNav: { eq: true } }) {
+    data {
+      id
+      attributes {
+        title
+        navIcon {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        items(filters: { showInNav: { eq: true } }) {
+          data {
+            id
+            attributes {
+              title
+              slug
+              items(filters: { showInNav: { eq: true } }) {
+                data {
+                  id
+                  attributes {
+                    title
+                    slug
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

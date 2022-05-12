@@ -1,0 +1,50 @@
+<template>
+  <div class="flex flex-col h-screen">
+    <PrometeiHeader />
+    <slot />
+    <PrometeiFooter />
+  </div>
+</template>
+
+<script setup>
+import PrometeiHeader from "/components/PrometeiHeader.vue";
+import PrometeiFooter from "/components/PrometeiFooter.vue";
+
+import { useMenuToggler } from "~/store/menu/menu";
+import { useCart } from "~/store/cart/cart";
+
+const cookieCartData = useCookie("cart");
+const delivery = useCookie("delivery");
+
+const cart = useCart();
+
+cart.$onAction(({ after, store, name }) => {
+  after(() => {
+    if (name !== "initCart" || name !== "updateDelivery") {
+      cookieCartData.value = store.items;
+    }
+    if (name === "updateDelivery") {
+      delivery.value = store.$state.selectedDelivery;
+    }
+  });
+});
+
+if (cookieCartData.value && cookieCartData.value.length && !cart.items.length) {
+  cart.initCart(cookieCartData.value);
+}
+
+if (delivery.value) {
+  cart.$state.selectedDelivery = delivery.value;
+}
+
+const route = useRoute();
+const menuStore = useMenuToggler();
+
+const closeMenu = () => {
+  menuStore.toggleMenu(false);
+};
+
+watch(route, () => {
+  closeMenu();
+});
+</script>

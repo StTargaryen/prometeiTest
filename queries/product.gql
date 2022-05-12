@@ -1,0 +1,168 @@
+# query ProductByArticle($article: String) {
+#   products(filters: { article: { eq: $article } }) {
+#     data {
+#       id
+#       attributes {
+#         title
+#         article
+#         price
+#         tags {
+#           data {
+#             attributes {
+#               name
+#             }
+#           }
+#         }
+#         colors {
+#           name
+#           hexColor
+#           disabled
+#           amount
+#         }
+#         section {
+#           data {
+#             id
+#             attributes {
+#               title
+#               slug
+#             }
+#           }
+#         }
+#         category {
+#           data {
+#             id
+#             attributes {
+#               title
+#               slug
+#             }
+#           }
+#         }
+#         subcategory {
+#           data {
+#             id
+#             attributes {
+#               title
+#               slug
+#             }
+#           }
+#         }
+#         images {
+#           data {
+#             id
+#             attributes {
+#               url
+#             }
+#           }
+#         }
+#       }
+#     }
+#   }
+# }
+
+query ProductByArticle($article: String) {
+  products(filters: { article: { eq: $article } }) {
+    data {
+      attributes {
+        article
+        title
+        price
+        amount
+        color {
+          value
+          title
+        }
+        size {
+          value
+        }
+        images {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query ProductCardDataBySlug($slug: String) {
+  productCards(filters: { slug: { eq: $slug } }) {
+    data {
+      attributes {
+        title
+        slug
+        items {
+          data {
+            attributes {
+              article
+              color {
+                title
+                value
+              }
+              size {
+                value
+              }
+            }
+          }
+        }
+        category {
+          data {
+            attributes {
+              slug
+              title
+            }
+          }
+        }
+        subcategory {
+          data {
+            attributes {
+              slug
+              title
+            }
+          }
+        }
+        section {
+          data {
+            attributes {
+              slug
+              title
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query ProductsBySubcategorySlug($slug: String) {
+  products(filters: { parent: { subcategory: { slug: { eq: $slug } } } }) {
+    data {
+      attributes {
+        title
+        article
+        price
+        color {
+          title
+        }
+        size {
+          value
+        }
+        parent {
+          data {
+            attributes {
+              slug
+            }
+          }
+        }
+        images {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}

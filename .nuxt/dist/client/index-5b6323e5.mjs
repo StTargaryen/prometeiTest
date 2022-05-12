@@ -1,0 +1,1 @@
+import{_ as o,o as s,c as t,w as c,a as n,b as e}from"./entry-6033a8be.mjs";const _={},r=e("div",{class:"flex-grow"},[e("main",{class:"mt-[135px] mb-[40px] flex-grow"},"address")],-1);function x(d,f){const a=n;return s(),t(a,{name:"shop"},{default:c(()=>[r]),_:1})}var p=o(_,[["render",x]]);export{p as default};
