@@ -134,7 +134,7 @@
                 </div>
               </div>
             </aside>
-            <div class="catalog-list flex-grow flex gap-[25px]">
+            <div class="catalog-list flex-grow flex flex-wrap">
               <div
                 v-if="loading"
                 class="w-full flex justify-center items-center animate-pulse"

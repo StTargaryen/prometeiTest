@@ -241,6 +241,7 @@
                     </svg>
                   </button>
                 </div>
+                <div v-if="isCartHandlerDisabled" class="text-center">Товара нет в наличии</div>
               </div>
             </aside>
           </div>
