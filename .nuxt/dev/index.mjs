@@ -21,7 +21,7 @@ import { snakeCase } from 'file:///Users/andrewstt/Projects/personal/strapi/ecco
 import htmlTemplate from '/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/views/document.template.mjs';
 import { renderToString as renderToString$2 } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/vue/server-renderer/index.mjs';
 
-const _runtimeConfig = (function(a,b){return {app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""},nitro:{routes:{},envPrefix:"NUXT_"},API_URL:a,public:{API_URL:a,GQL_HOST:b,"graphql-client":{clients:{default:{host:b,schema:void 0,token:{type:"Bearer"}}}}},"graphql-client":{clients:{}}}}("http:\u002F\u002Flocalhost:1337","http:\u002F\u002Flocalhost:1337\u002Fgraphql"));
+const _runtimeConfig = (function(a,b){return {app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""},nitro:{routes:{},envPrefix:"NUXT_"},API_URL:a,public:{API_URL:a,GQL_HOST:b,"graphql-client":{clients:{default:{host:b,schema:void 0,token:{type:"Bearer"}}}}},"graphql-client":{clients:{}}}}("https:\u002F\u002Fhidden-scrubland-92584.herokuapp.com\u002F","https:\u002F\u002Fhidden-scrubland-92584.herokuapp.com\u002Fgraphql"));
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {

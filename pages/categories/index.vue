@@ -123,5 +123,7 @@
 </template>
 
 <script setup>
-const { data: products } = await useFetch("http://localhost:1337/api/products");
+const config = useRuntimeConfig();
+
+const { data: products } = await useFetch(`${config.public.API_URL}/products`);
 </script>

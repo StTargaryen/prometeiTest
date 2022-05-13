@@ -3167,6 +3167,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_9__.default(_sfc_m
 // - /store/menu/menu.js ($id_53cdf039)
 // - /store/cart/cart.js ($id_08ef3e2f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /assets/images/header-logo.svg ($id_1ab94e98)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_7562f2a2 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
@@ -3219,6 +3220,9 @@ const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/
 
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/assets/images/header-logo.svg");
+
+
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLink = __vite_ssr_import_0__.default
@@ -3230,11 +3234,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   }, {
     default: __vite_ssr_import_5__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
-        _push(`<img src="/assets/images/header-logo.svg" alt=""${_scopeId}>`)
+        _push(`<img${
+          __vite_ssr_import_6__.ssrRenderAttr("src", __vite_ssr_import_7__.default)
+        } alt=""${
+          _scopeId
+        }>`)
       } else {
         return [
           __vite_ssr_import_5__.createVNode("img", {
-            src: "/assets/images/header-logo.svg",
+            src: __vite_ssr_import_7__.default,
             alt: ""
           })
         ]
@@ -3303,17 +3311,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_7__.useSSRContext()
+  const ssrContext = __vite_ssr_import_8__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/PrometeiHeader.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/components/PrometeiHeader.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_9__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/components/PrometeiHeader.vue"]]);
 }
 
 
@@ -3371,6 +3379,8 @@ const { data, error } = (
   __temp
 );
 
+console.log('data: ', data);
+
 const menu = data;
 
 
@@ -3397,7 +3407,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     _push(`<div${__vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({
       class: ["expand-menu", { hidden: !$setup.isExpandMenuOpen }]
     }, _attrs))} data-v-3efd3624><div class="max-w-screen-xl w-full mx-auto flex items-center" data-v-3efd3624>`)
-    if ($setup.menu.sections) {
+    if ($setup.menu && $setup.menu.sections) {
       _push(__vite_ssr_import_8__.ssrRenderComponent($setup["TabsWrapper"], { column: "" }, {
         default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
           if (_push) {
@@ -4702,6 +4712,18 @@ Object.defineProperty(__vite_ssr_exports__, "useCart", { enumerable: true, confi
 
 
 // --------------------
+// Request: /assets/images/header-logo.svg
+// Parents: 
+// - /components/PrometeiHeader.vue ($id_7562f2a2)
+// Dependencies: 
+
+// --------------------
+const $id_1ab94e98 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "/_nuxt/assets/images/header-logo.svg";
+}
+
+
+// --------------------
 // Request: /components/PrometeiFooter.vue
 // Parents: 
 // - /layouts/shop.vue ($id_8067d08d)
@@ -4709,6 +4731,7 @@ Object.defineProperty(__vite_ssr_exports__, "useCart", { enumerable: true, confi
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /assets/images/footer-logo.svg ($id_79b8e24e)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_04928ae8 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
@@ -4741,6 +4764,9 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/assets/images/footer-logo.svg");
+
+
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLink = __vite_ssr_import_0__.default
@@ -4752,11 +4778,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   }, {
     default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
-        _push(`<img src="/assets/images/footer-logo.svg" alt=""${_scopeId}>`)
+        _push(`<img${
+          __vite_ssr_import_2__.ssrRenderAttr("src", __vite_ssr_import_3__.default)
+        } alt=""${
+          _scopeId
+        }>`)
       } else {
         return [
           __vite_ssr_import_1__.createVNode("img", {
-            src: "/assets/images/footer-logo.svg",
+            src: __vite_ssr_import_3__.default,
             alt: ""
           })
         ]
@@ -4991,17 +5021,29 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  const ssrContext = __vite_ssr_import_4__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/PrometeiFooter.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/components/PrometeiFooter.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/components/PrometeiFooter.vue"]]);
+}
+
+
+// --------------------
+// Request: /assets/images/footer-logo.svg
+// Parents: 
+// - /components/PrometeiFooter.vue ($id_04928ae8)
+// Dependencies: 
+
+// --------------------
+const $id_79b8e24e = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "/_nuxt/assets/images/footer-logo.svg";
 }
 
 
@@ -5756,13 +5798,14 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
 const route = __vite_ssr_import_2__.useRoute();
 
 const sectionSlug = route.params.slug;
 
 const { data: currentSection } = (
   ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  `http://localhost:1337/api/sections?filters[slug][$eq]=${sectionSlug}`
+  `${config.public.API_URL}api/sections?filters[slug][$eq]=${sectionSlug}`
 ))),
   __temp = await __temp,
   __restore(),
@@ -5770,7 +5813,7 @@ const { data: currentSection } = (
 );
 const { data: sectionCategoriesData } = (
   ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  `http://localhost:1337/api/categories?filters[parent][slug][$eq]=${sectionSlug}&populate=image`
+  `${config.public.API_URL}api/categories?filters[parent][slug][$eq]=${sectionSlug}&populate=image`
 ))),
   __temp = await __temp,
   __restore(),
@@ -5785,16 +5828,15 @@ __vite_ssr_import_3__.useHead({
 
 const sectionCategories = sectionCategoriesData.value.data;
 
-const config = __vite_ssr_import_2__.useRuntimeConfig();
 const imageUrl = (category) => {
   const url = category.attributes?.image?.data?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };
 
-const __returned__ = { route, sectionSlug, currentSection, sectionCategoriesData, sectionTitle, sectionCategories, config, imageUrl }
+const __returned__ = { config, route, sectionSlug, currentSection, sectionCategoriesData, sectionTitle, sectionCategories, imageUrl }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -6044,10 +6086,10 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
+
 const { data: sections } = (
-  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  "http://localhost:1337/api/sections?populate=*"
-))),
+  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(`${config.public.API_URL}api/sections?populate=*`))),
   __temp = await __temp,
   __restore(),
   __temp
@@ -6055,17 +6097,16 @@ const { data: sections } = (
 
 const sectionsList = sections.value.data;
 
-const config = __vite_ssr_import_2__.useRuntimeConfig();
 
 const imageUrl = (section) => {
   const url = section.attributes?.image?.data?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };
 
-const __returned__ = { sections, sectionsList, config, imageUrl }
+const __returned__ = { config, sections, sectionsList, imageUrl }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -6839,13 +6880,14 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
 const route = __vite_ssr_import_2__.useRoute();
 
 const categorySlug = route.params.slug;
 
 const { data: currentCategoryData } = (
   ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  `http://localhost:1337/api/categories?filters[slug][$eq]=${categorySlug}&populate=parent`
+  `${config.public.API_URL}api/categories?filters[slug][$eq]=${categorySlug}&populate=parent`
 ))),
   __temp = await __temp,
   __restore(),
@@ -6862,7 +6904,7 @@ const currentSection = currentCategory.parent.data.attributes;
 
 const { data: categorySubcategoriesData } = (
   ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  `http://localhost:1337/api/subcategories?filters[parent][slug][$eq]=${currentCategory.slug}&populate=image`
+  `${config.public.API_URL}api/subcategories?filters[parent][slug][$eq]=${currentCategory.slug}&populate=image`
 ))),
   __temp = await __temp,
   __restore(),
@@ -6871,16 +6913,15 @@ const { data: categorySubcategoriesData } = (
 
 const categorySubcategories = categorySubcategoriesData.value.data;
 
-const config = __vite_ssr_import_2__.useRuntimeConfig();
 const imageUrl = (subcategory) => {
   const url = subcategory.attributes?.image?.data[0]?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };
 
-const __returned__ = { route, categorySlug, currentCategoryData, currentCategory, currentSection, categorySubcategoriesData, categorySubcategories, config, imageUrl }
+const __returned__ = { config, route, categorySlug, currentCategoryData, currentCategory, currentSection, categorySubcategoriesData, categorySubcategories, imageUrl }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -7164,14 +7205,16 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
+
 const { data: products } = (
-  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_2__.useFetch("http://localhost:1337/api/products"))),
+  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(`${config.public.API_URL}/products`))),
   __temp = await __temp,
   __restore(),
   __temp
 );
 
-const __returned__ = { products }
+const __returned__ = { config, products }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -7281,7 +7324,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           _push(__vite_ssr_import_5__.ssrRenderComponent(_component_NuxtLink, {
             to: `/product/${product.id}`,
             class: "item-image flex-grow bg-center bg-no-repeat bg-contain",
-            style: {"background-image":"url('assets/images/product-item.png')"}
+            style: {"background-image":"url('~/assets/images/product-item.png')"}
           }, null, _parent, _scopeId))
           _push(`<div class="item-content flex flex-col items-stretch text-center"${
             _scopeId
@@ -7385,7 +7428,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                         __vite_ssr_import_4__.createVNode(_component_NuxtLink, {
                           to: `/product/${product.id}`,
                           class: "item-image flex-grow bg-center bg-no-repeat bg-contain",
-                          style: {"background-image":"url('assets/images/product-item.png')"}
+                          style: {"background-image":"url('~/assets/images/product-item.png')"}
                         }, null, 8 /* PROPS */, ["to"]),
                         __vite_ssr_import_4__.createVNode("div", { class: "item-content flex flex-col items-stretch text-center" }, [
                           __vite_ssr_import_4__.createVNode("div", { class: "item-title mb-[30px] font-medium" }, __vite_ssr_import_4__.toDisplayString(product.attributes.Title), 1 /* TEXT */),
@@ -7612,7 +7655,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></div><div class="slider-image mt-[40px] image-slider flex justify-between gap-[25px]"${
           _scopeId
         }><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('/assets/images/basketball.png')"})
+          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/basketball.png')"})
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -7620,7 +7663,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Баскет<br${
           _scopeId
         }>бол</span></div><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('/assets/images/football.png')"})
+          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/football.png')"})
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -7628,7 +7671,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Фут<br${
           _scopeId
         }>бол</span></div><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('/assets/images/voleyball.png')"})
+          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/voleyball.png')"})
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -7678,7 +7721,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 __vite_ssr_import_6__.createVNode("div", { class: "slider-image mt-[40px] image-slider flex justify-between gap-[25px]" }, [
                   __vite_ssr_import_6__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('/assets/images/basketball.png')"}
+                    style: {"background-image":"url('~/assets/images/basketball.png')"}
                   }, [
                     __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
                       __vite_ssr_import_6__.createTextVNode("Баскет"),
@@ -7688,7 +7731,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                   ]),
                   __vite_ssr_import_6__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('/assets/images/football.png')"}
+                    style: {"background-image":"url('~/assets/images/football.png')"}
                   }, [
                     __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
                       __vite_ssr_import_6__.createTextVNode("Фут"),
@@ -7698,7 +7741,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                   ]),
                   __vite_ssr_import_6__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('/assets/images/voleyball.png')"}
+                    style: {"background-image":"url('~/assets/images/voleyball.png')"}
                   }, [
                     __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
                       __vite_ssr_import_6__.createTextVNode("Волей"),
@@ -9530,13 +9573,14 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
 const route = __vite_ssr_import_2__.useRoute();
 
 const sectionSlug = route.params.slug;
 
 const { data: currentSection } = (
   ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  `http://localhost:1337/api/sections?filters[slug][$eq]=${sectionSlug}`
+  `${config.public.API_URL}api/sections?filters[slug][$eq]=${sectionSlug}`
 ))),
   __temp = await __temp,
   __restore(),
@@ -9544,7 +9588,7 @@ const { data: currentSection } = (
 );
 const { data: sectionCategoriesData } = (
   ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  `http://localhost:1337/api/categories?filters[parent][slug][$eq]=${sectionSlug}&populate=image`
+  `${config.public.API_URL}api/categories?filters[parent][slug][$eq]=${sectionSlug}&populate=image`
 ))),
   __temp = await __temp,
   __restore(),
@@ -9559,16 +9603,15 @@ __vite_ssr_import_3__.useHead({
 
 const sectionCategories = sectionCategoriesData.value.data;
 
-const config = __vite_ssr_import_2__.useRuntimeConfig();
 const imageUrl = (category) => {
   const url = category.attributes?.image?.data?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };
 
-const __returned__ = { route, sectionSlug, currentSection, sectionCategoriesData, sectionTitle, sectionCategories, config, imageUrl }
+const __returned__ = { config, route, sectionSlug, currentSection, sectionCategoriesData, sectionTitle, sectionCategories, imageUrl }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -9816,10 +9859,10 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
+
 const { data: sections } = (
-  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  "http://localhost:1337/api/sections?populate=*"
-))),
+  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(`${config.public.API_URL}api/sections?populate=*`))),
   __temp = await __temp,
   __restore(),
   __temp
@@ -9827,17 +9870,16 @@ const { data: sections } = (
 
 const sectionsList = sections.value.data;
 
-const config = __vite_ssr_import_2__.useRuntimeConfig();
 
 const imageUrl = (section) => {
   const url = section.attributes?.image?.data?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };
 
-const __returned__ = { sections, sectionsList, config, imageUrl }
+const __returned__ = { config, sections, sectionsList, imageUrl }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -10607,13 +10649,14 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
 const route = __vite_ssr_import_2__.useRoute();
 
 const categorySlug = route.params.slug;
 
 const { data: currentCategoryData } = (
   ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  `http://localhost:1337/api/categories?filters[slug][$eq]=${categorySlug}&populate=parent`
+  `${config.public.API_URL}api/categories?filters[slug][$eq]=${categorySlug}&populate=parent`
 ))),
   __temp = await __temp,
   __restore(),
@@ -10630,7 +10673,7 @@ const currentSection = currentCategory.parent.data.attributes;
 
 const { data: categorySubcategoriesData } = (
   ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(
-  `http://localhost:1337/api/subcategories?filters[parent][slug][$eq]=${currentCategory.slug}&populate=image`
+  `${config.public.API_URL}api/subcategories?filters[parent][slug][$eq]=${currentCategory.slug}&populate=image`
 ))),
   __temp = await __temp,
   __restore(),
@@ -10639,16 +10682,15 @@ const { data: categorySubcategoriesData } = (
 
 const categorySubcategories = categorySubcategoriesData.value.data;
 
-const config = __vite_ssr_import_2__.useRuntimeConfig();
 const imageUrl = (subcategory) => {
   const url = subcategory.attributes?.image?.data[0]?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };
 
-const __returned__ = { route, categorySlug, currentCategoryData, currentCategory, currentSection, categorySubcategoriesData, categorySubcategories, config, imageUrl }
+const __returned__ = { config, route, categorySlug, currentCategoryData, currentCategory, currentSection, categorySubcategoriesData, categorySubcategories, imageUrl }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -10930,14 +10972,16 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
+
 const { data: products } = (
-  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_2__.useFetch("http://localhost:1337/api/products"))),
+  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_2__.useFetch(`${config.public.API_URL}/products`))),
   __temp = await __temp,
   __restore(),
   __temp
 );
 
-const __returned__ = { products }
+const __returned__ = { config, products }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -11047,7 +11091,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           _push(__vite_ssr_import_5__.ssrRenderComponent(_component_NuxtLink, {
             to: `/product/${product.id}`,
             class: "item-image flex-grow bg-center bg-no-repeat bg-contain",
-            style: {"background-image":"url('assets/images/product-item.png')"}
+            style: {"background-image":"url('~/assets/images/product-item.png')"}
           }, null, _parent, _scopeId))
           _push(`<div class="item-content flex flex-col items-stretch text-center"${
             _scopeId
@@ -11151,7 +11195,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                         __vite_ssr_import_4__.createVNode(_component_NuxtLink, {
                           to: `/product/${product.id}`,
                           class: "item-image flex-grow bg-center bg-no-repeat bg-contain",
-                          style: {"background-image":"url('assets/images/product-item.png')"}
+                          style: {"background-image":"url('~/assets/images/product-item.png')"}
                         }, null, 8 /* PROPS */, ["to"]),
                         __vite_ssr_import_4__.createVNode("div", { class: "item-content flex flex-col items-stretch text-center" }, [
                           __vite_ssr_import_4__.createVNode("div", { class: "item-title mb-[30px] font-medium" }, __vite_ssr_import_4__.toDisplayString(product.attributes.Title), 1 /* TEXT */),
@@ -11374,7 +11418,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></div><div class="slider-image mt-[40px] image-slider flex justify-between gap-[25px]"${
           _scopeId
         }><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('/assets/images/basketball.png')"})
+          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/basketball.png')"})
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -11382,7 +11426,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Баскет<br${
           _scopeId
         }>бол</span></div><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('/assets/images/football.png')"})
+          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/football.png')"})
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -11390,7 +11434,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Фут<br${
           _scopeId
         }>бол</span></div><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('/assets/images/voleyball.png')"})
+          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/voleyball.png')"})
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -11440,7 +11484,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                 __vite_ssr_import_6__.createVNode("div", { class: "slider-image mt-[40px] image-slider flex justify-between gap-[25px]" }, [
                   __vite_ssr_import_6__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('/assets/images/basketball.png')"}
+                    style: {"background-image":"url('~/assets/images/basketball.png')"}
                   }, [
                     __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
                       __vite_ssr_import_6__.createTextVNode("Баскет"),
@@ -11450,7 +11494,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                   ]),
                   __vite_ssr_import_6__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('/assets/images/football.png')"}
+                    style: {"background-image":"url('~/assets/images/football.png')"}
                   }, [
                     __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
                       __vite_ssr_import_6__.createTextVNode("Фут"),
@@ -11460,7 +11504,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                   ]),
                   __vite_ssr_import_6__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('/assets/images/voleyball.png')"}
+                    style: {"background-image":"url('~/assets/images/voleyball.png')"}
                   }, [
                     __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
                       __vite_ssr_import_6__.createTextVNode("Волей"),
@@ -13283,7 +13327,9 @@ const __modules__ = {
   "/store/menu/menu.js": $id_53cdf039,
   "/node_modules/pinia/dist/pinia.mjs": $id_b1920624,
   "/store/cart/cart.js": $id_08ef3e2f,
+  "/assets/images/header-logo.svg": $id_1ab94e98,
   "/components/PrometeiFooter.vue": $id_04928ae8,
+  "/assets/images/footer-logo.svg": $id_79b8e24e,
   "/pages/cart/index.vue?macro=true": $id_7c49fc15,
   "/components/UI/AmountCounter.vue": $id_5db0a46a,
   "/pages/cart/index.vue?vue&type=style&index=0&lang.css": $id_b6616365,

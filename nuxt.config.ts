@@ -1,8 +1,5 @@
 import { defineNuxtConfig } from "nuxt";
 
-const strapiBaseUri =
-  process.env.API_URL || "https://hidden-scrubland-92584.herokuapp.com/";
-
 export default defineNuxtConfig({
   buildModules: ["@pinia/nuxt", "@nuxtjs/tailwindcss"],
   modules: ["nuxt-graphql-client"],
@@ -24,7 +21,6 @@ export default defineNuxtConfig({
     },
   },
   strapi: {
-    strapiBaseUri: strapiBaseUri,
     url:
       process.env.STRAPI_URL || "https://hidden-scrubland-92584.herokuapp.com/",
     prefix: "/api",

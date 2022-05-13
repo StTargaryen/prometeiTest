@@ -54,18 +54,17 @@
 </template>
 
 <script setup>
-const { data: sections } = await useFetch(
-  "http://localhost:1337/api/sections?populate=*"
-);
+const config = useRuntimeConfig();
+
+const { data: sections } = await useFetch(`${config.public.API_URL}api/sections?populate=*`);
 
 const sectionsList = sections.value.data;
 
-const config = useRuntimeConfig();
 
 const imageUrl = (section) => {
   const url = section.attributes?.image?.data?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };

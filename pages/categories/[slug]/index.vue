@@ -83,12 +83,13 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
 const route = useRoute();
 
 const categorySlug = route.params.slug;
 
 const { data: currentCategoryData } = await useFetch(
-  `http://localhost:1337/api/categories?filters[slug][$eq]=${categorySlug}&populate=parent`
+  `${config.public.API_URL}api/categories?filters[slug][$eq]=${categorySlug}&populate=parent`
 );
 
 const currentCategory = currentCategoryData.value.data[0].attributes;
@@ -100,16 +101,15 @@ useHead({
 const currentSection = currentCategory.parent.data.attributes;
 
 const { data: categorySubcategoriesData } = await useFetch(
-  `http://localhost:1337/api/subcategories?filters[parent][slug][$eq]=${currentCategory.slug}&populate=image`
+  `${config.public.API_URL}api/subcategories?filters[parent][slug][$eq]=${currentCategory.slug}&populate=image`
 );
 
 const categorySubcategories = categorySubcategoriesData.value.data;
 
-const config = useRuntimeConfig();
 const imageUrl = (subcategory) => {
   const url = subcategory.attributes?.image?.data[0]?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };

@@ -72,15 +72,16 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
 const route = useRoute();
 
 const sectionSlug = route.params.slug;
 
 const { data: currentSection } = await useFetch(
-  `http://localhost:1337/api/sections?filters[slug][$eq]=${sectionSlug}`
+  `${config.public.API_URL}api/sections?filters[slug][$eq]=${sectionSlug}`
 );
 const { data: sectionCategoriesData } = await useFetch(
-  `http://localhost:1337/api/categories?filters[parent][slug][$eq]=${sectionSlug}&populate=image`
+  `${config.public.API_URL}api/categories?filters[parent][slug][$eq]=${sectionSlug}&populate=image`
 );
 
 const sectionTitle = currentSection.value.data[0].attributes.title;
@@ -91,11 +92,10 @@ useHead({
 
 const sectionCategories = sectionCategoriesData.value.data;
 
-const config = useRuntimeConfig();
 const imageUrl = (category) => {
   const url = category.attributes?.image?.data?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };
