@@ -8,13 +8,13 @@ export default defineNuxtConfig({
     transpile: ["ts-invariant/process"],
   },
   loadingIndicator: {
-    name: "rotating-plane",
-    color: "blue",
-    background: "red",
+    name: 'rotating-plane',
+    color: 'blue',
+    background: 'red'
   },
   loading: {
-    color: "DodgerBlue",
-    height: "10px",
+    color: 'DodgerBlue',
+    height: '10px'
   },
   runtimeConfig: {
     public: {
@@ -22,8 +22,7 @@ export default defineNuxtConfig({
     },
   },
   strapi: {
-    url:
-      process.env.STRAPI_URL || "https://hidden-scrubland-92584.herokuapp.com/",
+    url: process.env.STRAPI_URL || "https://hidden-scrubland-92584.herokuapp.com/",
     prefix: "/api",
     version: "v4",
     cookie: {},
