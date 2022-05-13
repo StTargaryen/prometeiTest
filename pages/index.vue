@@ -40,7 +40,7 @@
           >
             <div
               class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative"
-              style="background-image: url('/assets/images/basketball.png')"
+              style="background-image: url('~/assets/images/basketball.png')"
             >
               <span
                 class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"
@@ -49,7 +49,7 @@
             </div>
             <div
               class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative"
-              style="background-image: url('/assets/images/football.png')"
+              style="background-image: url('~/assets/images/football.png')"
             >
               <span
                 class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"
@@ -58,7 +58,7 @@
             </div>
             <div
               class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative"
-              style="background-image: url('/assets/images/voleyball.png')"
+              style="background-image: url('~/assets/images/voleyball.png')"
             >
               <span
                 class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"

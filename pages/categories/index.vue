@@ -98,7 +98,7 @@
                   :to="`/product/${product.id}`"
                   class="item-image flex-grow bg-center bg-no-repeat bg-contain"
                   style="
-                    background-image: url('assets/images/product-item.png');
+                    background-image: url('~/assets/images/product-item.png');
                   "
                 ></NuxtLink>
                 <div

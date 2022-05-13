@@ -4,7 +4,7 @@
       class="text-white max-w-screen-xl w-full mx-auto flex justify-between items-start"
     >
       <NuxtLink to="/" class="footer-logo">
-        <img src="/assets/images/footer-logo.svg" alt="" />
+        <img src="~/assets/images/footer-logo.svg" alt="" />
       </NuxtLink>
       <div class="footer-columns flex items-start">
         <div class="footer-column mr-[120px] last:mr-0">

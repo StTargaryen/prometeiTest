@@ -6,7 +6,7 @@
       class="max-w-screen-xl w-full mx-auto flex justify-between items-center"
     >
       <NuxtLink to="/" class="logo">
-        <img src="/assets/images/header-logo.svg" alt="" />
+        <img src="~/assets/images/header-logo.svg" alt="" />
       </NuxtLink>
       <div class="navigation flex items-center">
         <button
