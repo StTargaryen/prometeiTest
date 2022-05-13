@@ -1,6 +1,8 @@
 import { defineNuxtConfig } from "nuxt";
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
+const strapiBaseUri =
+  process.env.API_URL || "https://hidden-scrubland-92584.herokuapp.com/";
+
 export default defineNuxtConfig({
   buildModules: ["@pinia/nuxt", "@nuxtjs/tailwindcss"],
   modules: ["nuxt-graphql-client"],
@@ -8,13 +10,13 @@ export default defineNuxtConfig({
     transpile: ["ts-invariant/process"],
   },
   loadingIndicator: {
-    name: 'rotating-plane',
-    color: 'blue',
-    background: 'red'
+    name: "rotating-plane",
+    color: "blue",
+    background: "red",
   },
   loading: {
-    color: 'DodgerBlue',
-    height: '10px'
+    color: "DodgerBlue",
+    height: "10px",
   },
   runtimeConfig: {
     public: {
@@ -22,7 +24,9 @@ export default defineNuxtConfig({
     },
   },
   strapi: {
-    url: process.env.STRAPI_URL || "https://hidden-scrubland-92584.herokuapp.com/",
+    strapiBaseUri: strapiBaseUri,
+    url:
+      process.env.STRAPI_URL || "https://hidden-scrubland-92584.herokuapp.com/",
     prefix: "/api",
     version: "v4",
     cookie: {},
