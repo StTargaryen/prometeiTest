@@ -3,7 +3,7 @@
     <div class="flex-grow">
       <main class="mt-[102px] mb-[40px] flex-grow">
         <div class="max-w-screen-xl w-full mx-auto">
-          <div class="inline-block">
+          <div class="inline-flex">
             <NuxtLink
               to="/"
               class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
@@ -56,10 +56,11 @@
 <script setup>
 const config = useRuntimeConfig();
 
-const { data: sections } = await useFetch(`${config.public.API_URL}/api/sections?populate=*`);
+const { data: sections } = await useFetch(
+  `${config.public.API_URL}/api/sections?populate=*`
+);
 
 const sectionsList = sections.value.data;
-
 
 const imageUrl = (section) => {
   const url = section.attributes?.image?.data?.attributes?.url;
