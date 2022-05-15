@@ -56,7 +56,7 @@
 <script setup>
 const config = useRuntimeConfig();
 
-const { data: sections } = await useFetch(`${config.public.API_URL}api/sections?populate=*`);
+const { data: sections } = await useFetch(`${config.public.API_URL}/api/sections?populate=*`);
 
 const sectionsList = sections.value.data;
 

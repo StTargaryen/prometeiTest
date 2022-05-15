@@ -33,15 +33,6 @@
             >
               <span>Все категории</span>
             </NuxtLink>
-            <code class="text-grey-text text-[24px] ml-[5px] mr-[5px]">
-              /
-            </code>
-            <span
-              disabled
-              class="breadcrumb flex items-center text-[21px] text-grey-text cursor-default"
-            >
-              <span>{{ sectionTitle }}</span>
-            </span>
           </div>
           <div class="page-header mb-[20px] flex items-center">
             <h1 class="flex-grow text-primary text-[36px] font-bold">
@@ -78,10 +69,10 @@ const route = useRoute();
 const sectionSlug = route.params.slug;
 
 const { data: currentSection } = await useFetch(
-  `${config.public.API_URL}api/sections?filters[slug][$eq]=${sectionSlug}`
+  `${config.public.API_URL}/api/sections?filters[slug][$eq]=${sectionSlug}`
 );
 const { data: sectionCategoriesData } = await useFetch(
-  `${config.public.API_URL}api/categories?filters[parent][slug][$eq]=${sectionSlug}&populate=image`
+  `${config.public.API_URL}/api/categories?filters[parent][slug][$eq]=${sectionSlug}&populate=image`
 );
 
 const sectionTitle = currentSection.value.data[0].attributes.title;
@@ -93,7 +84,7 @@ useHead({
 const sectionCategories = sectionCategoriesData.value.data;
 
 const imageUrl = (category) => {
-  const url = category.attributes?.image?.data?.attributes?.url;
+  const url = category.attributes?.image.data?.attributes?.url;
   if (url) {
     return `${config.public.API_URL}${url}`;
   }

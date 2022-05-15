@@ -6,8 +6,6 @@ const { data, error } = await useAsyncData(`catalog-menu`, () =>
   GqlCatalogMenu()
 );
 
-console.log('data: ', data);
-
 const menu = data;
 
 const props = defineProps({

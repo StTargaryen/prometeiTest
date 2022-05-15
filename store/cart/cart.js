@@ -41,7 +41,7 @@ export const useCart = defineStore("cart", {
           newArr.push(item);
         }
       }
-      console.log(newArr);
+      // console.log(newArr);
       this.cartItems = newArr;
     },
   },

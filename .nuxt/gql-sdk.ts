@@ -62,6 +62,7 @@ export type CategoryFiltersInput = {
 };
 
 export type CategoryInput = {
+  image?: InputMaybe<Scalars['ID']>;
   items?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   name?: InputMaybe<Scalars['String']>;
   parent?: InputMaybe<Scalars['ID']>;
@@ -306,6 +307,7 @@ export type SectionFiltersInput = {
 };
 
 export type SectionInput = {
+  image?: InputMaybe<Scalars['ID']>;
   items?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   name?: InputMaybe<Scalars['String']>;
   navIcon?: InputMaybe<Scalars['ID']>;
@@ -497,14 +499,14 @@ export type ProductCardDataBySlugQueryVariables = Exact<{
 }>;
 
 
-export type ProductCardDataBySlugQuery = { productCards?: { data: Array<{ attributes?: { title: string, slug: string, items?: { data: Array<{ attributes?: { article: string, color: { title: string, value: string }, size: { value: string } } | null }> } | null, category?: { data?: { attributes?: { slug: string, title: string } | null } | null } | null, subcategory?: { data?: { attributes?: { slug: string, title: string } | null } | null } | null, section?: { data?: { attributes?: { slug: string, title: string } | null } | null } | null } | null }> } | null };
+export type ProductCardDataBySlugQuery = { productCards?: { data: Array<{ attributes?: { title: string, slug: string, images: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> }, items?: { data: Array<{ attributes?: { article: string, color: { title: string, value: string }, size: { value: string } } | null }> } | null, category?: { data?: { attributes?: { slug: string, title: string } | null } | null } | null, subcategory?: { data?: { attributes?: { slug: string, title: string } | null } | null } | null, section?: { data?: { attributes?: { slug: string, title: string } | null } | null } | null } | null }> } | null };
 
 export type ProductsBySubcategorySlugQueryVariables = Exact<{
   slug?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type ProductsBySubcategorySlugQuery = { products?: { data: Array<{ attributes?: { title: string, article: string, price?: number | null, color: { title: string }, size: { value: string }, parent?: { data?: { attributes?: { slug: string } | null } | null } | null, images?: { data: Array<{ attributes?: { url: string } | null }> } | null } | null }> } | null };
+export type ProductsBySubcategorySlugQuery = { products?: { data: Array<{ attributes?: { title: string, article: string, price?: number | null, color: { title: string }, size: { value: string }, parent?: { data?: { attributes?: { slug: string } | null } | null } | null, images?: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> } | null } | null }> } | null };
 
 export type SubcategoryDataBySlugQueryVariables = Exact<{
   slug?: InputMaybe<Scalars['String']>;
@@ -586,6 +588,14 @@ export const ProductCardDataBySlugDocument = gql`
       attributes {
         title
         slug
+        images {
+          data {
+            id
+            attributes {
+              url
+            }
+          }
+        }
         items {
           data {
             attributes {
@@ -652,6 +662,7 @@ export const ProductsBySubcategorySlugDocument = gql`
         }
         images {
           data {
+            id
             attributes {
               url
             }

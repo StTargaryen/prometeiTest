@@ -44,22 +44,16 @@
             >
               <span>{{ currentSection.name }}</span>
             </NuxtLink>
-            <code class="text-grey-text text-[24px] ml-[5px] mr-[5px]">
-              /
-            </code>
-            <span
-              disabled
-              class="breadcrumb flex items-center text-[21px] text-grey-text cursor-default"
-            >
-              <span>{{ currentCategory.name }}</span>
-            </span>
           </div>
           <div class="page-header mb-[20px] flex items-center">
             <h1 class="flex-grow text-primary text-[36px] font-bold">
               {{ currentCategory.name }}
             </h1>
           </div>
-          <div class="cards flex items-center gap-[20px]">
+          <div
+            class="cards flex items-center gap-[20px]"
+            v-if="categorySubcategories.length"
+          >
             <NuxtLink
               v-for="subcategory in categorySubcategories"
               :to="{
@@ -76,6 +70,17 @@
               </div>
             </NuxtLink>
           </div>
+          <h4 class="text-[26px]" v-else>
+            <div
+              class="flex flex-col justify-center items-center font-medium text-secondary"
+            >
+              <span class="text-[26px]">Тут пока пусто.</span>
+              <span class="text-[21px] mb-[25px]"
+                >Возвращайтесь сюда позднее!</span
+              >
+              <div class="text-[21px] text-center">¯\_(ツ)_/¯</div>
+            </div>
+          </h4>
         </div>
       </main>
     </div>
@@ -89,7 +94,7 @@ const route = useRoute();
 const categorySlug = route.params.slug;
 
 const { data: currentCategoryData } = await useFetch(
-  `${config.public.API_URL}api/categories?filters[slug][$eq]=${categorySlug}&populate=parent`
+  `${config.public.API_URL}/api/categories?filters[slug][$eq]=${categorySlug}&populate=parent`
 );
 
 const currentCategory = currentCategoryData.value.data[0].attributes;
@@ -101,13 +106,14 @@ useHead({
 const currentSection = currentCategory.parent.data.attributes;
 
 const { data: categorySubcategoriesData } = await useFetch(
-  `${config.public.API_URL}api/subcategories?filters[parent][slug][$eq]=${currentCategory.slug}&populate=image`
+  `${config.public.API_URL}/api/subcategories?filters[parent][slug][$eq]=${currentCategory.slug}&populate=image`
 );
 
 const categorySubcategories = categorySubcategoriesData.value.data;
 
 const imageUrl = (subcategory) => {
-  const url = subcategory.attributes?.image?.data[0]?.attributes?.url;
+  const url = subcategory.attributes?.image?.data?.attributes?.url;
+  console.log(url);
   if (url) {
     return `${config.public.API_URL}${url}`;
   }

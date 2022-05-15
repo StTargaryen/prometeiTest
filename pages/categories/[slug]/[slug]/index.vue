@@ -58,17 +58,6 @@
               >
                 <span>{{ category.title }}</span>
               </NuxtLink>
-
-              <code class="text-grey-text text-[24px] ml-[5px] mr-[5px]">
-                /
-              </code>
-
-              <span
-                disabled
-                class="breadcrumb flex items-center text-[21px] text-grey-text cursor-default"
-              >
-                <span>{{ subcategory.attributes.title }}</span>
-              </span>
             </div>
           </div>
           <div class="page-header mb-[20px] flex items-center">
@@ -79,7 +68,7 @@
           <button @click="getProducts()">fetchData</button>
 
           <div class="flex justify-between items-start gap-[40px]">
-            <aside class="catalog-filter w-[300px] flex flex-col">
+            <aside class="catalog-filter min-w-[300px] flex flex-col">
               <div class="filter-block mb-[20px]">
                 <div
                   class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"
@@ -134,18 +123,24 @@
                 </div>
               </div>
             </aside>
-            <div class="catalog-list flex-grow flex flex-wrap">
+            <!-- loading-cards -->
+            <div
+              v-if="loading"
+              class="catalog-list flex-grow flex flex-wrap gap-[25px]"
+            >
               <div
-                v-if="loading"
-                class="w-full flex justify-center items-center animate-pulse"
-              >
-                ЖОПА
-              </div>
+                v-for="item in 3"
+                class="catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"
+              ></div>
+            </div>
+            <div
+              v-else
+              class="catalog-list flex-grow flex flex-wrap gap-[25px]"
+            >
               <div
-                v-else
                 v-for="(product, index) in dataProducts"
                 :key="index"
-                class="catalog-list-item font-medium text-[21px] w-1/3 h-[450px] shadow-card hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start p-[30px] transition-shadow"
+                class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"
               >
                 <NuxtLink
                   :to="`/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`"
@@ -276,8 +271,9 @@ const productInCart = (product) => {
 };
 
 const cartHandler = (product) => {
+  console.log(product);
   if (productInCart(product)) {
-    cart.removeFromCart(product.article);
+    cart.removeFromCart(product.attributes.article);
   } else {
     cart.addToCart({
       count: 1,

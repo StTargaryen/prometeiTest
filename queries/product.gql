@@ -92,6 +92,14 @@ query ProductCardDataBySlug($slug: String) {
       attributes {
         title
         slug
+        images {
+          data {
+            id
+            attributes {
+              url
+            }
+          }
+        }
         items {
           data {
             attributes {
@@ -157,6 +165,7 @@ query ProductsBySubcategorySlug($slug: String) {
         }
         images {
           data {
+            id
             attributes {
               url
             }

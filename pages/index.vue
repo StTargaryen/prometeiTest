@@ -96,21 +96,6 @@ const isExpandMenuShow = computed(() => {
   return menuStore.$state.isExpandMenuOpen;
 });
 
-const url = "/api/stuff";
-const { data } = await useFetch(url, {
-  transform: (response) => {
-    response = JSON.parse(response);
-    const res = [];
-    for (const person in response) {
-      console.log(person);
-      if (response.hasOwnProperty(person)) {
-        res.push({ name: person, message: response[person] });
-      }
-    }
-    return res;
-  },
-});
-
 const getLocalBackgroundImageUrl = (name) => {
   switch (name) {
     case "voleyball":
@@ -118,7 +103,6 @@ const getLocalBackgroundImageUrl = (name) => {
     case "football":
       return football;
     case "basketball":
-      console.log("hi");
       return basketball;
     default:
       return "";

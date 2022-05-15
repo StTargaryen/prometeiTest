@@ -76,10 +76,6 @@
               >
                 <span>{{ subcategory.title }}</span>
               </NuxtLink>
-
-              <code class="text-grey-text text-[24px] ml-[5px] mr-[5px]">
-                /
-              </code>
             </div>
           </div>
 
@@ -105,7 +101,7 @@
                   </ul>
                 </div>
                 <div class="product-image">
-                  <ImageViewer v-model="productImages" />
+                  <ImageViewer v-model="imagesGalery" />
                 </div>
               </div>
             </div>
@@ -215,7 +211,9 @@
                       ></path>
                     </svg>
                   </button>
-                  <NuxtLink to="/cart">уже корзине ( {{ productCounter }} )</NuxtLink>
+                  <NuxtLink to="/cart"
+                    >уже корзине ( {{ productCounter }} )</NuxtLink
+                  >
                   <button
                     class="h-[30px] w-[30px] p-[2px] text-grey-text transition-colors rounded-[4px] bg-grey-light cursor-pointer hover:bg-primary hover:text-white"
                     :class="{
@@ -241,7 +239,9 @@
                     </svg>
                   </button>
                 </div>
-                <div v-if="isCartHandlerDisabled" class="text-center">Товара нет в наличии</div>
+                <div v-if="isCartHandlerDisabled" class="text-center">
+                  Товара нет в наличии
+                </div>
               </div>
             </aside>
           </div>
@@ -300,9 +300,22 @@ const productTitle = computed(
 
 const productPrice = computed(() => currentProduct.value.attributes.price || 0);
 
-const productImages = computed(
-  () => currentProduct.value.attributes.images.data || []
+// images
+
+const constProductCardImages = computed(
+  () => productCard.value.attributes?.images?.data || []
 );
+
+const productImages = computed(
+  () => currentProduct.value.attributes?.images?.data || []
+);
+
+const imagesGalery = computed(() => [
+  ...productImages.value,
+  ...constProductCardImages.value,
+]);
+
+console.log(imagesGalery);
 
 const productArticle = computed(
   () => currentProduct.value.attributes.article || "–"
@@ -449,7 +462,7 @@ const addToCart = () => {
     title: productTitle.value,
     price: productPrice.value,
     productCard: productCard.value.attributes.slug,
-    imageUrl: productImages.value[0]?.attributes?.url,
+    imageUrl: imagesGalery.value[0]?.attributes?.url,
   });
 };
 
@@ -463,7 +476,7 @@ const updateCartStateItem = (value) => {
     title: productTitle.value,
     price: productPrice.value,
     productCard: productCard.value.attributes.slug,
-    imageUrl: productImages.value[0]?.attributes?.url,
+    imageUrl: imagesGalery.value[0]?.attributes?.url,
   });
 };
 
@@ -486,78 +499,6 @@ const cartHandler = () => {
 const removeFromStateCart = () => {
   cart.removeFromCart(currentProduct.value.attributes.article);
 };
-
-// const selectedAmount = ref(1);
-
-// const cart = useCart();
-
-// const cartItems = computed(() => {
-//   return cart.items;
-// });
-
-// const productInCart = computed(() => {
-//   const foundItem = cartItems.value.find(
-//     (item) => item.id === currentProduct.value.id
-//   );
-
-//   if (foundItem) {
-//     nextTick(() => {
-//       colorHandler(foundItem.color);
-//     });
-//     selectedAmount.value = foundItem.amount;
-//     return true;
-//   }
-//   return false;
-// });
-
-// const addToCart = () => {
-//   cart.addToCart({
-//     id: currentProduct.value.id,
-//     amount: Number(selectedAmount.value),
-//     color: activeColor.value,
-//     article: currentProduct.value.attributes.article,
-//     title: currentProduct.value.attributes.title,
-//     price: currentProduct.value.attributes.price,
-//     imageUrl: productImages.value[0].attributes.url,
-//   });
-// };
-
-// const amountDisabled = computed(() => {
-//   const maxColorAmount = activeColor.value.amount;
-//   return maxColorAmount === selectedAmount.value;
-// });
-
-// const isCartHandlerDisabled = ref(false);
-
-// const cartHandler = () => {
-//   if (!productInCart.value) {
-//     addToCart();
-//   }
-// };
-
-// const toggleDisabeldCartHandler = (value) => {
-//   isCartHandlerDisabled.value = value;
-// };
-
-// // colors
-// const productColors = computed(() => {
-//   return currentProduct.value?.attributes.colors || null;
-// });
-
-// const activeColor = ref({});
-
-// const colorHandler = (color) => {
-//   activeColor.value = color;
-// };
-
-// if (productColors.value && productColors.value.length) {
-//   const foundColor = productColors.value.find((color) => color.amount > 0);
-//   if (foundColor && productInCart) {
-//     colorHandler(foundColor);
-//   } else {
-//     toggleDisabeldCartHandler(true);
-//   }
-// }
 
 function unique(arr, param) {
   const uniqueArr = [];

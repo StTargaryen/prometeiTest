@@ -1,8 +1,7 @@
 import { defineNuxtConfig } from "nuxt";
 
 export default defineNuxtConfig({
-  buildModules: ["@pinia/nuxt", "@nuxtjs/tailwindcss"],
-  modules: ["nuxt-graphql-client"],
+  buildModules: ["@pinia/nuxt", "@nuxtjs/tailwindcss", "nuxt-graphql-client"],
   build: {
     transpile: ["ts-invariant/process"],
   },
@@ -22,7 +21,7 @@ export default defineNuxtConfig({
   },
   strapi: {
     url:
-      process.env.STRAPI_URL || "https://hidden-scrubland-92584.herokuapp.com/",
+      process.env.STRAPI_URL || "https://hidden-scrubland-92584.herokuapp.com",
     prefix: "/api",
     version: "v4",
     cookie: {},
