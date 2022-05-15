@@ -7534,6 +7534,9 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /store/menu/menu.js ($id_53cdf039)
+// - /assets/images/voleyball.png ($id_b4d47dcb)
+// - /assets/images/basketball.png ($id_b631c89c)
+// - /assets/images/football.png ($id_dfb3bf7a)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
@@ -7548,6 +7551,12 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/store/menu/menu.js");
+
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/assets/images/voleyball.png");
+
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/assets/images/basketball.png");
+
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/assets/images/football.png");
 
 
 const _sfc_main = {
@@ -7582,26 +7591,40 @@ const { data } = (
   __temp
 );
 
-const __returned__ = { menuStore, isExpandMenuShow, url, data, useMenuToggler: __vite_ssr_import_5__.useMenuToggler }
+const getLocalBackgroundImageUrl = (name) => {
+  switch (name) {
+    case "voleyball":
+      return __vite_ssr_import_6__.default;
+    case "football":
+      return __vite_ssr_import_8__.default;
+    case "basketball":
+      console.log("hi");
+      return __vite_ssr_import_7__.default;
+    default:
+      return "";
+  }
+};
+
+const __returned__ = { menuStore, isExpandMenuShow, url, data, getLocalBackgroundImageUrl, useMenuToggler: __vite_ssr_import_5__.useMenuToggler, voleyball: __vite_ssr_import_6__.default, basketball: __vite_ssr_import_7__.default, football: __vite_ssr_import_8__.default }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_6__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_9__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="${
-          __vite_ssr_import_7__.ssrRenderClass([{
+          __vite_ssr_import_10__.ssrRenderClass([{
         'overflow-hidden': $setup.isExpandMenuShow,
       }, "flex-grow"])
         }"${
@@ -7617,11 +7640,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }> Популярные категории </h1><div${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/catalog",
           class: "flex items-center justify-center text-[21px] text-primary hover:text-orange"
         }, {
-          default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span class="mr-[5px]"${
                 _scopeId
@@ -7632,15 +7655,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }></path></svg>`)
             } else {
               return [
-                __vite_ssr_import_6__.createVNode("span", { class: "mr-[5px]" }, "Все категории"),
-                (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("svg", {
+                __vite_ssr_import_9__.createVNode("span", { class: "mr-[5px]" }, "Все категории"),
+                (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                   class: "w-6 h-6 mt-[2px]",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_6__.createVNode("path", {
+                  __vite_ssr_import_9__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
@@ -7655,7 +7678,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></div><div class="slider-image mt-[40px] image-slider flex justify-between gap-[25px]"${
           _scopeId
         }><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/basketball.png')"})
+          __vite_ssr_import_10__.ssrRenderStyle({
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'basketball'
+                )})`,
+              })
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -7663,7 +7690,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Баскет<br${
           _scopeId
         }>бол</span></div><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/football.png')"})
+          __vite_ssr_import_10__.ssrRenderStyle({
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'football'
+                )})`,
+              })
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -7671,7 +7702,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Фут<br${
           _scopeId
         }>бол</span></div><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/voleyball.png')"})
+          __vite_ssr_import_10__.ssrRenderStyle({
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'voleyball'
+                )})`,
+              })
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -7683,30 +7718,30 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }></div></div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_6__.createVNode("div", {
+          __vite_ssr_import_9__.createVNode("div", {
             class: ["flex-grow", {
         'overflow-hidden': $setup.isExpandMenuShow,
       }]
           }, [
-            __vite_ssr_import_6__.createVNode("main", { class: "mt-[136px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_6__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_6__.createVNode("div", { class: "page-header flex items-center" }, [
-                  __vite_ssr_import_6__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Популярные категории "),
-                  __vite_ssr_import_6__.createVNode("div", null, [
-                    __vite_ssr_import_6__.createVNode(_component_NuxtLink, {
+            __vite_ssr_import_9__.createVNode("main", { class: "mt-[136px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_9__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Популярные категории "),
+                  __vite_ssr_import_9__.createVNode("div", null, [
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: "/catalog",
                       class: "flex items-center justify-center text-[21px] text-primary hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_6__.withCtx(() => [
-                        __vite_ssr_import_6__.createVNode("span", { class: "mr-[5px]" }, "Все категории"),
-                        (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("svg", {
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", { class: "mr-[5px]" }, "Все категории"),
+                        (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                           class: "w-6 h-6 mt-[2px]",
                           fill: "none",
                           stroke: "currentColor",
                           viewBox: "0 0 24 24",
                           xmlns: "http://www.w3.org/2000/svg"
                         }, [
-                          __vite_ssr_import_6__.createVNode("path", {
+                          __vite_ssr_import_9__.createVNode("path", {
                             "stroke-linecap": "round",
                             "stroke-linejoin": "round",
                             "stroke-width": "2",
@@ -7718,39 +7753,51 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                     })
                   ])
                 ]),
-                __vite_ssr_import_6__.createVNode("div", { class: "slider-image mt-[40px] image-slider flex justify-between gap-[25px]" }, [
-                  __vite_ssr_import_6__.createVNode("div", {
+                __vite_ssr_import_9__.createVNode("div", { class: "slider-image mt-[40px] image-slider flex justify-between gap-[25px]" }, [
+                  __vite_ssr_import_9__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('~/assets/images/basketball.png')"}
+                    style: {
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'basketball'
+                )})`,
+              }
                   }, [
-                    __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
-                      __vite_ssr_import_6__.createTextVNode("Баскет"),
-                      __vite_ssr_import_6__.createVNode("br"),
-                      __vite_ssr_import_6__.createTextVNode("бол")
+                    __vite_ssr_import_9__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
+                      __vite_ssr_import_9__.createTextVNode("Баскет"),
+                      __vite_ssr_import_9__.createVNode("br"),
+                      __vite_ssr_import_9__.createTextVNode("бол")
                     ])
-                  ]),
-                  __vite_ssr_import_6__.createVNode("div", {
+                  ], 4 /* STYLE */),
+                  __vite_ssr_import_9__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('~/assets/images/football.png')"}
+                    style: {
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'football'
+                )})`,
+              }
                   }, [
-                    __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
-                      __vite_ssr_import_6__.createTextVNode("Фут"),
-                      __vite_ssr_import_6__.createVNode("br"),
-                      __vite_ssr_import_6__.createTextVNode("бол")
+                    __vite_ssr_import_9__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
+                      __vite_ssr_import_9__.createTextVNode("Фут"),
+                      __vite_ssr_import_9__.createVNode("br"),
+                      __vite_ssr_import_9__.createTextVNode("бол")
                     ])
-                  ]),
-                  __vite_ssr_import_6__.createVNode("div", {
+                  ], 4 /* STYLE */),
+                  __vite_ssr_import_9__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('~/assets/images/voleyball.png')"}
+                    style: {
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'voleyball'
+                )})`,
+              }
                   }, [
-                    __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
-                      __vite_ssr_import_6__.createTextVNode("Волей"),
-                      __vite_ssr_import_6__.createVNode("br"),
-                      __vite_ssr_import_6__.createTextVNode("бол")
+                    __vite_ssr_import_9__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
+                      __vite_ssr_import_9__.createTextVNode("Волей"),
+                      __vite_ssr_import_9__.createVNode("br"),
+                      __vite_ssr_import_9__.createTextVNode("бол")
                     ])
-                  ])
+                  ], 4 /* STYLE */)
                 ]),
-                __vite_ssr_import_6__.createVNode("div", { class: "slider-category" })
+                __vite_ssr_import_9__.createVNode("div", { class: "slider-category" })
               ])
             ])
           ], 2 /* CLASS */)
@@ -7762,19 +7809,58 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_8__.useSSRContext()
+  const ssrContext = __vite_ssr_import_11__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_9__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
+}
+
+
+// --------------------
+// Request: /assets/images/voleyball.png
+// Parents: 
+// - /pages/index.vue?macro=true ($id_5dd70240)
+// - /pages/index.vue ($id_cca58e97)
+// Dependencies: 
+
+// --------------------
+const $id_b4d47dcb = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "/_nuxt/assets/images/voleyball.png";
+}
+
+
+// --------------------
+// Request: /assets/images/basketball.png
+// Parents: 
+// - /pages/index.vue?macro=true ($id_5dd70240)
+// - /pages/index.vue ($id_cca58e97)
+// Dependencies: 
+
+// --------------------
+const $id_b631c89c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "/_nuxt/assets/images/basketball.png";
+}
+
+
+// --------------------
+// Request: /assets/images/football.png
+// Parents: 
+// - /pages/index.vue?macro=true ($id_5dd70240)
+// - /pages/index.vue ($id_cca58e97)
+// Dependencies: 
+
+// --------------------
+const $id_dfb3bf7a = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "/_nuxt/assets/images/football.png";
 }
 
 
@@ -11297,6 +11383,9 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_m
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /store/menu/menu.js ($id_53cdf039)
+// - /assets/images/voleyball.png ($id_b4d47dcb)
+// - /assets/images/basketball.png ($id_b631c89c)
+// - /assets/images/football.png ($id_dfb3bf7a)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
@@ -11311,6 +11400,12 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/store/menu/menu.js");
+
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/assets/images/voleyball.png");
+
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/assets/images/basketball.png");
+
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/assets/images/football.png");
 
 
 const _sfc_main = {
@@ -11345,26 +11440,40 @@ const { data } = (
   __temp
 );
 
-const __returned__ = { menuStore, isExpandMenuShow, url, data, useMenuToggler: __vite_ssr_import_5__.useMenuToggler }
+const getLocalBackgroundImageUrl = (name) => {
+  switch (name) {
+    case "voleyball":
+      return __vite_ssr_import_6__.default;
+    case "football":
+      return __vite_ssr_import_8__.default;
+    case "basketball":
+      console.log("hi");
+      return __vite_ssr_import_7__.default;
+    default:
+      return "";
+  }
+};
+
+const __returned__ = { menuStore, isExpandMenuShow, url, data, getLocalBackgroundImageUrl, useMenuToggler: __vite_ssr_import_5__.useMenuToggler, voleyball: __vite_ssr_import_6__.default, basketball: __vite_ssr_import_7__.default, football: __vite_ssr_import_8__.default }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_6__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_9__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="${
-          __vite_ssr_import_7__.ssrRenderClass([{
+          __vite_ssr_import_10__.ssrRenderClass([{
         'overflow-hidden': $setup.isExpandMenuShow,
       }, "flex-grow"])
         }"${
@@ -11380,11 +11489,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }> Популярные категории </h1><div${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/catalog",
           class: "flex items-center justify-center text-[21px] text-primary hover:text-orange"
         }, {
-          default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span class="mr-[5px]"${
                 _scopeId
@@ -11395,15 +11504,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }></path></svg>`)
             } else {
               return [
-                __vite_ssr_import_6__.createVNode("span", { class: "mr-[5px]" }, "Все категории"),
-                (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("svg", {
+                __vite_ssr_import_9__.createVNode("span", { class: "mr-[5px]" }, "Все категории"),
+                (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                   class: "w-6 h-6 mt-[2px]",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_6__.createVNode("path", {
+                  __vite_ssr_import_9__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
@@ -11418,7 +11527,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></div><div class="slider-image mt-[40px] image-slider flex justify-between gap-[25px]"${
           _scopeId
         }><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/basketball.png')"})
+          __vite_ssr_import_10__.ssrRenderStyle({
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'basketball'
+                )})`,
+              })
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -11426,7 +11539,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Баскет<br${
           _scopeId
         }>бол</span></div><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/football.png')"})
+          __vite_ssr_import_10__.ssrRenderStyle({
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'football'
+                )})`,
+              })
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -11434,7 +11551,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Фут<br${
           _scopeId
         }>бол</span></div><div class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative" style="${
-          __vite_ssr_import_7__.ssrRenderStyle({"background-image":"url('~/assets/images/voleyball.png')"})
+          __vite_ssr_import_10__.ssrRenderStyle({
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'voleyball'
+                )})`,
+              })
         }"${
           _scopeId
         }><span class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"${
@@ -11446,30 +11567,30 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }></div></div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_6__.createVNode("div", {
+          __vite_ssr_import_9__.createVNode("div", {
             class: ["flex-grow", {
         'overflow-hidden': $setup.isExpandMenuShow,
       }]
           }, [
-            __vite_ssr_import_6__.createVNode("main", { class: "mt-[136px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_6__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_6__.createVNode("div", { class: "page-header flex items-center" }, [
-                  __vite_ssr_import_6__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Популярные категории "),
-                  __vite_ssr_import_6__.createVNode("div", null, [
-                    __vite_ssr_import_6__.createVNode(_component_NuxtLink, {
+            __vite_ssr_import_9__.createVNode("main", { class: "mt-[136px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_9__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Популярные категории "),
+                  __vite_ssr_import_9__.createVNode("div", null, [
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: "/catalog",
                       class: "flex items-center justify-center text-[21px] text-primary hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_6__.withCtx(() => [
-                        __vite_ssr_import_6__.createVNode("span", { class: "mr-[5px]" }, "Все категории"),
-                        (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("svg", {
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", { class: "mr-[5px]" }, "Все категории"),
+                        (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                           class: "w-6 h-6 mt-[2px]",
                           fill: "none",
                           stroke: "currentColor",
                           viewBox: "0 0 24 24",
                           xmlns: "http://www.w3.org/2000/svg"
                         }, [
-                          __vite_ssr_import_6__.createVNode("path", {
+                          __vite_ssr_import_9__.createVNode("path", {
                             "stroke-linecap": "round",
                             "stroke-linejoin": "round",
                             "stroke-width": "2",
@@ -11481,39 +11602,51 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                     })
                   ])
                 ]),
-                __vite_ssr_import_6__.createVNode("div", { class: "slider-image mt-[40px] image-slider flex justify-between gap-[25px]" }, [
-                  __vite_ssr_import_6__.createVNode("div", {
+                __vite_ssr_import_9__.createVNode("div", { class: "slider-image mt-[40px] image-slider flex justify-between gap-[25px]" }, [
+                  __vite_ssr_import_9__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('~/assets/images/basketball.png')"}
+                    style: {
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'basketball'
+                )})`,
+              }
                   }, [
-                    __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
-                      __vite_ssr_import_6__.createTextVNode("Баскет"),
-                      __vite_ssr_import_6__.createVNode("br"),
-                      __vite_ssr_import_6__.createTextVNode("бол")
+                    __vite_ssr_import_9__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
+                      __vite_ssr_import_9__.createTextVNode("Баскет"),
+                      __vite_ssr_import_9__.createVNode("br"),
+                      __vite_ssr_import_9__.createTextVNode("бол")
                     ])
-                  ]),
-                  __vite_ssr_import_6__.createVNode("div", {
+                  ], 4 /* STYLE */),
+                  __vite_ssr_import_9__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('~/assets/images/football.png')"}
+                    style: {
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'football'
+                )})`,
+              }
                   }, [
-                    __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
-                      __vite_ssr_import_6__.createTextVNode("Фут"),
-                      __vite_ssr_import_6__.createVNode("br"),
-                      __vite_ssr_import_6__.createTextVNode("бол")
+                    __vite_ssr_import_9__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
+                      __vite_ssr_import_9__.createTextVNode("Фут"),
+                      __vite_ssr_import_9__.createVNode("br"),
+                      __vite_ssr_import_9__.createTextVNode("бол")
                     ])
-                  ]),
-                  __vite_ssr_import_6__.createVNode("div", {
+                  ], 4 /* STYLE */),
+                  __vite_ssr_import_9__.createVNode("div", {
                     class: "cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative",
-                    style: {"background-image":"url('~/assets/images/voleyball.png')"}
+                    style: {
+                backgroundImage: `url(${$setup.getLocalBackgroundImageUrl(
+                  'voleyball'
+                )})`,
+              }
                   }, [
-                    __vite_ssr_import_6__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
-                      __vite_ssr_import_6__.createTextVNode("Волей"),
-                      __vite_ssr_import_6__.createVNode("br"),
-                      __vite_ssr_import_6__.createTextVNode("бол")
+                    __vite_ssr_import_9__.createVNode("span", { class: "absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider" }, [
+                      __vite_ssr_import_9__.createTextVNode("Волей"),
+                      __vite_ssr_import_9__.createVNode("br"),
+                      __vite_ssr_import_9__.createTextVNode("бол")
                     ])
-                  ])
+                  ], 4 /* STYLE */)
                 ]),
-                __vite_ssr_import_6__.createVNode("div", { class: "slider-category" })
+                __vite_ssr_import_9__.createVNode("div", { class: "slider-category" })
               ])
             ])
           ], 2 /* CLASS */)
@@ -11525,17 +11658,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_8__.useSSRContext()
+  const ssrContext = __vite_ssr_import_11__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_9__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/index.vue"]]);
 }
 
 
@@ -13340,6 +13473,9 @@ const __modules__ = {
   "/pages/categories/index.vue?macro=true": $id_b04deb14,
   "/pages/delivery/index.vue?macro=true": $id_e1d04ef1,
   "/pages/index.vue?macro=true": $id_5dd70240,
+  "/assets/images/voleyball.png": $id_b4d47dcb,
+  "/assets/images/basketball.png": $id_b631c89c,
+  "/assets/images/football.png": $id_dfb3bf7a,
   "/pages/payments/index.vue?macro=true": $id_db8db898,
   "/pages/products/[params].vue?macro=true": $id_5fe5d068,
   "/components/UI/ImageViewer.vue": $id_9bcbfe6f,

@@ -40,7 +40,11 @@
           >
             <div
               class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative"
-              style="background-image: url('~/assets/images/basketball.png')"
+              :style="{
+                backgroundImage: `url(${getLocalBackgroundImageUrl(
+                  'basketball'
+                )})`,
+              }"
             >
               <span
                 class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"
@@ -49,7 +53,11 @@
             </div>
             <div
               class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative"
-              style="background-image: url('~/assets/images/football.png')"
+              :style="{
+                backgroundImage: `url(${getLocalBackgroundImageUrl(
+                  'football'
+                )})`,
+              }"
             >
               <span
                 class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"
@@ -58,7 +66,11 @@
             </div>
             <div
               class="cursor-pointer w-1/3 h-[500px] bg-no-repeat bg-cover rounded-[10px] hover:drop-shadow-card z-0 hover:z-10 relative"
-              style="background-image: url('~/assets/images/voleyball.png')"
+              :style="{
+                backgroundImage: `url(${getLocalBackgroundImageUrl(
+                  'voleyball'
+                )})`,
+              }"
             >
               <span
                 class="absolute left-[20px] bottom-[70px] text-[100px] font-extrabold italic uppercase text-white leading-[84px] drop-shadow-slider"
@@ -75,6 +87,9 @@
 
 <script setup>
 import { useMenuToggler } from "~/store/menu/menu";
+import voleyball from "~/assets/images/voleyball.png";
+import basketball from "~/assets/images/basketball.png";
+import football from "~/assets/images/football.png";
 const menuStore = useMenuToggler();
 
 const isExpandMenuShow = computed(() => {
@@ -95,4 +110,18 @@ const { data } = await useFetch(url, {
     return res;
   },
 });
+
+const getLocalBackgroundImageUrl = (name) => {
+  switch (name) {
+    case "voleyball":
+      return voleyball;
+    case "football":
+      return football;
+    case "basketball":
+      console.log("hi");
+      return basketball;
+    default:
+      return "";
+  }
+};
 </script>
