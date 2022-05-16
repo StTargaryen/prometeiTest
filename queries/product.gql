@@ -67,6 +67,9 @@ query ProductByArticle($article: String) {
         title
         price
         amount
+        description {
+          value
+        }
         color {
           value
           title

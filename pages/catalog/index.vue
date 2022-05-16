@@ -60,7 +60,7 @@ const { data: sections } = await useFetch(
   `${config.public.API_URL}/api/sections?populate=*`
 );
 
-const sectionsList = sections.value.data;
+const sectionsList = sections.value?.data;
 
 const imageUrl = (section) => {
   const url = section.attributes?.image?.data?.attributes?.url;

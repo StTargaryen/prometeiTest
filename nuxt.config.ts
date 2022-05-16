@@ -16,12 +16,11 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      GQL_HOST: "https://hidden-scrubland-92584.herokuapp.com/graphql", // overwritten by process.env.GQL_HOST
+      GQL_HOST: "http://localhost:1337/graphql", // overwritten by process.env.GQL_HOST
     },
   },
   strapi: {
-    url:
-      process.env.STRAPI_URL || "https://hidden-scrubland-92584.herokuapp.com",
+    url: process.env.STRAPI_URL || "http://localhost:1337",
     prefix: "/api",
     version: "v4",
     cookie: {},

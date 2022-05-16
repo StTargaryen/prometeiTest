@@ -93,10 +93,10 @@
                     class="product-specifics flex flex-col text-left justify-start items-start gap-[15px]"
                   >
                     <li
-                      v-for="tag in productTags"
+                      v-for="item in productDescription"
                       class="product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary"
                     >
-                      {{ tag.attributes.name }}
+                      {{ item.value }}
                     </li>
                   </ul>
                 </div>
@@ -303,11 +303,11 @@ const productPrice = computed(() => currentProduct.value.attributes.price || 0);
 // images
 
 const constProductCardImages = computed(
-  () => productCard.value.attributes?.images?.data || []
+  () => productCard.value?.attributes?.images?.data || []
 );
 
 const productImages = computed(
-  () => currentProduct.value.attributes?.images?.data || []
+  () => currentProduct.value?.attributes?.images?.data || []
 );
 
 const imagesGalery = computed(() => [
@@ -315,13 +315,11 @@ const imagesGalery = computed(() => [
   ...constProductCardImages.value,
 ]);
 
-console.log(imagesGalery);
-
 const productArticle = computed(
   () => currentProduct.value.attributes.article || "–"
 );
 
-const productTags = computed(() => []);
+const productDescription = computed(() => currentProduct.value.attributes.description);
 
 const productAmount = computed(() => currentProduct.value.attributes.amount);
 

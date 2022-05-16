@@ -129,6 +129,7 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
 // - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
+// - /components/Brands.vue ($id_dfc628ab)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/delivery/index.vue?macro=true ($id_e1d04ef1)
@@ -1632,7 +1633,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@nuxtjs/t
 
 // --------------------
 const $id_0a1402e6 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.right-0{right:0}.top-0{top:0}.top-\\[-5px\\]{top:-5px}.right-\\[-10px\\]{right:-10px}.top-\\[80px\\]{top:80px}.bottom-0{bottom:0}.left-\\[20px\\]{left:20px}.bottom-\\[70px\\]{bottom:70px}.bottom-\\[calc\\(-100\\%\\+5px\\)\\]{bottom:calc(-100% + 5px)}.top-\\[-10px\\]{top:-10px}.z-20{z-index:20}.z-50{z-index:50}.z-0{z-index:0}.m-\\[-1px\\]{margin:-1px}.mx-auto{margin-left:auto;margin-right:auto}.mx-\\[-10px\\]{margin-left:-10px;margin-right:-10px}.mx-\\[30px\\]{margin-left:30px;margin-right:30px}.my-\\[20px\\]{margin-bottom:20px;margin-top:20px}.mr-\\[120px\\]{margin-right:120px}.mt-\\[20px\\]{margin-top:20px}.mb-\\[20px\\]{margin-bottom:20px}.mr-\\[27px\\]{margin-right:27px}.mr-\\[16px\\]{margin-right:16px}.mr-\\[7px\\]{margin-right:7px}.ml-\\[21px\\]{margin-left:21px}.mt-\\[-4px\\]{margin-top:-4px}.mt-\\[60px\\]{margin-top:60px}.mb-\\[35px\\]{margin-bottom:35px}.mb-\\[30px\\]{margin-bottom:30px}.mb-\\[10px\\]{margin-bottom:10px}.mr-\\[20px\\]{margin-right:20px}.mr-\\[10px\\]{margin-right:10px}.mr-\\[60px\\]{margin-right:60px}.mt-\\[136px\\]{margin-top:136px}.mb-\\[40px\\]{margin-bottom:40px}.mr-\\[5px\\]{margin-right:5px}.mt-\\[2px\\]{margin-top:2px}.mt-\\[40px\\]{margin-top:40px}.mt-\\[135px\\]{margin-top:135px}.mt-\\[102px\\]{margin-top:102px}.ml-\\[5px\\]{margin-left:5px}.mb-\\[25px\\]{margin-bottom:25px}.mr-\\[40px\\]{margin-right:40px}.ml-\\[40px\\]{margin-left:40px}.mt-\\[100px\\]{margin-top:100px}.mt-\\[10px\\]{margin-top:10px}.mb-\\[21px\\]{margin-bottom:21px}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-\\[50px\\]{height:50px}.h-4{height:1rem}.h-5{height:1.25rem}.h-\\[20px\\]{height:20px}.h-screen{height:100vh}.h-\\[54px\\]{height:54px}.h-full{height:100%}.h-\\[60px\\]{height:60px}.h-\\[400px\\]{height:400px}.h-\\[86px\\]{height:86px}.h-\\[70px\\]{height:70px}.h-\\[22px\\]{height:22px}.h-6{height:1.5rem}.h-\\[500px\\]{height:500px}.h-\\[120px\\]{height:120px}.h-\\[40px\\]{height:40px}.h-\\[24px\\]{height:24px}.h-\\[2px\\]{height:2px}.h-\\[300px\\]{height:300px}.h-\\[200px\\]{height:200px}.h-\\[450px\\]{height:450px}.h-\\[80px\\]{height:80px}.h-\\[36px\\]{height:36px}.h-\\[30px\\]{height:30px}.h-\\[256px\\]{height:256px}.min-h-screen{min-height:100vh}.w-full{width:100%}.w-4{width:1rem}.w-\\[500px\\]{width:500px}.w-\\[360px\\]{width:360px}.w-5{width:1.25rem}.w-\\[20px\\]{width:20px}.w-\\[54px\\]{width:54px}.w-\\[60px\\]{width:60px}.w-\\[400px\\]{width:400px}.w-\\[86px\\]{width:86px}.w-\\[70px\\]{width:70px}.w-\\[2px\\]{width:2px}.w-6{width:1.5rem}.w-1\\/3{width:33.333333%}.w-\\[120px\\]{width:120px}.w-\\[40px\\]{width:40px}.w-\\[300px\\]{width:300px}.w-\\[24px\\]{width:24px}.w-1\\/5{width:20%}.w-\\[200px\\]{width:200px}.w-\\[36px\\]{width:36px}.w-\\[30px\\]{width:30px}.w-\\[calc\\(33\\.33\\%-16\\.7px\\)\\]{width:calc(33.33% - 16.7px)}.w-\\[256px\\]{width:256px}.min-w-\\[350px\\]{min-width:350px}.min-w-\\[300px\\]{min-width:300px}.max-w-screen-xl{max-width:1280px}.max-w-\\[22px\\]{max-width:22px}.max-w-\\[180px\\]{max-width:180px}.max-w-\\[100px\\]{max-width:100px}.flex-1{flex:1 1 0%}.flex-grow,.grow{flex-grow:1}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes pulse{50%{opacity:.5}}@keyframes pulse{50%{opacity:.5}}.animate-pulse{-webkit-animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite;animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-default{cursor:default}.cursor-pointer{cursor:pointer}.cursor-not-allowed{cursor:not-allowed}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.list-none{list-style-type:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-\\[60px\\]{gap:60px}.gap-\\[5px\\]{gap:5px}.gap-\\[10px\\]{gap:10px}.gap-\\[25px\\]{gap:25px}.gap-\\[40px\\]{gap:40px}.gap-\\[20px\\]{gap:20px}.gap-\\[15px\\]{gap:15px}.gap-\\[190px\\]{gap:190px}.overflow-hidden{overflow:hidden}.rounded-\\[4px\\]{border-radius:4px}.rounded-full{border-radius:9999px}.rounded{border-radius:.25rem}.rounded-\\[10px\\]{border-radius:10px}.rounded-r-\\[4px\\]{border-bottom-right-radius:4px;border-top-right-radius:4px}.border-\\[2px\\]{border-width:2px}.border-\\[1px\\]{border-width:1px}.border-2{border-width:2px}.border-b-\\[2px\\]{border-bottom-width:2px}.border-grey{--tw-border-opacity:1;border-color:rgb(239 239 239/var(--tw-border-opacity))}.border-primary{--tw-border-opacity:1;border-color:rgb(79 178 248/var(--tw-border-opacity))}.border-grey-light{--tw-border-opacity:1;border-color:rgb(241 241 241/var(--tw-border-opacity))}.border-grey-text{--tw-border-opacity:1;border-color:rgb(196 196 196/var(--tw-border-opacity))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.border-opacity-90{--tw-border-opacity:0.9}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(51 51 51/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(79 178 248/var(--tw-bg-opacity))}.bg-grey-light{--tw-bg-opacity:1;background-color:rgb(241 241 241/var(--tw-bg-opacity))}.bg-grey-text{--tw-bg-opacity:1;background-color:rgb(196 196 196/var(--tw-bg-opacity))}.bg-\\[\\#00000040\\]{background-color:#00000040}.bg-\\[\\#00000020\\]{background-color:#00000020}.bg-\\[\\#00000005\\]{background-color:#00000005}.bg-\\[\\#00000009\\]{background-color:#00000009}.bg-\\[\\#00000007\\]{background-color:#00000007}.bg-cover{background-size:cover}.bg-contain{background-size:contain}.bg-center{background-position:50%}.bg-no-repeat{background-repeat:no-repeat}.p-\\[12px\\]{padding:12px}.p-0{padding:0}.p-\\[10px\\]{padding:10px}.p-\\[5px\\]{padding:5px}.p-\\[50px\\]{padding:50px}.p-\\[4px\\]{padding:4px}.p-\\[30px\\]{padding:30px}.p-\\[2px\\]{padding:2px}.px-\\[24px\\]{padding-left:24px;padding-right:24px}.px-\\[27px\\]{padding-left:27px;padding-right:27px}.px-\\[18px\\]{padding-left:18px;padding-right:18px}.px-\\[13px\\]{padding-left:13px;padding-right:13px}.py-\\[10px\\]{padding-bottom:10px;padding-top:10px}.py-\\[12px\\]{padding-bottom:12px;padding-top:12px}.px-\\[28px\\]{padding-left:28px;padding-right:28px}.px-\\[5px\\]{padding-left:5px;padding-right:5px}.py-\\[4px\\]{padding-bottom:4px;padding-top:4px}.pt-\\[40px\\]{padding-top:40px}.pb-\\[50px\\]{padding-bottom:50px}.pt-\\[10px\\]{padding-top:10px}.pb-\\[20px\\]{padding-bottom:20px}.pt-\\[32px\\]{padding-top:32px}.text-left{text-align:left}.text-center{text-align:center}.text-\\[21px\\]{font-size:21px}.text-\\[13px\\]{font-size:13px}.text-\\[36px\\]{font-size:36px}.text-\\[100px\\]{font-size:100px}.text-\\[26px\\]{font-size:26px}.text-\\[16px\\]{font-size:16px}.text-\\[24px\\]{font-size:24px}.text-\\[18px\\]{font-size:18px}.font-medium{font-weight:500}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\\[84px\\]{line-height:84px}.leading-\\[25px\\]{line-height:25px}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}.text-secondary{--tw-text-opacity:1;color:rgb(51 51 51/var(--tw-text-opacity))}.text-grey-text{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.text-grey-light{--tw-text-opacity:1;color:rgb(241 241 241/var(--tw-text-opacity))}.text-orange{--tw-text-opacity:1;color:rgb(255 66 6/var(--tw-text-opacity))}.opacity-100{opacity:1}.opacity-0{opacity:0}.opacity-50{opacity:.5}.shadow-divider{--tw-shadow:inset 0px 0px 0.5px rgba(0,0,0,.25);--tw-shadow-colored:inset 0px 0px 0.5px var(--tw-shadow-color)}.shadow-divider,.shadow-inner{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0px 0px 4px rgba(0,0,0,.15);--tw-shadow-colored:inset 0px 0px 4px var(--tw-shadow-color)}.shadow-card{--tw-shadow:0px 0px 2px rgba(0,0,0,.25);--tw-shadow-colored:0px 0px 2px var(--tw-shadow-color)}.shadow-card,.shadow-product-color{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-product-color{--tw-shadow:inset 0px 0px 6px rgba(0,0,0,.25);--tw-shadow-colored:inset 0px 0px 6px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.drop-shadow-slider{--tw-drop-shadow:drop-shadow(4px 4px 5px rgba(0,0,0,.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,-webkit-text-decoration-color;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,-webkit-text-decoration-color;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-shadow{transition-duration:.15s;transition-property:box-shadow;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.placeholder\\:text-grey-text::-moz-placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.placeholder\\:text-grey-text:-ms-input-placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.placeholder\\:text-grey-text::placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.last\\:mr-0:last-child{margin-right:0}.last\\:mb-0:last-child{margin-bottom:0}.hover\\:z-10:hover{z-index:10}.hover\\:bg-grey-light:hover{--tw-bg-opacity:1;background-color:rgb(241 241 241/var(--tw-bg-opacity))}.hover\\:bg-orange:hover{--tw-bg-opacity:1;background-color:rgb(255 66 6/var(--tw-bg-opacity))}.hover\\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(79 178 248/var(--tw-bg-opacity))}.hover\\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.hover\\:bg-grey-text:hover{--tw-bg-opacity:1;background-color:rgb(196 196 196/var(--tw-bg-opacity))}.hover\\:bg-opacity-0:hover{--tw-bg-opacity:0}.hover\\:bg-opacity-20:hover{--tw-bg-opacity:0.2}.hover\\:text-orange:hover{--tw-text-opacity:1;color:rgb(255 66 6/var(--tw-text-opacity))}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\\:text-primary:hover{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}.hover\\:shadow-card-hover:hover{--tw-shadow:0px 0px 40px rgba(0,0,0,.25);--tw-shadow-colored:0px 0px 40px var(--tw-shadow-color);box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.hover\\:drop-shadow-card:hover{--tw-drop-shadow:drop-shadow(0px 0px 40px rgba(0,0,0,.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.focus\\:border-\\[2px\\]:focus{border-width:2px}.active\\:border-primary:active,.focus\\:border-primary:focus{--tw-border-opacity:1;border-color:rgb(79 178 248/var(--tw-border-opacity))}.active\\:border-opacity-0:active{--tw-border-opacity:0}.active\\:bg-white:active{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.active\\:bg-opacity-40:active{--tw-bg-opacity:0.4}.active\\:bg-opacity-100:active{--tw-bg-opacity:1}.active\\:text-primary:active{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}";
+__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.right-0{right:0}.top-0{top:0}.top-\\[-5px\\]{top:-5px}.right-\\[-10px\\]{right:-10px}.top-\\[80px\\]{top:80px}.bottom-0{bottom:0}.left-\\[20px\\]{left:20px}.bottom-\\[70px\\]{bottom:70px}.bottom-\\[calc\\(-100\\%\\+5px\\)\\]{bottom:calc(-100% + 5px)}.top-\\[-10px\\]{top:-10px}.z-20{z-index:20}.z-50{z-index:50}.z-0{z-index:0}.m-\\[-1px\\]{margin:-1px}.mx-auto{margin-left:auto;margin-right:auto}.mx-\\[-10px\\]{margin-left:-10px;margin-right:-10px}.mx-\\[30px\\]{margin-left:30px;margin-right:30px}.my-\\[20px\\]{margin-bottom:20px;margin-top:20px}.mr-\\[120px\\]{margin-right:120px}.mt-\\[20px\\]{margin-top:20px}.mb-\\[20px\\]{margin-bottom:20px}.mr-\\[27px\\]{margin-right:27px}.mr-\\[16px\\]{margin-right:16px}.mr-\\[7px\\]{margin-right:7px}.ml-\\[21px\\]{margin-left:21px}.mt-\\[-4px\\]{margin-top:-4px}.mt-\\[60px\\]{margin-top:60px}.mb-\\[35px\\]{margin-bottom:35px}.mb-\\[30px\\]{margin-bottom:30px}.mb-\\[10px\\]{margin-bottom:10px}.mr-\\[20px\\]{margin-right:20px}.mr-\\[10px\\]{margin-right:10px}.mr-\\[60px\\]{margin-right:60px}.mt-\\[136px\\]{margin-top:136px}.mb-\\[40px\\]{margin-bottom:40px}.mr-\\[5px\\]{margin-right:5px}.mt-\\[2px\\]{margin-top:2px}.mt-\\[40px\\]{margin-top:40px}.mt-\\[135px\\]{margin-top:135px}.mt-\\[102px\\]{margin-top:102px}.ml-\\[5px\\]{margin-left:5px}.mb-\\[25px\\]{margin-bottom:25px}.mr-\\[40px\\]{margin-right:40px}.ml-\\[40px\\]{margin-left:40px}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-\\[50px\\]{height:50px}.h-4{height:1rem}.h-5{height:1.25rem}.h-\\[20px\\]{height:20px}.h-screen{height:100vh}.h-\\[54px\\]{height:54px}.h-full{height:100%}.h-\\[60px\\]{height:60px}.h-\\[400px\\]{height:400px}.h-\\[86px\\]{height:86px}.h-\\[70px\\]{height:70px}.h-\\[22px\\]{height:22px}.h-6{height:1.5rem}.h-\\[500px\\]{height:500px}.h-\\[120px\\]{height:120px}.h-\\[40px\\]{height:40px}.h-\\[24px\\]{height:24px}.h-\\[2px\\]{height:2px}.h-\\[300px\\]{height:300px}.h-\\[200px\\]{height:200px}.h-\\[450px\\]{height:450px}.h-\\[80px\\]{height:80px}.h-\\[36px\\]{height:36px}.h-\\[30px\\]{height:30px}.h-\\[256px\\]{height:256px}.min-h-screen{min-height:100vh}.w-full{width:100%}.w-4{width:1rem}.w-\\[500px\\]{width:500px}.w-\\[360px\\]{width:360px}.w-5{width:1.25rem}.w-\\[20px\\]{width:20px}.w-\\[54px\\]{width:54px}.w-\\[60px\\]{width:60px}.w-\\[400px\\]{width:400px}.w-\\[86px\\]{width:86px}.w-\\[70px\\]{width:70px}.w-\\[2px\\]{width:2px}.w-6{width:1.5rem}.w-1\\/3{width:33.333333%}.w-\\[120px\\]{width:120px}.w-\\[40px\\]{width:40px}.w-\\[300px\\]{width:300px}.w-\\[24px\\]{width:24px}.w-1\\/5{width:20%}.w-\\[200px\\]{width:200px}.w-\\[36px\\]{width:36px}.w-\\[30px\\]{width:30px}.w-\\[calc\\(33\\.33\\%-16\\.7px\\)\\]{width:calc(33.33% - 16.7px)}.w-\\[256px\\]{width:256px}.min-w-\\[350px\\]{min-width:350px}.min-w-\\[300px\\]{min-width:300px}.max-w-screen-xl{max-width:1280px}.max-w-\\[22px\\]{max-width:22px}.max-w-\\[180px\\]{max-width:180px}.max-w-\\[100px\\]{max-width:100px}.flex-1{flex:1 1 0%}.flex-grow,.grow{flex-grow:1}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes pulse{50%{opacity:.5}}@keyframes pulse{50%{opacity:.5}}.animate-pulse{-webkit-animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite;animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-default{cursor:default}.cursor-pointer{cursor:pointer}.cursor-not-allowed{cursor:not-allowed}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.list-none{list-style-type:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-\\[60px\\]{gap:60px}.gap-\\[5px\\]{gap:5px}.gap-\\[10px\\]{gap:10px}.gap-\\[25px\\]{gap:25px}.gap-\\[40px\\]{gap:40px}.gap-\\[20px\\]{gap:20px}.gap-\\[15px\\]{gap:15px}.gap-\\[190px\\]{gap:190px}.overflow-hidden{overflow:hidden}.rounded-\\[4px\\]{border-radius:4px}.rounded-full{border-radius:9999px}.rounded{border-radius:.25rem}.rounded-\\[10px\\]{border-radius:10px}.rounded-r-\\[4px\\]{border-bottom-right-radius:4px;border-top-right-radius:4px}.border-\\[2px\\]{border-width:2px}.border-\\[1px\\]{border-width:1px}.border-2{border-width:2px}.border-b-\\[2px\\]{border-bottom-width:2px}.border-grey{--tw-border-opacity:1;border-color:rgb(239 239 239/var(--tw-border-opacity))}.border-primary{--tw-border-opacity:1;border-color:rgb(79 178 248/var(--tw-border-opacity))}.border-grey-light{--tw-border-opacity:1;border-color:rgb(241 241 241/var(--tw-border-opacity))}.border-grey-text{--tw-border-opacity:1;border-color:rgb(196 196 196/var(--tw-border-opacity))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.border-opacity-90{--tw-border-opacity:0.9}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(51 51 51/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(79 178 248/var(--tw-bg-opacity))}.bg-grey-light{--tw-bg-opacity:1;background-color:rgb(241 241 241/var(--tw-bg-opacity))}.bg-grey-text{--tw-bg-opacity:1;background-color:rgb(196 196 196/var(--tw-bg-opacity))}.bg-\\[\\#00000007\\]{background-color:#00000007}.bg-cover{background-size:cover}.bg-contain{background-size:contain}.bg-center{background-position:50%}.bg-no-repeat{background-repeat:no-repeat}.p-\\[12px\\]{padding:12px}.p-0{padding:0}.p-\\[10px\\]{padding:10px}.p-\\[5px\\]{padding:5px}.p-\\[50px\\]{padding:50px}.p-\\[4px\\]{padding:4px}.p-\\[30px\\]{padding:30px}.p-\\[2px\\]{padding:2px}.px-\\[24px\\]{padding-left:24px;padding-right:24px}.px-\\[27px\\]{padding-left:27px;padding-right:27px}.px-\\[18px\\]{padding-left:18px;padding-right:18px}.px-\\[13px\\]{padding-left:13px;padding-right:13px}.py-\\[10px\\]{padding-bottom:10px;padding-top:10px}.py-\\[12px\\]{padding-bottom:12px;padding-top:12px}.px-\\[28px\\]{padding-left:28px;padding-right:28px}.px-\\[5px\\]{padding-left:5px;padding-right:5px}.py-\\[4px\\]{padding-bottom:4px;padding-top:4px}.pt-\\[40px\\]{padding-top:40px}.pb-\\[50px\\]{padding-bottom:50px}.pt-\\[10px\\]{padding-top:10px}.pb-\\[20px\\]{padding-bottom:20px}.pt-\\[32px\\]{padding-top:32px}.text-left{text-align:left}.text-center{text-align:center}.text-\\[21px\\]{font-size:21px}.text-\\[13px\\]{font-size:13px}.text-\\[36px\\]{font-size:36px}.text-\\[100px\\]{font-size:100px}.text-\\[26px\\]{font-size:26px}.text-\\[16px\\]{font-size:16px}.text-\\[24px\\]{font-size:24px}.text-\\[18px\\]{font-size:18px}.font-medium{font-weight:500}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\\[84px\\]{line-height:84px}.leading-\\[25px\\]{line-height:25px}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}.text-secondary{--tw-text-opacity:1;color:rgb(51 51 51/var(--tw-text-opacity))}.text-grey-text{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.text-grey-light{--tw-text-opacity:1;color:rgb(241 241 241/var(--tw-text-opacity))}.text-orange{--tw-text-opacity:1;color:rgb(255 66 6/var(--tw-text-opacity))}.opacity-100{opacity:1}.opacity-0{opacity:0}.opacity-50{opacity:.5}.shadow-divider{--tw-shadow:inset 0px 0px 0.5px rgba(0,0,0,.25);--tw-shadow-colored:inset 0px 0px 0.5px var(--tw-shadow-color)}.shadow-divider,.shadow-inner{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0px 0px 4px rgba(0,0,0,.15);--tw-shadow-colored:inset 0px 0px 4px var(--tw-shadow-color)}.shadow-card{--tw-shadow:0px 0px 2px rgba(0,0,0,.25);--tw-shadow-colored:0px 0px 2px var(--tw-shadow-color)}.shadow-card,.shadow-product-color{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-product-color{--tw-shadow:inset 0px 0px 6px rgba(0,0,0,.25);--tw-shadow-colored:inset 0px 0px 6px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.drop-shadow-slider{--tw-drop-shadow:drop-shadow(4px 4px 5px rgba(0,0,0,.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,-webkit-text-decoration-color;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,-webkit-text-decoration-color;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-shadow{transition-duration:.15s;transition-property:box-shadow;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.placeholder\\:text-grey-text::-moz-placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.placeholder\\:text-grey-text:-ms-input-placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.placeholder\\:text-grey-text::placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.last\\:mr-0:last-child{margin-right:0}.last\\:mb-0:last-child{margin-bottom:0}.hover\\:z-10:hover{z-index:10}.hover\\:bg-grey-light:hover{--tw-bg-opacity:1;background-color:rgb(241 241 241/var(--tw-bg-opacity))}.hover\\:bg-orange:hover{--tw-bg-opacity:1;background-color:rgb(255 66 6/var(--tw-bg-opacity))}.hover\\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(79 178 248/var(--tw-bg-opacity))}.hover\\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.hover\\:bg-grey-text:hover{--tw-bg-opacity:1;background-color:rgb(196 196 196/var(--tw-bg-opacity))}.hover\\:bg-opacity-0:hover{--tw-bg-opacity:0}.hover\\:bg-opacity-20:hover{--tw-bg-opacity:0.2}.hover\\:text-orange:hover{--tw-text-opacity:1;color:rgb(255 66 6/var(--tw-text-opacity))}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\\:text-primary:hover{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}.hover\\:shadow-card-hover:hover{--tw-shadow:0px 0px 40px rgba(0,0,0,.25);--tw-shadow-colored:0px 0px 40px var(--tw-shadow-color);box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.hover\\:drop-shadow-card:hover{--tw-drop-shadow:drop-shadow(0px 0px 40px rgba(0,0,0,.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.focus\\:border-\\[2px\\]:focus{border-width:2px}.active\\:border-primary:active,.focus\\:border-primary:focus{--tw-border-opacity:1;border-color:rgb(79 178 248/var(--tw-border-opacity))}.active\\:border-opacity-0:active{--tw-border-opacity:0}.active\\:bg-white:active{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.active\\:bg-opacity-40:active{--tw-bg-opacity:0.4}.active\\:bg-opacity-100:active{--tw-bg-opacity:1}.active\\:text-primary:active{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}";
 }
 
 
@@ -3623,6 +3624,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
+// - /components/Brands.vue ($id_dfc628ab)
 // - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
@@ -3680,6 +3682,7 @@ import("file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/no
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
+// - /components/Brands.vue ($id_dfc628ab)
 // - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
@@ -4211,6 +4214,9 @@ const ProductByArticleDocument = __vite_ssr_import_0__.gql`
         title
         price
         amount
+        description {
+          value
+        }
         color {
           value
           title
@@ -4348,6 +4354,14 @@ const SubcategoryDataBySlugDocument = __vite_ssr_import_0__.gql`
             }
           }
         }
+      }
+    }
+  }
+  brands(filters: {products: {subcategory: {slug: {eq: $slug}}}}) {
+    data {
+      id
+      attributes {
+        title
       }
     }
   }
@@ -6103,7 +6117,7 @@ const { data: sections } = (
   __temp
 );
 
-const sectionsList = sections.value.data;
+const sectionsList = sections.value?.data;
 
 const imageUrl = (section) => {
   const url = section.attributes?.image?.data?.attributes?.url;
@@ -6305,6 +6319,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /@id/virtual:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_30bf6cdf)
 // - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
 // - /store/cart/cart.js ($id_08ef3e2f)
+// - /components/Brands.vue ($id_dfc628ab)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
@@ -6323,6 +6338,9 @@ const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/store/cart/cart.js");
+
+
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/components/Brands.vue");
 
 
 
@@ -6350,6 +6368,7 @@ const { data, error } = (
 );
 
 const subcategory = data.value.subcategories.data[0];
+const brands = __vite_ssr_import_3__.computed(() => data.value.brands.data);
 const category = subcategory.attributes.parent.data.attributes;
 const section = category.parent.data.attributes;
 
@@ -6414,23 +6433,23 @@ const cartHandler = (product) => {
   }
 };
 
-const __returned__ = { route, subcategorySlug, loading, dataProducts, data, error, subcategory, category, section, getProducts, config, imageUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_7__.useCart }
+const __returned__ = { route, subcategorySlug, loading, dataProducts, data, error, subcategory, brands, category, section, getProducts, config, imageUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_7__.useCart, Brands: __vite_ssr_import_8__.default }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_8__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_9__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="flex-grow"${
           _scopeId
@@ -6443,11 +6462,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="inline-flex"${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/",
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<svg class="w-6 h-6 mt-[2px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
                 _scopeId
@@ -6458,81 +6477,81 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }>На главную</span>`)
             } else {
               return [
-                (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                   class: "w-6 h-6 mt-[2px]",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_8__.createVNode("path", {
+                  __vite_ssr_import_9__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
                     d: "M15 19l-7-7 7-7"
                   })
                 ])),
-                __vite_ssr_import_8__.createVNode("span", null, "На главную")
+                __vite_ssr_import_9__.createVNode("span", null, "На главную")
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/catalog",
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span${_scopeId}>Все категории</span>`)
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("span", null, "Все категории")
+                __vite_ssr_import_9__.createVNode("span", null, "Все категории")
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: {
                   path: `/catalog/${$setup.section.slug}`,
                 },
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span${
                 _scopeId
               }>${
-                __vite_ssr_import_9__.ssrInterpolate($setup.section.title)
+                __vite_ssr_import_10__.ssrInterpolate($setup.section.title)
               }</span>`)
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.section.title), 1 /* TEXT */)
+                __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.section.title), 1 /* TEXT */)
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: {
                   path: `/categories/${$setup.category.slug}`,
                 },
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span${
                 _scopeId
               }>${
-                __vite_ssr_import_9__.ssrInterpolate($setup.category.title)
+                __vite_ssr_import_10__.ssrInterpolate($setup.category.title)
               }</span>`)
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
+                __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.category.title), 1 /* TEXT */)
               ]
             }
           }),
@@ -6543,7 +6562,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><h1 class="flex-grow text-primary text-[36px] font-bold"${
           _scopeId
         }>${
-          __vite_ssr_import_9__.ssrInterpolate($setup.subcategory.attributes.title)
+          __vite_ssr_import_10__.ssrInterpolate($setup.subcategory.attributes.title)
         }</h1></div><button${
           _scopeId
         }>fetchData</button><div class="flex justify-between items-start gap-[40px]"${
@@ -6556,17 +6575,23 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           _scopeId
         }> Бренд </div><ul class="filter-block-content py-[10px] mx-[30px]"${
           _scopeId
-        }><li class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"${
-          _scopeId
-        }><span class="flex-grow"${
-          _scopeId
-        }>Demix</span><span${
-          _scopeId
-        }><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-          _scopeId
-        }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"${
-          _scopeId
-        }></path></svg></span></li></ul></div><div class="filter-block"${
+        }><!--[-->`)
+        __vite_ssr_import_10__.ssrRenderList($setup.brands, (brand) => {
+          _push(`<li class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"${
+            _scopeId
+          }><span class="flex-grow"${
+            _scopeId
+          }>${
+            __vite_ssr_import_10__.ssrInterpolate(brand.attributes.title)
+          }</span><span${
+            _scopeId
+          }><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
+            _scopeId
+          }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"${
+            _scopeId
+          }></path></svg></span></li>`)
+        })
+        _push(`<!--]--></ul></div><div class="filter-block"${
           _scopeId
         }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
           _scopeId
@@ -6583,15 +6608,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }></div></div></div></aside><!-- loading-cards -->`)
         if ($setup.loading) {
           _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_9__.ssrRenderList(3, (item) => {
+          __vite_ssr_import_10__.ssrRenderList(3, (item) => {
             _push(`<div class="catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"${_scopeId}></div>`)
           })
           _push(`<!--]--></div>`)
         } else {
           _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_9__.ssrRenderList($setup.dataProducts, (product, index) => {
+          __vite_ssr_import_10__.ssrRenderList($setup.dataProducts, (product, index) => {
             _push(`<div class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"${_scopeId}>`)
-            _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+            _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
               to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
               class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
               style: `background-image: url('${$setup.imageUrl(product)}')`
@@ -6601,15 +6626,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
             }><div class="flex flex-1 item-title font-medium justify-center items-center"${
               _scopeId
             }>${
-              __vite_ssr_import_9__.ssrInterpolate(product.attributes.title)
+              __vite_ssr_import_10__.ssrInterpolate(product.attributes.title)
             }</div><div class="flex gap-[5px]"${
               _scopeId
             }><div class="flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none"${
               _scopeId
             }>${
-              __vite_ssr_import_9__.ssrInterpolate(product.attributes.price)
+              __vite_ssr_import_10__.ssrInterpolate(product.attributes.price)
             } ₽ </div><button class="${
-              __vite_ssr_import_9__.ssrRenderClass([{
+              __vite_ssr_import_10__.ssrRenderClass([{
                         'hover:bg-white border-[2px] border-primary hover:text-primary':
                           !$setup.productInCart(product),
                         'hover:bg-orange': $setup.productInCart(product),
@@ -6637,113 +6662,115 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_8__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_8__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_8__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "inline-flex" }, [
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+          __vite_ssr_import_9__.createVNode("div", { class: "flex-grow" }, [
+            __vite_ssr_import_9__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_9__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("div", { class: "inline-flex" }, [
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: "/",
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                           class: "w-6 h-6 mt-[2px]",
                           fill: "none",
                           stroke: "currentColor",
                           viewBox: "0 0 24 24",
                           xmlns: "http://www.w3.org/2000/svg"
                         }, [
-                          __vite_ssr_import_8__.createVNode("path", {
+                          __vite_ssr_import_9__.createVNode("path", {
                             "stroke-linecap": "round",
                             "stroke-linejoin": "round",
                             "stroke-width": "2",
                             d: "M15 19l-7-7 7-7"
                           })
                         ])),
-                        __vite_ssr_import_8__.createVNode("span", null, "На главную")
+                        __vite_ssr_import_9__.createVNode("span", null, "На главную")
                       ]),
                       _: 1 /* STABLE */
                     }),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                    __vite_ssr_import_9__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: "/catalog",
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, "Все категории")
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", null, "Все категории")
                       ]),
                       _: 1 /* STABLE */
                     }),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                    __vite_ssr_import_9__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: {
                   path: `/catalog/${$setup.section.slug}`,
                 },
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.section.title), 1 /* TEXT */)
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.section.title), 1 /* TEXT */)
                       ]),
                       _: 1 /* STABLE */
                     }, 8 /* PROPS */, ["to"]),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                    __vite_ssr_import_9__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: {
                   path: `/categories/${$setup.category.slug}`,
                 },
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.category.title), 1 /* TEXT */)
                       ]),
                       _: 1 /* STABLE */
                     }, 8 /* PROPS */, ["to"])
                   ])
                 ]),
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_8__.toDisplayString($setup.subcategory.attributes.title), 1 /* TEXT */)
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_9__.toDisplayString($setup.subcategory.attributes.title), 1 /* TEXT */)
                 ]),
-                __vite_ssr_import_8__.createVNode("button", {
+                __vite_ssr_import_9__.createVNode("button", {
                   onClick: $event => ($setup.getProducts())
                 }, "fetchData", 8 /* PROPS */, ["onClick"]),
-                __vite_ssr_import_8__.createVNode("div", { class: "flex justify-between items-start gap-[40px]" }, [
-                  __vite_ssr_import_8__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "filter-block mb-[20px]" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Бренд "),
-                      __vite_ssr_import_8__.createVNode("ul", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                        __vite_ssr_import_8__.createVNode("li", { class: "px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer" }, [
-                          __vite_ssr_import_8__.createVNode("span", { class: "flex-grow" }, "Demix"),
-                          __vite_ssr_import_8__.createVNode("span", null, [
-                            (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                              class: "w-6 h-6",
-                              fill: "none",
-                              stroke: "currentColor",
-                              viewBox: "0 0 24 24",
-                              xmlns: "http://www.w3.org/2000/svg"
-                            }, [
-                              __vite_ssr_import_8__.createVNode("path", {
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
-                                "stroke-width": "2",
-                                d: "M5 13l4 4L19 7"
-                              })
-                            ]))
-                          ])
-                        ])
+                __vite_ssr_import_9__.createVNode("div", { class: "flex justify-between items-start gap-[40px]" }, [
+                  __vite_ssr_import_9__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
+                    __vite_ssr_import_9__.createVNode("div", { class: "filter-block mb-[20px]" }, [
+                      __vite_ssr_import_9__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Бренд "),
+                      __vite_ssr_import_9__.createVNode("ul", { class: "filter-block-content py-[10px] mx-[30px]" }, [
+                        (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.brands, (brand) => {
+                          return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("li", { class: "px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer" }, [
+                            __vite_ssr_import_9__.createVNode("span", { class: "flex-grow" }, __vite_ssr_import_9__.toDisplayString(brand.attributes.title), 1 /* TEXT */),
+                            __vite_ssr_import_9__.createVNode("span", null, [
+                              (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
+                                class: "w-6 h-6",
+                                fill: "none",
+                                stroke: "currentColor",
+                                viewBox: "0 0 24 24",
+                                xmlns: "http://www.w3.org/2000/svg"
+                              }, [
+                                __vite_ssr_import_9__.createVNode("path", {
+                                  "stroke-linecap": "round",
+                                  "stroke-linejoin": "round",
+                                  "stroke-width": "2",
+                                  d: "M5 13l4 4L19 7"
+                                })
+                              ]))
+                            ])
+                          ]))
+                        }), 256 /* UNKEYED_FRAGMENT */))
                       ])
                     ]),
-                    __vite_ssr_import_8__.createVNode("div", { class: "filter-block" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Цена, руб. "),
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                        __vite_ssr_import_8__.createVNode("div", { class: "mt-[20px] flex justify-between items-center w-full" }, [
-                          __vite_ssr_import_8__.createVNode("input", {
+                    __vite_ssr_import_9__.createVNode("div", { class: "filter-block" }, [
+                      __vite_ssr_import_9__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Цена, руб. "),
+                      __vite_ssr_import_9__.createVNode("div", { class: "filter-block-content py-[10px] mx-[30px]" }, [
+                        __vite_ssr_import_9__.createVNode("div", { class: "mt-[20px] flex justify-between items-center w-full" }, [
+                          __vite_ssr_import_9__.createVNode("input", {
                             class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
                             type: "text",
                             placeholder: "799"
                           }),
-                          __vite_ssr_import_8__.createVNode("span", { class: "w-[20px] h-[2px] bg-grey-light" }),
-                          __vite_ssr_import_8__.createVNode("input", {
+                          __vite_ssr_import_9__.createVNode("span", { class: "w-[20px] h-[2px] bg-grey-light" }),
+                          __vite_ssr_import_9__.createVNode("input", {
                             class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
                             type: "text",
                             placeholder: "13000"
@@ -6752,35 +6779,35 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                       ])
                     ])
                   ]),
-                  __vite_ssr_import_8__.createCommentVNode(" loading-cards "),
+                  __vite_ssr_import_9__.createCommentVNode(" loading-cards "),
                   ($setup.loading)
-                    ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                    ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                         key: 0,
                         class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
                       }, [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList(3, (item) => {
-                          return __vite_ssr_import_8__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
+                        (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList(3, (item) => {
+                          return __vite_ssr_import_9__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
                         }), 64 /* STABLE_FRAGMENT */))
                       ]))
-                    : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                    : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                         key: 1,
                         class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
                       }, [
-                        (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.dataProducts, (product, index) => {
-                          return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.dataProducts, (product, index) => {
+                          return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: index,
                             class: "catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"
                           }, [
-                            __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                            __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                               to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
                               class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
                               style: `background-image: url('${$setup.imageUrl(product)}')`
                             }, null, 8 /* PROPS */, ["to", "style"]),
-                            __vite_ssr_import_8__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
-                              __vite_ssr_import_8__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_8__.toDisplayString(product.attributes.title), 1 /* TEXT */),
-                              __vite_ssr_import_8__.createVNode("div", { class: "flex gap-[5px]" }, [
-                                __vite_ssr_import_8__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_8__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
-                                __vite_ssr_import_8__.createVNode("button", {
+                            __vite_ssr_import_9__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
+                              __vite_ssr_import_9__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_9__.toDisplayString(product.attributes.title), 1 /* TEXT */),
+                              __vite_ssr_import_9__.createVNode("div", { class: "flex gap-[5px]" }, [
+                                __vite_ssr_import_9__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_9__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
+                                __vite_ssr_import_9__.createVNode("button", {
                                   class: ["item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center", {
                         'hover:bg-white border-[2px] border-primary hover:text-primary':
                           !$setup.productInCart(product),
@@ -6789,7 +6816,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                   onClick: $event => ($setup.cartHandler(product))
                                 }, [
                                   ($setup.productInCart(product))
-                                    ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                                    ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                                         key: 0,
                                         class: "w-6 h-6",
                                         fill: "none",
@@ -6797,14 +6824,14 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                         viewBox: "0 0 24 24",
                                         xmlns: "http://www.w3.org/2000/svg"
                                       }, [
-                                        __vite_ssr_import_8__.createVNode("path", {
+                                        __vite_ssr_import_9__.createVNode("path", {
                                           "stroke-linecap": "round",
                                           "stroke-linejoin": "round",
                                           "stroke-width": "2",
                                           d: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
                                         })
                                       ]))
-                                    : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                                    : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                                         key: 1,
                                         class: "w-6 h-6",
                                         fill: "none",
@@ -6812,7 +6839,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                         viewBox: "0 0 24 24",
                                         xmlns: "http://www.w3.org/2000/svg"
                                       }, [
-                                        __vite_ssr_import_8__.createVNode("path", {
+                                        __vite_ssr_import_9__.createVNode("path", {
                                           "stroke-linecap": "round",
                                           "stroke-linejoin": "round",
                                           "stroke-width": "2",
@@ -6837,19 +6864,81 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_10__.useSSRContext()
+  const ssrContext = __vite_ssr_import_11__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/categories/[slug]/[slug]/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/[slug]/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/[slug]/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
+}
+
+
+// --------------------
+// Request: /components/Brands.vue
+// Parents: 
+// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
+// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_dfc628ab = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {
+  props: {
+  modelValue: Array,
+  list: Array,
+},
+  emits: ["update:modelValue"],
+  setup(__props, { expose, emit }) {
+  expose();
+
+const props = __props
+
+
+
+
+
+// $emit("update:modelValue");
+
+const __returned__ = { props, emit }
+Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
+return __returned__
+}
+
+}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "filter-block mb-[20px]" }, _attrs))}><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"> Бренд </div><ul class="filter-block-content py-[10px] mx-[30px]"><!--[-->`)
+  __vite_ssr_import_1__.ssrRenderList($props.list, (brand) => {
+    _push(`<li class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"><span class="flex-grow">${__vite_ssr_import_1__.ssrInterpolate(brand.title)}</span><span><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span></li>`)
+  })
+  _push(`<!--]--></ul></div>`)
+}
+
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Brands.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/components/Brands.vue"]]);
 }
 
 
@@ -8010,11 +8099,11 @@ const productPrice = __vite_ssr_import_4__.computed(() => currentProduct.value.a
 // images
 
 const constProductCardImages = __vite_ssr_import_4__.computed(
-  () => productCard.value.attributes?.images?.data || []
+  () => productCard.value?.attributes?.images?.data || []
 );
 
 const productImages = __vite_ssr_import_4__.computed(
-  () => currentProduct.value.attributes?.images?.data || []
+  () => currentProduct.value?.attributes?.images?.data || []
 );
 
 const imagesGalery = __vite_ssr_import_4__.computed(() => [
@@ -8022,13 +8111,11 @@ const imagesGalery = __vite_ssr_import_4__.computed(() => [
   ...constProductCardImages.value,
 ]);
 
-console.log(imagesGalery);
-
 const productArticle = __vite_ssr_import_4__.computed(
   () => currentProduct.value.attributes.article || "–"
 );
 
-const productTags = __vite_ssr_import_4__.computed(() => []);
+const productDescription = __vite_ssr_import_4__.computed(() => currentProduct.value.attributes.description);
 
 const productAmount = __vite_ssr_import_4__.computed(() => currentProduct.value.attributes.amount);
 
@@ -8221,7 +8308,7 @@ function unique(arr, param) {
   return uniqueArr;
 }
 
-const __returned__ = { router, route, productParams, productCardSlug, article, data, error, productCard, category, subcategory, section, productData, currentProduct, productTitle, productPrice, constProductCardImages, productImages, imagesGalery, productArticle, productTags, productAmount, productCardProducts, productCardColors, productColor, colorIsActive, disabledColor, colorHandler, productCardSizes, productSize, sizeIsActive, disabledSize, sizeHandler, isCartHandlerDisabled, cart, cartItem, productCounter, productInCart, increaseAlowed, addToCart, updateCartStateItem, selectCounter, cartHandler, removeFromStateCart, unique, ImageViewer: __vite_ssr_import_6__.default, useCart: __vite_ssr_import_7__.useCart }
+const __returned__ = { router, route, productParams, productCardSlug, article, data, error, productCard, category, subcategory, section, productData, currentProduct, productTitle, productPrice, constProductCardImages, productImages, imagesGalery, productArticle, productDescription, productAmount, productCardProducts, productCardColors, productColor, colorIsActive, disabledColor, colorHandler, productCardSizes, productSize, sizeIsActive, disabledSize, sizeHandler, isCartHandlerDisabled, cart, cartItem, productCounter, productInCart, increaseAlowed, addToCart, updateCartStateItem, selectCounter, cartHandler, removeFromStateCart, unique, ImageViewer: __vite_ssr_import_6__.default, useCart: __vite_ssr_import_7__.useCart }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -8398,11 +8485,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }</div><ul class="product-specifics flex flex-col text-left justify-start items-start gap-[15px]" data-v-5076c47e${
           _scopeId
         }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList($setup.productTags, (tag) => {
+        __vite_ssr_import_9__.ssrRenderList($setup.productDescription, (item) => {
           _push(`<li class="product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" data-v-5076c47e${
             _scopeId
           }>${
-            __vite_ssr_import_9__.ssrInterpolate(tag.attributes.name)
+            __vite_ssr_import_9__.ssrInterpolate(item.value)
           }</li>`)
         })
         _push(`<!--]--></ul></div><div class="product-image" data-v-5076c47e${_scopeId}>`)
@@ -8636,8 +8723,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                       __vite_ssr_import_8__.createVNode("div", { class: "product-info" }, [
                         __vite_ssr_import_8__.createVNode("div", { class: "product-article text-grey-text mb-[40px]" }, " Код продукта: " + __vite_ssr_import_8__.toDisplayString($setup.productArticle), 1 /* TEXT */),
                         __vite_ssr_import_8__.createVNode("ul", { class: "product-specifics flex flex-col text-left justify-start items-start gap-[15px]" }, [
-                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productTags, (tag) => {
-                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("li", { class: "product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" }, __vite_ssr_import_8__.toDisplayString(tag.attributes.name), 1 /* TEXT */))
+                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productDescription, (item) => {
+                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("li", { class: "product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" }, __vite_ssr_import_8__.toDisplayString(item.value), 1 /* TEXT */))
                           }), 256 /* UNKEYED_FRAGMENT */))
                         ])
                       ]),
@@ -9868,7 +9955,7 @@ const { data: sections } = (
   __temp
 );
 
-const sectionsList = sections.value.data;
+const sectionsList = sections.value?.data;
 
 const imageUrl = (section) => {
   const url = section.attributes?.image?.data?.attributes?.url;
@@ -10068,6 +10155,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_7__.default(_sfc_m
 // - /@id/virtual:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_30bf6cdf)
 // - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
 // - /store/cart/cart.js ($id_08ef3e2f)
+// - /components/Brands.vue ($id_dfc628ab)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
@@ -10086,6 +10174,9 @@ const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/store/cart/cart.js");
+
+
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/components/Brands.vue");
 
 
 
@@ -10113,6 +10204,7 @@ const { data, error } = (
 );
 
 const subcategory = data.value.subcategories.data[0];
+const brands = __vite_ssr_import_3__.computed(() => data.value.brands.data);
 const category = subcategory.attributes.parent.data.attributes;
 const section = category.parent.data.attributes;
 
@@ -10177,23 +10269,23 @@ const cartHandler = (product) => {
   }
 };
 
-const __returned__ = { route, subcategorySlug, loading, dataProducts, data, error, subcategory, category, section, getProducts, config, imageUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_7__.useCart }
+const __returned__ = { route, subcategorySlug, loading, dataProducts, data, error, subcategory, brands, category, section, getProducts, config, imageUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_7__.useCart, Brands: __vite_ssr_import_8__.default }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_8__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_9__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="flex-grow"${
           _scopeId
@@ -10206,11 +10298,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="inline-flex"${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/",
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<svg class="w-6 h-6 mt-[2px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
                 _scopeId
@@ -10221,81 +10313,81 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }>На главную</span>`)
             } else {
               return [
-                (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                   class: "w-6 h-6 mt-[2px]",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_8__.createVNode("path", {
+                  __vite_ssr_import_9__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
                     d: "M15 19l-7-7 7-7"
                   })
                 ])),
-                __vite_ssr_import_8__.createVNode("span", null, "На главную")
+                __vite_ssr_import_9__.createVNode("span", null, "На главную")
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/catalog",
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span${_scopeId}>Все категории</span>`)
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("span", null, "Все категории")
+                __vite_ssr_import_9__.createVNode("span", null, "Все категории")
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: {
                   path: `/catalog/${$setup.section.slug}`,
                 },
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span${
                 _scopeId
               }>${
-                __vite_ssr_import_9__.ssrInterpolate($setup.section.title)
+                __vite_ssr_import_10__.ssrInterpolate($setup.section.title)
               }</span>`)
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.section.title), 1 /* TEXT */)
+                __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.section.title), 1 /* TEXT */)
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: {
                   path: `/categories/${$setup.category.slug}`,
                 },
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span${
                 _scopeId
               }>${
-                __vite_ssr_import_9__.ssrInterpolate($setup.category.title)
+                __vite_ssr_import_10__.ssrInterpolate($setup.category.title)
               }</span>`)
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
+                __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.category.title), 1 /* TEXT */)
               ]
             }
           }),
@@ -10306,7 +10398,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><h1 class="flex-grow text-primary text-[36px] font-bold"${
           _scopeId
         }>${
-          __vite_ssr_import_9__.ssrInterpolate($setup.subcategory.attributes.title)
+          __vite_ssr_import_10__.ssrInterpolate($setup.subcategory.attributes.title)
         }</h1></div><button${
           _scopeId
         }>fetchData</button><div class="flex justify-between items-start gap-[40px]"${
@@ -10319,17 +10411,23 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           _scopeId
         }> Бренд </div><ul class="filter-block-content py-[10px] mx-[30px]"${
           _scopeId
-        }><li class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"${
-          _scopeId
-        }><span class="flex-grow"${
-          _scopeId
-        }>Demix</span><span${
-          _scopeId
-        }><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-          _scopeId
-        }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"${
-          _scopeId
-        }></path></svg></span></li></ul></div><div class="filter-block"${
+        }><!--[-->`)
+        __vite_ssr_import_10__.ssrRenderList($setup.brands, (brand) => {
+          _push(`<li class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"${
+            _scopeId
+          }><span class="flex-grow"${
+            _scopeId
+          }>${
+            __vite_ssr_import_10__.ssrInterpolate(brand.attributes.title)
+          }</span><span${
+            _scopeId
+          }><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
+            _scopeId
+          }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"${
+            _scopeId
+          }></path></svg></span></li>`)
+        })
+        _push(`<!--]--></ul></div><div class="filter-block"${
           _scopeId
         }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
           _scopeId
@@ -10346,15 +10444,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }></div></div></div></aside><!-- loading-cards -->`)
         if ($setup.loading) {
           _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_9__.ssrRenderList(3, (item) => {
+          __vite_ssr_import_10__.ssrRenderList(3, (item) => {
             _push(`<div class="catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"${_scopeId}></div>`)
           })
           _push(`<!--]--></div>`)
         } else {
           _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_9__.ssrRenderList($setup.dataProducts, (product, index) => {
+          __vite_ssr_import_10__.ssrRenderList($setup.dataProducts, (product, index) => {
             _push(`<div class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"${_scopeId}>`)
-            _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+            _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
               to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
               class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
               style: `background-image: url('${$setup.imageUrl(product)}')`
@@ -10364,15 +10462,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
             }><div class="flex flex-1 item-title font-medium justify-center items-center"${
               _scopeId
             }>${
-              __vite_ssr_import_9__.ssrInterpolate(product.attributes.title)
+              __vite_ssr_import_10__.ssrInterpolate(product.attributes.title)
             }</div><div class="flex gap-[5px]"${
               _scopeId
             }><div class="flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none"${
               _scopeId
             }>${
-              __vite_ssr_import_9__.ssrInterpolate(product.attributes.price)
+              __vite_ssr_import_10__.ssrInterpolate(product.attributes.price)
             } ₽ </div><button class="${
-              __vite_ssr_import_9__.ssrRenderClass([{
+              __vite_ssr_import_10__.ssrRenderClass([{
                         'hover:bg-white border-[2px] border-primary hover:text-primary':
                           !$setup.productInCart(product),
                         'hover:bg-orange': $setup.productInCart(product),
@@ -10400,113 +10498,115 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_8__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_8__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_8__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "inline-flex" }, [
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+          __vite_ssr_import_9__.createVNode("div", { class: "flex-grow" }, [
+            __vite_ssr_import_9__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_9__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("div", { class: "inline-flex" }, [
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: "/",
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                           class: "w-6 h-6 mt-[2px]",
                           fill: "none",
                           stroke: "currentColor",
                           viewBox: "0 0 24 24",
                           xmlns: "http://www.w3.org/2000/svg"
                         }, [
-                          __vite_ssr_import_8__.createVNode("path", {
+                          __vite_ssr_import_9__.createVNode("path", {
                             "stroke-linecap": "round",
                             "stroke-linejoin": "round",
                             "stroke-width": "2",
                             d: "M15 19l-7-7 7-7"
                           })
                         ])),
-                        __vite_ssr_import_8__.createVNode("span", null, "На главную")
+                        __vite_ssr_import_9__.createVNode("span", null, "На главную")
                       ]),
                       _: 1 /* STABLE */
                     }),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                    __vite_ssr_import_9__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: "/catalog",
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, "Все категории")
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", null, "Все категории")
                       ]),
                       _: 1 /* STABLE */
                     }),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                    __vite_ssr_import_9__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: {
                   path: `/catalog/${$setup.section.slug}`,
                 },
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.section.title), 1 /* TEXT */)
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.section.title), 1 /* TEXT */)
                       ]),
                       _: 1 /* STABLE */
                     }, 8 /* PROPS */, ["to"]),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                    __vite_ssr_import_9__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: {
                   path: `/categories/${$setup.category.slug}`,
                 },
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.category.title), 1 /* TEXT */)
                       ]),
                       _: 1 /* STABLE */
                     }, 8 /* PROPS */, ["to"])
                   ])
                 ]),
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_8__.toDisplayString($setup.subcategory.attributes.title), 1 /* TEXT */)
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_9__.toDisplayString($setup.subcategory.attributes.title), 1 /* TEXT */)
                 ]),
-                __vite_ssr_import_8__.createVNode("button", {
+                __vite_ssr_import_9__.createVNode("button", {
                   onClick: $event => ($setup.getProducts())
                 }, "fetchData", 8 /* PROPS */, ["onClick"]),
-                __vite_ssr_import_8__.createVNode("div", { class: "flex justify-between items-start gap-[40px]" }, [
-                  __vite_ssr_import_8__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "filter-block mb-[20px]" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Бренд "),
-                      __vite_ssr_import_8__.createVNode("ul", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                        __vite_ssr_import_8__.createVNode("li", { class: "px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer" }, [
-                          __vite_ssr_import_8__.createVNode("span", { class: "flex-grow" }, "Demix"),
-                          __vite_ssr_import_8__.createVNode("span", null, [
-                            (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                              class: "w-6 h-6",
-                              fill: "none",
-                              stroke: "currentColor",
-                              viewBox: "0 0 24 24",
-                              xmlns: "http://www.w3.org/2000/svg"
-                            }, [
-                              __vite_ssr_import_8__.createVNode("path", {
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
-                                "stroke-width": "2",
-                                d: "M5 13l4 4L19 7"
-                              })
-                            ]))
-                          ])
-                        ])
+                __vite_ssr_import_9__.createVNode("div", { class: "flex justify-between items-start gap-[40px]" }, [
+                  __vite_ssr_import_9__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
+                    __vite_ssr_import_9__.createVNode("div", { class: "filter-block mb-[20px]" }, [
+                      __vite_ssr_import_9__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Бренд "),
+                      __vite_ssr_import_9__.createVNode("ul", { class: "filter-block-content py-[10px] mx-[30px]" }, [
+                        (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.brands, (brand) => {
+                          return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("li", { class: "px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer" }, [
+                            __vite_ssr_import_9__.createVNode("span", { class: "flex-grow" }, __vite_ssr_import_9__.toDisplayString(brand.attributes.title), 1 /* TEXT */),
+                            __vite_ssr_import_9__.createVNode("span", null, [
+                              (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
+                                class: "w-6 h-6",
+                                fill: "none",
+                                stroke: "currentColor",
+                                viewBox: "0 0 24 24",
+                                xmlns: "http://www.w3.org/2000/svg"
+                              }, [
+                                __vite_ssr_import_9__.createVNode("path", {
+                                  "stroke-linecap": "round",
+                                  "stroke-linejoin": "round",
+                                  "stroke-width": "2",
+                                  d: "M5 13l4 4L19 7"
+                                })
+                              ]))
+                            ])
+                          ]))
+                        }), 256 /* UNKEYED_FRAGMENT */))
                       ])
                     ]),
-                    __vite_ssr_import_8__.createVNode("div", { class: "filter-block" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Цена, руб. "),
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                        __vite_ssr_import_8__.createVNode("div", { class: "mt-[20px] flex justify-between items-center w-full" }, [
-                          __vite_ssr_import_8__.createVNode("input", {
+                    __vite_ssr_import_9__.createVNode("div", { class: "filter-block" }, [
+                      __vite_ssr_import_9__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Цена, руб. "),
+                      __vite_ssr_import_9__.createVNode("div", { class: "filter-block-content py-[10px] mx-[30px]" }, [
+                        __vite_ssr_import_9__.createVNode("div", { class: "mt-[20px] flex justify-between items-center w-full" }, [
+                          __vite_ssr_import_9__.createVNode("input", {
                             class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
                             type: "text",
                             placeholder: "799"
                           }),
-                          __vite_ssr_import_8__.createVNode("span", { class: "w-[20px] h-[2px] bg-grey-light" }),
-                          __vite_ssr_import_8__.createVNode("input", {
+                          __vite_ssr_import_9__.createVNode("span", { class: "w-[20px] h-[2px] bg-grey-light" }),
+                          __vite_ssr_import_9__.createVNode("input", {
                             class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
                             type: "text",
                             placeholder: "13000"
@@ -10515,35 +10615,35 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                       ])
                     ])
                   ]),
-                  __vite_ssr_import_8__.createCommentVNode(" loading-cards "),
+                  __vite_ssr_import_9__.createCommentVNode(" loading-cards "),
                   ($setup.loading)
-                    ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                    ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                         key: 0,
                         class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
                       }, [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList(3, (item) => {
-                          return __vite_ssr_import_8__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
+                        (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList(3, (item) => {
+                          return __vite_ssr_import_9__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
                         }), 64 /* STABLE_FRAGMENT */))
                       ]))
-                    : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                    : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                         key: 1,
                         class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
                       }, [
-                        (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.dataProducts, (product, index) => {
-                          return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.dataProducts, (product, index) => {
+                          return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: index,
                             class: "catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"
                           }, [
-                            __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                            __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                               to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
                               class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
                               style: `background-image: url('${$setup.imageUrl(product)}')`
                             }, null, 8 /* PROPS */, ["to", "style"]),
-                            __vite_ssr_import_8__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
-                              __vite_ssr_import_8__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_8__.toDisplayString(product.attributes.title), 1 /* TEXT */),
-                              __vite_ssr_import_8__.createVNode("div", { class: "flex gap-[5px]" }, [
-                                __vite_ssr_import_8__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_8__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
-                                __vite_ssr_import_8__.createVNode("button", {
+                            __vite_ssr_import_9__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
+                              __vite_ssr_import_9__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_9__.toDisplayString(product.attributes.title), 1 /* TEXT */),
+                              __vite_ssr_import_9__.createVNode("div", { class: "flex gap-[5px]" }, [
+                                __vite_ssr_import_9__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_9__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
+                                __vite_ssr_import_9__.createVNode("button", {
                                   class: ["item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center", {
                         'hover:bg-white border-[2px] border-primary hover:text-primary':
                           !$setup.productInCart(product),
@@ -10552,7 +10652,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                   onClick: $event => ($setup.cartHandler(product))
                                 }, [
                                   ($setup.productInCart(product))
-                                    ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                                    ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                                         key: 0,
                                         class: "w-6 h-6",
                                         fill: "none",
@@ -10560,14 +10660,14 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                         viewBox: "0 0 24 24",
                                         xmlns: "http://www.w3.org/2000/svg"
                                       }, [
-                                        __vite_ssr_import_8__.createVNode("path", {
+                                        __vite_ssr_import_9__.createVNode("path", {
                                           "stroke-linecap": "round",
                                           "stroke-linejoin": "round",
                                           "stroke-width": "2",
                                           d: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
                                         })
                                       ]))
-                                    : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                                    : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                                         key: 1,
                                         class: "w-6 h-6",
                                         fill: "none",
@@ -10575,7 +10675,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                         viewBox: "0 0 24 24",
                                         xmlns: "http://www.w3.org/2000/svg"
                                       }, [
-                                        __vite_ssr_import_8__.createVNode("path", {
+                                        __vite_ssr_import_9__.createVNode("path", {
                                           "stroke-linecap": "round",
                                           "stroke-linejoin": "round",
                                           "stroke-width": "2",
@@ -10600,17 +10700,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_10__.useSSRContext()
+  const ssrContext = __vite_ssr_import_11__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/categories/[slug]/[slug]/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/[slug]/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/[slug]/index.vue"]]);
 }
 
 
@@ -11722,11 +11822,11 @@ const productPrice = __vite_ssr_import_4__.computed(() => currentProduct.value.a
 // images
 
 const constProductCardImages = __vite_ssr_import_4__.computed(
-  () => productCard.value.attributes?.images?.data || []
+  () => productCard.value?.attributes?.images?.data || []
 );
 
 const productImages = __vite_ssr_import_4__.computed(
-  () => currentProduct.value.attributes?.images?.data || []
+  () => currentProduct.value?.attributes?.images?.data || []
 );
 
 const imagesGalery = __vite_ssr_import_4__.computed(() => [
@@ -11734,13 +11834,11 @@ const imagesGalery = __vite_ssr_import_4__.computed(() => [
   ...constProductCardImages.value,
 ]);
 
-console.log(imagesGalery);
-
 const productArticle = __vite_ssr_import_4__.computed(
   () => currentProduct.value.attributes.article || "–"
 );
 
-const productTags = __vite_ssr_import_4__.computed(() => []);
+const productDescription = __vite_ssr_import_4__.computed(() => currentProduct.value.attributes.description);
 
 const productAmount = __vite_ssr_import_4__.computed(() => currentProduct.value.attributes.amount);
 
@@ -11933,7 +12031,7 @@ function unique(arr, param) {
   return uniqueArr;
 }
 
-const __returned__ = { router, route, productParams, productCardSlug, article, data, error, productCard, category, subcategory, section, productData, currentProduct, productTitle, productPrice, constProductCardImages, productImages, imagesGalery, productArticle, productTags, productAmount, productCardProducts, productCardColors, productColor, colorIsActive, disabledColor, colorHandler, productCardSizes, productSize, sizeIsActive, disabledSize, sizeHandler, isCartHandlerDisabled, cart, cartItem, productCounter, productInCart, increaseAlowed, addToCart, updateCartStateItem, selectCounter, cartHandler, removeFromStateCart, unique, ImageViewer: __vite_ssr_import_6__.default, useCart: __vite_ssr_import_7__.useCart }
+const __returned__ = { router, route, productParams, productCardSlug, article, data, error, productCard, category, subcategory, section, productData, currentProduct, productTitle, productPrice, constProductCardImages, productImages, imagesGalery, productArticle, productDescription, productAmount, productCardProducts, productCardColors, productColor, colorIsActive, disabledColor, colorHandler, productCardSizes, productSize, sizeIsActive, disabledSize, sizeHandler, isCartHandlerDisabled, cart, cartItem, productCounter, productInCart, increaseAlowed, addToCart, updateCartStateItem, selectCounter, cartHandler, removeFromStateCart, unique, ImageViewer: __vite_ssr_import_6__.default, useCart: __vite_ssr_import_7__.useCart }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -12110,11 +12208,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }</div><ul class="product-specifics flex flex-col text-left justify-start items-start gap-[15px]" data-v-5076c47e${
           _scopeId
         }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList($setup.productTags, (tag) => {
+        __vite_ssr_import_9__.ssrRenderList($setup.productDescription, (item) => {
           _push(`<li class="product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" data-v-5076c47e${
             _scopeId
           }>${
-            __vite_ssr_import_9__.ssrInterpolate(tag.attributes.name)
+            __vite_ssr_import_9__.ssrInterpolate(item.value)
           }</li>`)
         })
         _push(`<!--]--></ul></div><div class="product-image" data-v-5076c47e${_scopeId}>`)
@@ -12348,8 +12446,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                       __vite_ssr_import_8__.createVNode("div", { class: "product-info" }, [
                         __vite_ssr_import_8__.createVNode("div", { class: "product-article text-grey-text mb-[40px]" }, " Код продукта: " + __vite_ssr_import_8__.toDisplayString($setup.productArticle), 1 /* TEXT */),
                         __vite_ssr_import_8__.createVNode("ul", { class: "product-specifics flex flex-col text-left justify-start items-start gap-[15px]" }, [
-                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productTags, (tag) => {
-                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("li", { class: "product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" }, __vite_ssr_import_8__.toDisplayString(tag.attributes.name), 1 /* TEXT */))
+                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productDescription, (item) => {
+                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("li", { class: "product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" }, __vite_ssr_import_8__.toDisplayString(item.value), 1 /* TEXT */))
                           }), 256 /* UNKEYED_FRAGMENT */))
                         ])
                       ]),
@@ -13302,6 +13400,7 @@ const __modules__ = {
   "/pages/catalog/[slug].vue?macro=true": $id_365463e7,
   "/pages/catalog/index.vue?macro=true": $id_15c6bef3,
   "/pages/categories/[slug]/[slug]/index.vue?macro=true": $id_40ab69cf,
+  "/components/Brands.vue": $id_dfc628ab,
   "/pages/categories/[slug]/index.vue?macro=true": $id_b19ac374,
   "/pages/categories/index.vue?macro=true": $id_b04deb14,
   "/pages/delivery/index.vue?macro=true": $id_e1d04ef1,

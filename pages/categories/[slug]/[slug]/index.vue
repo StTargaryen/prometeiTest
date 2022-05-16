@@ -78,8 +78,9 @@
                 <ul class="filter-block-content py-[10px] mx-[30px]">
                   <li
                     class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"
+                    v-for="brand in brands"
                   >
-                    <span class="flex-grow">Demix</span>
+                    <span class="flex-grow">{{ brand.attributes.title }}</span>
                     <span
                       ><svg
                         class="w-6 h-6"
@@ -216,6 +217,8 @@
 <script setup>
 import { useCart } from "~~/store/cart/cart";
 
+import Brands from "~~/components/Brands.vue";
+
 const route = useRoute();
 
 const subcategorySlug = route.params.slug;
@@ -229,6 +232,7 @@ const { data, error } = await useAsyncData(
 );
 
 const subcategory = data.value.subcategories.data[0];
+const brands = computed(() => data.value.brands.data);
 const category = subcategory.attributes.parent.data.attributes;
 const section = category.parent.data.attributes;
 

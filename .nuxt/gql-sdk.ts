@@ -44,6 +44,29 @@ export type BooleanFilterInput = {
   startsWith?: InputMaybe<Scalars['Boolean']>;
 };
 
+export type BrandFiltersInput = {
+  and?: InputMaybe<Array<InputMaybe<BrandFiltersInput>>>;
+  createdAt?: InputMaybe<DateTimeFilterInput>;
+  id?: InputMaybe<IdFilterInput>;
+  name?: InputMaybe<StringFilterInput>;
+  not?: InputMaybe<BrandFiltersInput>;
+  or?: InputMaybe<Array<InputMaybe<BrandFiltersInput>>>;
+  products?: InputMaybe<ProductCardFiltersInput>;
+  publishedAt?: InputMaybe<DateTimeFilterInput>;
+  title?: InputMaybe<StringFilterInput>;
+  updatedAt?: InputMaybe<DateTimeFilterInput>;
+  uuid?: InputMaybe<StringFilterInput>;
+};
+
+export type BrandInput = {
+  image?: InputMaybe<Scalars['ID']>;
+  name?: InputMaybe<Scalars['String']>;
+  products?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
+  publishedAt?: InputMaybe<Scalars['DateTime']>;
+  title?: InputMaybe<Scalars['String']>;
+  uuid?: InputMaybe<Scalars['String']>;
+};
+
 export type CategoryFiltersInput = {
   and?: InputMaybe<Array<InputMaybe<CategoryFiltersInput>>>;
   createdAt?: InputMaybe<DateTimeFilterInput>;
@@ -80,6 +103,18 @@ export type ComponentProductSettingsColorInput = {
 };
 
 export type ComponentProductSettingsSizeInput = {
+  id?: InputMaybe<Scalars['ID']>;
+  value?: InputMaybe<Scalars['String']>;
+};
+
+export type ComponentProductSettingsTagsFiltersInput = {
+  and?: InputMaybe<Array<InputMaybe<ComponentProductSettingsTagsFiltersInput>>>;
+  not?: InputMaybe<ComponentProductSettingsTagsFiltersInput>;
+  or?: InputMaybe<Array<InputMaybe<ComponentProductSettingsTagsFiltersInput>>>;
+  value?: InputMaybe<StringFilterInput>;
+};
+
+export type ComponentProductSettingsTagsInput = {
   id?: InputMaybe<Scalars['ID']>;
   value?: InputMaybe<Scalars['String']>;
 };
@@ -225,6 +260,7 @@ export type PaginationArg = {
 
 export type ProductCardFiltersInput = {
   and?: InputMaybe<Array<InputMaybe<ProductCardFiltersInput>>>;
+  brand?: InputMaybe<BrandFiltersInput>;
   category?: InputMaybe<CategoryFiltersInput>;
   createdAt?: InputMaybe<DateTimeFilterInput>;
   id?: InputMaybe<IdFilterInput>;
@@ -242,6 +278,7 @@ export type ProductCardFiltersInput = {
 };
 
 export type ProductCardInput = {
+  brand?: InputMaybe<Scalars['ID']>;
   category?: InputMaybe<Scalars['ID']>;
   images?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   items?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
@@ -275,6 +312,7 @@ export type ProductInput = {
   amount?: InputMaybe<Scalars['Int']>;
   article?: InputMaybe<Scalars['String']>;
   color?: InputMaybe<ComponentProductSettingsColorInput>;
+  description?: InputMaybe<Array<InputMaybe<ComponentProductSettingsTagsInput>>>;
   images?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   name?: InputMaybe<Scalars['String']>;
   parent?: InputMaybe<Scalars['ID']>;
@@ -492,7 +530,7 @@ export type ProductByArticleQueryVariables = Exact<{
 }>;
 
 
-export type ProductByArticleQuery = { products?: { data: Array<{ attributes?: { article: string, title: string, price?: number | null, amount: number, color: { value: string, title: string }, size: { value: string }, images?: { data: Array<{ attributes?: { url: string } | null }> } | null } | null }> } | null };
+export type ProductByArticleQuery = { products?: { data: Array<{ attributes?: { article: string, title: string, price?: number | null, amount: number, description?: Array<{ value?: string | null } | null> | null, color: { value: string, title: string }, size: { value: string }, images: { data: Array<{ attributes?: { url: string } | null }> } } | null }> } | null };
 
 export type ProductCardDataBySlugQueryVariables = Exact<{
   slug?: InputMaybe<Scalars['String']>;
@@ -506,14 +544,14 @@ export type ProductsBySubcategorySlugQueryVariables = Exact<{
 }>;
 
 
-export type ProductsBySubcategorySlugQuery = { products?: { data: Array<{ attributes?: { title: string, article: string, price?: number | null, color: { title: string }, size: { value: string }, parent?: { data?: { attributes?: { slug: string } | null } | null } | null, images?: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> } | null } | null }> } | null };
+export type ProductsBySubcategorySlugQuery = { products?: { data: Array<{ attributes?: { title: string, article: string, price?: number | null, color: { title: string }, size: { value: string }, parent?: { data?: { attributes?: { slug: string } | null } | null } | null, images: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> } } | null }> } | null };
 
 export type SubcategoryDataBySlugQueryVariables = Exact<{
   slug?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type SubcategoryDataBySlugQuery = { subcategories?: { data: Array<{ attributes?: { title: string, slug: string, parent?: { data?: { attributes?: { title: string, slug: string, parent?: { data?: { attributes?: { title: string, slug: string } | null } | null } | null } | null } | null } | null } | null }> } | null };
+export type SubcategoryDataBySlugQuery = { subcategories?: { data: Array<{ attributes?: { title: string, slug: string, parent?: { data?: { attributes?: { title: string, slug: string, parent?: { data?: { attributes?: { title: string, slug: string } | null } | null } | null } | null } | null } | null } | null }> } | null, brands?: { data: Array<{ id?: string | null, attributes?: { title: string } | null }> } | null };
 
 
 export const CatalogMenuDocument = gql`
@@ -562,6 +600,9 @@ export const ProductByArticleDocument = gql`
         title
         price
         amount
+        description {
+          value
+        }
         color {
           value
           title
@@ -696,6 +737,14 @@ export const SubcategoryDataBySlugDocument = gql`
             }
           }
         }
+      }
+    }
+  }
+  brands(filters: {products: {subcategory: {slug: {eq: $slug}}}}) {
+    data {
+      id
+      attributes {
+        title
       }
     }
   }
