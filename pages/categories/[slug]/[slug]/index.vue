@@ -216,30 +216,29 @@
 
 <script setup>
 import { useCart } from "~~/store/cart/cart";
-
-import Brands from "~~/components/Brands.vue";
+// import Brands from "~~/components/Brands.vue";
 
 const route = useRoute();
+console.log(route);
 
 const subcategorySlug = route.params.slug;
 
 const loading = ref(false);
 const dataProducts = ref([]);
-
 const { data, error } = await useAsyncData(
   `subcategory-by-slug-${subcategorySlug}`,
   () => GqlSubcategoryDataBySlug({ slug: subcategorySlug })
 );
 
-const subcategory = data.value.subcategories.data[0];
-const brands = computed(() => data.value.brands.data);
-const category = subcategory.attributes.parent.data.attributes;
+const subcategory = computed(() => data.value.subcategories.data[0]);
+console.log(subcategory.value);
+const category = subcategory.value.attributes.parent.data.attributes;
 const section = category.parent.data.attributes;
 
 const getProducts = async () => {
   loading.value = true;
   const productsData = await GqlProductsBySubcategorySlug({
-    slug: subcategory.attributes.slug,
+    slug: subcategory.value.attributes.slug,
   });
   dataProducts.value = productsData.products.data;
   loading.value = false;
@@ -248,7 +247,7 @@ const getProducts = async () => {
 await getProducts();
 
 useHead({
-  title: `Prometei – ${subcategory.attributes.title}`,
+  title: `Prometei – ${subcategory.value.attributes.title}`,
 });
 
 const config = useRuntimeConfig();
@@ -275,7 +274,6 @@ const productInCart = (product) => {
 };
 
 const cartHandler = (product) => {
-  console.log(product);
   if (productInCart(product)) {
     cart.removeFromCart(product.attributes.article);
   } else {

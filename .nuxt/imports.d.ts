@@ -5,5 +5,5 @@ export { withCtx, withDirectives, withKeys, withMemo, withModifiers, withScopeId
 export { useGqlHeaders, useGqlToken, useGqlCors, useGql } from '/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/nuxt-graphql-client/dist/runtime/composables';
 export { deepmerge } from '/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/nuxt-graphql-client/dist/runtime/utils';
 export { getSdk as gqlSdk } from '#build/gql-sdk';
-export { GqlCatalogMenu, GqlProductByArticle, GqlProductCardDataBySlug, GqlProductsBySubcategorySlug, GqlSubcategoryDataBySlug } from '#build/gql';
+export { GqlCatalogMenu, GqlProductByArticle, GqlProductCardDataBySlug, GqlProductsBySubcategorySlug, GqlSubcategoryDataBySlug, GqlGetCategoryBySlug, GqlGetRootCategories } from '#build/gql';
 export { definePageMeta } from '/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/nuxt/dist/pages/runtime/composables';

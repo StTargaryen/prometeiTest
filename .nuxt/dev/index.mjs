@@ -1,11 +1,11 @@
-import 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/unenv/runtime/polyfill/fetch.node.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'http';
 import { tmpdir } from 'os';
 import { join } from 'path';
 import { mkdirSync } from 'fs';
 import { parentPort, threadId } from 'worker_threads';
 import { provider, isWindows } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/std-env/dist/index.mjs';
-import { toEventHandler, defineEventHandler, handleCacheHeaders, createEvent, createApp, createRouter, lazyEventHandler, eventHandler, useQuery } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, createApp, createRouter, lazyEventHandler, eventHandler, useQuery } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/h3/dist/index.mjs';
 import { createFetch as createFetch$1, Headers } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/ohmyfetch/dist/node.mjs';
 import destr from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/destr/dist/index.mjs';
 import { createRouter as createRouter$1 } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/radix3/dist/index.mjs';
@@ -13,15 +13,15 @@ import { createCall, createFetch } from 'file:///Users/andrewstt/Projects/person
 import { createHooks } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/hookable/dist/index.mjs';
 import { hash } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/ohash/dist/index.mjs';
 import { createStorage } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/unstorage/dist/index.mjs';
-import _unstorage_drivers_fs from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/unstorage/drivers/fs.mjs';
+import _unstorage_drivers_fs from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/unstorage/dist/drivers/fs.mjs';
 import { withQuery, joinURL } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/ufo/dist/index.mjs';
 import { createRenderer } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/vue-bundle-renderer/dist/index.mjs';
 import devalue from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/vue/server-renderer/index.mjs';
 import { snakeCase } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/scule/dist/index.mjs';
 import htmlTemplate from '/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/views/document.template.mjs';
-import { renderToString as renderToString$2 } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/vue/server-renderer/index.mjs';
 
-const _runtimeConfig = (function(a){return {app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""},nitro:{routes:{},envPrefix:"NUXT_"},API_URL:a,public:{API_URL:a,GQL_HOST:"https:\u002F\u002Fhidden-scrubland-92584.herokuapp.com\u002Fgraphql","graphql-client":{clients:{default:{host:"http:\u002F\u002Flocalhost:1337\u002Fgraphql",schema:void 0,token:{type:"Bearer"}}}}},"graphql-client":{clients:{}}}}("http:\u002F\u002Flocalhost:1337"));
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"API_URL":"http://localhost:1337","public":{"API_URL":"http://localhost:1337","GQL_HOST":"http://localhost:1337/graphql","graphql-client":{"clients":{"default":{"host":"http://localhost:1337/graphql","token":{"type":"Bearer"}}}}},"graphql-client":{"clients":{}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -92,10 +92,10 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui"}));
-storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/server"}));
-storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt"}));
-storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/cache"}));
+storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 const defaultCacheOptions = {
   name: "_",
@@ -160,7 +160,6 @@ function defineCachedEventHandler(handler, opts = defaultCacheOptions) {
       handler
     ]
   };
-  const _handler = toEventHandler(handler);
   const _cachedHandler = cachedFunction(async (incomingEvent) => {
     const reqProxy = cloneWithProxy(incomingEvent.req, { headers: {} });
     const resHeaders = {};
@@ -187,7 +186,8 @@ function defineCachedEventHandler(handler, opts = defaultCacheOptions) {
       }
     });
     const event = createEvent(reqProxy, resProxy);
-    const body = await _handler(event);
+    event.context = incomingEvent.context;
+    const body = await handler(event);
     const headers = event.res.getHeaders();
     headers.Etag = `W/"${hash(body)}"`;
     headers["Last-Modified"] = new Date().toUTCString();
@@ -290,7 +290,8 @@ const errorHandler = (async function errorhandler(_error, event) {
     statusCode,
     statusMessage,
     message,
-    description: statusCode !== 404 ? `<pre>${stack.map((i) => `<span class="stack${i.internal ? " internal" : ""}">${i.text}</span>`).join("\n")}</pre>` : ""
+    description: statusCode !== 404 ? `<pre>${stack.map((i) => `<span class="stack${i.internal ? " internal" : ""}">${i.text}</span>`).join("\n")}</pre>` : "",
+    data: _error.data
   };
   event.res.statusCode = errorObject.statusCode;
   event.res.statusMessage = errorObject.statusMessage;
@@ -311,17 +312,17 @@ const errorHandler = (async function errorhandler(_error, event) {
   event.res.end(html);
 });
 
-const _6b4fd0 = () => Promise.resolve().then(function () { return stuff$1; });
-const _9dff4e = () => Promise.resolve().then(function () { return products$1; });
-const _8ca704 = () => Promise.resolve().then(function () { return categories; });
-const _c97d83 = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_241345 = () => Promise.resolve().then(function () { return stuff$1; });
+const _lazy_280418 = () => Promise.resolve().then(function () { return products$1; });
+const _lazy_328615 = () => Promise.resolve().then(function () { return categories; });
+const _lazy_219010 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/stuff', handler: _6b4fd0, lazy: true, method: undefined },
-  { route: '/api/products', handler: _9dff4e, lazy: true, method: undefined },
-  { route: '/api/categories', handler: _8ca704, lazy: true, method: undefined },
-  { route: '/__nuxt_error', handler: _c97d83, lazy: true, method: undefined },
-  { route: '/**', handler: _c97d83, lazy: true, method: undefined }
+  { route: '/api/stuff', handler: _lazy_241345, lazy: true, middleware: false, method: undefined },
+  { route: '/api/products', handler: _lazy_280418, lazy: true, middleware: false, method: undefined },
+  { route: '/api/categories', handler: _lazy_328615, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_219010, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_219010, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -343,8 +344,9 @@ function createNitroApp() {
         group: "nitro/routes"
       });
     }
-    if (h.route === "") {
-      h3App.use(config.app.baseURL, handler);
+    if (h.middleware || !h.route) {
+      const middlewareBase = (config.app.baseURL + (h.route || "/")).replace(/\/+/g, "/");
+      h3App.use(middlewareBase, handler);
     } else {
       router.use(h.route, handler, h.method);
     }
@@ -389,8 +391,10 @@ server.listen(listenAddress, () => {
     address: typeof _address === "string" ? { socketPath: _address } : { host: "localhost", port: _address.port }
   });
 });
-process.on("unhandledRejection", (err) => console.error("[nitro] [dev] [unhandledRejection] " + err));
-process.on("uncaughtException", (err) => console.error("[nitro] [dev] [uncaughtException] " + err));
+{
+  process.on("unhandledRejection", (err) => console.error("[nitro] [dev] [unhandledRejection]", err));
+  process.on("uncaughtException", (err) => console.error("[nitro] [dev] [uncaughtException]", err));
+}
 
 const stuff = () => {
   return JSON.stringify({
@@ -428,28 +432,32 @@ function publicAssetsURL(...path) {
   return path.length ? joinURL(publicBase, ...path) : publicBase;
 }
 
-const STATIC_ASSETS_BASE = process.env.NUXT_STATIC_BASE + "/" + process.env.NUXT_STATIC_VERSION;
-const NUXT_NO_SSR = process.env.NUXT_NO_SSR;
-const PAYLOAD_JS = "/payload.js";
-const getClientManifest = cachedImport(() => import('/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/dist/server/client.manifest.mjs'));
-const getSSRApp = !process.env.NUXT_NO_SSR && cachedImport(() => import('/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/dist/server/server.mjs'));
-const getSSRRenderer = cachedResult(async () => {
+const getClientManifest = () => import('/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getSSRRenderer = lazyCachedFunction(async () => {
   const clientManifest = await getClientManifest();
   if (!clientManifest) {
     throw new Error("client.manifest is not available");
   }
-  const createSSRApp = await getSSRApp();
+  const createSSRApp = await getServerEntry();
   if (!createSSRApp) {
     throw new Error("Server bundle is not available");
   }
-  const { renderToString: renderToString2 } = await Promise.resolve().then(function () { return vue3; });
-  return createRenderer(createSSRApp, { clientManifest, renderToString: renderToString2, publicPath: buildAssetsURL() }).renderToString;
+  const renderToString$1 = async (input, context) => {
+    const html = await renderToString(input, context);
+    return `<div id="__nuxt">${html}</div>`;
+  };
+  return createRenderer(createSSRApp, {
+    clientManifest,
+    renderToString: renderToString$1,
+    publicPath: buildAssetsURL()
+  });
 });
-const getSPARenderer = cachedResult(async () => {
+const getSPARenderer = lazyCachedFunction(async () => {
   const clientManifest = await getClientManifest();
-  return (ssrContext) => {
+  const renderToString = (ssrContext) => {
     const config = useRuntimeConfig();
-    ssrContext.nuxt = {
+    ssrContext.payload = {
       serverRendered: false,
       config: {
         public: config.public,
@@ -460,7 +468,7 @@ const getSPARenderer = cachedResult(async () => {
     if ("all" in clientManifest && "initial" in clientManifest) {
       entryFiles = clientManifest.initial.map((file) => ({ file }));
     }
-    return {
+    return Promise.resolve({
       html: '<div id="__nuxt"></div>',
       renderResourceHints: () => "",
       renderStyles: () => entryFiles.flatMap(({ css }) => css).filter((css) => css != null).map((file) => `<link rel="stylesheet" href="${buildAssetsURL(file)}">`).join(""),
@@ -468,34 +476,27 @@ const getSPARenderer = cachedResult(async () => {
         const isMJS = !file.endsWith(".js");
         return `<script ${isMJS ? 'type="module"' : ""} src="${buildAssetsURL(file)}"><\/script>`;
       }).join("")
-    };
+    });
   };
+  return { renderToString };
 });
-function renderToString$1(ssrContext) {
-  const getRenderer = NUXT_NO_SSR || ssrContext.noSSR ? getSPARenderer : getSSRRenderer;
-  return getRenderer().then((renderToString2) => renderToString2(ssrContext));
-}
 const renderer = eventHandler(async (event) => {
   const ssrError = event.req.url?.startsWith("/__nuxt_error") ? useQuery(event) : null;
-  let url = ssrError?.url || event.req.url;
-  let isPayloadReq = false;
-  if (url.startsWith(STATIC_ASSETS_BASE) && url.endsWith(PAYLOAD_JS)) {
-    isPayloadReq = true;
-    url = url.slice(STATIC_ASSETS_BASE.length, url.length - PAYLOAD_JS.length) || "/";
-  }
+  const url = ssrError?.url || event.req.url;
   const ssrContext = {
     url,
     event,
     req: event.req,
     res: event.res,
     runtimeConfig: useRuntimeConfig(),
-    noSSR: event.req.headers["x-nuxt-no-ssr"],
+    noSSR: !!event.req.headers["x-nuxt-no-ssr"],
     error: ssrError,
     redirected: void 0,
     nuxt: void 0,
     payload: void 0
   };
-  const rendered = await renderToString$1(ssrContext).catch((e) => {
+  const renderer = ssrContext.noSSR ? await getSPARenderer() : await getSSRRenderer();
+  const rendered = await renderer.renderToString(ssrContext).catch((e) => {
     if (!ssrError) {
       throw e;
     }
@@ -506,60 +507,32 @@ const renderer = eventHandler(async (event) => {
   if (ssrContext.redirected || event.res.writableEnded) {
     return;
   }
-  const error = ssrContext.error || ssrContext.nuxt?.error;
-  if (error && !ssrError) {
-    throw error;
+  if (ssrContext.error && !ssrError) {
+    throw ssrContext.error;
   }
   if (ssrContext.nuxt?.hooks) {
     await ssrContext.nuxt.hooks.callHook("app:rendered");
   }
-  const payload = ssrContext.payload || ssrContext.nuxt;
-  if (process.env.NUXT_FULL_STATIC) {
-    payload.staticAssetsBase = STATIC_ASSETS_BASE;
-  }
-  let data;
-  if (isPayloadReq) {
-    data = renderPayload(payload, url);
-    event.res.setHeader("Content-Type", "text/javascript;charset=UTF-8");
-  } else {
-    data = await renderHTML(payload, rendered, ssrContext);
-    event.res.setHeader("Content-Type", "text/html;charset=UTF-8");
-  }
-  event.res.end(data, "utf-8");
+  const html = await renderHTML(ssrContext.payload, rendered, ssrContext);
+  event.res.setHeader("Content-Type", "text/html;charset=UTF-8");
+  return html;
 });
 async function renderHTML(payload, rendered, ssrContext) {
   const state = `<script>window.__NUXT__=${devalue(payload)}<\/script>`;
-  const html = rendered.html;
-  if ("renderMeta" in ssrContext) {
-    rendered.meta = await ssrContext.renderMeta();
+  rendered.meta = rendered.meta || {};
+  if (ssrContext.renderMeta) {
+    Object.assign(rendered.meta, await ssrContext.renderMeta());
   }
-  const {
-    htmlAttrs = "",
-    bodyAttrs = "",
-    headAttrs = "",
-    headTags = "",
-    bodyScriptsPrepend = "",
-    bodyScripts = ""
-  } = rendered.meta || {};
   return htmlTemplate({
-    HTML_ATTRS: htmlAttrs,
-    HEAD_ATTRS: headAttrs,
-    HEAD: headTags + rendered.renderResourceHints() + rendered.renderStyles() + (ssrContext.styles || ""),
-    BODY_ATTRS: bodyAttrs,
+    HTML_ATTRS: rendered.meta.htmlAttrs || "",
+    HEAD_ATTRS: rendered.meta.headAttrs || "",
+    HEAD: (rendered.meta.headTags || "") + rendered.renderResourceHints() + rendered.renderStyles() + (ssrContext.styles || ""),
+    BODY_ATTRS: rendered.meta.bodyAttrs || "",
     BODY_PREPEND: ssrContext.teleports?.body || "",
-    APP: bodyScriptsPrepend + html + state + rendered.renderScripts() + bodyScripts
+    APP: (rendered.meta.bodyScriptsPrepend || "") + rendered.html + state + rendered.renderScripts() + (rendered.meta.bodyScripts || "")
   });
 }
-function renderPayload(payload, url) {
-  return `__NUXT_JSONP__("${url}", ${devalue(payload)})`;
-}
-function _interopDefault(e) {
-  return e && typeof e === "object" && "default" in e ? e.default : e;
-}
-function cachedImport(importer) {
-  return cachedResult(() => importer().then(_interopDefault));
-}
-function cachedResult(fn) {
+function lazyCachedFunction(fn) {
   let res = null;
   return () => {
     if (res === null) {
@@ -575,14 +548,5 @@ function cachedResult(fn) {
 const renderer$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   'default': renderer
-});
-
-const renderToString = (...args) => {
-  return renderToString$2(...args).then((result) => `<div id="__nuxt">${result}</div>`);
-};
-
-const vue3 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  renderToString: renderToString
 });
 //# sourceMappingURL=index.mjs.map

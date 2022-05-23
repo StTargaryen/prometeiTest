@@ -1,64 +1,3 @@
-# query ProductByArticle($article: String) {
-#   products(filters: { article: { eq: $article } }) {
-#     data {
-#       id
-#       attributes {
-#         title
-#         article
-#         price
-#         tags {
-#           data {
-#             attributes {
-#               name
-#             }
-#           }
-#         }
-#         colors {
-#           name
-#           hexColor
-#           disabled
-#           amount
-#         }
-#         section {
-#           data {
-#             id
-#             attributes {
-#               title
-#               slug
-#             }
-#           }
-#         }
-#         category {
-#           data {
-#             id
-#             attributes {
-#               title
-#               slug
-#             }
-#           }
-#         }
-#         subcategory {
-#           data {
-#             id
-#             attributes {
-#               title
-#               slug
-#             }
-#           }
-#         }
-#         images {
-#           data {
-#             id
-#             attributes {
-#               url
-#             }
-#           }
-#         }
-#       }
-#     }
-#   }
-# }
-
 query ProductByArticle($article: String) {
   products(filters: { article: { eq: $article } }) {
     data {
@@ -117,27 +56,11 @@ query ProductCardDataBySlug($slug: String) {
             }
           }
         }
-        category {
+        testCategory {
           data {
             attributes {
-              slug
               title
-            }
-          }
-        }
-        subcategory {
-          data {
-            attributes {
               slug
-              title
-            }
-          }
-        }
-        section {
-          data {
-            attributes {
-              slug
-              title
             }
           }
         }
@@ -147,7 +70,7 @@ query ProductCardDataBySlug($slug: String) {
 }
 
 query ProductsBySubcategorySlug($slug: String) {
-  products(filters: { parent: { subcategory: { slug: { eq: $slug } } } }) {
+  products(filters: { parent: { testCategory: { slug: { eq: $slug } } } }) {
     data {
       attributes {
         title

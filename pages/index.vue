@@ -14,7 +14,7 @@
             </h1>
             <div>
               <NuxtLink
-                to="/catalog"
+                to="/categories"
                 class="flex items-center justify-center text-[21px] text-primary hover:text-orange"
               >
                 <span class="mr-[5px]">Все категории</span>
@@ -108,4 +108,8 @@ const getLocalBackgroundImageUrl = (name) => {
       return "";
   }
 };
+
+useHead({
+  title: `Prometei – Магазин спортивного инвентаря`,
+});
 </script>

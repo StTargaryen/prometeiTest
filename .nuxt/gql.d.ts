@@ -6,4 +6,6 @@ declare module '#build/gql' {
   export const GqlProductCardDataBySlug: (...params: Parameters<GqlFunc['ProductCardDataBySlug']>) => ReturnType<GqlFunc['ProductCardDataBySlug']>
   export const GqlProductsBySubcategorySlug: (...params: Parameters<GqlFunc['ProductsBySubcategorySlug']>) => ReturnType<GqlFunc['ProductsBySubcategorySlug']>
   export const GqlSubcategoryDataBySlug: (...params: Parameters<GqlFunc['SubcategoryDataBySlug']>) => ReturnType<GqlFunc['SubcategoryDataBySlug']>
+  export const GqlGetCategoryBySlug: (...params: Parameters<GqlFunc['getCategoryBySlug']>) => ReturnType<GqlFunc['getCategoryBySlug']>
+  export const GqlGetRootCategories: (...params: Parameters<GqlFunc['getRootCategories']>) => ReturnType<GqlFunc['getRootCategories']>
 }

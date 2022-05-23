@@ -23,7 +23,7 @@ query SubcategoryDataBySlug($slug: String) {
       }
     }
   }
-  brands(filters: {products: { subcategory: {slug: {eq: $slug }}}}) {
+  brands(filters: { products: { subcategory: { slug: { eq: $slug } } } }) {
     data {
       id
       attributes {

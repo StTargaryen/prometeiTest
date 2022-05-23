@@ -8,26 +8,6 @@ declare module '@nuxt/schema' {
   interface RuntimeConfig {
      API_URL: string,
 
-    public: {
-        API_URL: string,
-
-        GQL_HOST: string,
-
-        "graphql-client": {
-             clients: {
-                   default: {
-                          host: string,
-
-                          schema: any,
-
-                          token: {
-                                  type: string,
-                          },
-                   },
-             },
-        },
-    },
-
     app: {
         baseURL: string,
 
@@ -38,6 +18,25 @@ declare module '@nuxt/schema' {
 
     "graphql-client": {
         clients: any,
+    },
+  }
+  interface PublicRuntimeConfig {
+     API_URL: string,
+
+    GQL_HOST: string,
+
+    "graphql-client": {
+        clients: {
+             default: {
+                   host: string,
+
+                   schema: any,
+
+                   token: {
+                          type: string,
+                   },
+             },
+        },
     },
   }
 }

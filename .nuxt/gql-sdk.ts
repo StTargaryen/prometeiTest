@@ -142,6 +142,12 @@ export type DateTimeFilterInput = {
   startsWith?: InputMaybe<Scalars['DateTime']>;
 };
 
+export enum Enum_Testcategory_Type {
+  Category = 'category',
+  Section = 'section',
+  Subcategory = 'subcategory'
+}
+
 export type FileInfoInput = {
   alternativeText?: InputMaybe<Scalars['String']>;
   caption?: InputMaybe<Scalars['String']>;
@@ -272,6 +278,7 @@ export type ProductCardFiltersInput = {
   section?: InputMaybe<SectionFiltersInput>;
   slug?: InputMaybe<StringFilterInput>;
   subcategory?: InputMaybe<SubcategoryFiltersInput>;
+  testCategory?: InputMaybe<TestCategoryFiltersInput>;
   title?: InputMaybe<StringFilterInput>;
   updatedAt?: InputMaybe<DateTimeFilterInput>;
   uuid?: InputMaybe<StringFilterInput>;
@@ -287,6 +294,7 @@ export type ProductCardInput = {
   section?: InputMaybe<Scalars['ID']>;
   slug?: InputMaybe<Scalars['String']>;
   subcategory?: InputMaybe<Scalars['ID']>;
+  testCategory?: InputMaybe<Scalars['ID']>;
   title?: InputMaybe<Scalars['String']>;
   uuid?: InputMaybe<Scalars['String']>;
 };
@@ -405,6 +413,43 @@ export type SubcategoryInput = {
   title?: InputMaybe<Scalars['String']>;
 };
 
+export type TestCategoryFiltersInput = {
+  and?: InputMaybe<Array<InputMaybe<TestCategoryFiltersInput>>>;
+  createdAt?: InputMaybe<DateTimeFilterInput>;
+  id?: InputMaybe<IdFilterInput>;
+  items?: InputMaybe<TestCategoryFiltersInput>;
+  name?: InputMaybe<StringFilterInput>;
+  not?: InputMaybe<TestCategoryFiltersInput>;
+  or?: InputMaybe<Array<InputMaybe<TestCategoryFiltersInput>>>;
+  parent?: InputMaybe<TestCategoryFiltersInput>;
+  products?: InputMaybe<ProductCardFiltersInput>;
+  publishedAt?: InputMaybe<DateTimeFilterInput>;
+  relatedCategories?: InputMaybe<TestCategoryFiltersInput>;
+  showInNav?: InputMaybe<BooleanFilterInput>;
+  showProducts?: InputMaybe<BooleanFilterInput>;
+  showRelatedCategories?: InputMaybe<BooleanFilterInput>;
+  slug?: InputMaybe<StringFilterInput>;
+  title?: InputMaybe<StringFilterInput>;
+  type?: InputMaybe<StringFilterInput>;
+  updatedAt?: InputMaybe<DateTimeFilterInput>;
+};
+
+export type TestCategoryInput = {
+  image?: InputMaybe<Scalars['ID']>;
+  items?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
+  name?: InputMaybe<Scalars['String']>;
+  parent?: InputMaybe<Scalars['ID']>;
+  products?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
+  publishedAt?: InputMaybe<Scalars['DateTime']>;
+  relatedCategories?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
+  showInNav?: InputMaybe<Scalars['Boolean']>;
+  showProducts?: InputMaybe<Scalars['Boolean']>;
+  showRelatedCategories?: InputMaybe<Scalars['Boolean']>;
+  slug?: InputMaybe<Scalars['String']>;
+  title?: InputMaybe<Scalars['String']>;
+  type?: InputMaybe<Enum_Testcategory_Type>;
+};
+
 export type UploadFileFiltersInput = {
   alternativeText?: InputMaybe<StringFilterInput>;
   and?: InputMaybe<Array<InputMaybe<UploadFileFiltersInput>>>;
@@ -520,6 +565,20 @@ export type UsersPermissionsUserInput = {
   username?: InputMaybe<Scalars['String']>;
 };
 
+export type GetRootCategoriesQueryVariables = Exact<{
+  type?: InputMaybe<Scalars['String']>;
+}>;
+
+
+export type GetRootCategoriesQuery = { testCategories?: { data: Array<{ attributes?: { slug: string, title: string, parent?: { data?: { attributes?: { title: string } | null } | null } | null, items?: { data: Array<{ attributes?: { title: string, slug: string, image?: { data?: { attributes?: { url: string } | null } | null } | null } | null }> } | null, image?: { data?: { attributes?: { url: string } | null } | null } | null } | null }> } | null };
+
+export type GetCategoryBySlugQueryVariables = Exact<{
+  slug?: InputMaybe<Scalars['String']>;
+}>;
+
+
+export type GetCategoryBySlugQuery = { testCategories?: { data: Array<{ attributes?: { slug: string, title: string, showProducts?: boolean | null, showRelatedCategories?: boolean | null, parent?: { data?: { attributes?: { title: string, slug: string } | null } | null } | null, items?: { data: Array<{ attributes?: { title: string, slug: string, image?: { data?: { attributes?: { url: string } | null } | null } | null } | null }> } | null, relatedCategories?: { data: Array<{ attributes?: { title: string, slug: string, image?: { data?: { attributes?: { url: string } | null } | null } | null } | null }> } | null } | null }> } | null };
+
 export type CatalogMenuQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -537,7 +596,7 @@ export type ProductCardDataBySlugQueryVariables = Exact<{
 }>;
 
 
-export type ProductCardDataBySlugQuery = { productCards?: { data: Array<{ attributes?: { title: string, slug: string, images: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> }, items?: { data: Array<{ attributes?: { article: string, color: { title: string, value: string }, size: { value: string } } | null }> } | null, category?: { data?: { attributes?: { slug: string, title: string } | null } | null } | null, subcategory?: { data?: { attributes?: { slug: string, title: string } | null } | null } | null, section?: { data?: { attributes?: { slug: string, title: string } | null } | null } | null } | null }> } | null };
+export type ProductCardDataBySlugQuery = { productCards?: { data: Array<{ attributes?: { title: string, slug: string, images: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> }, items?: { data: Array<{ attributes?: { article: string, color: { title: string, value: string }, size: { value: string } } | null }> } | null, testCategory?: { data?: { attributes?: { title: string, slug: string } | null } | null } | null } | null }> } | null };
 
 export type ProductsBySubcategorySlugQueryVariables = Exact<{
   slug?: InputMaybe<Scalars['String']>;
@@ -554,6 +613,99 @@ export type SubcategoryDataBySlugQueryVariables = Exact<{
 export type SubcategoryDataBySlugQuery = { subcategories?: { data: Array<{ attributes?: { title: string, slug: string, parent?: { data?: { attributes?: { title: string, slug: string, parent?: { data?: { attributes?: { title: string, slug: string } | null } | null } | null } | null } | null } | null } | null }> } | null, brands?: { data: Array<{ id?: string | null, attributes?: { title: string } | null }> } | null };
 
 
+export const GetRootCategoriesDocument = gql`
+    query getRootCategories($type: String) {
+  testCategories(filters: {type: {eq: $type}}) {
+    data {
+      attributes {
+        slug
+        title
+        parent {
+          data {
+            attributes {
+              title
+            }
+          }
+        }
+        items {
+          data {
+            attributes {
+              title
+              slug
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+        image {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}
+    `;
+export const GetCategoryBySlugDocument = gql`
+    query getCategoryBySlug($slug: String) {
+  testCategories(filters: {slug: {eq: $slug}}) {
+    data {
+      attributes {
+        slug
+        title
+        showProducts
+        showRelatedCategories
+        parent {
+          data {
+            attributes {
+              title
+              slug
+            }
+          }
+        }
+        items {
+          data {
+            attributes {
+              title
+              slug
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+        relatedCategories {
+          data {
+            attributes {
+              title
+              slug
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+    `;
 export const CatalogMenuDocument = gql`
     query CatalogMenu {
   sections(filters: {showInNav: {eq: true}}) {
@@ -651,27 +803,11 @@ export const ProductCardDataBySlugDocument = gql`
             }
           }
         }
-        category {
+        testCategory {
           data {
             attributes {
-              slug
               title
-            }
-          }
-        }
-        subcategory {
-          data {
-            attributes {
               slug
-              title
-            }
-          }
-        }
-        section {
-          data {
-            attributes {
-              slug
-              title
             }
           }
         }
@@ -682,7 +818,7 @@ export const ProductCardDataBySlugDocument = gql`
     `;
 export const ProductsBySubcategorySlugDocument = gql`
     query ProductsBySubcategorySlug($slug: String) {
-  products(filters: {parent: {subcategory: {slug: {eq: $slug}}}}) {
+  products(filters: {parent: {testCategory: {slug: {eq: $slug}}}}) {
     data {
       attributes {
         title
@@ -758,6 +894,12 @@ const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationTy
 
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
+    getRootCategories(variables?: GetRootCategoriesQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<GetRootCategoriesQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetRootCategoriesQuery>(GetRootCategoriesDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'getRootCategories', 'query');
+    },
+    getCategoryBySlug(variables?: GetCategoryBySlugQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<GetCategoryBySlugQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetCategoryBySlugQuery>(GetCategoryBySlugDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'getCategoryBySlug', 'query');
+    },
     CatalogMenu(variables?: CatalogMenuQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<CatalogMenuQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<CatalogMenuQuery>(CatalogMenuDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'CatalogMenu', 'query');
     },

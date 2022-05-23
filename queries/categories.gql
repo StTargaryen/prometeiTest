@@ -1,0 +1,90 @@
+query getRootCategories($type: String) {
+  testCategories(filters: { type: { eq: $type } }) {
+    data {
+      attributes {
+        slug
+        title
+        parent {
+          data {
+            attributes {
+              title
+            }
+          }
+        }
+        items {
+          data {
+            attributes {
+              title
+              slug
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+        image {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query getCategoryBySlug($slug: String) {
+  testCategories(filters: { slug: { eq: $slug } }) {
+    data {
+      attributes {
+        slug
+        title
+        showProducts
+        showRelatedCategories
+        parent {
+          data {
+            attributes {
+              title
+              slug
+            }
+          }
+        }
+        items {
+          data {
+            attributes {
+              title
+              slug
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+        relatedCategories {
+          data {
+            attributes {
+              title
+              slug
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

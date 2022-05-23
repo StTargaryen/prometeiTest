@@ -68,7 +68,7 @@
                             Артикул {{ item.article }}
                           </span>
                           <span
-                            class="text-[21px] text-secondary leading-[25px]"
+                            class="text-[21px] text-secondary leading-[25px] font-medium"
                           >
                             {{ item.title }}
                           </span>
@@ -302,6 +302,10 @@ const cartTotalCounter = computed(() =>
 const cartTotalSum = computed(() =>
   cartItems.value.reduce((acc, item) => acc + item.count * item.price, 0)
 );
+
+useHead({
+  title: `Prometei – Корзина`,
+});
 </script>
 
 <style>

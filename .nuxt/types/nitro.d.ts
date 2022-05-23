@@ -11,6 +11,8 @@ declare module 'nitropack' {
 declare global {
   const defineCachedFunction: typeof import('#internal/nitro')['defineCachedFunction']
   const defineCachedEventHandler: typeof import('#internal/nitro')['defineCachedEventHandler']
+  const cachedFunction: typeof import('#internal/nitro')['cachedFunction']
+  const cachedEventHandler: typeof import('#internal/nitro')['cachedEventHandler']
   const useRuntimeConfig: typeof import('#internal/nitro')['useRuntimeConfig']
   const useStorage: typeof import('#internal/nitro')['useStorage']
   const useNitroApp: typeof import('#internal/nitro')['useNitroApp']

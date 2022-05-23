@@ -48,3 +48,13 @@ watch(route, () => {
   closeMenu();
 });
 </script>
+
+<style>
+* {
+  font-family: inherit;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+}
+</style>

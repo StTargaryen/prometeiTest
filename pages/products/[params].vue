@@ -4,10 +4,10 @@
       <main class="mt-[102px] mb-[40px] flex-grow">
         <div class="max-w-screen-xl w-full mx-auto">
           <div class="page-header flex items-center">
-            <div class="inline-flex">
+            <div class="flex items-center">
               <NuxtLink
                 to="/"
-                class="breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:text-orange"
+                class="breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
               >
                 <svg
                   class="w-6 h-6"
@@ -25,57 +25,30 @@
                 </svg>
                 <span class="ml-[5px]">На главную</span>
               </NuxtLink>
-              <code class="text-grey-text text-[24px] ml-[5px] mr-[5px]">
-                /
-              </code>
+              <div
+                class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center"
+              ></div>
               <NuxtLink
-                to="/catalog"
+                :to="{
+                  path: `/categories`,
+                }"
                 class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
               >
                 <span>Все категории</span>
               </NuxtLink>
-
-              <code class="text-grey-text text-[24px] ml-[5px] mr-[5px]">
-                /
-              </code>
-
-              <NuxtLink
-                v-if="section"
-                :to="{
-                  path: `/catalog/${section.slug}`,
-                }"
-                class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-              >
-                <span>{{ section.title }}</span>
-              </NuxtLink>
-
-              <code class="text-grey-text text-[24px] ml-[5px] mr-[5px]">
-                /
-              </code>
-
-              <NuxtLink
-                v-if="category"
-                :to="{
-                  path: `/categories/${category.slug}`,
-                }"
-                class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-              >
-                <span>{{ category.title }}</span>
-              </NuxtLink>
-
-              <code class="text-grey-text text-[24px] ml-[5px] mr-[5px]">
-                /
-              </code>
-
-              <NuxtLink
-                v-if="category && subcategory"
-                :to="{
-                  path: `/categories/${category.slug}/${subcategory.slug}`,
-                }"
-                class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-              >
-                <span>{{ subcategory.title }}</span>
-              </NuxtLink>
+              <template v-if="category">
+                <div
+                  class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center"
+                ></div>
+                <NuxtLink
+                  :to="{
+                    path: `/categories/${category.slug}`,
+                  }"
+                  class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
+                >
+                  <span>{{ category.title }}</span>
+                </NuxtLink>
+              </template>
             </div>
           </div>
 
@@ -273,15 +246,7 @@ if (!productCard.value) {
   router.push("/404");
 }
 
-const category = computed(
-  () => productCard.value.attributes.category.data.attributes
-);
-const subcategory = computed(
-  () => productCard.value.attributes.subcategory.data.attributes
-);
-const section = computed(
-  () => productCard.value.attributes.section.data.attributes
-);
+const category = productCard.value.attributes.testCategory.data.attributes;
 
 const productData = await GqlProductByArticle({ article: article });
 
@@ -319,7 +284,9 @@ const productArticle = computed(
   () => currentProduct.value.attributes.article || "–"
 );
 
-const productDescription = computed(() => currentProduct.value.attributes.description);
+const productDescription = computed(
+  () => currentProduct.value.attributes.description
+);
 
 const productAmount = computed(() => currentProduct.value.attributes.amount);
 
