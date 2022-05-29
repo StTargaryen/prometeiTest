@@ -32,7 +32,7 @@
           </div>
           <div
             class="cards flex items-center gap-[20px]"
-            v-if="categoriesList.length"
+            v-if="categoriesList && categoriesList.length"
           >
             <NuxtLink
               v-for="category in categoriesList"
@@ -73,7 +73,13 @@ const config = useRuntimeConfig();
 const { data, error } = await useAsyncData("root-categories", () =>
   GqlGetRootCategories({ type: "section" })
 );
-const categoriesList = data.value.testCategories?.data;
+
+console.log(data.value);
+const categoriesList = data.value?.categories?.data;
+
+useHead({
+  title: `Прометей – Все категории`,
+});
 
 const imageUrl = (category) => {
   const url = category.attributes?.image?.data?.attributes?.url;

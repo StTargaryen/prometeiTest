@@ -128,8 +128,10 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /components/UI/AmountCounter.vue ($id_5db0a46a)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
+// - /components/ProductFilter.vue ($id_16ebd3b1)
+// - /components/BrandsSelect.vue ($id_a68b9e82)
+// - /components/PriceSelect.vue ($id_894078cd)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/delivery/index.vue?macro=true ($id_e1d04ef1)
 // - /pages/index.vue?macro=true ($id_5dd70240)
@@ -140,7 +142,6 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /pages/cart/index.vue ($id_3fa45d07)
 // - /pages/catalog/[slug].vue ($id_3566c471)
 // - /pages/catalog/index.vue ($id_820ec6e4)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
 // - /pages/categories/[slug]/index.vue ($id_a38e0b82)
 // - /pages/categories/index.vue ($id_8d9b42c9)
 // - /pages/delivery/index.vue ($id_6d69d13a)
@@ -267,15 +268,14 @@ import("file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/no
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
+// - /components/ProductFilter.vue ($id_16ebd3b1)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/products/[params].vue?macro=true ($id_5fe5d068)
 // - /components/UI/ImageViewer.vue ($id_9bcbfe6f)
 // - /pages/cart/index.vue ($id_3fa45d07)
 // - /pages/catalog/[slug].vue ($id_3566c471)
 // - /pages/catalog/index.vue ($id_820ec6e4)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
 // - /pages/categories/[slug]/index.vue ($id_a38e0b82)
 // - /pages/categories/index.vue ($id_8d9b42c9)
 // - /pages/products/[params].vue ($id_e6c5b58b)
@@ -1408,7 +1408,6 @@ Object.defineProperty(__vite_ssr_exports__, "defineNuxtLink", { enumerable: true
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/index.vue?macro=true ($id_5dd70240)
@@ -1416,7 +1415,6 @@ Object.defineProperty(__vite_ssr_exports__, "defineNuxtLink", { enumerable: true
 // - /pages/cart/index.vue ($id_3fa45d07)
 // - /pages/catalog/[slug].vue ($id_3566c471)
 // - /pages/catalog/index.vue ($id_820ec6e4)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
 // - /pages/categories/[slug]/index.vue ($id_a38e0b82)
 // - /pages/categories/index.vue ($id_8d9b42c9)
 // - /pages/index.vue ($id_cca58e97)
@@ -1552,12 +1550,16 @@ __vite_ssr_exports__.default = defineNuxtLink({ componentName: "NuxtLink" });
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs ($id_0aa4a4c2)
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
+// - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
+// - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/index.vue?macro=true ($id_5dd70240)
+// - /pages/products/[params].vue?macro=true ($id_5fe5d068)
 // - /pages/cart/index.vue ($id_3fa45d07)
 // - /pages/catalog/[slug].vue ($id_3566c471)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
+// - /pages/categories/[slug]/index.vue ($id_a38e0b82)
+// - /pages/categories/index.vue ($id_8d9b42c9)
 // - /pages/index.vue ($id_cca58e97)
+// - /pages/products/[params].vue ($id_e6c5b58b)
 // Dependencies: 
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
 // --------------------
@@ -1644,7 +1646,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/assets/styles/app.scss
 
 // --------------------
 const $id_0a1402e6 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.right-0{right:0}.top-0{top:0}.top-\\[-5px\\]{top:-5px}.right-\\[-10px\\]{right:-10px}.top-\\[80px\\]{top:80px}.bottom-0{bottom:0}.left-\\[20px\\]{left:20px}.bottom-\\[70px\\]{bottom:70px}.bottom-\\[calc\\(-100\\%\\+5px\\)\\]{bottom:calc(-100% + 5px)}.top-\\[-10px\\]{top:-10px}.z-20{z-index:20}.z-50{z-index:50}.z-0{z-index:0}.m-\\[-1px\\]{margin:-1px}.mx-\\[30px\\]{margin-left:30px;margin-right:30px}.mx-auto{margin-left:auto;margin-right:auto}.mx-\\[-10px\\]{margin-left:-10px;margin-right:-10px}.my-\\[20px\\]{margin-bottom:20px;margin-top:20px}.my-\\[40px\\]{margin-bottom:40px;margin-top:40px}.mb-\\[20px\\]{margin-bottom:20px}.mr-\\[120px\\]{margin-right:120px}.mt-\\[20px\\]{margin-top:20px}.mr-\\[27px\\]{margin-right:27px}.mr-\\[16px\\]{margin-right:16px}.mr-\\[7px\\]{margin-right:7px}.ml-\\[21px\\]{margin-left:21px}.mt-\\[-4px\\]{margin-top:-4px}.mt-\\[60px\\]{margin-top:60px}.mb-\\[35px\\]{margin-bottom:35px}.mb-\\[30px\\]{margin-bottom:30px}.mb-\\[10px\\]{margin-bottom:10px}.mr-\\[20px\\]{margin-right:20px}.mr-\\[10px\\]{margin-right:10px}.mr-\\[60px\\]{margin-right:60px}.mt-\\[136px\\]{margin-top:136px}.mb-\\[40px\\]{margin-bottom:40px}.mr-\\[5px\\]{margin-right:5px}.mt-\\[2px\\]{margin-top:2px}.mt-\\[40px\\]{margin-top:40px}.mt-\\[135px\\]{margin-top:135px}.mt-\\[102px\\]{margin-top:102px}.ml-\\[5px\\]{margin-left:5px}.mb-\\[25px\\]{margin-bottom:25px}.mr-\\[40px\\]{margin-right:40px}.ml-\\[40px\\]{margin-left:40px}.ml-\\[13px\\]{margin-left:13px}.mr-\\[13px\\]{margin-right:13px}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-\\[60px\\]{height:60px}.h-6{height:1.5rem}.h-\\[50px\\]{height:50px}.h-4{height:1rem}.h-5{height:1.25rem}.h-\\[20px\\]{height:20px}.h-screen{height:100vh}.h-\\[54px\\]{height:54px}.h-full{height:100%}.h-\\[400px\\]{height:400px}.h-\\[86px\\]{height:86px}.h-\\[70px\\]{height:70px}.h-\\[22px\\]{height:22px}.h-\\[500px\\]{height:500px}.h-\\[120px\\]{height:120px}.h-\\[40px\\]{height:40px}.h-\\[24px\\]{height:24px}.h-\\[2px\\]{height:2px}.h-\\[300px\\]{height:300px}.h-\\[200px\\]{height:200px}.h-\\[4px\\]{height:4px}.h-\\[80px\\]{height:80px}.h-\\[36px\\]{height:36px}.h-\\[30px\\]{height:30px}.h-\\[450px\\]{height:450px}.h-\\[256px\\]{height:256px}.min-h-screen{min-height:100vh}.w-6{width:1.5rem}.w-full{width:100%}.w-4{width:1rem}.w-\\[500px\\]{width:500px}.w-\\[360px\\]{width:360px}.w-5{width:1.25rem}.w-\\[20px\\]{width:20px}.w-\\[54px\\]{width:54px}.w-\\[60px\\]{width:60px}.w-\\[400px\\]{width:400px}.w-\\[86px\\]{width:86px}.w-\\[70px\\]{width:70px}.w-\\[2px\\]{width:2px}.w-1\\/3{width:33.333333%}.w-\\[120px\\]{width:120px}.w-\\[40px\\]{width:40px}.w-\\[300px\\]{width:300px}.w-\\[24px\\]{width:24px}.w-1\\/5{width:20%}.w-\\[200px\\]{width:200px}.w-\\[4px\\]{width:4px}.w-\\[36px\\]{width:36px}.w-\\[30px\\]{width:30px}.w-\\[calc\\(33\\.33\\%-16\\.7px\\)\\]{width:calc(33.33% - 16.7px)}.w-\\[256px\\]{width:256px}.min-w-\\[350px\\]{min-width:350px}.min-w-\\[300px\\]{min-width:300px}.max-w-screen-xl{max-width:1280px}.max-w-\\[22px\\]{max-width:22px}.max-w-\\[180px\\]{max-width:180px}.max-w-\\[100px\\]{max-width:100px}.flex-1{flex:1 1 0%}.flex-grow,.grow{flex-grow:1}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes pulse{50%{opacity:.5}}@keyframes pulse{50%{opacity:.5}}.animate-pulse{-webkit-animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite;animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.cursor-default{cursor:default}.cursor-not-allowed{cursor:not-allowed}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.list-none{list-style-type:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-start{justify-content:flex-start}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-\\[60px\\]{gap:60px}.gap-\\[5px\\]{gap:5px}.gap-\\[10px\\]{gap:10px}.gap-\\[25px\\]{gap:25px}.gap-\\[40px\\]{gap:40px}.gap-\\[20px\\]{gap:20px}.gap-\\[15px\\]{gap:15px}.gap-\\[190px\\]{gap:190px}.gap-\\[70px\\]{gap:70px}.overflow-hidden{overflow:hidden}.rounded-\\[4px\\]{border-radius:4px}.rounded-full{border-radius:9999px}.rounded{border-radius:.25rem}.rounded-\\[10px\\]{border-radius:10px}.rounded-r-\\[4px\\]{border-bottom-right-radius:4px;border-top-right-radius:4px}.border-\\[1px\\]{border-width:1px}.border-2,.border-\\[2px\\]{border-width:2px}.border-b-\\[2px\\]{border-bottom-width:2px}.border-grey-text{--tw-border-opacity:1;border-color:rgb(196 196 196/var(--tw-border-opacity))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.border-grey{--tw-border-opacity:1;border-color:rgb(239 239 239/var(--tw-border-opacity))}.border-primary{--tw-border-opacity:1;border-color:rgb(79 178 248/var(--tw-border-opacity))}.border-grey-light{--tw-border-opacity:1;border-color:rgb(241 241 241/var(--tw-border-opacity))}.border-opacity-90{--tw-border-opacity:0.9}.bg-grey-light{--tw-bg-opacity:1;background-color:rgb(241 241 241/var(--tw-bg-opacity))}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(51 51 51/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(79 178 248/var(--tw-bg-opacity))}.bg-grey-text{--tw-bg-opacity:1;background-color:rgb(196 196 196/var(--tw-bg-opacity))}.bg-\\[\\#00000007\\]{background-color:#00000007}.bg-cover{background-size:cover}.bg-contain{background-size:contain}.bg-center{background-position:50%}.bg-no-repeat{background-repeat:no-repeat}.p-\\[12px\\]{padding:12px}.p-0{padding:0}.p-\\[10px\\]{padding:10px}.p-\\[5px\\]{padding:5px}.p-\\[50px\\]{padding:50px}.p-\\[4px\\]{padding:4px}.p-\\[2px\\]{padding:2px}.p-\\[30px\\]{padding:30px}.px-\\[28px\\]{padding-left:28px;padding-right:28px}.py-\\[10px\\]{padding-bottom:10px;padding-top:10px}.px-\\[18px\\]{padding-left:18px;padding-right:18px}.px-\\[24px\\]{padding-left:24px;padding-right:24px}.px-\\[27px\\]{padding-left:27px;padding-right:27px}.px-\\[13px\\]{padding-left:13px;padding-right:13px}.py-\\[12px\\]{padding-bottom:12px;padding-top:12px}.px-\\[5px\\]{padding-left:5px;padding-right:5px}.py-\\[4px\\]{padding-bottom:4px;padding-top:4px}.pt-\\[40px\\]{padding-top:40px}.pb-\\[50px\\]{padding-bottom:50px}.pt-\\[10px\\]{padding-top:10px}.pb-\\[20px\\]{padding-bottom:20px}.pt-\\[32px\\]{padding-top:32px}.text-left{text-align:left}.text-center{text-align:center}.text-\\[21px\\]{font-size:21px}.text-\\[16px\\]{font-size:16px}.text-\\[13px\\]{font-size:13px}.text-\\[36px\\]{font-size:36px}.text-\\[100px\\]{font-size:100px}.text-\\[26px\\]{font-size:26px}.text-\\[24px\\]{font-size:24px}.text-\\[18px\\]{font-size:18px}.font-medium{font-weight:500}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\\[84px\\]{line-height:84px}.leading-\\[25px\\]{line-height:25px}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}.text-secondary{--tw-text-opacity:1;color:rgb(51 51 51/var(--tw-text-opacity))}.text-grey-text{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.text-grey-light{--tw-text-opacity:1;color:rgb(241 241 241/var(--tw-text-opacity))}.text-orange{--tw-text-opacity:1;color:rgb(255 66 6/var(--tw-text-opacity))}.opacity-100{opacity:1}.opacity-0{opacity:0}.opacity-50{opacity:.5}.shadow-divider{--tw-shadow:inset 0px 0px 0.5px rgba(0,0,0,.25);--tw-shadow-colored:inset 0px 0px 0.5px var(--tw-shadow-color)}.shadow-divider,.shadow-product-color{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-product-color{--tw-shadow:inset 0px 0px 6px rgba(0,0,0,.25);--tw-shadow-colored:inset 0px 0px 6px var(--tw-shadow-color)}.shadow-inner{--tw-shadow:inset 0px 0px 4px rgba(0,0,0,.15);--tw-shadow-colored:inset 0px 0px 4px var(--tw-shadow-color)}.shadow-card,.shadow-inner{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-card{--tw-shadow:0px 0px 2px rgba(0,0,0,.25);--tw-shadow-colored:0px 0px 2px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.drop-shadow-slider{--tw-drop-shadow:drop-shadow(4px 4px 5px rgba(0,0,0,.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,-webkit-text-decoration-color;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,-webkit-text-decoration-color;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-shadow{transition-duration:.15s;transition-property:box-shadow;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.placeholder\\:text-grey-text::-moz-placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.placeholder\\:text-grey-text:-ms-input-placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.placeholder\\:text-grey-text::placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.last\\:mr-0:last-child{margin-right:0}.last\\:mb-0:last-child{margin-bottom:0}.hover\\:z-10:hover{z-index:10}.hover\\:bg-grey-light:hover{--tw-bg-opacity:1;background-color:rgb(241 241 241/var(--tw-bg-opacity))}.hover\\:bg-orange:hover{--tw-bg-opacity:1;background-color:rgb(255 66 6/var(--tw-bg-opacity))}.hover\\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(79 178 248/var(--tw-bg-opacity))}.hover\\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.hover\\:bg-grey-text:hover{--tw-bg-opacity:1;background-color:rgb(196 196 196/var(--tw-bg-opacity))}.hover\\:bg-opacity-0:hover{--tw-bg-opacity:0}.hover\\:bg-opacity-20:hover{--tw-bg-opacity:0.2}.hover\\:text-orange:hover{--tw-text-opacity:1;color:rgb(255 66 6/var(--tw-text-opacity))}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\\:text-primary:hover{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}.hover\\:shadow-card-hover:hover{--tw-shadow:0px 0px 40px rgba(0,0,0,.25);--tw-shadow-colored:0px 0px 40px var(--tw-shadow-color);box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.hover\\:drop-shadow-card:hover{--tw-drop-shadow:drop-shadow(0px 0px 40px rgba(0,0,0,.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.focus\\:border-\\[2px\\]:focus{border-width:2px}.active\\:border-primary:active,.focus\\:border-primary:focus{--tw-border-opacity:1;border-color:rgb(79 178 248/var(--tw-border-opacity))}.active\\:border-opacity-0:active{--tw-border-opacity:0}.active\\:bg-white:active{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.active\\:bg-opacity-40:active{--tw-bg-opacity:0.4}.active\\:bg-opacity-100:active{--tw-bg-opacity:1}.active\\:text-primary:active{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}";
+__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.right-0{right:0}.top-0{top:0}.top-\\[-5px\\]{top:-5px}.right-\\[-10px\\]{right:-10px}.top-\\[80px\\]{top:80px}.bottom-0{bottom:0}.left-\\[20px\\]{left:20px}.bottom-\\[70px\\]{bottom:70px}.bottom-\\[calc\\(-100\\%\\+5px\\)\\]{bottom:calc(-100% + 5px)}.top-\\[-10px\\]{top:-10px}.z-20{z-index:20}.z-50{z-index:50}.z-0{z-index:0}.m-\\[-1px\\]{margin:-1px}.mx-\\[30px\\]{margin-left:30px;margin-right:30px}.my-\\[5px\\]{margin-bottom:5px;margin-top:5px}.mx-auto{margin-left:auto;margin-right:auto}.mx-\\[-10px\\]{margin-left:-10px;margin-right:-10px}.my-\\[20px\\]{margin-bottom:20px;margin-top:20px}.my-\\[40px\\]{margin-bottom:40px;margin-top:40px}.mb-\\[20px\\]{margin-bottom:20px}.mt-\\[20px\\]{margin-top:20px}.mr-\\[5px\\]{margin-right:5px}.mr-\\[120px\\]{margin-right:120px}.mr-\\[27px\\]{margin-right:27px}.mr-\\[16px\\]{margin-right:16px}.mr-\\[7px\\]{margin-right:7px}.ml-\\[21px\\]{margin-left:21px}.mt-\\[-4px\\]{margin-top:-4px}.mt-\\[60px\\]{margin-top:60px}.mb-\\[35px\\]{margin-bottom:35px}.mb-\\[30px\\]{margin-bottom:30px}.mb-\\[10px\\]{margin-bottom:10px}.mr-\\[20px\\]{margin-right:20px}.mr-\\[10px\\]{margin-right:10px}.mr-\\[60px\\]{margin-right:60px}.mt-\\[102px\\]{margin-top:102px}.mb-\\[40px\\]{margin-bottom:40px}.mt-\\[2px\\]{margin-top:2px}.mt-\\[40px\\]{margin-top:40px}.mt-\\[135px\\]{margin-top:135px}.ml-\\[5px\\]{margin-left:5px}.mb-\\[25px\\]{margin-bottom:25px}.mr-\\[40px\\]{margin-right:40px}.ml-\\[40px\\]{margin-left:40px}.ml-\\[13px\\]{margin-left:13px}.mr-\\[13px\\]{margin-right:13px}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-\\[60px\\]{height:60px}.h-6{height:1.5rem}.h-\\[2px\\]{height:2px}.h-\\[50px\\]{height:50px}.h-4{height:1rem}.h-5{height:1.25rem}.h-\\[20px\\]{height:20px}.h-screen{height:100vh}.h-\\[54px\\]{height:54px}.h-full{height:100%}.h-\\[400px\\]{height:400px}.h-\\[86px\\]{height:86px}.h-\\[70px\\]{height:70px}.h-\\[22px\\]{height:22px}.h-\\[500px\\]{height:500px}.h-\\[120px\\]{height:120px}.h-\\[40px\\]{height:40px}.h-\\[24px\\]{height:24px}.h-\\[300px\\]{height:300px}.h-\\[200px\\]{height:200px}.h-\\[4px\\]{height:4px}.h-\\[80px\\]{height:80px}.h-\\[36px\\]{height:36px}.h-\\[30px\\]{height:30px}.h-\\[450px\\]{height:450px}.h-\\[256px\\]{height:256px}.min-h-screen{min-height:100vh}.w-full{width:100%}.w-6{width:1.5rem}.w-\\[20px\\]{width:20px}.w-4{width:1rem}.w-\\[500px\\]{width:500px}.w-\\[360px\\]{width:360px}.w-5{width:1.25rem}.w-\\[54px\\]{width:54px}.w-\\[60px\\]{width:60px}.w-\\[400px\\]{width:400px}.w-\\[86px\\]{width:86px}.w-\\[70px\\]{width:70px}.w-\\[2px\\]{width:2px}.w-1\\/3{width:33.333333%}.w-\\[120px\\]{width:120px}.w-\\[40px\\]{width:40px}.w-\\[300px\\]{width:300px}.w-\\[24px\\]{width:24px}.w-1\\/5{width:20%}.w-\\[200px\\]{width:200px}.w-\\[4px\\]{width:4px}.w-\\[36px\\]{width:36px}.w-\\[30px\\]{width:30px}.w-\\[calc\\(33\\.33\\%-16\\.7px\\)\\]{width:calc(33.33% - 16.7px)}.w-\\[256px\\]{width:256px}.min-w-\\[350px\\]{min-width:350px}.min-w-\\[300px\\]{min-width:300px}.max-w-\\[100px\\]{max-width:100px}.max-w-screen-xl{max-width:1280px}.max-w-\\[22px\\]{max-width:22px}.max-w-\\[180px\\]{max-width:180px}.flex-1{flex:1 1 0%}.flex-grow,.grow{flex-grow:1}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes pulse{50%{opacity:.5}}@keyframes pulse{50%{opacity:.5}}.animate-pulse{-webkit-animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite;animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.cursor-default{cursor:default}.cursor-not-allowed{cursor:not-allowed}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.list-none{list-style-type:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-start{justify-content:flex-start}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-\\[60px\\]{gap:60px}.gap-\\[5px\\]{gap:5px}.gap-\\[10px\\]{gap:10px}.gap-\\[25px\\]{gap:25px}.gap-\\[40px\\]{gap:40px}.gap-\\[20px\\]{gap:20px}.gap-\\[15px\\]{gap:15px}.gap-\\[190px\\]{gap:190px}.gap-\\[70px\\]{gap:70px}.overflow-hidden{overflow:hidden}.rounded-\\[4px\\]{border-radius:4px}.rounded-full{border-radius:9999px}.rounded{border-radius:.25rem}.rounded-\\[10px\\]{border-radius:10px}.rounded-r-\\[4px\\]{border-bottom-right-radius:4px;border-top-right-radius:4px}.border-\\[1px\\]{border-width:1px}.border-2,.border-\\[2px\\]{border-width:2px}.border-b-\\[2px\\]{border-bottom-width:2px}.border-grey-text{--tw-border-opacity:1;border-color:rgb(196 196 196/var(--tw-border-opacity))}.border-primary{--tw-border-opacity:1;border-color:rgb(79 178 248/var(--tw-border-opacity))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.border-grey{--tw-border-opacity:1;border-color:rgb(239 239 239/var(--tw-border-opacity))}.border-grey-light{--tw-border-opacity:1;border-color:rgb(241 241 241/var(--tw-border-opacity))}.border-opacity-90{--tw-border-opacity:0.9}.bg-grey-light{--tw-bg-opacity:1;background-color:rgb(241 241 241/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(79 178 248/var(--tw-bg-opacity))}.bg-orange{--tw-bg-opacity:1;background-color:rgb(255 66 6/var(--tw-bg-opacity))}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(51 51 51/var(--tw-bg-opacity))}.bg-grey-text{--tw-bg-opacity:1;background-color:rgb(196 196 196/var(--tw-bg-opacity))}.bg-grey{--tw-bg-opacity:1;background-color:rgb(239 239 239/var(--tw-bg-opacity))}.bg-opacity-70{--tw-bg-opacity:0.7}.bg-cover{background-size:cover}.bg-contain{background-size:contain}.bg-center{background-position:50%}.bg-no-repeat{background-repeat:no-repeat}.p-\\[12px\\]{padding:12px}.p-0{padding:0}.p-\\[10px\\]{padding:10px}.p-\\[5px\\]{padding:5px}.p-\\[50px\\]{padding:50px}.p-\\[4px\\]{padding:4px}.p-\\[2px\\]{padding:2px}.p-\\[30px\\]{padding:30px}.px-\\[28px\\]{padding-left:28px;padding-right:28px}.py-\\[10px\\]{padding-bottom:10px;padding-top:10px}.px-\\[18px\\]{padding-left:18px;padding-right:18px}.px-\\[5px\\]{padding-left:5px;padding-right:5px}.px-\\[24px\\]{padding-left:24px;padding-right:24px}.px-\\[27px\\]{padding-left:27px;padding-right:27px}.px-\\[13px\\]{padding-left:13px;padding-right:13px}.py-\\[12px\\]{padding-bottom:12px;padding-top:12px}.py-\\[4px\\]{padding-bottom:4px;padding-top:4px}.pt-\\[40px\\]{padding-top:40px}.pb-\\[50px\\]{padding-bottom:50px}.pt-\\[10px\\]{padding-top:10px}.pb-\\[20px\\]{padding-bottom:20px}.pt-\\[32px\\]{padding-top:32px}.text-left{text-align:left}.text-center{text-align:center}.text-\\[21px\\]{font-size:21px}.text-\\[16px\\]{font-size:16px}.text-\\[13px\\]{font-size:13px}.text-\\[36px\\]{font-size:36px}.text-\\[100px\\]{font-size:100px}.text-\\[26px\\]{font-size:26px}.text-\\[24px\\]{font-size:24px}.text-\\[18px\\]{font-size:18px}.font-medium{font-weight:500}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\\[84px\\]{line-height:84px}.leading-\\[25px\\]{line-height:25px}.text-primary{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}.text-secondary{--tw-text-opacity:1;color:rgb(51 51 51/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-grey-text{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.text-grey-light{--tw-text-opacity:1;color:rgb(241 241 241/var(--tw-text-opacity))}.text-orange{--tw-text-opacity:1;color:rgb(255 66 6/var(--tw-text-opacity))}.opacity-100{opacity:1}.opacity-0{opacity:0}.opacity-50{opacity:.5}.shadow-inner{--tw-shadow:inset 0px 0px 4px rgba(0,0,0,.15);--tw-shadow-colored:inset 0px 0px 4px var(--tw-shadow-color)}.shadow-divider,.shadow-inner{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-divider{--tw-shadow:inset 0px 0px 0.5px rgba(0,0,0,.25);--tw-shadow-colored:inset 0px 0px 0.5px var(--tw-shadow-color)}.shadow-product-color{--tw-shadow:inset 0px 0px 6px rgba(0,0,0,.25);--tw-shadow-colored:inset 0px 0px 6px var(--tw-shadow-color)}.shadow-card,.shadow-product-color{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-card{--tw-shadow:0px 0px 2px rgba(0,0,0,.25);--tw-shadow-colored:0px 0px 2px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.drop-shadow-slider{--tw-drop-shadow:drop-shadow(4px 4px 5px rgba(0,0,0,.25))}.drop-shadow-slider,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,-webkit-text-decoration-color;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,-webkit-text-decoration-color;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.placeholder\\:text-grey-text::-moz-placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.placeholder\\:text-grey-text:-ms-input-placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.placeholder\\:text-grey-text::placeholder{--tw-text-opacity:1;color:rgb(196 196 196/var(--tw-text-opacity))}.last\\:mr-0:last-child{margin-right:0}.last\\:mb-0:last-child{margin-bottom:0}.hover\\:z-10:hover{z-index:10}.hover\\:bg-grey-light:hover{--tw-bg-opacity:1;background-color:rgb(241 241 241/var(--tw-bg-opacity))}.hover\\:bg-orange:hover{--tw-bg-opacity:1;background-color:rgb(255 66 6/var(--tw-bg-opacity))}.hover\\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(79 178 248/var(--tw-bg-opacity))}.hover\\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.hover\\:bg-grey-text:hover{--tw-bg-opacity:1;background-color:rgb(196 196 196/var(--tw-bg-opacity))}.hover\\:bg-opacity-0:hover{--tw-bg-opacity:0}.hover\\:bg-opacity-20:hover{--tw-bg-opacity:0.2}.hover\\:text-orange:hover{--tw-text-opacity:1;color:rgb(255 66 6/var(--tw-text-opacity))}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\\:text-primary:hover{--tw-text-opacity:1;color:rgb(79 178 248/var(--tw-text-opacity))}.hover\\:shadow-card-hover:hover{--tw-shadow:0px 0px 40px rgba(0,0,0,.25);--tw-shadow-colored:0px 0px 40px var(--tw-shadow-color);box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.hover\\:drop-shadow-card:hover{--tw-drop-shadow:drop-shadow(0px 0px 40px rgba(0,0,0,.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.focus\\:border-\\[2px\\]:focus{border-width:2px}.focus\\:border-primary:focus{--tw-border-opacity:1;border-color:rgb(79 178 248/var(--tw-border-opacity))}.active\\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\\:border-orange:active{--tw-border-opacity:1;border-color:rgb(255 66 6/var(--tw-border-opacity))}.active\\:border-primary:active{--tw-border-opacity:1;border-color:rgb(79 178 248/var(--tw-border-opacity))}.active\\:border-opacity-70:active{--tw-border-opacity:0.7}.active\\:border-opacity-0:active{--tw-border-opacity:0}.active\\:bg-primary:active{--tw-bg-opacity:1;background-color:rgb(79 178 248/var(--tw-bg-opacity))}.active\\:bg-opacity-20:active{--tw-bg-opacity:0.2}.active\\:bg-opacity-40:active{--tw-bg-opacity:0.4}.active\\:bg-opacity-100:active{--tw-bg-opacity:1}.active\\:text-orange:active{--tw-text-opacity:1;color:rgb(255 66 6/var(--tw-text-opacity))}";
 }
 
 
@@ -2224,7 +2226,7 @@ Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, confi
 // Request: /node_modules/defu/dist/defu.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs ($id_e6f12003)
-// - /node_modules/nuxt-graphql-client/dist/runtime/composables.mjs ($id_4b9a9333)
+// - /node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs ($id_0ab5e784)
 // Dependencies: 
 
 // --------------------
@@ -2804,7 +2806,6 @@ Object.defineProperty(__vite_ssr_exports__, "_wrapIf", { enumerable: true, confi
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/delivery/index.vue?macro=true ($id_e1d04ef1)
@@ -2815,7 +2816,6 @@ Object.defineProperty(__vite_ssr_exports__, "_wrapIf", { enumerable: true, confi
 // - /pages/cart/index.vue ($id_3fa45d07)
 // - /pages/catalog/[slug].vue ($id_3566c471)
 // - /pages/catalog/index.vue ($id_820ec6e4)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
 // - /pages/categories/[slug]/index.vue ($id_a38e0b82)
 // - /pages/categories/index.vue ($id_8d9b42c9)
 // - /pages/delivery/index.vue ($id_6d69d13a)
@@ -2832,19 +2832,17 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/pages/catalog/[slug].v
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/pages/catalog/index.vue?macro=true");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/pages/categories/[slug]/[slug]/index.vue?macro=true");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/pages/categories/[slug]/index.vue?macro=true");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/pages/categories/[slug]/index.vue?macro=true");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/pages/categories/index.vue?macro=true");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/pages/categories/index.vue?macro=true");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/pages/delivery/index.vue?macro=true");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/pages/delivery/index.vue?macro=true");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/pages/index.vue?macro=true");
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/pages/index.vue?macro=true");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/pages/payments/index.vue?macro=true");
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/pages/payments/index.vue?macro=true");
-
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/pages/products/[params].vue?macro=true");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/pages/products/[params].vue?macro=true");
 
 __vite_ssr_exports__.default = [
   {
@@ -2884,21 +2882,12 @@ __vite_ssr_exports__.default = [
     component: () => __vite_ssr_dynamic_import__('/pages/catalog/index.vue')
   },
   {
-    name: "categories-slug-slug",
-    path: "/categories/:slug/:slug",
-    file: "/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/[slug]/index.vue",
-    children: [],
-    meta: __vite_ssr_import_4__.meta,
-    alias: __vite_ssr_import_4__.meta?.alias || [],
-    component: () => __vite_ssr_dynamic_import__('/pages/categories/[slug]/[slug]/index.vue')
-  },
-  {
     name: "categories-slug",
     path: "/categories/:slug",
     file: "/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/index.vue",
     children: [],
-    meta: __vite_ssr_import_5__.meta,
-    alias: __vite_ssr_import_5__.meta?.alias || [],
+    meta: __vite_ssr_import_4__.meta,
+    alias: __vite_ssr_import_4__.meta?.alias || [],
     component: () => __vite_ssr_dynamic_import__('/pages/categories/[slug]/index.vue')
   },
   {
@@ -2906,8 +2895,8 @@ __vite_ssr_exports__.default = [
     path: "/categories",
     file: "/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/index.vue",
     children: [],
-    meta: __vite_ssr_import_6__.meta,
-    alias: __vite_ssr_import_6__.meta?.alias || [],
+    meta: __vite_ssr_import_5__.meta,
+    alias: __vite_ssr_import_5__.meta?.alias || [],
     component: () => __vite_ssr_dynamic_import__('/pages/categories/index.vue')
   },
   {
@@ -2915,8 +2904,8 @@ __vite_ssr_exports__.default = [
     path: "/delivery",
     file: "/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/delivery/index.vue",
     children: [],
-    meta: __vite_ssr_import_7__.meta,
-    alias: __vite_ssr_import_7__.meta?.alias || [],
+    meta: __vite_ssr_import_6__.meta,
+    alias: __vite_ssr_import_6__.meta?.alias || [],
     component: () => __vite_ssr_dynamic_import__('/pages/delivery/index.vue')
   },
   {
@@ -2924,8 +2913,8 @@ __vite_ssr_exports__.default = [
     path: "/",
     file: "/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/index.vue",
     children: [],
-    meta: __vite_ssr_import_8__.meta,
-    alias: __vite_ssr_import_8__.meta?.alias || [],
+    meta: __vite_ssr_import_7__.meta,
+    alias: __vite_ssr_import_7__.meta?.alias || [],
     component: () => __vite_ssr_dynamic_import__('/pages/index.vue')
   },
   {
@@ -2933,8 +2922,8 @@ __vite_ssr_exports__.default = [
     path: "/payments",
     file: "/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/payments/index.vue",
     children: [],
-    meta: __vite_ssr_import_9__.meta,
-    alias: __vite_ssr_import_9__.meta?.alias || [],
+    meta: __vite_ssr_import_8__.meta,
+    alias: __vite_ssr_import_8__.meta?.alias || [],
     component: () => __vite_ssr_dynamic_import__('/pages/payments/index.vue')
   },
   {
@@ -2942,8 +2931,8 @@ __vite_ssr_exports__.default = [
     path: "/products/:params",
     file: "/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/products/[params].vue",
     children: [],
-    meta: __vite_ssr_import_10__.meta,
-    alias: __vite_ssr_import_10__.meta?.alias || [],
+    meta: __vite_ssr_import_9__.meta,
+    alias: __vite_ssr_import_9__.meta?.alias || [],
     component: () => __vite_ssr_dynamic_import__('/pages/products/[params].vue')
   }
 ];
@@ -3016,7 +3005,6 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/delivery/index.vue?macro=true ($id_e1d04ef1)
@@ -3027,7 +3015,6 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /pages/cart/index.vue ($id_3fa45d07)
 // - /pages/catalog/[slug].vue ($id_3566c471)
 // - /pages/catalog/index.vue ($id_820ec6e4)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
 // - /pages/categories/[slug]/index.vue ($id_a38e0b82)
 // - /pages/categories/index.vue ($id_8d9b42c9)
 // - /pages/delivery/index.vue ($id_6d69d13a)
@@ -3110,6 +3097,7 @@ const $id_8067d08d = async function (global, module, exports, __vite_ssr_exports
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/PrometeiHeader.vue");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/components/PrometeiFooter.vue");
@@ -3215,6 +3203,7 @@ const $id_7562f2a2 = async function (global, module, exports, __vite_ssr_exports
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/ExpandMenu/ExpandMenu.vue");
 
 
@@ -3296,8 +3285,10 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   _push(__vite_ssr_import_6__.ssrRenderComponent(_component_NuxtLink, {
     to: "/cart",
     class: ["cart h-[50px] px-[18px] bg-white flex flex-col justify-center items-center rounded-[4px] outline-none transition-colors", {
-          'bg-primary text-white cursor-default': _ctx.$router.currentRoute.value.name === 'cart',
-          'text-secondary hover:bg-grey-light': _ctx.$router.currentRoute.value.name !== 'cart',
+          'bg-primary text-white cursor-default':
+            _ctx.$router.currentRoute.value.name === 'cart',
+          'text-secondary hover:bg-grey-light':
+            _ctx.$router.currentRoute.value.name !== 'cart',
         }],
     disabled: _ctx.$router.currentRoute.value.name === 'cart'
   }, {
@@ -3406,6 +3397,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/components/UI/TabsWrapper.vue");
@@ -3438,6 +3430,8 @@ const { data, error } = (
   __temp
 );
 
+console.log(data.value);
+
 const menu = data;
 
 
@@ -3464,27 +3458,27 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     _push(`<div${__vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({
       class: ["expand-menu", { hidden: !$setup.isExpandMenuOpen }]
     }, _attrs))} data-v-3efd3624><div class="max-w-screen-xl w-full mx-auto flex items-center" data-v-3efd3624>`)
-    if ($setup.menu && $setup.menu.sections) {
+    if ($setup.menu && $setup.menu.categories) {
       _push(__vite_ssr_import_8__.ssrRenderComponent($setup["TabsWrapper"], { column: "" }, {
         default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
           if (_push) {
             _push(`<!--[-->`)
-            __vite_ssr_import_8__.ssrRenderList($setup.menu.sections.data, (section) => {
+            __vite_ssr_import_8__.ssrRenderList($setup.menu.categories.data, (category) => {
               _push(__vite_ssr_import_8__.ssrRenderComponent($setup["Tab"], {
-                settings: section,
+                settings: category,
                 hello: true
               }, {
                 default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
                   if (_push) {
                     _push(__vite_ssr_import_8__.ssrRenderComponent(_component_ExpandMenuContentItem, {
-                      title: section.attributes.title,
-                      content: section.attributes
+                      title: category.attributes.title,
+                      content: category.attributes
                     }, null, _parent, _scopeId))
                   } else {
                     return [
                       __vite_ssr_import_7__.createVNode(_component_ExpandMenuContentItem, {
-                        title: section.attributes.title,
-                        content: section.attributes
+                        title: category.attributes.title,
+                        content: category.attributes
                       }, null, 8 /* PROPS */, ["title", "content"])
                     ]
                   }
@@ -3495,15 +3489,15 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
             _push(`<!--]-->`)
           } else {
             return [
-              (__vite_ssr_import_7__.openBlock(true), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList($setup.menu.sections.data, (section) => {
+              (__vite_ssr_import_7__.openBlock(true), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList($setup.menu.categories.data, (category) => {
                 return (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock($setup["Tab"], {
-                  settings: section,
+                  settings: category,
                   hello: true
                 }, {
                   default: __vite_ssr_import_7__.withCtx(() => [
                     __vite_ssr_import_7__.createVNode(_component_ExpandMenuContentItem, {
-                      title: section.attributes.title,
-                      content: section.attributes
+                      title: category.attributes.title,
+                      content: category.attributes
                     }, null, 8 /* PROPS */, ["title", "content"])
                   ]),
                   _: 2 /* DYNAMIC */
@@ -3614,7 +3608,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
       __vite_ssr_import_3__.ssrRenderList(category.attributes.items.data, (subcategory) => {
         _push(`<li class="hover:text-orange mb-[20px]">`)
         _push(__vite_ssr_import_3__.ssrRenderComponent(_component_nuxt_link, {
-          to: `/categories/${category.attributes.slug}/${subcategory.attributes.slug}`
+          to: `/categories/${subcategory.attributes.slug}`
         }, {
           default: __vite_ssr_import_2__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
@@ -3668,7 +3662,9 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
+// - /components/BrandsSelect.vue ($id_a68b9e82)
+// - /components/PriceSelect.vue ($id_894078cd)
+// - /components/ProductFilter.vue ($id_16ebd3b1)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/delivery/index.vue?macro=true ($id_e1d04ef1)
@@ -3680,7 +3676,6 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 // - /pages/cart/index.vue ($id_3fa45d07)
 // - /pages/catalog/[slug].vue ($id_3566c471)
 // - /pages/catalog/index.vue ($id_820ec6e4)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
 // - /pages/categories/[slug]/index.vue ($id_a38e0b82)
 // - /pages/categories/index.vue ($id_8d9b42c9)
 // - /pages/delivery/index.vue ($id_6d69d13a)
@@ -3725,7 +3720,9 @@ import("file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/no
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
 // - /pages/catalog/[slug].vue?macro=true ($id_365463e7)
 // - /pages/catalog/index.vue?macro=true ($id_15c6bef3)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
+// - /components/BrandsSelect.vue ($id_a68b9e82)
+// - /components/PriceSelect.vue ($id_894078cd)
+// - /components/ProductFilter.vue ($id_16ebd3b1)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/delivery/index.vue?macro=true ($id_e1d04ef1)
@@ -3737,7 +3734,6 @@ import("file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/no
 // - /pages/cart/index.vue ($id_3fa45d07)
 // - /pages/catalog/[slug].vue ($id_3566c471)
 // - /pages/catalog/index.vue ($id_820ec6e4)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
 // - /pages/categories/[slug]/index.vue ($id_a38e0b82)
 // - /pages/categories/index.vue ($id_8d9b42c9)
 // - /pages/delivery/index.vue ($id_6d69d13a)
@@ -3771,11 +3767,9 @@ __vite_ssr_exports__.default = (sfc, props) => {
 // Parents: 
 // - /components/ExpandMenu/ExpandMenu.vue ($id_be3b5d3c)
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs ($id_0aa4a4c2)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/categories/index.vue?macro=true ($id_b04deb14)
 // - /pages/products/[params].vue?macro=true ($id_5fe5d068)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
 // - /pages/categories/[slug]/index.vue ($id_a38e0b82)
 // - /pages/categories/index.vue ($id_8d9b42c9)
 // - /pages/products/[params].vue ($id_e6c5b58b)
@@ -3793,8 +3787,6 @@ const GqlProductCardDataBySlug = (...params) => __vite_ssr_import_0__.useGql()['
 Object.defineProperty(__vite_ssr_exports__, "GqlProductCardDataBySlug", { enumerable: true, configurable: true, get(){ return GqlProductCardDataBySlug }});
 const GqlProductsBySubcategorySlug = (...params) => __vite_ssr_import_0__.useGql()['ProductsBySubcategorySlug'](...params)
 Object.defineProperty(__vite_ssr_exports__, "GqlProductsBySubcategorySlug", { enumerable: true, configurable: true, get(){ return GqlProductsBySubcategorySlug }});
-const GqlSubcategoryDataBySlug = (...params) => __vite_ssr_import_0__.useGql()['SubcategoryDataBySlug'](...params)
-Object.defineProperty(__vite_ssr_exports__, "GqlSubcategoryDataBySlug", { enumerable: true, configurable: true, get(){ return GqlSubcategoryDataBySlug }});
 const GqlGetCategoryBySlug = (...params) => __vite_ssr_import_0__.useGql()['getCategoryBySlug'](...params)
 Object.defineProperty(__vite_ssr_exports__, "GqlGetCategoryBySlug", { enumerable: true, configurable: true, get(){ return GqlGetCategoryBySlug }});
 const GqlGetRootCategories = (...params) => __vite_ssr_import_0__.useGql()['getRootCategories'](...params)
@@ -3806,7 +3798,7 @@ Object.defineProperty(__vite_ssr_exports__, "GqlGetRootCategories", { enumerable
 // Request: /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs
 // Parents: 
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
-// - /node_modules/nuxt-graphql-client/dist/runtime/composables.mjs ($id_4b9a9333)
+// - /node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs ($id_0ab5e784)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
@@ -3815,10 +3807,8 @@ Object.defineProperty(__vite_ssr_exports__, "GqlGetRootCategories", { enumerable
 // - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_a8110be7)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt-graphql-client/dist/runtime/composables.mjs ($id_4b9a9333)
+// - /node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs ($id_0ab5e784)
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
-// - /node_modules/nuxt-graphql-client/dist/runtime/utils.mjs ($id_0876cc71)
-// - /.nuxt/gql-sdk.ts ($id_514a6b66)
 // - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_ff6ed455)
 // --------------------
 const $id_0aa4a4c2 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
@@ -3830,9 +3820,10 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt-graphql-client/dist/runtime/composables.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
+
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
 
 Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useHead }});
@@ -3926,30 +3917,23 @@ Object.defineProperty(__vite_ssr_exports__, "useCssModule", { enumerable: true, 
 Object.defineProperty(__vite_ssr_exports__, "useCssVars", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_9__.useCssVars }});
 Object.defineProperty(__vite_ssr_exports__, "useSlots", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_9__.useSlots }});
 Object.defineProperty(__vite_ssr_exports__, "useTransitionState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_9__.useTransitionState }});
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/nuxt-graphql-client/dist/runtime/composables.mjs");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs");
 
 Object.defineProperty(__vite_ssr_exports__, "useGqlHeaders", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_10__.useGqlHeaders }});
 Object.defineProperty(__vite_ssr_exports__, "useGqlToken", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_10__.useGqlToken }});
 Object.defineProperty(__vite_ssr_exports__, "useGqlCors", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_10__.useGqlCors }});
 Object.defineProperty(__vite_ssr_exports__, "useGql", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_10__.useGql }});
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/nuxt-graphql-client/dist/runtime/utils.mjs");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
 
-Object.defineProperty(__vite_ssr_exports__, "deepmerge", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_11__.deepmerge }});
-const __vite_ssr_import_12__ = await __vite_ssr_import__("/.nuxt/gql-sdk.ts");
+Object.defineProperty(__vite_ssr_exports__, "GqlCatalogMenu", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_11__.GqlCatalogMenu }});
+Object.defineProperty(__vite_ssr_exports__, "GqlProductByArticle", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_11__.GqlProductByArticle }});
+Object.defineProperty(__vite_ssr_exports__, "GqlProductCardDataBySlug", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_11__.GqlProductCardDataBySlug }});
+Object.defineProperty(__vite_ssr_exports__, "GqlProductsBySubcategorySlug", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_11__.GqlProductsBySubcategorySlug }});
+Object.defineProperty(__vite_ssr_exports__, "GqlGetCategoryBySlug", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_11__.GqlGetCategoryBySlug }});
+Object.defineProperty(__vite_ssr_exports__, "GqlGetRootCategories", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_11__.GqlGetRootCategories }});
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/node_modules/nuxt/dist/pages/runtime/composables.mjs");
 
-Object.defineProperty(__vite_ssr_exports__, "gqlSdk", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_12__.getSdk }});
-const __vite_ssr_import_13__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "GqlCatalogMenu", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_13__.GqlCatalogMenu }});
-Object.defineProperty(__vite_ssr_exports__, "GqlProductByArticle", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_13__.GqlProductByArticle }});
-Object.defineProperty(__vite_ssr_exports__, "GqlProductCardDataBySlug", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_13__.GqlProductCardDataBySlug }});
-Object.defineProperty(__vite_ssr_exports__, "GqlProductsBySubcategorySlug", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_13__.GqlProductsBySubcategorySlug }});
-Object.defineProperty(__vite_ssr_exports__, "GqlSubcategoryDataBySlug", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_13__.GqlSubcategoryDataBySlug }});
-Object.defineProperty(__vite_ssr_exports__, "GqlGetCategoryBySlug", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_13__.GqlGetCategoryBySlug }});
-Object.defineProperty(__vite_ssr_exports__, "GqlGetRootCategories", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_13__.GqlGetRootCategories }});
-const __vite_ssr_import_14__ = await __vite_ssr_import__("/node_modules/nuxt/dist/pages/runtime/composables.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.definePageMeta }});;
+Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_12__.definePageMeta }});;
 }
 
 
@@ -4010,29 +3994,32 @@ Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configura
 
 
 // --------------------
-// Request: /node_modules/nuxt-graphql-client/dist/runtime/composables.mjs
+// Request: /node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs
 // Parents: 
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs ($id_0aa4a4c2)
 // Dependencies: 
 // - /node_modules/defu/dist/defu.mjs ($id_d7afab65)
 // - /node_modules/graphql-request/dist/index.js ($id_3c4dd26c)
 // - /node_modules/nuxt-graphql-client/dist/runtime/utils.mjs ($id_0876cc71)
+// - /.nuxt/gql-sdk.ts ($id_514a6b66)
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs ($id_0aa4a4c2)
 // --------------------
-const $id_4b9a9333 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_0ab5e784 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/defu/dist/defu.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/graphql-request/dist/index.js");
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt-graphql-client/dist/runtime/utils.mjs");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/.nuxt/gql-sdk.ts");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs");
 
 const DEFAULT_STATE = { proxyCookies: true };
 const useGqlState = (state, reset) => {
-  const nuxtApp = __vite_ssr_import_3__.useNuxtApp();
+  const nuxtApp = __vite_ssr_import_4__.useNuxtApp();
   if (!nuxtApp._gqlState) {
-    nuxtApp._gqlState = __vite_ssr_import_3__.ref(Object.assign({}, DEFAULT_STATE));
+    nuxtApp._gqlState = __vite_ssr_import_4__.ref(Object.assign({}, DEFAULT_STATE));
   }
   if (state) {
     if (state.options) {
@@ -4071,7 +4058,7 @@ const useGqlState = (state, reset) => {
 };
 const initClients = () => {
   const state = useGqlState();
-  const config = __vite_ssr_import_3__.useRuntimeConfig();
+  const config = __vite_ssr_import_4__.useRuntimeConfig();
   const { clients } = __vite_ssr_import_2__.deepmerge({}, __vite_ssr_import_0__.defu(config?.["graphql-client"], config?.public?.["graphql-client"]));
   state.value.clients = state.value?.clients || {};
   state.value.options = state.value?.options || {};
@@ -4082,7 +4069,8 @@ const initClients = () => {
     if (!state.value?.options[name]) {
       state.value.options[name] = {};
     }
-    const c = new __vite_ssr_import_1__.GraphQLClient(v.host, state.value.options[name]);
+    const host = false && v?.clientHost || v.host;
+    const c = new __vite_ssr_import_1__.GraphQLClient(host, state.value.options[name]);
     state.value.clients[name] = c;
     if (v?.token?.value) {
       useGqlToken(v.token.value, { client: name });
@@ -4094,7 +4082,7 @@ const getClient = (client) => {
   if (client && state.value?.clients?.[client]) {
     return client;
   }
-  const { clients } = __vite_ssr_import_3__.useRuntimeConfig()?.public?.["graphql-client"];
+  const { clients } = __vite_ssr_import_4__.useRuntimeConfig()?.public?.["graphql-client"];
   if (!state.value.clients || !state.value.options) {
     initClients();
   }
@@ -4120,25 +4108,27 @@ const useGqlHeaders = (headers, client) => {
 Object.defineProperty(__vite_ssr_exports__, "useGqlHeaders", { enumerable: true, configurable: true, get(){ return useGqlHeaders }});
 const DEFAULT_AUTH = { type: "Bearer", name: "Authorization" };
 const useGqlToken = (token, opts) => {
-  if (!token) {
-    return;
-  }
   let { client, config } = opts || {};
   client = getClient(client);
-  const clientConfig = __vite_ssr_import_3__.useRuntimeConfig()?.public?.["graphql-client"]?.clients?.[client];
+  const clientConfig = __vite_ssr_import_4__.useRuntimeConfig()?.public?.["graphql-client"]?.clients?.[client];
   config = {
     ...DEFAULT_AUTH,
     ...clientConfig?.token?.name && { name: clientConfig.token.name },
     ...clientConfig?.token?.type !== void 0 && { type: clientConfig.token.type },
     ...config
   };
-  useGqlState({
-    options: {
-      [client]: {
-        headers: { [config.name || DEFAULT_AUTH.name]: `${config.type} ${token}`.trim() }
+  const state = useGqlState();
+  if (token) {
+    useGqlState({
+      options: {
+        [client]: {
+          headers: { [config.name]: `${config.type} ${token}`.trim() }
+        }
       }
-    }
-  });
+    });
+  } else if (state.value?.options?.[client]?.headers?.[config.name]) {
+    delete state.value.options[client].headers[config.name];
+  }
 };
 Object.defineProperty(__vite_ssr_exports__, "useGqlToken", { enumerable: true, configurable: true, get(){ return useGqlToken }});
 const useGqlCors = ({ mode, credentials, client }) => {
@@ -4154,12 +4144,12 @@ const useGql = (client) => {
   const state = useGqlState();
   const gqlClient = useGqlClient(client);
   if (true && state.value?.proxyCookies) {
-    const { cookie } = __vite_ssr_import_3__.useRequestHeaders(["cookie"]);
+    const { cookie } = __vite_ssr_import_4__.useRequestHeaders(["cookie"]);
     if (cookie) {
       gqlClient.setHeader("cookie", cookie);
     }
   }
-  const $gql = __vite_ssr_import_3__.gqlSdk(gqlClient);
+  const $gql = __vite_ssr_import_3__.getSdk(gqlClient);
   return { ...$gql };
 };
 Object.defineProperty(__vite_ssr_exports__, "useGql", { enumerable: true, configurable: true, get(){ return useGql }});
@@ -4170,7 +4160,7 @@ Object.defineProperty(__vite_ssr_exports__, "useGql", { enumerable: true, config
 // --------------------
 // Request: /node_modules/graphql-request/dist/index.js
 // Parents: 
-// - /node_modules/nuxt-graphql-client/dist/runtime/composables.mjs ($id_4b9a9333)
+// - /node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs ($id_0ab5e784)
 // - /.nuxt/gql-sdk.ts ($id_514a6b66)
 // Dependencies: 
 
@@ -4192,8 +4182,7 @@ import("file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/no
 // --------------------
 // Request: /node_modules/nuxt-graphql-client/dist/runtime/utils.mjs
 // Parents: 
-// - /node_modules/nuxt-graphql-client/dist/runtime/composables.mjs ($id_4b9a9333)
-// - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs ($id_0aa4a4c2)
+// - /node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs ($id_0ab5e784)
 // Dependencies: 
 
 // --------------------
@@ -4217,20 +4206,20 @@ Object.defineProperty(__vite_ssr_exports__, "deepmerge", { enumerable: true, con
 // --------------------
 // Request: /.nuxt/gql-sdk.ts
 // Parents: 
-// - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs ($id_0aa4a4c2)
+// - /node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs ($id_0ab5e784)
 // Dependencies: 
 // - /node_modules/graphql-request/dist/index.js ($id_3c4dd26c)
 // --------------------
 const $id_514a6b66 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/graphql-request/dist/index.js");
 
-var Enum_Testcategory_Type = /* @__PURE__ */ ((Enum_Testcategory_Type2) => {
-  Enum_Testcategory_Type2["Category"] = "category";
-  Enum_Testcategory_Type2["Section"] = "section";
-  Enum_Testcategory_Type2["Subcategory"] = "subcategory";
-  return Enum_Testcategory_Type2;
-})(Enum_Testcategory_Type || {});
-Object.defineProperty(__vite_ssr_exports__, "Enum_Testcategory_Type", { enumerable: true, configurable: true, get(){ return Enum_Testcategory_Type }});
+var Enum_Category_Type = /* @__PURE__ */ ((Enum_Category_Type2) => {
+  Enum_Category_Type2["Category"] = "category";
+  Enum_Category_Type2["Section"] = "section";
+  Enum_Category_Type2["Subcategory"] = "subcategory";
+  return Enum_Category_Type2;
+})(Enum_Category_Type || {});
+Object.defineProperty(__vite_ssr_exports__, "Enum_Category_Type", { enumerable: true, configurable: true, get(){ return Enum_Category_Type }});
 var PublicationState = /* @__PURE__ */ ((PublicationState2) => {
   PublicationState2["LIVE"] = "LIVE";
   PublicationState2["PREVIEW"] = "PREVIEW";
@@ -4239,7 +4228,7 @@ var PublicationState = /* @__PURE__ */ ((PublicationState2) => {
 Object.defineProperty(__vite_ssr_exports__, "PublicationState", { enumerable: true, configurable: true, get(){ return PublicationState }});
 const GetRootCategoriesDocument = __vite_ssr_import_0__.gql`
     query getRootCategories($type: String) {
-  testCategories(filters: {type: {eq: $type}}) {
+  categories(filters: {type: {eq: $type}}) {
     data {
       attributes {
         slug
@@ -4281,13 +4270,13 @@ const GetRootCategoriesDocument = __vite_ssr_import_0__.gql`
 Object.defineProperty(__vite_ssr_exports__, "GetRootCategoriesDocument", { enumerable: true, configurable: true, get(){ return GetRootCategoriesDocument }});
 const GetCategoryBySlugDocument = __vite_ssr_import_0__.gql`
     query getCategoryBySlug($slug: String) {
-  testCategories(filters: {slug: {eq: $slug}}) {
+  categories(filters: {slug: {eq: $slug}}) {
     data {
       attributes {
         slug
         title
         showProducts
-        showRelatedCategories
+        showRelated
         parent {
           data {
             attributes {
@@ -4311,7 +4300,7 @@ const GetCategoryBySlugDocument = __vite_ssr_import_0__.gql`
             }
           }
         }
-        relatedCategories {
+        related {
           data {
             attributes {
               title
@@ -4329,12 +4318,20 @@ const GetCategoryBySlugDocument = __vite_ssr_import_0__.gql`
       }
     }
   }
+  brands(filters: {products: {category: {slug: {eq: $slug}}}}) {
+    data {
+      id
+      attributes {
+        title
+      }
+    }
+  }
 }
     `;
 Object.defineProperty(__vite_ssr_exports__, "GetCategoryBySlugDocument", { enumerable: true, configurable: true, get(){ return GetCategoryBySlugDocument }});
 const CatalogMenuDocument = __vite_ssr_import_0__.gql`
     query CatalogMenu {
-  sections(filters: {showInNav: {eq: true}}) {
+  categories(filters: {showInNav: {eq: true}, and: {type: {eq: "section"}}}) {
     data {
       id
       attributes {
@@ -4346,13 +4343,13 @@ const CatalogMenuDocument = __vite_ssr_import_0__.gql`
             }
           }
         }
-        items(filters: {showInNav: {eq: true}}) {
+        items(filters: {showInNav: {eq: true}, and: {type: {eq: "category"}}}) {
           data {
             id
             attributes {
               title
               slug
-              items(filters: {showInNav: {eq: true}}) {
+              items(filters: {showInNav: {eq: true}, and: {type: {eq: "subcategory"}}}) {
                 data {
                   id
                   attributes {
@@ -4431,7 +4428,7 @@ const ProductCardDataBySlugDocument = __vite_ssr_import_0__.gql`
             }
           }
         }
-        testCategory {
+        category {
           data {
             attributes {
               title
@@ -4446,8 +4443,10 @@ const ProductCardDataBySlugDocument = __vite_ssr_import_0__.gql`
     `;
 Object.defineProperty(__vite_ssr_exports__, "ProductCardDataBySlugDocument", { enumerable: true, configurable: true, get(){ return ProductCardDataBySlugDocument }});
 const ProductsBySubcategorySlugDocument = __vite_ssr_import_0__.gql`
-    query ProductsBySubcategorySlug($slug: String) {
-  products(filters: {parent: {testCategory: {slug: {eq: $slug}}}}) {
+    query ProductsBySubcategorySlug($slug: String, $brands: [ID], $priceFrom: Float, $priceTo: Float) {
+  products(
+    filters: {parent: {category: {slug: {eq: $slug}}, brand: {id: {in: $brands}}}, and: {price: {gte: $priceFrom, lte: $priceTo}}}
+  ) {
     data {
       attributes {
         title
@@ -4463,6 +4462,14 @@ const ProductsBySubcategorySlugDocument = __vite_ssr_import_0__.gql`
           data {
             attributes {
               slug
+              brand {
+                data {
+                  attributes {
+                    title
+                  }
+                  id
+                }
+              }
             }
           }
         }
@@ -4480,43 +4487,6 @@ const ProductsBySubcategorySlugDocument = __vite_ssr_import_0__.gql`
 }
     `;
 Object.defineProperty(__vite_ssr_exports__, "ProductsBySubcategorySlugDocument", { enumerable: true, configurable: true, get(){ return ProductsBySubcategorySlugDocument }});
-const SubcategoryDataBySlugDocument = __vite_ssr_import_0__.gql`
-    query SubcategoryDataBySlug($slug: String) {
-  subcategories(filters: {slug: {eq: $slug}}) {
-    data {
-      attributes {
-        title
-        slug
-        parent {
-          data {
-            attributes {
-              title
-              slug
-              parent {
-                data {
-                  attributes {
-                    title
-                    slug
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  brands(filters: {products: {subcategory: {slug: {eq: $slug}}}}) {
-    data {
-      id
-      attributes {
-        title
-      }
-    }
-  }
-}
-    `;
-Object.defineProperty(__vite_ssr_exports__, "SubcategoryDataBySlugDocument", { enumerable: true, configurable: true, get(){ return SubcategoryDataBySlugDocument }});
 const defaultWrapper = (action, _operationName, _operationType) => action();
 function getSdk(client, withWrapper = defaultWrapper) {
   return {
@@ -4537,9 +4507,6 @@ function getSdk(client, withWrapper = defaultWrapper) {
     },
     ProductsBySubcategorySlug(variables, requestHeaders) {
       return withWrapper((wrappedRequestHeaders) => client.request(ProductsBySubcategorySlugDocument, variables, { ...requestHeaders, ...wrappedRequestHeaders }), "ProductsBySubcategorySlug", "query");
-    },
-    SubcategoryDataBySlug(variables, requestHeaders) {
-      return withWrapper((wrappedRequestHeaders) => client.request(SubcategoryDataBySlugDocument, variables, { ...requestHeaders, ...wrappedRequestHeaders }), "SubcategoryDataBySlug", "query");
     }
   };
 }
@@ -4580,6 +4547,7 @@ Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true
 // --------------------
 const $id_e6a8446c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
@@ -4835,11 +4803,9 @@ import("file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/no
 // - /components/PrometeiHeader.vue ($id_7562f2a2)
 // - /layouts/shop.vue ($id_8067d08d)
 // - /pages/cart/index.vue?macro=true ($id_7c49fc15)
-// - /pages/categories/[slug]/[slug]/index.vue?macro=true ($id_40ab69cf)
 // - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
 // - /pages/products/[params].vue?macro=true ($id_5fe5d068)
 // - /pages/cart/index.vue ($id_3fa45d07)
-// - /pages/categories/[slug]/[slug]/index.vue ($id_018188d2)
 // - /pages/categories/[slug]/index.vue ($id_a38e0b82)
 // - /pages/products/[params].vue ($id_e6c5b58b)
 // Dependencies: 
@@ -5275,6 +5241,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/store/cart/cart.js");
 
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/components/UI/AmountCounter.vue");
@@ -5323,7 +5290,7 @@ const cartTotalSum = __vite_ssr_import_2__.computed(() =>
 );
 
 __vite_ssr_import_4__.useHead({
-  title: `Prometei – Корзина`,
+  title: `Прометей – Корзина`,
 });
 
 const __returned__ = { cart, cartItems, updateCartItemAmount, deleteItem, config, getImageLink, pickedDelivery, selectDelivery, cartTotalCounter, cartTotalSum, useCart: __vite_ssr_import_5__.useCart, AmountCounter: __vite_ssr_import_6__.default }
@@ -5852,6 +5819,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // --------------------
 const $id_5db0a46a = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
 const _sfc_main = {
   name: 'AmountCounter',
   props: {
@@ -6000,6 +5968,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
@@ -6035,7 +6004,7 @@ const { data: sectionCategoriesData } = (
 const sectionTitle = currentSection.value.data[0].attributes.title;
 
 __vite_ssr_import_3__.useHead({
-  title: `Prometei – ${sectionTitle}`,
+  title: `Прометей – ${sectionTitle}`,
 });
 
 const sectionCategories = sectionCategoriesData.value.data;
@@ -6274,6 +6243,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
@@ -6486,7 +6456,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 
 
 // --------------------
-// Request: /pages/categories/[slug]/[slug]/index.vue?macro=true
+// Request: /pages/categories/[slug]/index.vue?macro=true
 // Parents: 
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/routes.mjs ($id_eb849233)
 // Dependencies: 
@@ -6497,10 +6467,11 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
 // - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
 // - /store/cart/cart.js ($id_08ef3e2f)
+// - /components/ProductFilter.vue ($id_16ebd3b1)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
-const $id_40ab69cf = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_b19ac374 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/layout.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
@@ -6512,11 +6483,13 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/store/cart/cart.js");
 
-// import Brands from "~~/components/Brands.vue";
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/components/ProductFilter.vue");
+
 
 
 const _sfc_main = {
@@ -6526,52 +6499,147 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
 const route = __vite_ssr_import_2__.useRoute();
-console.log(route);
+const router = __vite_ssr_import_2__.useRouter();
 
-const subcategorySlug = route.params.slug;
-
-const loading = __vite_ssr_import_3__.ref(false);
+const categorySlug = route.params.slug;
 const dataProducts = __vite_ssr_import_3__.ref([]);
-const { data, error } = (
-  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData(
-  `subcategory-by-slug-${subcategorySlug}`,
-  () => __vite_ssr_import_4__.GqlSubcategoryDataBySlug({ slug: subcategorySlug })
-))),
+const loading = __vite_ssr_import_3__.ref(false);
+
+const data = (
+  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => __vite_ssr_import_4__.GqlGetCategoryBySlug({ slug: categorySlug }))),
   __temp = await __temp,
   __restore(),
   __temp
 );
 
-const subcategory = __vite_ssr_import_3__.computed(() => data.value.subcategories.data[0]);
-console.log(subcategory.value);
-const category = subcategory.value.attributes.parent.data.attributes;
-const section = category.parent.data.attributes;
+const categoryBrands = __vite_ssr_import_3__.computed(() => data.brands.data);
 
-const getProducts = async () => {
+const currentCategory = data?.categories?.data[0]?.attributes;
+
+if (
+  !currentCategory.value ||
+  (currentCategory.value && !currentCategory.value.lenght)
+) {
+  // router.push("/404");
+}
+
+const isProductsVisible = __vite_ssr_import_3__.computed(() => currentCategory.showProducts);
+const isRelatedCategoriesVisible = __vite_ssr_import_3__.computed(
+  () => currentCategory.showRelatedCategories
+);
+
+const relatedCategories = __vite_ssr_import_3__.computed(
+  () => currentCategory.relatedCategories.data
+);
+
+const parentCategory = __vite_ssr_import_3__.computed(() => currentCategory.parent?.data?.attributes);
+
+const getProducts = async (query) => {
   loading.value = true;
-  const productsData = await __vite_ssr_import_4__.GqlProductsBySubcategorySlug({
-    slug: subcategory.value.attributes.slug,
-  });
-  dataProducts.value = productsData.products.data;
+  const productsData = __vite_ssr_import_3__.ref([]);
+  const toSendData = {
+    slug: currentCategory.slug,
+  };
+
+  if (query) {
+    const brandsList = query.brandsList;
+    const price = query.price;
+
+    if (brandsList && brandsList.length) {
+      toSendData.brands = brandsList;
+    }
+
+    if (price) {
+      if (price.from) {
+        toSendData.priceFrom = Number(price.from);
+      }
+
+      if (price.to) {
+        toSendData.priceTo = Number(price.to);
+      }
+    }
+  }
+  // turn on filter
+  if (Object.keys(toSendData).length > 1) {
+    filterIsActive.value = true;
+  }
+
+  productsData.value = await __vite_ssr_import_4__.GqlProductsBySubcategorySlug(toSendData);
+
+  dataProducts.value = productsData.value.products.data;
   loading.value = false;
 };
 
+const filterIsActive = __vite_ssr_import_3__.ref(false);
+
+const clearFilter = async () => {
+  await getProducts();
+};
+
+const getFilteredProducts = async () => {
+  const query = {};
+  const brands = route.query.brands;
+  const from = route.query.from;
+  const to = route.query.to;
+  if (brands) {
+    query.brandsList = brands.split(",").map((item) => Number(item));
+  }
+
+  if (from) {
+    if (!query.price) {
+      query.price = {};
+    }
+    query.price.from = from;
+  }
+  if (to) {
+    if (!query.price) {
+      query.price = {};
+    }
+    query.price.to = to;
+  }
+
+  await getProducts(query);
+};
+
+const preSearchQuery = __vite_ssr_import_3__.ref({});
+if (route.query.from) {
+  if (!preSearchQuery.value.price) {
+    preSearchQuery.value.price = {};
+  }
+  preSearchQuery.value.price.from = route.query.from;
+}
+
+if (route.query.to) {
+  if (!preSearchQuery.value.price) {
+    preSearchQuery.value.price = {};
+  }
+  preSearchQuery.value.price.to = route.query.to;
+}
+
+if (route.query.brands) {
+  preSearchQuery.value.brandsList = route.query.brands.split(",");
+}
+
 ;(
-  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => getProducts())),
+  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => getProducts(preSearchQuery.value))),
   await __temp,
   __restore()
 );
 
-__vite_ssr_import_5__.useHead({
-  title: `Prometei – ${subcategory.value.attributes.title}`,
-});
-
-const config = __vite_ssr_import_2__.useRuntimeConfig();
-const imageUrl = (product) => {
-  const url = product?.attributes?.images?.data[0]?.attributes?.url;
+const categoryUrl = (category) => {
+  const url = category.attributes?.image?.data?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
+  }
+  return "";
+};
+
+const productUrl = (product) => {
+  const url = product.attributes?.images?.data[0]?.attributes?.url;
+  if (url) {
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };
@@ -6608,606 +6676,27 @@ const cartHandler = (product) => {
   }
 };
 
-const __returned__ = { route, subcategorySlug, loading, dataProducts, data, error, subcategory, category, section, getProducts, config, imageUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_7__.useCart }
-Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
-return __returned__
-}
-
-}
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_NuxtLayout = __vite_ssr_import_0__.default
-  const _component_NuxtLink = __vite_ssr_import_1__.default
-
-  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_8__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(`<div class="flex-grow"${
-          _scopeId
-        }><main class="mt-[102px] mb-[40px] flex-grow"${
-          _scopeId
-        }><div class="max-w-screen-xl w-full mx-auto"${
-          _scopeId
-        }><div class="page-header flex items-center"${
-          _scopeId
-        }><div class="inline-flex"${
-          _scopeId
-        }>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-          to: "/",
-          class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-        }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<svg class="w-6 h-6 mt-[2px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-                _scopeId
-              }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"${
-                _scopeId
-              }></path></svg><span${
-                _scopeId
-              }>На главную</span>`)
-            } else {
-              return [
-                (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                  class: "w-6 h-6 mt-[2px]",
-                  fill: "none",
-                  stroke: "currentColor",
-                  viewBox: "0 0 24 24",
-                  xmlns: "http://www.w3.org/2000/svg"
-                }, [
-                  __vite_ssr_import_8__.createVNode("path", {
-                    "stroke-linecap": "round",
-                    "stroke-linejoin": "round",
-                    "stroke-width": "2",
-                    d: "M15 19l-7-7 7-7"
-                  })
-                ])),
-                __vite_ssr_import_8__.createVNode("span", null, "На главную")
-              ]
-            }
-          }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-          to: "/catalog",
-          class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-        }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<span${_scopeId}>Все категории</span>`)
-            } else {
-              return [
-                __vite_ssr_import_8__.createVNode("span", null, "Все категории")
-              ]
-            }
-          }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-          to: {
-                  path: `/catalog/${$setup.section.slug}`,
-                },
-          class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-        }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<span${
-                _scopeId
-              }>${
-                __vite_ssr_import_9__.ssrInterpolate($setup.section.title)
-              }</span>`)
-            } else {
-              return [
-                __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.section.title), 1 /* TEXT */)
-              ]
-            }
-          }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-          to: {
-                  path: `/categories/${$setup.category.slug}`,
-                },
-          class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-        }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<span${
-                _scopeId
-              }>${
-                __vite_ssr_import_9__.ssrInterpolate($setup.category.title)
-              }</span>`)
-            } else {
-              return [
-                __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
-              ]
-            }
-          }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(`</div></div><div class="page-header mb-[20px] flex items-center"${
-          _scopeId
-        }><h1 class="flex-grow text-primary text-[36px] font-bold"${
-          _scopeId
-        }>${
-          __vite_ssr_import_9__.ssrInterpolate($setup.subcategory.attributes.title)
-        }</h1></div><button${
-          _scopeId
-        }>fetchData</button><div class="flex justify-between items-start gap-[40px]"${
-          _scopeId
-        }><aside class="catalog-filter min-w-[300px] flex flex-col"${
-          _scopeId
-        }><div class="filter-block mb-[20px]"${
-          _scopeId
-        }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
-          _scopeId
-        }> Бренд </div><ul class="filter-block-content py-[10px] mx-[30px]"${
-          _scopeId
-        }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList(_ctx.brands, (brand) => {
-          _push(`<li class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"${
-            _scopeId
-          }><span class="flex-grow"${
-            _scopeId
-          }>${
-            __vite_ssr_import_9__.ssrInterpolate(brand.attributes.title)
-          }</span><span${
-            _scopeId
-          }><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-            _scopeId
-          }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"${
-            _scopeId
-          }></path></svg></span></li>`)
-        })
-        _push(`<!--]--></ul></div><div class="filter-block"${
-          _scopeId
-        }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
-          _scopeId
-        }> Цена, руб. </div><div class="filter-block-content py-[10px] mx-[30px]"${
-          _scopeId
-        }><div class="mt-[20px] flex justify-between items-center w-full"${
-          _scopeId
-        }><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center" type="text" placeholder="799"${
-          _scopeId
-        }><span class="w-[20px] h-[2px] bg-grey-light"${
-          _scopeId
-        }></span><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center" type="text" placeholder="13000"${
-          _scopeId
-        }></div></div></div></aside><!-- loading-cards -->`)
-        if ($setup.loading) {
-          _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_9__.ssrRenderList(3, (item) => {
-            _push(`<div class="catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"${_scopeId}></div>`)
-          })
-          _push(`<!--]--></div>`)
-        } else {
-          _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_9__.ssrRenderList($setup.dataProducts, (product, index) => {
-            _push(`<div class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"${_scopeId}>`)
-            _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-              to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
-              class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
-              style: `background-image: url('${$setup.imageUrl(product)}')`
-            }, null, _parent, _scopeId))
-            _push(`<div class="item-content flex flex-1 flex-col justify-between text-center"${
-              _scopeId
-            }><div class="flex flex-1 item-title font-medium justify-center items-center"${
-              _scopeId
-            }>${
-              __vite_ssr_import_9__.ssrInterpolate(product.attributes.title)
-            }</div><div class="flex gap-[5px]"${
-              _scopeId
-            }><div class="flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none"${
-              _scopeId
-            }>${
-              __vite_ssr_import_9__.ssrInterpolate(product.attributes.price)
-            } ₽ </div><button class="${
-              __vite_ssr_import_9__.ssrRenderClass([{
-                        'hover:bg-white border-[2px] border-primary hover:text-primary':
-                          !$setup.productInCart(product),
-                        'hover:bg-orange': $setup.productInCart(product),
-                      }, "item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center"])
-            }"${
-              _scopeId
-            }>`)
-            if ($setup.productInCart(product)) {
-              _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-                _scopeId
-              }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"${
-                _scopeId
-              }></path></svg>`)
-            } else {
-              _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-                _scopeId
-              }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"${
-                _scopeId
-              }></path></svg>`)
-            }
-            _push(`</button></div></div></div>`)
-          })
-          _push(`<!--]--></div>`)
-        }
-        _push(`</div></div></main></div>`)
-      } else {
-        return [
-          __vite_ssr_import_8__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_8__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_8__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "inline-flex" }, [
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                      to: "/",
-                      class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-                    }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                          class: "w-6 h-6 mt-[2px]",
-                          fill: "none",
-                          stroke: "currentColor",
-                          viewBox: "0 0 24 24",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }, [
-                          __vite_ssr_import_8__.createVNode("path", {
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round",
-                            "stroke-width": "2",
-                            d: "M15 19l-7-7 7-7"
-                          })
-                        ])),
-                        __vite_ssr_import_8__.createVNode("span", null, "На главную")
-                      ]),
-                      _: 1 /* STABLE */
-                    }),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                      to: "/catalog",
-                      class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-                    }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, "Все категории")
-                      ]),
-                      _: 1 /* STABLE */
-                    }),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                      to: {
-                  path: `/catalog/${$setup.section.slug}`,
-                },
-                      class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-                    }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.section.title), 1 /* TEXT */)
-                      ]),
-                      _: 1 /* STABLE */
-                    }, 8 /* PROPS */, ["to"]),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                      to: {
-                  path: `/categories/${$setup.category.slug}`,
-                },
-                      class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-                    }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
-                      ]),
-                      _: 1 /* STABLE */
-                    }, 8 /* PROPS */, ["to"])
-                  ])
-                ]),
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_8__.toDisplayString($setup.subcategory.attributes.title), 1 /* TEXT */)
-                ]),
-                __vite_ssr_import_8__.createVNode("button", {
-                  onClick: $event => ($setup.getProducts())
-                }, "fetchData", 8 /* PROPS */, ["onClick"]),
-                __vite_ssr_import_8__.createVNode("div", { class: "flex justify-between items-start gap-[40px]" }, [
-                  __vite_ssr_import_8__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "filter-block mb-[20px]" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Бренд "),
-                      __vite_ssr_import_8__.createVNode("ul", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                        (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList(_ctx.brands, (brand) => {
-                          return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("li", { class: "px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer" }, [
-                            __vite_ssr_import_8__.createVNode("span", { class: "flex-grow" }, __vite_ssr_import_8__.toDisplayString(brand.attributes.title), 1 /* TEXT */),
-                            __vite_ssr_import_8__.createVNode("span", null, [
-                              (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                                class: "w-6 h-6",
-                                fill: "none",
-                                stroke: "currentColor",
-                                viewBox: "0 0 24 24",
-                                xmlns: "http://www.w3.org/2000/svg"
-                              }, [
-                                __vite_ssr_import_8__.createVNode("path", {
-                                  "stroke-linecap": "round",
-                                  "stroke-linejoin": "round",
-                                  "stroke-width": "2",
-                                  d: "M5 13l4 4L19 7"
-                                })
-                              ]))
-                            ])
-                          ]))
-                        }), 256 /* UNKEYED_FRAGMENT */))
-                      ])
-                    ]),
-                    __vite_ssr_import_8__.createVNode("div", { class: "filter-block" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Цена, руб. "),
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                        __vite_ssr_import_8__.createVNode("div", { class: "mt-[20px] flex justify-between items-center w-full" }, [
-                          __vite_ssr_import_8__.createVNode("input", {
-                            class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
-                            type: "text",
-                            placeholder: "799"
-                          }),
-                          __vite_ssr_import_8__.createVNode("span", { class: "w-[20px] h-[2px] bg-grey-light" }),
-                          __vite_ssr_import_8__.createVNode("input", {
-                            class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
-                            type: "text",
-                            placeholder: "13000"
-                          })
-                        ])
-                      ])
-                    ])
-                  ]),
-                  __vite_ssr_import_8__.createCommentVNode(" loading-cards "),
-                  ($setup.loading)
-                    ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
-                        key: 0,
-                        class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
-                      }, [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList(3, (item) => {
-                          return __vite_ssr_import_8__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
-                        }), 64 /* STABLE_FRAGMENT */))
-                      ]))
-                    : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
-                        key: 1,
-                        class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
-                      }, [
-                        (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.dataProducts, (product, index) => {
-                          return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
-                            key: index,
-                            class: "catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"
-                          }, [
-                            __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                              to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
-                              class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
-                              style: `background-image: url('${$setup.imageUrl(product)}')`
-                            }, null, 8 /* PROPS */, ["to", "style"]),
-                            __vite_ssr_import_8__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
-                              __vite_ssr_import_8__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_8__.toDisplayString(product.attributes.title), 1 /* TEXT */),
-                              __vite_ssr_import_8__.createVNode("div", { class: "flex gap-[5px]" }, [
-                                __vite_ssr_import_8__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_8__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
-                                __vite_ssr_import_8__.createVNode("button", {
-                                  class: ["item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center", {
-                        'hover:bg-white border-[2px] border-primary hover:text-primary':
-                          !$setup.productInCart(product),
-                        'hover:bg-orange': $setup.productInCart(product),
-                      }],
-                                  onClick: $event => ($setup.cartHandler(product))
-                                }, [
-                                  ($setup.productInCart(product))
-                                    ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                                        key: 0,
-                                        class: "w-6 h-6",
-                                        fill: "none",
-                                        stroke: "currentColor",
-                                        viewBox: "0 0 24 24",
-                                        xmlns: "http://www.w3.org/2000/svg"
-                                      }, [
-                                        __vite_ssr_import_8__.createVNode("path", {
-                                          "stroke-linecap": "round",
-                                          "stroke-linejoin": "round",
-                                          "stroke-width": "2",
-                                          d: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                                        })
-                                      ]))
-                                    : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                                        key: 1,
-                                        class: "w-6 h-6",
-                                        fill: "none",
-                                        stroke: "currentColor",
-                                        viewBox: "0 0 24 24",
-                                        xmlns: "http://www.w3.org/2000/svg"
-                                      }, [
-                                        __vite_ssr_import_8__.createVNode("path", {
-                                          "stroke-linecap": "round",
-                                          "stroke-linejoin": "round",
-                                          "stroke-width": "2",
-                                          d: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                                        })
-                                      ]))
-                                ], 10 /* CLASS, PROPS */, ["onClick"])
-                              ])
-                            ])
-                          ]))
-                        }), 128 /* KEYED_FRAGMENT */))
-                      ]))
-                ])
-              ])
-            ])
-          ])
-        ]
-      }
-    }),
-    _: 1 /* STABLE */
-  }, _parent))
-}
-
-
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_10__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/categories/[slug]/[slug]/index.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/[slug]/index.vue"]])
-const meta = undefined
-Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
-}
-
-
-// --------------------
-// Request: /pages/categories/[slug]/index.vue?macro=true
-// Parents: 
-// - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/routes.mjs ($id_eb849233)
-// Dependencies: 
-// - /node_modules/nuxt/dist/app/components/layout.mjs ($id_39003883)
-// - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
-// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
-// - /store/cart/cart.js ($id_08ef3e2f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_b19ac374 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/layout.mjs");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/store/cart/cart.js");
-
-
-
-const _sfc_main = {
-  name: 'index',
-  async setup(__props, { expose }) {
-  expose();
-
-let __temp, __restore
-
-const config = __vite_ssr_import_2__.useRuntimeConfig();
-const route = __vite_ssr_import_2__.useRoute();
-const router = __vite_ssr_import_2__.useRouter();
-
-const categorySlug = route.params.slug;
-const dataProducts = __vite_ssr_import_3__.ref([]);
-const loading = __vite_ssr_import_3__.ref(false);
-
-const data = (
-  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => __vite_ssr_import_4__.GqlGetCategoryBySlug({ slug: categorySlug }))),
-  __temp = await __temp,
-  __restore(),
-  __temp
-);
-
-const currentCategory = data?.testCategories?.data[0]?.attributes;
-
-if (
-  !currentCategory.value ||
-  (currentCategory.value && !currentCategory.value.lenght)
-) {
-  // router.push("/404");
-}
-
-const isProductsVisible = __vite_ssr_import_3__.computed(() => currentCategory.showProducts);
-const isRelatedCategoriesVisible = __vite_ssr_import_3__.computed(
-  () => currentCategory.showRelatedCategories
-);
-
-const relatedCategories = __vite_ssr_import_3__.computed(
-  () => currentCategory.relatedCategories.data
-);
-
-const parentCategory = __vite_ssr_import_3__.computed(() => currentCategory.parent?.data?.attributes);
-
-const getProducts = async () => {
-  loading.value = true;
-  const productsData = await __vite_ssr_import_4__.GqlProductsBySubcategorySlug({
-    slug: currentCategory.slug,
-  });
-  console.log(productsData);
-  dataProducts.value = productsData.products.data;
-  loading.value = false;
-};
-
-;(
-  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => getProducts())),
-  await __temp,
-  __restore()
-);
-
-const categoryUrl = (category) => {
-  const url = category.attributes?.image?.data?.attributes?.url;
-  if (url) {
-    return `${config.public.API_URL}${url}`;
-  }
-  return "";
-};
-
-const productUrl = (product) => {
-  const url = product.attributes?.images?.data[0]?.attributes?.url;
-  if (url) {
-    return `${config.public.API_URL}${url}`;
-  }
-  return "";
-};
-
-const cart = __vite_ssr_import_6__.useCart();
-
-const cartItems = __vite_ssr_import_3__.computed(() => {
-  return cart.items;
+__vite_ssr_import_5__.useHead({
+  title: `Прометей – ${data.categories.data[0].attributes.title}`,
 });
 
-const productInCart = (product) => {
-  const foundItem = cartItems.value.find(
-    (item) => item.article === product.attributes.article
-  );
-
-  return !!foundItem;
-};
-
-const cartHandler = (product) => {
-  if (productInCart(product)) {
-    cart.removeFromCart(product.attributes.article);
-  } else {
-    cart.addToCart({
-      count: 1,
-      color: product.attributes.color,
-      article: product.attributes.article,
-      amount: product.attributes.amount,
-      size: product.attributes.size,
-      title: product.attributes.title,
-      price: product.attributes.price,
-      imageUrl: product.attributes.images.data[0]?.attributes?.url,
-      productCard: product.attributes.parent.slug,
-    });
-  }
-};
-
-const __returned__ = { config, route, router, categorySlug, dataProducts, loading, data, currentCategory, isProductsVisible, isRelatedCategoriesVisible, relatedCategories, parentCategory, getProducts, categoryUrl, productUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_6__.useCart }
+const __returned__ = { config, route, router, categorySlug, dataProducts, loading, data, categoryBrands, currentCategory, isProductsVisible, isRelatedCategoriesVisible, relatedCategories, parentCategory, getProducts, filterIsActive, clearFilter, getFilteredProducts, preSearchQuery, categoryUrl, productUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_7__.useCart, ProductFilter: __vite_ssr_import_8__.default }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_7__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_9__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="flex-grow"${
           _scopeId
@@ -7218,11 +6707,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="flex items-center"${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/",
           class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
         }, {
-          default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
                 _scopeId
@@ -7233,39 +6722,39 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }>На главную</span>`)
             } else {
               return [
-                (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("svg", {
+                (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                   class: "w-6 h-6",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_7__.createVNode("path", {
+                  __vite_ssr_import_9__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
                     d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   })
                 ])),
-                __vite_ssr_import_7__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                __vite_ssr_import_9__.createVNode("span", { class: "ml-[5px]" }, "На главную")
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<div class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center"${_scopeId}></div>`)
-        _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: {
                 path: `/categories`,
               },
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span${_scopeId}>Все категории</span>`)
             } else {
               return [
-                __vite_ssr_import_7__.createVNode("span", null, "Все категории")
+                __vite_ssr_import_9__.createVNode("span", null, "Все категории")
               ]
             }
           }),
@@ -7273,22 +6762,22 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }, _parent, _scopeId))
         if ($setup.parentCategory) {
           _push(`<!--[--><div class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center"${_scopeId}></div>`)
-          _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+          _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
             to: {
                   path: `/categories/${$setup.parentCategory.slug}`,
                 },
             class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
           }, {
-            default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+            default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
               if (_push) {
                 _push(`<span${
                   _scopeId
                 }>${
-                  __vite_ssr_import_8__.ssrInterpolate($setup.parentCategory.title)
+                  __vite_ssr_import_10__.ssrInterpolate($setup.parentCategory.title)
                 }</span>`)
               } else {
                 return [
-                  __vite_ssr_import_7__.createVNode("span", null, __vite_ssr_import_7__.toDisplayString($setup.parentCategory.title), 1 /* TEXT */)
+                  __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.parentCategory.title), 1 /* TEXT */)
                 ]
               }
             }),
@@ -7303,37 +6792,37 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><h1 class="flex-grow text-primary text-[36px] font-bold"${
           _scopeId
         }>${
-          __vite_ssr_import_8__.ssrInterpolate($setup.currentCategory.title)
+          __vite_ssr_import_10__.ssrInterpolate($setup.currentCategory.title)
         }</h1></div>`)
         if (
               $setup.currentCategory.items.data && $setup.currentCategory.items.data.length
             ) {
           _push(`<div class="cards flex items-center gap-[20px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_8__.ssrRenderList($setup.currentCategory.items.data, (category) => {
-            _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+          __vite_ssr_import_10__.ssrRenderList($setup.currentCategory.items.data, (category) => {
+            _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
               to: {
                 path: `/categories/${category.attributes.slug}`,
               },
               class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
             }, {
-              default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+              default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
                 if (_push) {
                   _push(`<div class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain" style="${
-                    __vite_ssr_import_8__.ssrRenderStyle(`background-image: url('${$setup.categoryUrl(category)}')`)
+                    __vite_ssr_import_10__.ssrRenderStyle(`background-image: url('${$setup.categoryUrl(category)}')`)
                   }"${
                     _scopeId
                   }></div><div class="flex flex-grow card-text text-[21px]"${
                     _scopeId
                   }>${
-                    __vite_ssr_import_8__.ssrInterpolate(category.attributes.title)
+                    __vite_ssr_import_10__.ssrInterpolate(category.attributes.title)
                   }</div>`)
                 } else {
                   return [
-                    __vite_ssr_import_7__.createVNode("div", {
+                    __vite_ssr_import_9__.createVNode("div", {
                       class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                       style: `background-image: url('${$setup.categoryUrl(category)}')`
                     }, null, 4 /* STYLE */),
-                    __vite_ssr_import_7__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_7__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                    __vite_ssr_import_9__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_9__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                   ]
                 }
               }),
@@ -7358,58 +6847,26 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
             _scopeId
           }><aside class="catalog-filter min-w-[300px] flex flex-col"${
             _scopeId
-          }><div class="filter-block mb-[20px]"${
-            _scopeId
-          }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
-            _scopeId
-          }> Бренд </div><!-- <ul class="filter-block-content py-[10px] mx-[30px]">
-                  <li
-                    class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"
-                    v-for="brand in brands"
-                  >
-                    <span class="flex-grow">{{ brand.attributes.title }}</span>
-                    <span
-                      ><svg
-                        class="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        ></path></svg
-                    ></span>
-                  </li>
-                </ul> --></div><div class="filter-block"${
-            _scopeId
-          }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
-            _scopeId
-          }> Цена, руб. </div><div class="filter-block-content py-[10px] mx-[30px]"${
-            _scopeId
-          }><div class="mt-[20px] flex justify-between items-center w-full"${
-            _scopeId
-          }><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center" type="text" placeholder="799"${
-            _scopeId
-          }><span class="w-[20px] h-[2px] bg-grey-light"${
-            _scopeId
-          }></span><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center" type="text" placeholder="13000"${
-            _scopeId
-          }></div></div></div></aside><!-- loading-cards -->`)
+          }>`)
+          _push(__vite_ssr_import_10__.ssrRenderComponent($setup["ProductFilter"], {
+            modelValue: $setup.filterIsActive,
+            "onUpdate:modelValue": $event => (($setup.filterIsActive) = $event),
+            brands: $setup.categoryBrands,
+            onApply: $setup.getFilteredProducts,
+            onClear: $event => ($setup.clearFilter())
+          }, null, _parent, _scopeId))
+          _push(`</aside><!-- loading-cards -->`)
           if ($setup.loading) {
             _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-            __vite_ssr_import_8__.ssrRenderList(3, (item) => {
-              _push(`<div class="catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"${_scopeId}></div>`)
+            __vite_ssr_import_10__.ssrRenderList(4, (item) => {
+              _push(`<div class="catalog-list-item font-medium text-[21px] bg-grey w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"${_scopeId}></div>`)
             })
             _push(`<!--]--></div>`)
-          } else {
+          } else if ($setup.dataProducts && $setup.dataProducts.length) {
             _push(`<!--[--><!-- products-list --><div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-            __vite_ssr_import_8__.ssrRenderList($setup.dataProducts, (product, index) => {
-              _push(`<div class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"${_scopeId}>`)
-              _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+            __vite_ssr_import_10__.ssrRenderList($setup.dataProducts, (product, index) => {
+              _push(`<div class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-all"${_scopeId}>`)
+              _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
                 to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
                 class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
                 style: `background-image: url('${$setup.productUrl(product)}')`
@@ -7419,19 +6876,19 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }><div class="flex flex-1 item-title font-medium justify-center items-center"${
                 _scopeId
               }>${
-                __vite_ssr_import_8__.ssrInterpolate(product.attributes.title)
+                __vite_ssr_import_10__.ssrInterpolate(product.attributes.title)
               }</div><div class="flex gap-[5px]"${
                 _scopeId
               }><div class="flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none"${
                 _scopeId
               }>${
-                __vite_ssr_import_8__.ssrInterpolate(product.attributes.price)
+                __vite_ssr_import_10__.ssrInterpolate(product.attributes.price)
               } ₽ </div><button class="${
-                __vite_ssr_import_8__.ssrRenderClass([{
+                __vite_ssr_import_10__.ssrRenderClass([{
                           'hover:bg-white border-[2px] border-primary hover:text-primary':
                             !$setup.productInCart(product),
                           'hover:bg-orange': $setup.productInCart(product),
-                        }, "item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center"])
+                        }, "item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center active:scale-95 transition-all"])
               }"${
                 _scopeId
               }>`)
@@ -7451,6 +6908,16 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               _push(`</button></div></div></div>`)
             })
             _push(`<!--]--></div><!--]-->`)
+          } else {
+            _push(`<div class="flex flex-1 flex-col justify-center items-center font-medium text-secondary"${
+              _scopeId
+            }><span class="text-[26px]"${
+              _scopeId
+            }>Пусто</span><span class="text-[21px] mb-[25px]"${
+              _scopeId
+            }>По выбранным параметрам фильтра ничего не найдено</span><div class="text-[21px] text-center"${
+              _scopeId
+            }>¯\\_(ツ)_/¯</div></div>`)
           }
           _push(`</div>`)
         } else {
@@ -7467,31 +6934,31 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }></div></div><div class="cards flex items-center gap-[20px]"${
             _scopeId
           }><!--[-->`)
-          __vite_ssr_import_8__.ssrRenderList($setup.relatedCategories, (category) => {
-            _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+          __vite_ssr_import_10__.ssrRenderList($setup.relatedCategories, (category) => {
+            _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
               to: {
                   path: `/categories/${category.attributes.slug}`,
                 },
               class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
             }, {
-              default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+              default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
                 if (_push) {
                   _push(`<div class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain" style="${
-                    __vite_ssr_import_8__.ssrRenderStyle(`background-image: url('${$setup.categoryUrl(category)}')`)
+                    __vite_ssr_import_10__.ssrRenderStyle(`background-image: url('${$setup.categoryUrl(category)}')`)
                   }"${
                     _scopeId
                   }></div><div class="flex flex-grow card-text text-[21px]"${
                     _scopeId
                   }>${
-                    __vite_ssr_import_8__.ssrInterpolate(category.attributes.title)
+                    __vite_ssr_import_10__.ssrInterpolate(category.attributes.title)
                   }</div>`)
                 } else {
                   return [
-                    __vite_ssr_import_7__.createVNode("div", {
+                    __vite_ssr_import_9__.createVNode("div", {
                       class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                       style: `background-image: url('${$setup.categoryUrl(category)}')`
                     }, null, 4 /* STYLE */),
-                    __vite_ssr_import_7__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_7__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                    __vite_ssr_import_9__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_9__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                   ]
                 }
               }),
@@ -7505,233 +6972,227 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_7__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_7__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_7__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_7__.createVNode("div", { class: "flex items-center" }, [
-                  __vite_ssr_import_7__.createVNode(_component_NuxtLink, {
+          __vite_ssr_import_9__.createVNode("div", { class: "flex-grow" }, [
+            __vite_ssr_import_9__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_9__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_9__.createVNode("div", { class: "flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                     to: "/",
                     class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
                   }, {
-                    default: __vite_ssr_import_7__.withCtx(() => [
-                      (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("svg", {
+                    default: __vite_ssr_import_9__.withCtx(() => [
+                      (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                         class: "w-6 h-6",
                         fill: "none",
                         stroke: "currentColor",
                         viewBox: "0 0 24 24",
                         xmlns: "http://www.w3.org/2000/svg"
                       }, [
-                        __vite_ssr_import_7__.createVNode("path", {
+                        __vite_ssr_import_9__.createVNode("path", {
                           "stroke-linecap": "round",
                           "stroke-linejoin": "round",
                           "stroke-width": "2",
                           d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                         })
                       ])),
-                      __vite_ssr_import_7__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                      __vite_ssr_import_9__.createVNode("span", { class: "ml-[5px]" }, "На главную")
                     ]),
                     _: 1 /* STABLE */
                   }),
-                  __vite_ssr_import_7__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
-                  __vite_ssr_import_7__.createVNode(_component_NuxtLink, {
+                  __vite_ssr_import_9__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
+                  __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                     to: {
                 path: `/categories`,
               },
                     class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                   }, {
-                    default: __vite_ssr_import_7__.withCtx(() => [
-                      __vite_ssr_import_7__.createVNode("span", null, "Все категории")
+                    default: __vite_ssr_import_9__.withCtx(() => [
+                      __vite_ssr_import_9__.createVNode("span", null, "Все категории")
                     ]),
                     _: 1 /* STABLE */
                   }),
                   ($setup.parentCategory)
-                    ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, { key: 0 }, [
-                        __vite_ssr_import_7__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
-                        __vite_ssr_import_7__.createVNode(_component_NuxtLink, {
+                    ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, { key: 0 }, [
+                        __vite_ssr_import_9__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
+                        __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                           to: {
                   path: `/categories/${$setup.parentCategory.slug}`,
                 },
                           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                         }, {
-                          default: __vite_ssr_import_7__.withCtx(() => [
-                            __vite_ssr_import_7__.createVNode("span", null, __vite_ssr_import_7__.toDisplayString($setup.parentCategory.title), 1 /* TEXT */)
+                          default: __vite_ssr_import_9__.withCtx(() => [
+                            __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.parentCategory.title), 1 /* TEXT */)
                           ]),
                           _: 1 /* STABLE */
                         }, 8 /* PROPS */, ["to"])
                       ], 64 /* STABLE_FRAGMENT */))
-                    : __vite_ssr_import_7__.createCommentVNode("v-if", true)
+                    : __vite_ssr_import_9__.createCommentVNode("v-if", true)
                 ]),
-                __vite_ssr_import_7__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
-                  __vite_ssr_import_7__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_7__.toDisplayString($setup.currentCategory.title), 1 /* TEXT */)
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_9__.toDisplayString($setup.currentCategory.title), 1 /* TEXT */)
                 ]),
                 (
               $setup.currentCategory.items.data && $setup.currentCategory.items.data.length
             )
-                  ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
+                  ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                       key: 0,
                       class: "cards flex items-center gap-[20px]"
                     }, [
-                      (__vite_ssr_import_7__.openBlock(true), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList($setup.currentCategory.items.data, (category) => {
-                        return (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(_component_NuxtLink, {
+                      (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.currentCategory.items.data, (category) => {
+                        return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(_component_NuxtLink, {
                           to: {
                 path: `/categories/${category.attributes.slug}`,
               },
                           class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
                         }, {
-                          default: __vite_ssr_import_7__.withCtx(() => [
-                            __vite_ssr_import_7__.createVNode("div", {
+                          default: __vite_ssr_import_9__.withCtx(() => [
+                            __vite_ssr_import_9__.createVNode("div", {
                               class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                               style: `background-image: url('${$setup.categoryUrl(category)}')`
                             }, null, 4 /* STYLE */),
-                            __vite_ssr_import_7__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_7__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                            __vite_ssr_import_9__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_9__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                           ]),
                           _: 2 /* DYNAMIC */
                         }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
                       }), 256 /* UNKEYED_FRAGMENT */))
                     ]))
-                  : __vite_ssr_import_7__.createCommentVNode("v-if", true),
+                  : __vite_ssr_import_9__.createCommentVNode("v-if", true),
                 (
               $setup.isProductsVisible &&
               $setup.currentCategory.items.data &&
               $setup.currentCategory.items.data.length
             )
-                  ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
+                  ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                       key: 1,
                       class: "section-divider w-full h-[2px] bg-grey-light shadow-divider my-[40px] rounded-full"
                     }))
-                  : __vite_ssr_import_7__.createCommentVNode("v-if", true),
+                  : __vite_ssr_import_9__.createCommentVNode("v-if", true),
                 ($setup.isProductsVisible)
-                  ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
+                  ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                       key: 2,
                       class: "flex justify-between items-start gap-[40px]"
                     }, [
-                      __vite_ssr_import_7__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
-                        __vite_ssr_import_7__.createVNode("div", { class: "filter-block mb-[20px]" }, [
-                          __vite_ssr_import_7__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Бренд "),
-                          __vite_ssr_import_7__.createCommentVNode(" <ul class=\"filter-block-content py-[10px] mx-[30px]\">\n                  <li\n                    class=\"px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer\"\n                    v-for=\"brand in brands\"\n                  >\n                    <span class=\"flex-grow\">{{ brand.attributes.title }}</span>\n                    <span\n                      ><svg\n                        class=\"w-6 h-6\"\n                        fill=\"none\"\n                        stroke=\"currentColor\"\n                        viewBox=\"0 0 24 24\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                      >\n                        <path\n                          stroke-linecap=\"round\"\n                          stroke-linejoin=\"round\"\n                          stroke-width=\"2\"\n                          d=\"M5 13l4 4L19 7\"\n                        ></path></svg\n                    ></span>\n                  </li>\n                </ul> ")
-                        ]),
-                        __vite_ssr_import_7__.createVNode("div", { class: "filter-block" }, [
-                          __vite_ssr_import_7__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Цена, руб. "),
-                          __vite_ssr_import_7__.createVNode("div", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                            __vite_ssr_import_7__.createVNode("div", { class: "mt-[20px] flex justify-between items-center w-full" }, [
-                              __vite_ssr_import_7__.createVNode("input", {
-                                class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
-                                type: "text",
-                                placeholder: "799"
-                              }),
-                              __vite_ssr_import_7__.createVNode("span", { class: "w-[20px] h-[2px] bg-grey-light" }),
-                              __vite_ssr_import_7__.createVNode("input", {
-                                class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
-                                type: "text",
-                                placeholder: "13000"
-                              })
-                            ])
-                          ])
-                        ])
+                      __vite_ssr_import_9__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
+                        __vite_ssr_import_9__.createVNode($setup["ProductFilter"], {
+                          modelValue: $setup.filterIsActive,
+                          "onUpdate:modelValue": $event => (($setup.filterIsActive) = $event),
+                          brands: $setup.categoryBrands,
+                          onApply: $setup.getFilteredProducts,
+                          onClear: $event => ($setup.clearFilter())
+                        }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue", "brands", "onClear"])
                       ]),
-                      __vite_ssr_import_7__.createCommentVNode(" loading-cards "),
+                      __vite_ssr_import_9__.createCommentVNode(" loading-cards "),
                       ($setup.loading)
-                        ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 0,
                             class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
                           }, [
-                            (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList(3, (item) => {
-                              return __vite_ssr_import_7__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
+                            (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList(4, (item) => {
+                              return __vite_ssr_import_9__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-grey w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
                             }), 64 /* STABLE_FRAGMENT */))
                           ]))
-                        : (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, { key: 1 }, [
-                            __vite_ssr_import_7__.createCommentVNode(" products-list "),
-                            __vite_ssr_import_7__.createVNode("div", { class: "catalog-list flex-grow flex flex-wrap gap-[25px]" }, [
-                              (__vite_ssr_import_7__.openBlock(true), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList($setup.dataProducts, (product, index) => {
-                                return (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
-                                  key: index,
-                                  class: "catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"
-                                }, [
-                                  __vite_ssr_import_7__.createVNode(_component_NuxtLink, {
-                                    to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
-                                    class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
-                                    style: `background-image: url('${$setup.productUrl(product)}')`
-                                  }, null, 8 /* PROPS */, ["to", "style"]),
-                                  __vite_ssr_import_7__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
-                                    __vite_ssr_import_7__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_7__.toDisplayString(product.attributes.title), 1 /* TEXT */),
-                                    __vite_ssr_import_7__.createVNode("div", { class: "flex gap-[5px]" }, [
-                                      __vite_ssr_import_7__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_7__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
-                                      __vite_ssr_import_7__.createVNode("button", {
-                                        class: ["item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center", {
+                        : ($setup.dataProducts && $setup.dataProducts.length)
+                          ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, { key: 1 }, [
+                              __vite_ssr_import_9__.createCommentVNode(" products-list "),
+                              __vite_ssr_import_9__.createVNode("div", { class: "catalog-list flex-grow flex flex-wrap gap-[25px]" }, [
+                                (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.dataProducts, (product, index) => {
+                                  return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
+                                    key: index,
+                                    class: "catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-all"
+                                  }, [
+                                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
+                                      to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
+                                      class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
+                                      style: `background-image: url('${$setup.productUrl(product)}')`
+                                    }, null, 8 /* PROPS */, ["to", "style"]),
+                                    __vite_ssr_import_9__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
+                                      __vite_ssr_import_9__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_9__.toDisplayString(product.attributes.title), 1 /* TEXT */),
+                                      __vite_ssr_import_9__.createVNode("div", { class: "flex gap-[5px]" }, [
+                                        __vite_ssr_import_9__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_9__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
+                                        __vite_ssr_import_9__.createVNode("button", {
+                                          class: ["item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center active:scale-95 transition-all", {
                           'hover:bg-white border-[2px] border-primary hover:text-primary':
                             !$setup.productInCart(product),
                           'hover:bg-orange': $setup.productInCart(product),
                         }],
-                                        onClick: $event => ($setup.cartHandler(product))
-                                      }, [
-                                        ($setup.productInCart(product))
-                                          ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("svg", {
-                                              key: 0,
-                                              class: "w-6 h-6",
-                                              fill: "none",
-                                              stroke: "currentColor",
-                                              viewBox: "0 0 24 24",
-                                              xmlns: "http://www.w3.org/2000/svg"
-                                            }, [
-                                              __vite_ssr_import_7__.createVNode("path", {
-                                                "stroke-linecap": "round",
-                                                "stroke-linejoin": "round",
-                                                "stroke-width": "2",
-                                                d: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                                              })
-                                            ]))
-                                          : (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("svg", {
-                                              key: 1,
-                                              class: "w-6 h-6",
-                                              fill: "none",
-                                              stroke: "currentColor",
-                                              viewBox: "0 0 24 24",
-                                              xmlns: "http://www.w3.org/2000/svg"
-                                            }, [
-                                              __vite_ssr_import_7__.createVNode("path", {
-                                                "stroke-linecap": "round",
-                                                "stroke-linejoin": "round",
-                                                "stroke-width": "2",
-                                                d: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                                              })
-                                            ]))
-                                      ], 10 /* CLASS, PROPS */, ["onClick"])
+                                          onClick: $event => ($setup.cartHandler(product))
+                                        }, [
+                                          ($setup.productInCart(product))
+                                            ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
+                                                key: 0,
+                                                class: "w-6 h-6",
+                                                fill: "none",
+                                                stroke: "currentColor",
+                                                viewBox: "0 0 24 24",
+                                                xmlns: "http://www.w3.org/2000/svg"
+                                              }, [
+                                                __vite_ssr_import_9__.createVNode("path", {
+                                                  "stroke-linecap": "round",
+                                                  "stroke-linejoin": "round",
+                                                  "stroke-width": "2",
+                                                  d: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                                                })
+                                              ]))
+                                            : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
+                                                key: 1,
+                                                class: "w-6 h-6",
+                                                fill: "none",
+                                                stroke: "currentColor",
+                                                viewBox: "0 0 24 24",
+                                                xmlns: "http://www.w3.org/2000/svg"
+                                              }, [
+                                                __vite_ssr_import_9__.createVNode("path", {
+                                                  "stroke-linecap": "round",
+                                                  "stroke-linejoin": "round",
+                                                  "stroke-width": "2",
+                                                  d: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                                                })
+                                              ]))
+                                        ], 10 /* CLASS, PROPS */, ["onClick"])
+                                      ])
                                     ])
-                                  ])
-                                ]))
-                              }), 128 /* KEYED_FRAGMENT */))
-                            ])
-                          ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
+                                  ]))
+                                }), 128 /* KEYED_FRAGMENT */))
+                              ])
+                            ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
+                          : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
+                              key: 2,
+                              class: "flex flex-1 flex-col justify-center items-center font-medium text-secondary"
+                            }, [
+                              __vite_ssr_import_9__.createVNode("span", { class: "text-[26px]" }, "Пусто"),
+                              __vite_ssr_import_9__.createVNode("span", { class: "text-[21px] mb-[25px]" }, "По выбранным параметрам фильтра ничего не найдено"),
+                              __vite_ssr_import_9__.createVNode("div", { class: "text-[21px] text-center" }, "¯\\_(ツ)_/¯")
+                            ]))
                     ]))
-                  : __vite_ssr_import_7__.createCommentVNode("v-if", true),
-                __vite_ssr_import_7__.createCommentVNode(" related-categories "),
+                  : __vite_ssr_import_9__.createCommentVNode("v-if", true),
+                __vite_ssr_import_9__.createCommentVNode(" related-categories "),
                 ($setup.isRelatedCategoriesVisible && $setup.relatedCategories.length)
-                  ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, { key: 3 }, [
-                      __vite_ssr_import_7__.createVNode("div", { class: "my-[40px] flex items-center gap-[70px]" }, [
-                        __vite_ssr_import_7__.createVNode("h4", { class: "text-[36px] text-secondary font-bold" }, " Сопутствующие категории "),
-                        __vite_ssr_import_7__.createVNode("div", { class: "section-divider flex-1 h-[2px] bg-grey-light shadow-divider my-[40px] rounded-full" })
+                  ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, { key: 3 }, [
+                      __vite_ssr_import_9__.createVNode("div", { class: "my-[40px] flex items-center gap-[70px]" }, [
+                        __vite_ssr_import_9__.createVNode("h4", { class: "text-[36px] text-secondary font-bold" }, " Сопутствующие категории "),
+                        __vite_ssr_import_9__.createVNode("div", { class: "section-divider flex-1 h-[2px] bg-grey-light shadow-divider my-[40px] rounded-full" })
                       ]),
-                      __vite_ssr_import_7__.createVNode("div", { class: "cards flex items-center gap-[20px]" }, [
-                        (__vite_ssr_import_7__.openBlock(true), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList($setup.relatedCategories, (category) => {
-                          return (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(_component_NuxtLink, {
+                      __vite_ssr_import_9__.createVNode("div", { class: "cards flex items-center gap-[20px]" }, [
+                        (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.relatedCategories, (category) => {
+                          return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(_component_NuxtLink, {
                             to: {
                   path: `/categories/${category.attributes.slug}`,
                 },
                             class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
                           }, {
-                            default: __vite_ssr_import_7__.withCtx(() => [
-                              __vite_ssr_import_7__.createVNode("div", {
+                            default: __vite_ssr_import_9__.withCtx(() => [
+                              __vite_ssr_import_9__.createVNode("div", {
                                 class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                                 style: `background-image: url('${$setup.categoryUrl(category)}')`
                               }, null, 4 /* STYLE */),
-                              __vite_ssr_import_7__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_7__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                              __vite_ssr_import_9__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_9__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                             ]),
                             _: 2 /* DYNAMIC */
                           }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
                         }), 256 /* UNKEYED_FRAGMENT */))
                       ])
                     ], 64 /* STABLE_FRAGMENT */))
-                  : __vite_ssr_import_7__.createCommentVNode("v-if", true)
+                  : __vite_ssr_import_9__.createCommentVNode("v-if", true)
               ])
             ])
           ])
@@ -7743,19 +7204,448 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_9__.useSSRContext()
+  const ssrContext = __vite_ssr_import_11__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/categories/[slug]/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
+}
+
+
+// --------------------
+// Request: /components/ProductFilter.vue
+// Parents: 
+// - /pages/categories/[slug]/index.vue?macro=true ($id_b19ac374)
+// - /pages/categories/[slug]/index.vue ($id_a38e0b82)
+// Dependencies: 
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /components/BrandsSelect.vue ($id_a68b9e82)
+// - /components/PriceSelect.vue ($id_894078cd)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_16ebd3b1 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/BrandsSelect.vue");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/components/PriceSelect.vue");
+
+
+
+const _sfc_main = {
+  name: 'ProductFilter',
+  props: {
+  modelValue: Boolean,
+  brands: Array,
+  price: Object,
+},
+  emits: ["apply", "clear", "update:modelValue"],
+  setup(__props, { expose, emit }) {
+  expose();
+
+const props = __props
+
+const route = __vite_ssr_import_0__.useRoute();
+const router = __vite_ssr_import_0__.useRouter();
+
+
+
+
+
+const brandsList = __vite_ssr_import_1__.computed(() => props.brands);
+
+const activeBrandsList = __vite_ssr_import_1__.ref([]);
+
+let activeBrands = __vite_ssr_import_1__.computed({
+  get() {
+    return activeBrandsList.value;
+  },
+  set(newValue) {
+    activeBrandsList.value = [...newValue].sort();
+  },
+});
+
+const priceRange = __vite_ssr_import_1__.ref({
+  from: null,
+  to: null,
+});
+
+const currentBrandsFilter = __vite_ssr_import_1__.computed(() => route.query?.brands?.split(","));
+const currentPriceFilter = __vite_ssr_import_1__.computed(() => {
+  let query = null;
+  if (route.query?.from) {
+    if (!query) {
+      query = {};
+    }
+    query.from = route.query.from;
+  }
+
+  if (route.query?.to) {
+    if (!query) {
+      query = {};
+    }
+    query.to = route.query.to;
+  }
+
+  return query;
+});
+
+if (currentBrandsFilter.value) {
+  activeBrands.value = currentBrandsFilter.value;
+}
+
+if (currentPriceFilter.value) {
+  if (currentPriceFilter.value.from) {
+    priceRange.value.from = currentPriceFilter.value.from;
+  }
+
+  if (currentPriceFilter.value.to) {
+    priceRange.value.to = currentPriceFilter.value.to;
+  }
+}
+
+const brandsHandler = (type, brand) => {
+  if (type === "add") {
+    activeBrands.value = [...activeBrands.value, brand.id];
+  }
+  if (type === "remove") {
+    activeBrands.value = activeBrands.value.filter((item) => item !== brand.id);
+  }
+};
+
+// отфильтровано или нет (влияет на то, будет ли сброс)
+// пустой ли список выбранных брендов
+// пустые ли цены
+// отличаются ли текущий список брендов от брендов в фильтре
+// отличаются ли текущие цены от цен в фильтре
+
+// Заблокированная "применить":
+// Ничего не выбрано и поиск неактивен
+
+// !isActive && allIsEmpty
+
+// –––––––––––––––––––––––––––––––––––––––––––––
+
+// Активная "применить":
+// 1 – поиск неактивен и что-то выбрано
+// 2 – поиск активен и выбрано что-то новое
+
+// 1 – !isActive && isNotSame
+// 2 – isActive && !allIsEmpty
+
+// –––––––––––––––––––––––––––––––––––––––––––––
+
+// Активная "отменить":
+// Поиск активен и совпадают значения текущего фильтра и примененного
+
+// isActive && isSame
+
+// –––––––––––––––––––––––––––––––––––––––––––––
+
+// helpers:
+let filterIsActive = __vite_ssr_import_1__.computed(() => props.modelValue);
+
+const usedBrands = __vite_ssr_import_1__.computed(
+  () => (route.query.brands && route.query.brands.split(",")) || []
+);
+const usedPriceFrom = __vite_ssr_import_1__.computed(() => route.query.from || null);
+const usedPriceTo = __vite_ssr_import_1__.computed(() => route.query.to || null);
+// brands
+const brandsSame = __vite_ssr_import_1__.computed(
+  () => JSON.stringify(usedBrands.value) === JSON.stringify(activeBrands.value)
+);
+const brandsIsEmpty = __vite_ssr_import_1__.computed(() =>
+  activeBrands.value && activeBrands.value.length ? false : true
+);
+// price
+const priceIsSame = __vite_ssr_import_1__.computed(() => {
+  if (
+    priceRange.value.from === usedPriceFrom.value &&
+    priceRange.value.to === usedPriceTo.value
+  ) {
+    return true;
+  }
+  return false;
+});
+const priceIsEmpty = __vite_ssr_import_1__.computed(
+  () =>
+    (!priceRange.value.from || priceRange.value.from === "") &&
+    (!priceRange.value.to || priceRange.value.to === "")
+);
+
+// button
+const applyDisabled = __vite_ssr_import_1__.computed(
+  () => !filterIsActive.value && priceIsEmpty.value && brandsIsEmpty.value
+);
+
+const applyDisplay = __vite_ssr_import_1__.computed(
+  () =>
+    (!filterIsActive.value && (priceIsSame.value || brandsSame.value)) ||
+    (!filterIsActive.value && (!priceIsSame.value || !brandsSame.value)) ||
+    (filterIsActive.value && (!priceIsSame.value || !brandsSame.value))
+);
+
+const cancelDisplay = __vite_ssr_import_1__.computed(
+  () => filterIsActive.value && priceIsSame.value && brandsSame.value
+);
+
+const filterHandler = () => {
+  if (filterIsActive.value && brandsSame.value && priceIsSame.value) {
+    activeBrands.value = [];
+    priceRange.value.from = null;
+    priceRange.value.to = null;
+    emit("update:modelValue", false);
+    // filterIsActive = false;
+    router.push({ query: null });
+    emit("clear");
+  } else {
+    const query = {};
+
+    if (activeBrands.value && activeBrands.value.length) {
+      query.brands = activeBrands.value.sort().join(",");
+    }
+
+    if (priceRange.value.from) {
+      query.from = priceRange.value.from;
+    }
+
+    if (priceRange.value.to) {
+      query.to = priceRange.value.to;
+    }
+
+    router.replace({
+      query,
+    });
+
+    setTimeout(() => {
+      emit("apply");
+    }, 0);
+    emit("update:modelValue", true);
+    // filterIsActive = true;
+  }
+};
+
+const __returned__ = { route, router, props, emit, brandsList, activeBrandsList, activeBrands, priceRange, currentBrandsFilter, currentPriceFilter, brandsHandler, filterIsActive, usedBrands, usedPriceFrom, usedPriceTo, brandsSame, brandsIsEmpty, priceIsSame, priceIsEmpty, applyDisabled, applyDisplay, cancelDisplay, filterHandler, BrandsSelect: __vite_ssr_import_2__.default, PriceSelect: __vite_ssr_import_3__.default }
+Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
+return __returned__
+}
+
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<!--[--><div class="filter-block flex flex-col items-center">`)
+  _push(__vite_ssr_import_4__.ssrRenderComponent($setup["BrandsSelect"], {
+    list: $setup.brandsList,
+    modelValue: $setup.activeBrands,
+    "onUpdate:modelValue": $event => (($setup.activeBrands) = $event),
+    onRemoveBrand: (value) => $setup.brandsHandler('remove', value),
+    onAddBrand: (value) => $setup.brandsHandler('add', value)
+  }, null, _parent))
+  _push(__vite_ssr_import_4__.ssrRenderComponent($setup["PriceSelect"], {
+    modelValue: $setup.priceRange,
+    "onUpdate:modelValue": $event => (($setup.priceRange) = $event)
+  }, null, _parent))
+  _push(`</div><!-- <div>
+    <pre>
+      filterIsActive: {{ filterIsActive }}
+      applyDisabled: {{ applyDisabled }}
+      usedBrands: {{ usedBrands }}
+      activeBrands: {{ activeBrands }}
+      brandsSame: {{ brandsSame }}
+      brandsIsEmpty: {{ brandsIsEmpty }}
+      priceIsSame: {{ priceIsSame }}
+      priceIsEmpty: {{ priceIsEmpty }}
+    </pre>
+  </div> --><button class="${
+    __vite_ssr_import_4__.ssrRenderClass([{
+      'bg-orange bg-opacity-70': $setup.cancelDisplay,
+      'disabled bg-opacity-70': $setup.applyDisabled,
+    }, "bg-primary text-white text-[21px] py-[10px] w-full rounded-[4px] mt-[20px] mx-auto flex justify-center items-center transition-all"])
+  }"${
+    (__vite_ssr_import_4__.ssrIncludeBooleanAttr($setup.applyDisabled)) ? " disabled" : ""
+  }>`)
+  if ($setup.cancelDisplay) {
+    _push(`<span class="flex justify-center items-center"><span class="mr-[5px]">Сбросить фильтр</span><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></span>`)
+  } else {
+    _push(`<!---->`)
+  }
+  if ($setup.applyDisplay) {
+    _push(`<span class="flex justify-center items-center"><span class="mr-[5px]">Применить фильтр</span><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>`)
+  } else {
+    _push(`<!---->`)
+  }
+  _push(`</button><!--]-->`)
+}
+
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_5__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/ProductFilter.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/components/ProductFilter.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/BrandsSelect.vue
+// Parents: 
+// - /components/ProductFilter.vue ($id_16ebd3b1)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_a68b9e82 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {
+  name: 'BrandsSelect',
+  props: {
+  modelValue: Array,
+  list: Array,
+},
+  setup(__props, { expose, emit }) {
+  expose();
+
+const props = __props
+
+
+
+
+const isActive = (brand) => {
+  const foundBrand = props.modelValue.find((item) => item === brand.id);
+
+  return !!foundBrand;
+};
+
+const brandHandler = (brand) => {
+  if (isActive(brand)) {
+    emit("removeBrand", brand);
+  } else {
+    emit("addBrand", brand);
+  }
+};
+
+const __returned__ = { emit, props, isActive, brandHandler }
+Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
+return __returned__
+}
+
+}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "filter-block mb-[20px] w-full" }, _attrs))}><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"> Бренды </div><ul class="filter-block-content py-[10px] mx-[30px]"><!--[-->`)
+  __vite_ssr_import_1__.ssrRenderList($props.list, (brand) => {
+    _push(`<li class="${
+      __vite_ssr_import_1__.ssrRenderClass([{
+          'text-primary border-primary bg-white active:border-orange active:border-opacity-70 active:text-orange': $setup.isActive(brand),
+          'border-white bg-white text-secondary hover:bg-grey-light active:scale-95 active:bg-primary active:bg-opacity-20': !$setup.isActive(brand),
+        }, "px-[18px] py-[10px] my-[5px] border-2 text-[16px] rounded-[4px] flex justify-center items-center cursor-pointer transition-all"])
+    }"><span class="flex-grow">${
+      __vite_ssr_import_1__.ssrInterpolate(brand.attributes.title)
+    }</span>`)
+    if ($setup.isActive(brand)) {
+      _push(`<span><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>`)
+    } else {
+      _push(`<!---->`)
+    }
+    _push(`</li>`)
+  })
+  _push(`<!--]--></ul></div>`)
+}
+
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/BrandsSelect.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/components/BrandsSelect.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/PriceSelect.vue
+// Parents: 
+// - /components/ProductFilter.vue ($id_16ebd3b1)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_894078cd = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {
+  name: 'PriceSelect',
+  props: {
+  modelValue: Object,
+},
+  setup(__props, { expose }) {
+  expose();
+
+const props = __props
+
+
+
+const __returned__ = { props }
+Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
+return __returned__
+}
+
+}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${
+    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "w-full" }, _attrs))
+  }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"> Цена, руб. </div><div class="filter-block-content py-[10px] mx-[30px]"><div class="mt-[20px] flex justify-between items-center w-full"><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center"${
+    __vite_ssr_import_1__.ssrRenderAttr("value", $props.modelValue.from)
+  } type="text" placeholder="799"><span class="w-[20px] h-[2px] bg-grey-light"></span><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center"${
+    __vite_ssr_import_1__.ssrRenderAttr("value", $props.modelValue.to)
+  } type="text" placeholder="13000"></div></div></div>`)
+}
+
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/PriceSelect.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/components/PriceSelect.vue"]]);
 }
 
 
@@ -7768,6 +7658,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
+// - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
@@ -7780,7 +7671,10 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
 const _sfc_main = {
@@ -7793,14 +7687,20 @@ let __temp, __restore
 const config = __vite_ssr_import_2__.useRuntimeConfig();
 
 const { data, error } = (
-  ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData("root-categories", () =>
+  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData("root-categories", () =>
   __vite_ssr_import_3__.GqlGetRootCategories({ type: "section" })
 ))),
   __temp = await __temp,
   __restore(),
   __temp
 );
-const categoriesList = data.value.testCategories?.data;
+
+console.log(data.value);
+const categoriesList = data.value?.categories?.data;
+
+__vite_ssr_import_4__.useHead({
+  title: `Прометей – Все категории`,
+});
 
 const imageUrl = (category) => {
   const url = category.attributes?.image?.data?.attributes?.url;
@@ -7816,17 +7716,17 @@ return __returned__
 }
 
 }
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_6__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_5__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_5__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_6__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="flex-grow"${
           _scopeId
@@ -7837,11 +7737,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="flex items-center"${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_6__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLink, {
           to: "/",
           class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
         }, {
-          default: __vite_ssr_import_5__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
                 _scopeId
@@ -7852,21 +7752,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }>На главную</span>`)
             } else {
               return [
-                (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("svg", {
+                (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("svg", {
                   class: "w-6 h-6",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_5__.createVNode("path", {
+                  __vite_ssr_import_6__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
                     d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   })
                 ])),
-                __vite_ssr_import_5__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                __vite_ssr_import_6__.createVNode("span", { class: "ml-[5px]" }, "На главную")
               ]
             }
           }),
@@ -7877,33 +7777,33 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><h1 class="flex-grow text-primary text-[36px] font-bold"${
           _scopeId
         }> Все категории </h1></div>`)
-        if ($setup.categoriesList.length) {
+        if ($setup.categoriesList && $setup.categoriesList.length) {
           _push(`<div class="cards flex items-center gap-[20px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_6__.ssrRenderList($setup.categoriesList, (category) => {
-            _push(__vite_ssr_import_6__.ssrRenderComponent(_component_NuxtLink, {
+          __vite_ssr_import_7__.ssrRenderList($setup.categoriesList, (category) => {
+            _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLink, {
               to: {
                 path: `/categories/${category.attributes.slug}`,
               },
               class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
             }, {
-              default: __vite_ssr_import_5__.withCtx((_, _push, _parent, _scopeId) => {
+              default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
                 if (_push) {
                   _push(`<div class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain" style="${
-                    __vite_ssr_import_6__.ssrRenderStyle(`background-image: url('${$setup.imageUrl(category)}')`)
+                    __vite_ssr_import_7__.ssrRenderStyle(`background-image: url('${$setup.imageUrl(category)}')`)
                   }"${
                     _scopeId
                   }></div><div class="flex flex-grow card-text text-[21px]"${
                     _scopeId
                   }>${
-                    __vite_ssr_import_6__.ssrInterpolate(category.attributes.title)
+                    __vite_ssr_import_7__.ssrInterpolate(category.attributes.title)
                   }</div>`)
                 } else {
                   return [
-                    __vite_ssr_import_5__.createVNode("div", {
+                    __vite_ssr_import_6__.createVNode("div", {
                       class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                       style: `background-image: url('${$setup.imageUrl(category)}')`
                     }, null, 4 /* STYLE */),
-                    __vite_ssr_import_5__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_5__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                    __vite_ssr_import_6__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_6__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                   ]
                 }
               }),
@@ -7927,68 +7827,68 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_5__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_5__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_5__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_5__.createVNode("div", { class: "flex items-center" }, [
-                  __vite_ssr_import_5__.createVNode(_component_NuxtLink, {
+          __vite_ssr_import_6__.createVNode("div", { class: "flex-grow" }, [
+            __vite_ssr_import_6__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_6__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_6__.createVNode("div", { class: "flex items-center" }, [
+                  __vite_ssr_import_6__.createVNode(_component_NuxtLink, {
                     to: "/",
                     class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
                   }, {
-                    default: __vite_ssr_import_5__.withCtx(() => [
-                      (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("svg", {
+                    default: __vite_ssr_import_6__.withCtx(() => [
+                      (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("svg", {
                         class: "w-6 h-6",
                         fill: "none",
                         stroke: "currentColor",
                         viewBox: "0 0 24 24",
                         xmlns: "http://www.w3.org/2000/svg"
                       }, [
-                        __vite_ssr_import_5__.createVNode("path", {
+                        __vite_ssr_import_6__.createVNode("path", {
                           "stroke-linecap": "round",
                           "stroke-linejoin": "round",
                           "stroke-width": "2",
                           d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                         })
                       ])),
-                      __vite_ssr_import_5__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                      __vite_ssr_import_6__.createVNode("span", { class: "ml-[5px]" }, "На главную")
                     ]),
                     _: 1 /* STABLE */
                   })
                 ]),
-                __vite_ssr_import_5__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
-                  __vite_ssr_import_5__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Все категории ")
+                __vite_ssr_import_6__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
+                  __vite_ssr_import_6__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Все категории ")
                 ]),
-                ($setup.categoriesList.length)
-                  ? (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("div", {
+                ($setup.categoriesList && $setup.categoriesList.length)
+                  ? (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("div", {
                       key: 0,
                       class: "cards flex items-center gap-[20px]"
                     }, [
-                      (__vite_ssr_import_5__.openBlock(true), __vite_ssr_import_5__.createBlock(__vite_ssr_import_5__.Fragment, null, __vite_ssr_import_5__.renderList($setup.categoriesList, (category) => {
-                        return (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock(_component_NuxtLink, {
+                      (__vite_ssr_import_6__.openBlock(true), __vite_ssr_import_6__.createBlock(__vite_ssr_import_6__.Fragment, null, __vite_ssr_import_6__.renderList($setup.categoriesList, (category) => {
+                        return (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock(_component_NuxtLink, {
                           to: {
                 path: `/categories/${category.attributes.slug}`,
               },
                           class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
                         }, {
-                          default: __vite_ssr_import_5__.withCtx(() => [
-                            __vite_ssr_import_5__.createVNode("div", {
+                          default: __vite_ssr_import_6__.withCtx(() => [
+                            __vite_ssr_import_6__.createVNode("div", {
                               class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                               style: `background-image: url('${$setup.imageUrl(category)}')`
                             }, null, 4 /* STYLE */),
-                            __vite_ssr_import_5__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_5__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                            __vite_ssr_import_6__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_6__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                           ]),
                           _: 2 /* DYNAMIC */
                         }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
                       }), 256 /* UNKEYED_FRAGMENT */))
                     ]))
-                  : (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("h4", {
+                  : (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("h4", {
                       key: 1,
                       class: "text-[26px]"
                     }, [
-                      __vite_ssr_import_5__.createVNode("div", { class: "flex flex-col justify-center items-center font-medium text-secondary" }, [
-                        __vite_ssr_import_5__.createVNode("span", { class: "text-[26px]" }, "Тут пока пусто."),
-                        __vite_ssr_import_5__.createVNode("span", { class: "text-[21px] mb-[25px]" }, "Возвращайтесь сюда позднее!"),
-                        __vite_ssr_import_5__.createVNode("div", { class: "text-[21px] text-center" }, "¯\\_(ツ)_/¯")
+                      __vite_ssr_import_6__.createVNode("div", { class: "flex flex-col justify-center items-center font-medium text-secondary" }, [
+                        __vite_ssr_import_6__.createVNode("span", { class: "text-[26px]" }, "Тут пока пусто."),
+                        __vite_ssr_import_6__.createVNode("span", { class: "text-[21px] mb-[25px]" }, "Возвращайтесь сюда позднее!"),
+                        __vite_ssr_import_6__.createVNode("div", { class: "text-[21px] text-center" }, "¯\\_(ツ)_/¯")
                       ])
                     ]))
               ])
@@ -8002,17 +7902,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_7__.useSSRContext()
+  const ssrContext = __vite_ssr_import_8__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/categories/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_9__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -8101,6 +8001,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/store/menu/menu.js");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/assets/images/voleyball.png");
@@ -8135,7 +8036,7 @@ const getLocalBackgroundImageUrl = (name) => {
 };
 
 __vite_ssr_import_3__.useHead({
-  title: `Prometei – Магазин спортивного инвентаря`,
+  title: `Прометей – Магазин спортивного инвентаря`,
 });
 
 const __returned__ = { menuStore, isExpandMenuShow, getLocalBackgroundImageUrl, useMenuToggler: __vite_ssr_import_4__.useMenuToggler, voleyball: __vite_ssr_import_5__.default, basketball: __vite_ssr_import_6__.default, football: __vite_ssr_import_7__.default }
@@ -8162,7 +8063,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
       }, "flex-grow"])
         }"${
           _scopeId
-        }><main class="mt-[136px] mb-[40px] flex-grow"${
+        }><main class="mt-[102px] mb-[40px] flex-grow"${
           _scopeId
         }><div class="max-w-screen-xl w-full mx-auto"${
           _scopeId
@@ -8256,7 +8157,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         'overflow-hidden': $setup.isExpandMenuShow,
       }]
           }, [
-            __vite_ssr_import_8__.createVNode("main", { class: "mt-[136px] mb-[40px] flex-grow" }, [
+            __vite_ssr_import_8__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
               __vite_ssr_import_8__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
                 __vite_ssr_import_8__.createVNode("div", { class: "page-header flex items-center" }, [
                   __vite_ssr_import_8__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Популярные категории "),
@@ -8466,6 +8367,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
 // - /components/UI/ImageViewer.vue ($id_9bcbfe6f)
 // - /store/cart/cart.js ($id_08ef3e2f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
@@ -8482,11 +8384,14 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
 
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/components/UI/ImageViewer.vue");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/store/cart/cart.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/components/UI/ImageViewer.vue");
+
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/store/cart/cart.js");
 
 
 
@@ -8505,7 +8410,7 @@ const productParams = route.params.params;
 const [productCardSlug, article] = productParams.split("_");
 
 const { data, error } = (
-  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData(
+  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData(
   `product-card-data-by-slug-${productCardSlug}`,
   () => __vite_ssr_import_3__.GqlProductCardDataBySlug({ slug: productCardSlug })
 ))),
@@ -8520,10 +8425,10 @@ if (!productCard.value) {
   router.push("/404");
 }
 
-const category = productCard.value.attributes.testCategory.data.attributes;
+const category = productCard.value.attributes.category.data.attributes;
 
 const productData = (
-  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => __vite_ssr_import_3__.GqlProductByArticle({ article: article }))),
+  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => __vite_ssr_import_3__.GqlProductByArticle({ article: article }))),
   __temp = await __temp,
   __restore(),
   __temp
@@ -8677,7 +8582,7 @@ const isCartHandlerDisabled = __vite_ssr_import_4__.computed(
   () => currentProduct.value.attributes.amount <= 0
 );
 
-const cart = __vite_ssr_import_7__.useCart();
+const cart = __vite_ssr_import_8__.useCart();
 
 const cartItem = __vite_ssr_import_4__.computed(() =>
   cart.items.find(
@@ -8758,23 +8663,27 @@ function unique(arr, param) {
   return uniqueArr;
 }
 
-const __returned__ = { router, route, productParams, productCardSlug, article, data, error, productCard, category, productData, currentProduct, productTitle, productPrice, constProductCardImages, productImages, imagesGalery, productArticle, productDescription, productAmount, productCardProducts, productCardColors, productColor, colorIsActive, disabledColor, colorHandler, productCardSizes, productSize, sizeIsActive, disabledSize, sizeHandler, isCartHandlerDisabled, cart, cartItem, productCounter, productInCart, increaseAlowed, addToCart, updateCartStateItem, selectCounter, cartHandler, removeFromStateCart, unique, ImageViewer: __vite_ssr_import_6__.default, useCart: __vite_ssr_import_7__.useCart }
+__vite_ssr_import_5__.useHead({
+  title: `Прометей – ${productCard.value.attributes.title}`,
+});
+
+const __returned__ = { router, route, productParams, productCardSlug, article, data, error, productCard, category, productData, currentProduct, productTitle, productPrice, constProductCardImages, productImages, imagesGalery, productArticle, productDescription, productAmount, productCardProducts, productCardColors, productColor, colorIsActive, disabledColor, colorHandler, productCardSizes, productSize, sizeIsActive, disabledSize, sizeHandler, isCartHandlerDisabled, cart, cartItem, productCounter, productInCart, increaseAlowed, addToCart, updateCartStateItem, selectCounter, cartHandler, removeFromStateCart, unique, ImageViewer: __vite_ssr_import_7__.default, useCart: __vite_ssr_import_8__.useCart }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_8__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_9__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="flex-grow" data-v-5076c47e${
           _scopeId
@@ -8787,11 +8696,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="flex items-center" data-v-5076c47e${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/",
           class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-v-5076c47e${
                 _scopeId
@@ -8802,39 +8711,39 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }>На главную</span>`)
             } else {
               return [
-                (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                   class: "w-6 h-6",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_8__.createVNode("path", {
+                  __vite_ssr_import_9__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
                     d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   })
                 ])),
-                __vite_ssr_import_8__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                __vite_ssr_import_9__.createVNode("span", { class: "ml-[5px]" }, "На главную")
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<div class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" data-v-5076c47e${_scopeId}></div>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: {
                   path: `/categories`,
                 },
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span data-v-5076c47e${_scopeId}>Все категории</span>`)
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("span", null, "Все категории")
+                __vite_ssr_import_9__.createVNode("span", null, "Все категории")
               ]
             }
           }),
@@ -8842,22 +8751,22 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }, _parent, _scopeId))
         if ($setup.category) {
           _push(`<!--[--><div class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" data-v-5076c47e${_scopeId}></div>`)
-          _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+          _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
             to: {
                     path: `/categories/${$setup.category.slug}`,
                   },
             class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
           }, {
-            default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+            default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
               if (_push) {
                 _push(`<span data-v-5076c47e${
                   _scopeId
                 }>${
-                  __vite_ssr_import_9__.ssrInterpolate($setup.category.title)
+                  __vite_ssr_import_10__.ssrInterpolate($setup.category.title)
                 }</span>`)
               } else {
                 return [
-                  __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
+                  __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.category.title), 1 /* TEXT */)
                 ]
               }
             }),
@@ -8874,7 +8783,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="product-title text-[36px] font-bold text-secondary" data-v-5076c47e${
           _scopeId
         }>${
-          __vite_ssr_import_9__.ssrInterpolate($setup.productTitle)
+          __vite_ssr_import_10__.ssrInterpolate($setup.productTitle)
         }</div><div class="product-content flex items-start justify-between" data-v-5076c47e${
           _scopeId
         }><div class="product-info" data-v-5076c47e${
@@ -8882,19 +8791,19 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="product-article text-grey-text mb-[40px]" data-v-5076c47e${
           _scopeId
         }> Код продукта: ${
-          __vite_ssr_import_9__.ssrInterpolate($setup.productArticle)
+          __vite_ssr_import_10__.ssrInterpolate($setup.productArticle)
         }</div><ul class="product-specifics flex flex-col text-left justify-start items-start gap-[15px]" data-v-5076c47e${
           _scopeId
         }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList($setup.productDescription, (item) => {
+        __vite_ssr_import_10__.ssrRenderList($setup.productDescription, (item) => {
           _push(`<li class="product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" data-v-5076c47e${
             _scopeId
           }>${
-            __vite_ssr_import_9__.ssrInterpolate(item.value)
+            __vite_ssr_import_10__.ssrInterpolate(item.value)
           }</li>`)
         })
         _push(`<!--]--></ul></div><div class="product-image" data-v-5076c47e${_scopeId}>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent($setup["ImageViewer"], {
+        _push(__vite_ssr_import_10__.ssrRenderComponent($setup["ImageViewer"], {
           modelValue: $setup.imagesGalery,
           "onUpdate:modelValue": $event => (($setup.imagesGalery) = $event)
         }, null, _parent, _scopeId))
@@ -8905,7 +8814,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><span class="text-[36px] font-bold text-secondary" data-v-5076c47e${
           _scopeId
         }>${
-          __vite_ssr_import_9__.ssrInterpolate($setup.productPrice)
+          __vite_ssr_import_10__.ssrInterpolate($setup.productPrice)
         } руб.</span>`)
         if ($setup.productCardColors && $setup.productCardColors.length) {
           _push(`<div class="divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full" data-v-5076c47e${_scopeId}></div>`)
@@ -8919,9 +8828,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Выберите цвет</span><div class="grid grid-cols-2 gap-[10px]" data-v-5076c47e${
           _scopeId
         }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList($setup.productCardColors, (color) => {
+        __vite_ssr_import_10__.ssrRenderList($setup.productCardColors, (color) => {
           _push(`<button class="${
-            __vite_ssr_import_9__.ssrRenderClass([{
+            __vite_ssr_import_10__.ssrRenderClass([{
                         'opacity-50 disabled': $setup.disabledColor(color),
                         'hover:bg-primary active:bg-opacity-40 active:border-primary active:border-opacity-0':
                           !$setup.disabledColor(color),
@@ -8934,7 +8843,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }" data-v-5076c47e${
             _scopeId
           }><span class="w-[36px] h-[36px] rounded-[4px] shadow-product-color" style="${
-            __vite_ssr_import_9__.ssrRenderStyle({
+            __vite_ssr_import_10__.ssrRenderStyle({
                           backgroundColor: `${color.value}`,
                         })
           }" data-v-5076c47e${
@@ -8942,7 +8851,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }></span><span data-v-5076c47e${
             _scopeId
           }>${
-            __vite_ssr_import_9__.ssrInterpolate(color.title)
+            __vite_ssr_import_10__.ssrInterpolate(color.title)
           }</span></button>`)
         })
         _push(`<!--]--></div></div>`)
@@ -8958,9 +8867,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Выберите размер</span><div class="grid grid-cols-2 gap-[10px]" data-v-5076c47e${
           _scopeId
         }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList($setup.productCardSizes, (size) => {
+        __vite_ssr_import_10__.ssrRenderList($setup.productCardSizes, (size) => {
           _push(`<button class="${
-            __vite_ssr_import_9__.ssrRenderClass([{
+            __vite_ssr_import_10__.ssrRenderClass([{
                         'bg-primary text-white border-opacity-90 cursor-default active:bg-opacity-100':
                           $setup.sizeIsActive(size.value),
                         'bg-grey-light': !$setup.sizeIsActive(size.value),
@@ -8973,17 +8882,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }" data-v-5076c47e${
             _scopeId
           }>${
-            __vite_ssr_import_9__.ssrInterpolate(size.value)
+            __vite_ssr_import_10__.ssrInterpolate(size.value)
           }</button>`)
         })
         _push(`<!--]--></div></div><div class="divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full" data-v-5076c47e${_scopeId}></div>`)
         if (!$setup.productInCart) {
           _push(`<button class="${
-            __vite_ssr_import_9__.ssrRenderClass([{
+            __vite_ssr_import_10__.ssrRenderClass([{
                     'bg-grey-text cursor-not-allowed': $setup.isCartHandlerDisabled,
                   }, "bg-primary h-[70px] text-[21px] font-medium text-white rounded-[4px] transition-all flex justify-center items-center"])
           }"${
-            (__vite_ssr_import_9__.ssrIncludeBooleanAttr($setup.isCartHandlerDisabled)) ? " disabled" : ""
+            (__vite_ssr_import_10__.ssrIncludeBooleanAttr($setup.isCartHandlerDisabled)) ? " disabled" : ""
           } data-v-5076c47e${
             _scopeId
           }> Добавить в корзину </button>`)
@@ -8997,25 +8906,25 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" data-v-5076c47e${
             _scopeId
           }></path></svg></button>`)
-          _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, { to: "/cart" }, {
-            default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, { to: "/cart" }, {
+            default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
               if (_push) {
-                _push(`уже корзине ( ${__vite_ssr_import_9__.ssrInterpolate($setup.productCounter)} )`)
+                _push(`уже корзине ( ${__vite_ssr_import_10__.ssrInterpolate($setup.productCounter)} )`)
               } else {
                 return [
-                  __vite_ssr_import_8__.createTextVNode("уже корзине ( " + __vite_ssr_import_8__.toDisplayString($setup.productCounter) + " )", 1 /* TEXT */)
+                  __vite_ssr_import_9__.createTextVNode("уже корзине ( " + __vite_ssr_import_9__.toDisplayString($setup.productCounter) + " )", 1 /* TEXT */)
                 ]
               }
             }),
             _: 1 /* STABLE */
           }, _parent, _scopeId))
           _push(`<button class="${
-            __vite_ssr_import_9__.ssrRenderClass([{
+            __vite_ssr_import_10__.ssrRenderClass([{
                       'cursor-not-allowed bg-grey-text hover:bg-grey-text text-grey-light':
                         !$setup.increaseAlowed,
                     }, "h-[30px] w-[30px] p-[2px] text-grey-text transition-colors rounded-[4px] bg-grey-light cursor-pointer hover:bg-primary hover:text-white"])
           }"${
-            (__vite_ssr_import_9__.ssrIncludeBooleanAttr(!$setup.increaseAlowed)) ? " disabled" : ""
+            (__vite_ssr_import_10__.ssrIncludeBooleanAttr(!$setup.increaseAlowed)) ? " disabled" : ""
           } data-v-5076c47e${
             _scopeId
           }><svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-v-5076c47e${
@@ -9032,98 +8941,98 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></aside></div></div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_8__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_8__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_8__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex items-center" }, [
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+          __vite_ssr_import_9__.createVNode("div", { class: "flex-grow" }, [
+            __vite_ssr_import_9__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_9__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("div", { class: "flex items-center" }, [
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: "/",
                       class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                           class: "w-6 h-6",
                           fill: "none",
                           stroke: "currentColor",
                           viewBox: "0 0 24 24",
                           xmlns: "http://www.w3.org/2000/svg"
                         }, [
-                          __vite_ssr_import_8__.createVNode("path", {
+                          __vite_ssr_import_9__.createVNode("path", {
                             "stroke-linecap": "round",
                             "stroke-linejoin": "round",
                             "stroke-width": "2",
                             d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                           })
                         ])),
-                        __vite_ssr_import_8__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                        __vite_ssr_import_9__.createVNode("span", { class: "ml-[5px]" }, "На главную")
                       ]),
                       _: 1 /* STABLE */
                     }),
-                    __vite_ssr_import_8__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                    __vite_ssr_import_9__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: {
                   path: `/categories`,
                 },
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, "Все категории")
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", null, "Все категории")
                       ]),
                       _: 1 /* STABLE */
                     }),
                     ($setup.category)
-                      ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, { key: 0 }, [
-                          __vite_ssr_import_8__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
-                          __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                      ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, { key: 0 }, [
+                          __vite_ssr_import_9__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
+                          __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                             to: {
                     path: `/categories/${$setup.category.slug}`,
                   },
                             class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                           }, {
-                            default: __vite_ssr_import_8__.withCtx(() => [
-                              __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
+                            default: __vite_ssr_import_9__.withCtx(() => [
+                              __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.category.title), 1 /* TEXT */)
                             ]),
                             _: 1 /* STABLE */
                           }, 8 /* PROPS */, ["to"])
                         ], 64 /* STABLE_FRAGMENT */))
-                      : __vite_ssr_import_8__.createCommentVNode("v-if", true)
+                      : __vite_ssr_import_9__.createCommentVNode("v-if", true)
                   ])
                 ]),
-                __vite_ssr_import_8__.createVNode("div", { class: "product flex items-start gap-[190px]" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "product-card flex-grow" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "product-title text-[36px] font-bold text-secondary" }, __vite_ssr_import_8__.toDisplayString($setup.productTitle), 1 /* TEXT */),
-                    __vite_ssr_import_8__.createVNode("div", { class: "product-content flex items-start justify-between" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "product-info" }, [
-                        __vite_ssr_import_8__.createVNode("div", { class: "product-article text-grey-text mb-[40px]" }, " Код продукта: " + __vite_ssr_import_8__.toDisplayString($setup.productArticle), 1 /* TEXT */),
-                        __vite_ssr_import_8__.createVNode("ul", { class: "product-specifics flex flex-col text-left justify-start items-start gap-[15px]" }, [
-                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productDescription, (item) => {
-                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("li", { class: "product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" }, __vite_ssr_import_8__.toDisplayString(item.value), 1 /* TEXT */))
+                __vite_ssr_import_9__.createVNode("div", { class: "product flex items-start gap-[190px]" }, [
+                  __vite_ssr_import_9__.createVNode("div", { class: "product-card flex-grow" }, [
+                    __vite_ssr_import_9__.createVNode("div", { class: "product-title text-[36px] font-bold text-secondary" }, __vite_ssr_import_9__.toDisplayString($setup.productTitle), 1 /* TEXT */),
+                    __vite_ssr_import_9__.createVNode("div", { class: "product-content flex items-start justify-between" }, [
+                      __vite_ssr_import_9__.createVNode("div", { class: "product-info" }, [
+                        __vite_ssr_import_9__.createVNode("div", { class: "product-article text-grey-text mb-[40px]" }, " Код продукта: " + __vite_ssr_import_9__.toDisplayString($setup.productArticle), 1 /* TEXT */),
+                        __vite_ssr_import_9__.createVNode("ul", { class: "product-specifics flex flex-col text-left justify-start items-start gap-[15px]" }, [
+                          (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.productDescription, (item) => {
+                            return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("li", { class: "product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" }, __vite_ssr_import_9__.toDisplayString(item.value), 1 /* TEXT */))
                           }), 256 /* UNKEYED_FRAGMENT */))
                         ])
                       ]),
-                      __vite_ssr_import_8__.createVNode("div", { class: "product-image" }, [
-                        __vite_ssr_import_8__.createVNode($setup["ImageViewer"], {
+                      __vite_ssr_import_9__.createVNode("div", { class: "product-image" }, [
+                        __vite_ssr_import_9__.createVNode($setup["ImageViewer"], {
                           modelValue: $setup.imagesGalery,
                           "onUpdate:modelValue": $event => (($setup.imagesGalery) = $event)
                         }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue"])
                       ])
                     ])
                   ]),
-                  __vite_ssr_import_8__.createVNode("aside", { class: "product-action w-1/5" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                      __vite_ssr_import_8__.createVNode("span", { class: "text-[36px] font-bold text-secondary" }, __vite_ssr_import_8__.toDisplayString($setup.productPrice) + " руб.", 1 /* TEXT */),
+                  __vite_ssr_import_9__.createVNode("aside", { class: "product-action w-1/5" }, [
+                    __vite_ssr_import_9__.createVNode("div", { class: "flex flex-col" }, [
+                      __vite_ssr_import_9__.createVNode("span", { class: "text-[36px] font-bold text-secondary" }, __vite_ssr_import_9__.toDisplayString($setup.productPrice) + " руб.", 1 /* TEXT */),
                       ($setup.productCardColors && $setup.productCardColors.length)
-                        ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 0,
                             class: "divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full"
                           }))
-                        : __vite_ssr_import_8__.createCommentVNode("v-if", true),
-                      __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                        __vite_ssr_import_8__.createVNode("span", { class: "text-[21px] text-secondary mb-[10px]" }, "Выберите цвет"),
-                        __vite_ssr_import_8__.createVNode("div", { class: "grid grid-cols-2 gap-[10px]" }, [
-                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productCardColors, (color) => {
-                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("button", {
+                        : __vite_ssr_import_9__.createCommentVNode("v-if", true),
+                      __vite_ssr_import_9__.createVNode("div", { class: "flex flex-col" }, [
+                        __vite_ssr_import_9__.createVNode("span", { class: "text-[21px] text-secondary mb-[10px]" }, "Выберите цвет"),
+                        __vite_ssr_import_9__.createVNode("div", { class: "grid grid-cols-2 gap-[10px]" }, [
+                          (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.productCardColors, (color) => {
+                            return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("button", {
                               class: [{
                         'opacity-50 disabled': $setup.disabledColor(color),
                         'hover:bg-primary active:bg-opacity-40 active:border-primary active:border-opacity-0':
@@ -9136,28 +9045,28 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                       }, "w-[120px] h-[80px] rounded-[4px] flex flex-col justify-center items-center transition-colors"],
                               onClick: $event => ($setup.colorHandler(color))
                             }, [
-                              __vite_ssr_import_8__.createVNode("span", {
+                              __vite_ssr_import_9__.createVNode("span", {
                                 class: "w-[36px] h-[36px] rounded-[4px] shadow-product-color",
                                 style: {
                           backgroundColor: `${color.value}`,
                         }
                               }, null, 4 /* STYLE */),
-                              __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString(color.title), 1 /* TEXT */)
+                              __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString(color.title), 1 /* TEXT */)
                             ], 10 /* CLASS, PROPS */, ["onClick"]))
                           }), 256 /* UNKEYED_FRAGMENT */))
                         ])
                       ]),
                       ($setup.productCardSizes && $setup.productCardSizes.length)
-                        ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 1,
                             class: "divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full"
                           }))
-                        : __vite_ssr_import_8__.createCommentVNode("v-if", true),
-                      __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                        __vite_ssr_import_8__.createVNode("span", { class: "text-[21px] text-secondary mb-[10px]" }, "Выберите размер"),
-                        __vite_ssr_import_8__.createVNode("div", { class: "grid grid-cols-2 gap-[10px]" }, [
-                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productCardSizes, (size) => {
-                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("button", {
+                        : __vite_ssr_import_9__.createCommentVNode("v-if", true),
+                      __vite_ssr_import_9__.createVNode("div", { class: "flex flex-col" }, [
+                        __vite_ssr_import_9__.createVNode("span", { class: "text-[21px] text-secondary mb-[10px]" }, "Выберите размер"),
+                        __vite_ssr_import_9__.createVNode("div", { class: "grid grid-cols-2 gap-[10px]" }, [
+                          (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.productCardSizes, (size) => {
+                            return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("button", {
                               class: [{
                         'bg-primary text-white border-opacity-90 cursor-default active:bg-opacity-100':
                           $setup.sizeIsActive(size.value),
@@ -9169,13 +9078,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                           !$setup.disabledSize(size) && !$setup.sizeIsActive(size.value),
                       }, "w-[120px] h-[40px] rounded-[4px] flex flex-col justify-center items-center transition-colors"],
                               onClick: $event => ($setup.sizeHandler(size))
-                            }, __vite_ssr_import_8__.toDisplayString(size.value), 11 /* TEXT, CLASS, PROPS */, ["onClick"]))
+                            }, __vite_ssr_import_9__.toDisplayString(size.value), 11 /* TEXT, CLASS, PROPS */, ["onClick"]))
                           }), 256 /* UNKEYED_FRAGMENT */))
                         ])
                       ]),
-                      __vite_ssr_import_8__.createVNode("div", { class: "divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full" }),
+                      __vite_ssr_import_9__.createVNode("div", { class: "divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full" }),
                       (!$setup.productInCart)
-                        ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("button", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("button", {
                             key: 2,
                             class: ["bg-primary h-[70px] text-[21px] font-medium text-white rounded-[4px] transition-all flex justify-center items-center", {
                     'bg-grey-text cursor-not-allowed': $setup.isCartHandlerDisabled,
@@ -9183,22 +9092,22 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                             disabled: $setup.isCartHandlerDisabled,
                             onClick: $event => ($setup.cartHandler())
                           }, " Добавить в корзину ", 10 /* CLASS, PROPS */, ["disabled", "onClick"]))
-                        : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 3,
                             class: "h-[70px] text-[18px] flex items-center justify-between"
                           }, [
-                            __vite_ssr_import_8__.createVNode("button", {
+                            __vite_ssr_import_9__.createVNode("button", {
                               class: "h-[30px] w-[30px] p-[2px] text-grey-text transition-colors rounded-[4px] bg-grey-light cursor-pointer hover:text-white hover:bg-orange",
                               onClick: $event => ($setup.selectCounter(-1))
                             }, [
-                              (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                              (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                                 class: "w-full h-full",
                                 fill: "none",
                                 stroke: "currentColor",
                                 viewBox: "0 0 24 24",
                                 xmlns: "http://www.w3.org/2000/svg"
                               }, [
-                                __vite_ssr_import_8__.createVNode("path", {
+                                __vite_ssr_import_9__.createVNode("path", {
                                   "stroke-linecap": "round",
                                   "stroke-linejoin": "round",
                                   "stroke-width": "2",
@@ -9206,13 +9115,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 })
                               ]))
                             ], 8 /* PROPS */, ["onClick"]),
-                            __vite_ssr_import_8__.createVNode(_component_NuxtLink, { to: "/cart" }, {
-                              default: __vite_ssr_import_8__.withCtx(() => [
-                                __vite_ssr_import_8__.createTextVNode("уже корзине ( " + __vite_ssr_import_8__.toDisplayString($setup.productCounter) + " )", 1 /* TEXT */)
+                            __vite_ssr_import_9__.createVNode(_component_NuxtLink, { to: "/cart" }, {
+                              default: __vite_ssr_import_9__.withCtx(() => [
+                                __vite_ssr_import_9__.createTextVNode("уже корзине ( " + __vite_ssr_import_9__.toDisplayString($setup.productCounter) + " )", 1 /* TEXT */)
                               ]),
                               _: 1 /* STABLE */
                             }),
-                            __vite_ssr_import_8__.createVNode("button", {
+                            __vite_ssr_import_9__.createVNode("button", {
                               class: ["h-[30px] w-[30px] p-[2px] text-grey-text transition-colors rounded-[4px] bg-grey-light cursor-pointer hover:bg-primary hover:text-white", {
                       'cursor-not-allowed bg-grey-text hover:bg-grey-text text-grey-light':
                         !$setup.increaseAlowed,
@@ -9220,14 +9129,14 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               disabled: !$setup.increaseAlowed,
                               onClick: $event => ($setup.selectCounter(1))
                             }, [
-                              (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                              (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                                 class: "w-full h-full",
                                 fill: "none",
                                 stroke: "currentColor",
                                 viewBox: "0 0 24 24",
                                 xmlns: "http://www.w3.org/2000/svg"
                               }, [
-                                __vite_ssr_import_8__.createVNode("path", {
+                                __vite_ssr_import_9__.createVNode("path", {
                                   "stroke-linecap": "round",
                                   "stroke-linejoin": "round",
                                   "stroke-width": "2",
@@ -9237,11 +9146,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                             ], 10 /* CLASS, PROPS */, ["disabled", "onClick"])
                           ])),
                       ($setup.isCartHandlerDisabled)
-                        ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 4,
                             class: "text-center"
                           }, " Товара нет в наличии "))
-                        : __vite_ssr_import_8__.createCommentVNode("v-if", true)
+                        : __vite_ssr_import_9__.createCommentVNode("v-if", true)
                     ])
                   ])
                 ])
@@ -9255,20 +9164,20 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   }, _parent))
 }
 
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/pages/products/[params].vue?vue&type=style&index=0&scoped=true&lang.css");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/pages/products/[params].vue?vue&type=style&index=0&scoped=true&lang.css");
 
 
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_11__.useSSRContext()
+  const ssrContext = __vite_ssr_import_12__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/products/[params].vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_13__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-5076c47e"],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/products/[params].vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-5076c47e"],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/products/[params].vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -9287,6 +9196,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // --------------------
 const $id_9bcbfe6f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
@@ -9462,6 +9372,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/store/cart/cart.js");
 
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/components/UI/AmountCounter.vue");
@@ -9510,7 +9421,7 @@ const cartTotalSum = __vite_ssr_import_2__.computed(() =>
 );
 
 __vite_ssr_import_4__.useHead({
-  title: `Prometei – Корзина`,
+  title: `Прометей – Корзина`,
 });
 
 const __returned__ = { cart, cartItems, updateCartItemAmount, deleteItem, config, getImageLink, pickedDelivery, selectDelivery, cartTotalCounter, cartTotalSum, useCart: __vite_ssr_import_5__.useCart, AmountCounter: __vite_ssr_import_6__.default }
@@ -10046,6 +9957,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
@@ -10081,7 +9993,7 @@ const { data: sectionCategoriesData } = (
 const sectionTitle = currentSection.value.data[0].attributes.title;
 
 __vite_ssr_import_3__.useHead({
-  title: `Prometei – ${sectionTitle}`,
+  title: `Прометей – ${sectionTitle}`,
 });
 
 const sectionCategories = sectionCategoriesData.value.data;
@@ -10318,6 +10230,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
@@ -10528,7 +10441,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_7__.default(_sfc_m
 
 
 // --------------------
-// Request: /pages/categories/[slug]/[slug]/index.vue
+// Request: /pages/categories/[slug]/index.vue
 // Parents: 
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/routes.mjs ($id_eb849233)
 // Dependencies: 
@@ -10539,10 +10452,11 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_7__.default(_sfc_m
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
 // - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
 // - /store/cart/cart.js ($id_08ef3e2f)
+// - /components/ProductFilter.vue ($id_16ebd3b1)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
-const $id_018188d2 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_a38e0b82 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/layout.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
@@ -10554,11 +10468,13 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/store/cart/cart.js");
 
-// import Brands from "~~/components/Brands.vue";
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/components/ProductFilter.vue");
+
 
 
 const _sfc_main = {
@@ -10568,52 +10484,147 @@ const _sfc_main = {
 
 let __temp, __restore
 
+const config = __vite_ssr_import_2__.useRuntimeConfig();
 const route = __vite_ssr_import_2__.useRoute();
-console.log(route);
+const router = __vite_ssr_import_2__.useRouter();
 
-const subcategorySlug = route.params.slug;
-
-const loading = __vite_ssr_import_3__.ref(false);
+const categorySlug = route.params.slug;
 const dataProducts = __vite_ssr_import_3__.ref([]);
-const { data, error } = (
-  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData(
-  `subcategory-by-slug-${subcategorySlug}`,
-  () => __vite_ssr_import_4__.GqlSubcategoryDataBySlug({ slug: subcategorySlug })
-))),
+const loading = __vite_ssr_import_3__.ref(false);
+
+const data = (
+  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => __vite_ssr_import_4__.GqlGetCategoryBySlug({ slug: categorySlug }))),
   __temp = await __temp,
   __restore(),
   __temp
 );
 
-const subcategory = __vite_ssr_import_3__.computed(() => data.value.subcategories.data[0]);
-console.log(subcategory.value);
-const category = subcategory.value.attributes.parent.data.attributes;
-const section = category.parent.data.attributes;
+const categoryBrands = __vite_ssr_import_3__.computed(() => data.brands.data);
 
-const getProducts = async () => {
+const currentCategory = data?.categories?.data[0]?.attributes;
+
+if (
+  !currentCategory.value ||
+  (currentCategory.value && !currentCategory.value.lenght)
+) {
+  // router.push("/404");
+}
+
+const isProductsVisible = __vite_ssr_import_3__.computed(() => currentCategory.showProducts);
+const isRelatedCategoriesVisible = __vite_ssr_import_3__.computed(
+  () => currentCategory.showRelatedCategories
+);
+
+const relatedCategories = __vite_ssr_import_3__.computed(
+  () => currentCategory.relatedCategories.data
+);
+
+const parentCategory = __vite_ssr_import_3__.computed(() => currentCategory.parent?.data?.attributes);
+
+const getProducts = async (query) => {
   loading.value = true;
-  const productsData = await __vite_ssr_import_4__.GqlProductsBySubcategorySlug({
-    slug: subcategory.value.attributes.slug,
-  });
-  dataProducts.value = productsData.products.data;
+  const productsData = __vite_ssr_import_3__.ref([]);
+  const toSendData = {
+    slug: currentCategory.slug,
+  };
+
+  if (query) {
+    const brandsList = query.brandsList;
+    const price = query.price;
+
+    if (brandsList && brandsList.length) {
+      toSendData.brands = brandsList;
+    }
+
+    if (price) {
+      if (price.from) {
+        toSendData.priceFrom = Number(price.from);
+      }
+
+      if (price.to) {
+        toSendData.priceTo = Number(price.to);
+      }
+    }
+  }
+  // turn on filter
+  if (Object.keys(toSendData).length > 1) {
+    filterIsActive.value = true;
+  }
+
+  productsData.value = await __vite_ssr_import_4__.GqlProductsBySubcategorySlug(toSendData);
+
+  dataProducts.value = productsData.value.products.data;
   loading.value = false;
 };
 
+const filterIsActive = __vite_ssr_import_3__.ref(false);
+
+const clearFilter = async () => {
+  await getProducts();
+};
+
+const getFilteredProducts = async () => {
+  const query = {};
+  const brands = route.query.brands;
+  const from = route.query.from;
+  const to = route.query.to;
+  if (brands) {
+    query.brandsList = brands.split(",").map((item) => Number(item));
+  }
+
+  if (from) {
+    if (!query.price) {
+      query.price = {};
+    }
+    query.price.from = from;
+  }
+  if (to) {
+    if (!query.price) {
+      query.price = {};
+    }
+    query.price.to = to;
+  }
+
+  await getProducts(query);
+};
+
+const preSearchQuery = __vite_ssr_import_3__.ref({});
+if (route.query.from) {
+  if (!preSearchQuery.value.price) {
+    preSearchQuery.value.price = {};
+  }
+  preSearchQuery.value.price.from = route.query.from;
+}
+
+if (route.query.to) {
+  if (!preSearchQuery.value.price) {
+    preSearchQuery.value.price = {};
+  }
+  preSearchQuery.value.price.to = route.query.to;
+}
+
+if (route.query.brands) {
+  preSearchQuery.value.brandsList = route.query.brands.split(",");
+}
+
 ;(
-  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => getProducts())),
+  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => getProducts(preSearchQuery.value))),
   await __temp,
   __restore()
 );
 
-__vite_ssr_import_5__.useHead({
-  title: `Prometei – ${subcategory.value.attributes.title}`,
-});
-
-const config = __vite_ssr_import_2__.useRuntimeConfig();
-const imageUrl = (product) => {
-  const url = product?.attributes?.images?.data[0]?.attributes?.url;
+const categoryUrl = (category) => {
+  const url = category.attributes?.image?.data?.attributes?.url;
   if (url) {
-    return `${config.API_URL}${url}`;
+    return `${config.public.API_URL}${url}`;
+  }
+  return "";
+};
+
+const productUrl = (product) => {
+  const url = product.attributes?.images?.data[0]?.attributes?.url;
+  if (url) {
+    return `${config.public.API_URL}${url}`;
   }
   return "";
 };
@@ -10650,604 +10661,27 @@ const cartHandler = (product) => {
   }
 };
 
-const __returned__ = { route, subcategorySlug, loading, dataProducts, data, error, subcategory, category, section, getProducts, config, imageUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_7__.useCart }
-Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
-return __returned__
-}
-
-}
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_NuxtLayout = __vite_ssr_import_0__.default
-  const _component_NuxtLink = __vite_ssr_import_1__.default
-
-  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_8__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(`<div class="flex-grow"${
-          _scopeId
-        }><main class="mt-[102px] mb-[40px] flex-grow"${
-          _scopeId
-        }><div class="max-w-screen-xl w-full mx-auto"${
-          _scopeId
-        }><div class="page-header flex items-center"${
-          _scopeId
-        }><div class="inline-flex"${
-          _scopeId
-        }>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-          to: "/",
-          class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-        }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<svg class="w-6 h-6 mt-[2px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-                _scopeId
-              }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"${
-                _scopeId
-              }></path></svg><span${
-                _scopeId
-              }>На главную</span>`)
-            } else {
-              return [
-                (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                  class: "w-6 h-6 mt-[2px]",
-                  fill: "none",
-                  stroke: "currentColor",
-                  viewBox: "0 0 24 24",
-                  xmlns: "http://www.w3.org/2000/svg"
-                }, [
-                  __vite_ssr_import_8__.createVNode("path", {
-                    "stroke-linecap": "round",
-                    "stroke-linejoin": "round",
-                    "stroke-width": "2",
-                    d: "M15 19l-7-7 7-7"
-                  })
-                ])),
-                __vite_ssr_import_8__.createVNode("span", null, "На главную")
-              ]
-            }
-          }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-          to: "/catalog",
-          class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-        }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<span${_scopeId}>Все категории</span>`)
-            } else {
-              return [
-                __vite_ssr_import_8__.createVNode("span", null, "Все категории")
-              ]
-            }
-          }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-          to: {
-                  path: `/catalog/${$setup.section.slug}`,
-                },
-          class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-        }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<span${
-                _scopeId
-              }>${
-                __vite_ssr_import_9__.ssrInterpolate($setup.section.title)
-              }</span>`)
-            } else {
-              return [
-                __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.section.title), 1 /* TEXT */)
-              ]
-            }
-          }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(`<code class="text-grey-text text-[24px] ml-[5px] mr-[5px]"${_scopeId}> / </code>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-          to: {
-                  path: `/categories/${$setup.category.slug}`,
-                },
-          class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-        }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
-            if (_push) {
-              _push(`<span${
-                _scopeId
-              }>${
-                __vite_ssr_import_9__.ssrInterpolate($setup.category.title)
-              }</span>`)
-            } else {
-              return [
-                __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
-              ]
-            }
-          }),
-          _: 1 /* STABLE */
-        }, _parent, _scopeId))
-        _push(`</div></div><div class="page-header mb-[20px] flex items-center"${
-          _scopeId
-        }><h1 class="flex-grow text-primary text-[36px] font-bold"${
-          _scopeId
-        }>${
-          __vite_ssr_import_9__.ssrInterpolate($setup.subcategory.attributes.title)
-        }</h1></div><button${
-          _scopeId
-        }>fetchData</button><div class="flex justify-between items-start gap-[40px]"${
-          _scopeId
-        }><aside class="catalog-filter min-w-[300px] flex flex-col"${
-          _scopeId
-        }><div class="filter-block mb-[20px]"${
-          _scopeId
-        }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
-          _scopeId
-        }> Бренд </div><ul class="filter-block-content py-[10px] mx-[30px]"${
-          _scopeId
-        }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList(_ctx.brands, (brand) => {
-          _push(`<li class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"${
-            _scopeId
-          }><span class="flex-grow"${
-            _scopeId
-          }>${
-            __vite_ssr_import_9__.ssrInterpolate(brand.attributes.title)
-          }</span><span${
-            _scopeId
-          }><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-            _scopeId
-          }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"${
-            _scopeId
-          }></path></svg></span></li>`)
-        })
-        _push(`<!--]--></ul></div><div class="filter-block"${
-          _scopeId
-        }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
-          _scopeId
-        }> Цена, руб. </div><div class="filter-block-content py-[10px] mx-[30px]"${
-          _scopeId
-        }><div class="mt-[20px] flex justify-between items-center w-full"${
-          _scopeId
-        }><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center" type="text" placeholder="799"${
-          _scopeId
-        }><span class="w-[20px] h-[2px] bg-grey-light"${
-          _scopeId
-        }></span><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center" type="text" placeholder="13000"${
-          _scopeId
-        }></div></div></div></aside><!-- loading-cards -->`)
-        if ($setup.loading) {
-          _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_9__.ssrRenderList(3, (item) => {
-            _push(`<div class="catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"${_scopeId}></div>`)
-          })
-          _push(`<!--]--></div>`)
-        } else {
-          _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_9__.ssrRenderList($setup.dataProducts, (product, index) => {
-            _push(`<div class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"${_scopeId}>`)
-            _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
-              to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
-              class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
-              style: `background-image: url('${$setup.imageUrl(product)}')`
-            }, null, _parent, _scopeId))
-            _push(`<div class="item-content flex flex-1 flex-col justify-between text-center"${
-              _scopeId
-            }><div class="flex flex-1 item-title font-medium justify-center items-center"${
-              _scopeId
-            }>${
-              __vite_ssr_import_9__.ssrInterpolate(product.attributes.title)
-            }</div><div class="flex gap-[5px]"${
-              _scopeId
-            }><div class="flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none"${
-              _scopeId
-            }>${
-              __vite_ssr_import_9__.ssrInterpolate(product.attributes.price)
-            } ₽ </div><button class="${
-              __vite_ssr_import_9__.ssrRenderClass([{
-                        'hover:bg-white border-[2px] border-primary hover:text-primary':
-                          !$setup.productInCart(product),
-                        'hover:bg-orange': $setup.productInCart(product),
-                      }, "item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center"])
-            }"${
-              _scopeId
-            }>`)
-            if ($setup.productInCart(product)) {
-              _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-                _scopeId
-              }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"${
-                _scopeId
-              }></path></svg>`)
-            } else {
-              _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
-                _scopeId
-              }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"${
-                _scopeId
-              }></path></svg>`)
-            }
-            _push(`</button></div></div></div>`)
-          })
-          _push(`<!--]--></div>`)
-        }
-        _push(`</div></div></main></div>`)
-      } else {
-        return [
-          __vite_ssr_import_8__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_8__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_8__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "inline-flex" }, [
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                      to: "/",
-                      class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-                    }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                          class: "w-6 h-6 mt-[2px]",
-                          fill: "none",
-                          stroke: "currentColor",
-                          viewBox: "0 0 24 24",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }, [
-                          __vite_ssr_import_8__.createVNode("path", {
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round",
-                            "stroke-width": "2",
-                            d: "M15 19l-7-7 7-7"
-                          })
-                        ])),
-                        __vite_ssr_import_8__.createVNode("span", null, "На главную")
-                      ]),
-                      _: 1 /* STABLE */
-                    }),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                      to: "/catalog",
-                      class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-                    }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, "Все категории")
-                      ]),
-                      _: 1 /* STABLE */
-                    }),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                      to: {
-                  path: `/catalog/${$setup.section.slug}`,
-                },
-                      class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-                    }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.section.title), 1 /* TEXT */)
-                      ]),
-                      _: 1 /* STABLE */
-                    }, 8 /* PROPS */, ["to"]),
-                    __vite_ssr_import_8__.createVNode("code", { class: "text-grey-text text-[24px] ml-[5px] mr-[5px]" }, " / "),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                      to: {
-                  path: `/categories/${$setup.category.slug}`,
-                },
-                      class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
-                    }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
-                      ]),
-                      _: 1 /* STABLE */
-                    }, 8 /* PROPS */, ["to"])
-                  ])
-                ]),
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_8__.toDisplayString($setup.subcategory.attributes.title), 1 /* TEXT */)
-                ]),
-                __vite_ssr_import_8__.createVNode("button", {
-                  onClick: $event => ($setup.getProducts())
-                }, "fetchData", 8 /* PROPS */, ["onClick"]),
-                __vite_ssr_import_8__.createVNode("div", { class: "flex justify-between items-start gap-[40px]" }, [
-                  __vite_ssr_import_8__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "filter-block mb-[20px]" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Бренд "),
-                      __vite_ssr_import_8__.createVNode("ul", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                        (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList(_ctx.brands, (brand) => {
-                          return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("li", { class: "px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer" }, [
-                            __vite_ssr_import_8__.createVNode("span", { class: "flex-grow" }, __vite_ssr_import_8__.toDisplayString(brand.attributes.title), 1 /* TEXT */),
-                            __vite_ssr_import_8__.createVNode("span", null, [
-                              (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                                class: "w-6 h-6",
-                                fill: "none",
-                                stroke: "currentColor",
-                                viewBox: "0 0 24 24",
-                                xmlns: "http://www.w3.org/2000/svg"
-                              }, [
-                                __vite_ssr_import_8__.createVNode("path", {
-                                  "stroke-linecap": "round",
-                                  "stroke-linejoin": "round",
-                                  "stroke-width": "2",
-                                  d: "M5 13l4 4L19 7"
-                                })
-                              ]))
-                            ])
-                          ]))
-                        }), 256 /* UNKEYED_FRAGMENT */))
-                      ])
-                    ]),
-                    __vite_ssr_import_8__.createVNode("div", { class: "filter-block" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Цена, руб. "),
-                      __vite_ssr_import_8__.createVNode("div", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                        __vite_ssr_import_8__.createVNode("div", { class: "mt-[20px] flex justify-between items-center w-full" }, [
-                          __vite_ssr_import_8__.createVNode("input", {
-                            class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
-                            type: "text",
-                            placeholder: "799"
-                          }),
-                          __vite_ssr_import_8__.createVNode("span", { class: "w-[20px] h-[2px] bg-grey-light" }),
-                          __vite_ssr_import_8__.createVNode("input", {
-                            class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
-                            type: "text",
-                            placeholder: "13000"
-                          })
-                        ])
-                      ])
-                    ])
-                  ]),
-                  __vite_ssr_import_8__.createCommentVNode(" loading-cards "),
-                  ($setup.loading)
-                    ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
-                        key: 0,
-                        class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
-                      }, [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList(3, (item) => {
-                          return __vite_ssr_import_8__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
-                        }), 64 /* STABLE_FRAGMENT */))
-                      ]))
-                    : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
-                        key: 1,
-                        class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
-                      }, [
-                        (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.dataProducts, (product, index) => {
-                          return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
-                            key: index,
-                            class: "catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"
-                          }, [
-                            __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
-                              to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
-                              class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
-                              style: `background-image: url('${$setup.imageUrl(product)}')`
-                            }, null, 8 /* PROPS */, ["to", "style"]),
-                            __vite_ssr_import_8__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
-                              __vite_ssr_import_8__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_8__.toDisplayString(product.attributes.title), 1 /* TEXT */),
-                              __vite_ssr_import_8__.createVNode("div", { class: "flex gap-[5px]" }, [
-                                __vite_ssr_import_8__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_8__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
-                                __vite_ssr_import_8__.createVNode("button", {
-                                  class: ["item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center", {
-                        'hover:bg-white border-[2px] border-primary hover:text-primary':
-                          !$setup.productInCart(product),
-                        'hover:bg-orange': $setup.productInCart(product),
-                      }],
-                                  onClick: $event => ($setup.cartHandler(product))
-                                }, [
-                                  ($setup.productInCart(product))
-                                    ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                                        key: 0,
-                                        class: "w-6 h-6",
-                                        fill: "none",
-                                        stroke: "currentColor",
-                                        viewBox: "0 0 24 24",
-                                        xmlns: "http://www.w3.org/2000/svg"
-                                      }, [
-                                        __vite_ssr_import_8__.createVNode("path", {
-                                          "stroke-linecap": "round",
-                                          "stroke-linejoin": "round",
-                                          "stroke-width": "2",
-                                          d: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                                        })
-                                      ]))
-                                    : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
-                                        key: 1,
-                                        class: "w-6 h-6",
-                                        fill: "none",
-                                        stroke: "currentColor",
-                                        viewBox: "0 0 24 24",
-                                        xmlns: "http://www.w3.org/2000/svg"
-                                      }, [
-                                        __vite_ssr_import_8__.createVNode("path", {
-                                          "stroke-linecap": "round",
-                                          "stroke-linejoin": "round",
-                                          "stroke-width": "2",
-                                          d: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                                        })
-                                      ]))
-                                ], 10 /* CLASS, PROPS */, ["onClick"])
-                              ])
-                            ])
-                          ]))
-                        }), 128 /* KEYED_FRAGMENT */))
-                      ]))
-                ])
-              ])
-            ])
-          ])
-        ]
-      }
-    }),
-    _: 1 /* STABLE */
-  }, _parent))
-}
-
-
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_10__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/categories/[slug]/[slug]/index.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/[slug]/index.vue"]]);
-}
-
-
-// --------------------
-// Request: /pages/categories/[slug]/index.vue
-// Parents: 
-// - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/routes.mjs ($id_eb849233)
-// Dependencies: 
-// - /node_modules/nuxt/dist/app/components/layout.mjs ($id_39003883)
-// - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
-// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
-// - /store/cart/cart.js ($id_08ef3e2f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_a38e0b82 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/layout.mjs");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/store/cart/cart.js");
-
-
-
-const _sfc_main = {
-  name: 'index',
-  async setup(__props, { expose }) {
-  expose();
-
-let __temp, __restore
-
-const config = __vite_ssr_import_2__.useRuntimeConfig();
-const route = __vite_ssr_import_2__.useRoute();
-const router = __vite_ssr_import_2__.useRouter();
-
-const categorySlug = route.params.slug;
-const dataProducts = __vite_ssr_import_3__.ref([]);
-const loading = __vite_ssr_import_3__.ref(false);
-
-const data = (
-  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => __vite_ssr_import_4__.GqlGetCategoryBySlug({ slug: categorySlug }))),
-  __temp = await __temp,
-  __restore(),
-  __temp
-);
-
-const currentCategory = data?.testCategories?.data[0]?.attributes;
-
-if (
-  !currentCategory.value ||
-  (currentCategory.value && !currentCategory.value.lenght)
-) {
-  // router.push("/404");
-}
-
-const isProductsVisible = __vite_ssr_import_3__.computed(() => currentCategory.showProducts);
-const isRelatedCategoriesVisible = __vite_ssr_import_3__.computed(
-  () => currentCategory.showRelatedCategories
-);
-
-const relatedCategories = __vite_ssr_import_3__.computed(
-  () => currentCategory.relatedCategories.data
-);
-
-const parentCategory = __vite_ssr_import_3__.computed(() => currentCategory.parent?.data?.attributes);
-
-const getProducts = async () => {
-  loading.value = true;
-  const productsData = await __vite_ssr_import_4__.GqlProductsBySubcategorySlug({
-    slug: currentCategory.slug,
-  });
-  console.log(productsData);
-  dataProducts.value = productsData.products.data;
-  loading.value = false;
-};
-
-;(
-  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => getProducts())),
-  await __temp,
-  __restore()
-);
-
-const categoryUrl = (category) => {
-  const url = category.attributes?.image?.data?.attributes?.url;
-  if (url) {
-    return `${config.public.API_URL}${url}`;
-  }
-  return "";
-};
-
-const productUrl = (product) => {
-  const url = product.attributes?.images?.data[0]?.attributes?.url;
-  if (url) {
-    return `${config.public.API_URL}${url}`;
-  }
-  return "";
-};
-
-const cart = __vite_ssr_import_6__.useCart();
-
-const cartItems = __vite_ssr_import_3__.computed(() => {
-  return cart.items;
+__vite_ssr_import_5__.useHead({
+  title: `Прометей – ${data.categories.data[0].attributes.title}`,
 });
 
-const productInCart = (product) => {
-  const foundItem = cartItems.value.find(
-    (item) => item.article === product.attributes.article
-  );
-
-  return !!foundItem;
-};
-
-const cartHandler = (product) => {
-  if (productInCart(product)) {
-    cart.removeFromCart(product.attributes.article);
-  } else {
-    cart.addToCart({
-      count: 1,
-      color: product.attributes.color,
-      article: product.attributes.article,
-      amount: product.attributes.amount,
-      size: product.attributes.size,
-      title: product.attributes.title,
-      price: product.attributes.price,
-      imageUrl: product.attributes.images.data[0]?.attributes?.url,
-      productCard: product.attributes.parent.slug,
-    });
-  }
-};
-
-const __returned__ = { config, route, router, categorySlug, dataProducts, loading, data, currentCategory, isProductsVisible, isRelatedCategoriesVisible, relatedCategories, parentCategory, getProducts, categoryUrl, productUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_6__.useCart }
+const __returned__ = { config, route, router, categorySlug, dataProducts, loading, data, categoryBrands, currentCategory, isProductsVisible, isRelatedCategoriesVisible, relatedCategories, parentCategory, getProducts, filterIsActive, clearFilter, getFilteredProducts, preSearchQuery, categoryUrl, productUrl, cart, cartItems, productInCart, cartHandler, useCart: __vite_ssr_import_7__.useCart, ProductFilter: __vite_ssr_import_8__.default }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_7__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_9__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="flex-grow"${
           _scopeId
@@ -11258,11 +10692,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="flex items-center"${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/",
           class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
         }, {
-          default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
                 _scopeId
@@ -11273,39 +10707,39 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }>На главную</span>`)
             } else {
               return [
-                (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("svg", {
+                (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                   class: "w-6 h-6",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_7__.createVNode("path", {
+                  __vite_ssr_import_9__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
                     d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   })
                 ])),
-                __vite_ssr_import_7__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                __vite_ssr_import_9__.createVNode("span", { class: "ml-[5px]" }, "На главную")
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<div class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center"${_scopeId}></div>`)
-        _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: {
                 path: `/categories`,
               },
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span${_scopeId}>Все категории</span>`)
             } else {
               return [
-                __vite_ssr_import_7__.createVNode("span", null, "Все категории")
+                __vite_ssr_import_9__.createVNode("span", null, "Все категории")
               ]
             }
           }),
@@ -11313,22 +10747,22 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }, _parent, _scopeId))
         if ($setup.parentCategory) {
           _push(`<!--[--><div class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center"${_scopeId}></div>`)
-          _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+          _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
             to: {
                   path: `/categories/${$setup.parentCategory.slug}`,
                 },
             class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
           }, {
-            default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+            default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
               if (_push) {
                 _push(`<span${
                   _scopeId
                 }>${
-                  __vite_ssr_import_8__.ssrInterpolate($setup.parentCategory.title)
+                  __vite_ssr_import_10__.ssrInterpolate($setup.parentCategory.title)
                 }</span>`)
               } else {
                 return [
-                  __vite_ssr_import_7__.createVNode("span", null, __vite_ssr_import_7__.toDisplayString($setup.parentCategory.title), 1 /* TEXT */)
+                  __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.parentCategory.title), 1 /* TEXT */)
                 ]
               }
             }),
@@ -11343,37 +10777,37 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><h1 class="flex-grow text-primary text-[36px] font-bold"${
           _scopeId
         }>${
-          __vite_ssr_import_8__.ssrInterpolate($setup.currentCategory.title)
+          __vite_ssr_import_10__.ssrInterpolate($setup.currentCategory.title)
         }</h1></div>`)
         if (
               $setup.currentCategory.items.data && $setup.currentCategory.items.data.length
             ) {
           _push(`<div class="cards flex items-center gap-[20px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_8__.ssrRenderList($setup.currentCategory.items.data, (category) => {
-            _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+          __vite_ssr_import_10__.ssrRenderList($setup.currentCategory.items.data, (category) => {
+            _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
               to: {
                 path: `/categories/${category.attributes.slug}`,
               },
               class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
             }, {
-              default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+              default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
                 if (_push) {
                   _push(`<div class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain" style="${
-                    __vite_ssr_import_8__.ssrRenderStyle(`background-image: url('${$setup.categoryUrl(category)}')`)
+                    __vite_ssr_import_10__.ssrRenderStyle(`background-image: url('${$setup.categoryUrl(category)}')`)
                   }"${
                     _scopeId
                   }></div><div class="flex flex-grow card-text text-[21px]"${
                     _scopeId
                   }>${
-                    __vite_ssr_import_8__.ssrInterpolate(category.attributes.title)
+                    __vite_ssr_import_10__.ssrInterpolate(category.attributes.title)
                   }</div>`)
                 } else {
                   return [
-                    __vite_ssr_import_7__.createVNode("div", {
+                    __vite_ssr_import_9__.createVNode("div", {
                       class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                       style: `background-image: url('${$setup.categoryUrl(category)}')`
                     }, null, 4 /* STYLE */),
-                    __vite_ssr_import_7__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_7__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                    __vite_ssr_import_9__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_9__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                   ]
                 }
               }),
@@ -11398,58 +10832,26 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
             _scopeId
           }><aside class="catalog-filter min-w-[300px] flex flex-col"${
             _scopeId
-          }><div class="filter-block mb-[20px]"${
-            _scopeId
-          }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
-            _scopeId
-          }> Бренд </div><!-- <ul class="filter-block-content py-[10px] mx-[30px]">
-                  <li
-                    class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"
-                    v-for="brand in brands"
-                  >
-                    <span class="flex-grow">{{ brand.attributes.title }}</span>
-                    <span
-                      ><svg
-                        class="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        ></path></svg
-                    ></span>
-                  </li>
-                </ul> --></div><div class="filter-block"${
-            _scopeId
-          }><div class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"${
-            _scopeId
-          }> Цена, руб. </div><div class="filter-block-content py-[10px] mx-[30px]"${
-            _scopeId
-          }><div class="mt-[20px] flex justify-between items-center w-full"${
-            _scopeId
-          }><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center" type="text" placeholder="799"${
-            _scopeId
-          }><span class="w-[20px] h-[2px] bg-grey-light"${
-            _scopeId
-          }></span><input class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center" type="text" placeholder="13000"${
-            _scopeId
-          }></div></div></div></aside><!-- loading-cards -->`)
+          }>`)
+          _push(__vite_ssr_import_10__.ssrRenderComponent($setup["ProductFilter"], {
+            modelValue: $setup.filterIsActive,
+            "onUpdate:modelValue": $event => (($setup.filterIsActive) = $event),
+            brands: $setup.categoryBrands,
+            onApply: $setup.getFilteredProducts,
+            onClear: $event => ($setup.clearFilter())
+          }, null, _parent, _scopeId))
+          _push(`</aside><!-- loading-cards -->`)
           if ($setup.loading) {
             _push(`<div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-            __vite_ssr_import_8__.ssrRenderList(3, (item) => {
-              _push(`<div class="catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"${_scopeId}></div>`)
+            __vite_ssr_import_10__.ssrRenderList(4, (item) => {
+              _push(`<div class="catalog-list-item font-medium text-[21px] bg-grey w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"${_scopeId}></div>`)
             })
             _push(`<!--]--></div>`)
-          } else {
+          } else if ($setup.dataProducts && $setup.dataProducts.length) {
             _push(`<!--[--><!-- products-list --><div class="catalog-list flex-grow flex flex-wrap gap-[25px]"${_scopeId}><!--[-->`)
-            __vite_ssr_import_8__.ssrRenderList($setup.dataProducts, (product, index) => {
-              _push(`<div class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"${_scopeId}>`)
-              _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+            __vite_ssr_import_10__.ssrRenderList($setup.dataProducts, (product, index) => {
+              _push(`<div class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-all"${_scopeId}>`)
+              _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
                 to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
                 class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
                 style: `background-image: url('${$setup.productUrl(product)}')`
@@ -11459,19 +10861,19 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }><div class="flex flex-1 item-title font-medium justify-center items-center"${
                 _scopeId
               }>${
-                __vite_ssr_import_8__.ssrInterpolate(product.attributes.title)
+                __vite_ssr_import_10__.ssrInterpolate(product.attributes.title)
               }</div><div class="flex gap-[5px]"${
                 _scopeId
               }><div class="flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none"${
                 _scopeId
               }>${
-                __vite_ssr_import_8__.ssrInterpolate(product.attributes.price)
+                __vite_ssr_import_10__.ssrInterpolate(product.attributes.price)
               } ₽ </div><button class="${
-                __vite_ssr_import_8__.ssrRenderClass([{
+                __vite_ssr_import_10__.ssrRenderClass([{
                           'hover:bg-white border-[2px] border-primary hover:text-primary':
                             !$setup.productInCart(product),
                           'hover:bg-orange': $setup.productInCart(product),
-                        }, "item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center"])
+                        }, "item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center active:scale-95 transition-all"])
               }"${
                 _scopeId
               }>`)
@@ -11491,6 +10893,16 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               _push(`</button></div></div></div>`)
             })
             _push(`<!--]--></div><!--]-->`)
+          } else {
+            _push(`<div class="flex flex-1 flex-col justify-center items-center font-medium text-secondary"${
+              _scopeId
+            }><span class="text-[26px]"${
+              _scopeId
+            }>Пусто</span><span class="text-[21px] mb-[25px]"${
+              _scopeId
+            }>По выбранным параметрам фильтра ничего не найдено</span><div class="text-[21px] text-center"${
+              _scopeId
+            }>¯\\_(ツ)_/¯</div></div>`)
           }
           _push(`</div>`)
         } else {
@@ -11507,31 +10919,31 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }></div></div><div class="cards flex items-center gap-[20px]"${
             _scopeId
           }><!--[-->`)
-          __vite_ssr_import_8__.ssrRenderList($setup.relatedCategories, (category) => {
-            _push(__vite_ssr_import_8__.ssrRenderComponent(_component_NuxtLink, {
+          __vite_ssr_import_10__.ssrRenderList($setup.relatedCategories, (category) => {
+            _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
               to: {
                   path: `/categories/${category.attributes.slug}`,
                 },
               class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
             }, {
-              default: __vite_ssr_import_7__.withCtx((_, _push, _parent, _scopeId) => {
+              default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
                 if (_push) {
                   _push(`<div class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain" style="${
-                    __vite_ssr_import_8__.ssrRenderStyle(`background-image: url('${$setup.categoryUrl(category)}')`)
+                    __vite_ssr_import_10__.ssrRenderStyle(`background-image: url('${$setup.categoryUrl(category)}')`)
                   }"${
                     _scopeId
                   }></div><div class="flex flex-grow card-text text-[21px]"${
                     _scopeId
                   }>${
-                    __vite_ssr_import_8__.ssrInterpolate(category.attributes.title)
+                    __vite_ssr_import_10__.ssrInterpolate(category.attributes.title)
                   }</div>`)
                 } else {
                   return [
-                    __vite_ssr_import_7__.createVNode("div", {
+                    __vite_ssr_import_9__.createVNode("div", {
                       class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                       style: `background-image: url('${$setup.categoryUrl(category)}')`
                     }, null, 4 /* STYLE */),
-                    __vite_ssr_import_7__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_7__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                    __vite_ssr_import_9__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_9__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                   ]
                 }
               }),
@@ -11545,233 +10957,227 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_7__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_7__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_7__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_7__.createVNode("div", { class: "flex items-center" }, [
-                  __vite_ssr_import_7__.createVNode(_component_NuxtLink, {
+          __vite_ssr_import_9__.createVNode("div", { class: "flex-grow" }, [
+            __vite_ssr_import_9__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_9__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_9__.createVNode("div", { class: "flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                     to: "/",
                     class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
                   }, {
-                    default: __vite_ssr_import_7__.withCtx(() => [
-                      (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("svg", {
+                    default: __vite_ssr_import_9__.withCtx(() => [
+                      (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                         class: "w-6 h-6",
                         fill: "none",
                         stroke: "currentColor",
                         viewBox: "0 0 24 24",
                         xmlns: "http://www.w3.org/2000/svg"
                       }, [
-                        __vite_ssr_import_7__.createVNode("path", {
+                        __vite_ssr_import_9__.createVNode("path", {
                           "stroke-linecap": "round",
                           "stroke-linejoin": "round",
                           "stroke-width": "2",
                           d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                         })
                       ])),
-                      __vite_ssr_import_7__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                      __vite_ssr_import_9__.createVNode("span", { class: "ml-[5px]" }, "На главную")
                     ]),
                     _: 1 /* STABLE */
                   }),
-                  __vite_ssr_import_7__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
-                  __vite_ssr_import_7__.createVNode(_component_NuxtLink, {
+                  __vite_ssr_import_9__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
+                  __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                     to: {
                 path: `/categories`,
               },
                     class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                   }, {
-                    default: __vite_ssr_import_7__.withCtx(() => [
-                      __vite_ssr_import_7__.createVNode("span", null, "Все категории")
+                    default: __vite_ssr_import_9__.withCtx(() => [
+                      __vite_ssr_import_9__.createVNode("span", null, "Все категории")
                     ]),
                     _: 1 /* STABLE */
                   }),
                   ($setup.parentCategory)
-                    ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, { key: 0 }, [
-                        __vite_ssr_import_7__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
-                        __vite_ssr_import_7__.createVNode(_component_NuxtLink, {
+                    ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, { key: 0 }, [
+                        __vite_ssr_import_9__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
+                        __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                           to: {
                   path: `/categories/${$setup.parentCategory.slug}`,
                 },
                           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                         }, {
-                          default: __vite_ssr_import_7__.withCtx(() => [
-                            __vite_ssr_import_7__.createVNode("span", null, __vite_ssr_import_7__.toDisplayString($setup.parentCategory.title), 1 /* TEXT */)
+                          default: __vite_ssr_import_9__.withCtx(() => [
+                            __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.parentCategory.title), 1 /* TEXT */)
                           ]),
                           _: 1 /* STABLE */
                         }, 8 /* PROPS */, ["to"])
                       ], 64 /* STABLE_FRAGMENT */))
-                    : __vite_ssr_import_7__.createCommentVNode("v-if", true)
+                    : __vite_ssr_import_9__.createCommentVNode("v-if", true)
                 ]),
-                __vite_ssr_import_7__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
-                  __vite_ssr_import_7__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_7__.toDisplayString($setup.currentCategory.title), 1 /* TEXT */)
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, __vite_ssr_import_9__.toDisplayString($setup.currentCategory.title), 1 /* TEXT */)
                 ]),
                 (
               $setup.currentCategory.items.data && $setup.currentCategory.items.data.length
             )
-                  ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
+                  ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                       key: 0,
                       class: "cards flex items-center gap-[20px]"
                     }, [
-                      (__vite_ssr_import_7__.openBlock(true), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList($setup.currentCategory.items.data, (category) => {
-                        return (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(_component_NuxtLink, {
+                      (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.currentCategory.items.data, (category) => {
+                        return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(_component_NuxtLink, {
                           to: {
                 path: `/categories/${category.attributes.slug}`,
               },
                           class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
                         }, {
-                          default: __vite_ssr_import_7__.withCtx(() => [
-                            __vite_ssr_import_7__.createVNode("div", {
+                          default: __vite_ssr_import_9__.withCtx(() => [
+                            __vite_ssr_import_9__.createVNode("div", {
                               class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                               style: `background-image: url('${$setup.categoryUrl(category)}')`
                             }, null, 4 /* STYLE */),
-                            __vite_ssr_import_7__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_7__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                            __vite_ssr_import_9__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_9__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                           ]),
                           _: 2 /* DYNAMIC */
                         }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
                       }), 256 /* UNKEYED_FRAGMENT */))
                     ]))
-                  : __vite_ssr_import_7__.createCommentVNode("v-if", true),
+                  : __vite_ssr_import_9__.createCommentVNode("v-if", true),
                 (
               $setup.isProductsVisible &&
               $setup.currentCategory.items.data &&
               $setup.currentCategory.items.data.length
             )
-                  ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
+                  ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                       key: 1,
                       class: "section-divider w-full h-[2px] bg-grey-light shadow-divider my-[40px] rounded-full"
                     }))
-                  : __vite_ssr_import_7__.createCommentVNode("v-if", true),
+                  : __vite_ssr_import_9__.createCommentVNode("v-if", true),
                 ($setup.isProductsVisible)
-                  ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
+                  ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                       key: 2,
                       class: "flex justify-between items-start gap-[40px]"
                     }, [
-                      __vite_ssr_import_7__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
-                        __vite_ssr_import_7__.createVNode("div", { class: "filter-block mb-[20px]" }, [
-                          __vite_ssr_import_7__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Бренд "),
-                          __vite_ssr_import_7__.createCommentVNode(" <ul class=\"filter-block-content py-[10px] mx-[30px]\">\n                  <li\n                    class=\"px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer\"\n                    v-for=\"brand in brands\"\n                  >\n                    <span class=\"flex-grow\">{{ brand.attributes.title }}</span>\n                    <span\n                      ><svg\n                        class=\"w-6 h-6\"\n                        fill=\"none\"\n                        stroke=\"currentColor\"\n                        viewBox=\"0 0 24 24\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                      >\n                        <path\n                          stroke-linecap=\"round\"\n                          stroke-linejoin=\"round\"\n                          stroke-width=\"2\"\n                          d=\"M5 13l4 4L19 7\"\n                        ></path></svg\n                    ></span>\n                  </li>\n                </ul> ")
-                        ]),
-                        __vite_ssr_import_7__.createVNode("div", { class: "filter-block" }, [
-                          __vite_ssr_import_7__.createVNode("div", { class: "filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]" }, " Цена, руб. "),
-                          __vite_ssr_import_7__.createVNode("div", { class: "filter-block-content py-[10px] mx-[30px]" }, [
-                            __vite_ssr_import_7__.createVNode("div", { class: "mt-[20px] flex justify-between items-center w-full" }, [
-                              __vite_ssr_import_7__.createVNode("input", {
-                                class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
-                                type: "text",
-                                placeholder: "799"
-                              }),
-                              __vite_ssr_import_7__.createVNode("span", { class: "w-[20px] h-[2px] bg-grey-light" }),
-                              __vite_ssr_import_7__.createVNode("input", {
-                                class: "py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center",
-                                type: "text",
-                                placeholder: "13000"
-                              })
-                            ])
-                          ])
-                        ])
+                      __vite_ssr_import_9__.createVNode("aside", { class: "catalog-filter min-w-[300px] flex flex-col" }, [
+                        __vite_ssr_import_9__.createVNode($setup["ProductFilter"], {
+                          modelValue: $setup.filterIsActive,
+                          "onUpdate:modelValue": $event => (($setup.filterIsActive) = $event),
+                          brands: $setup.categoryBrands,
+                          onApply: $setup.getFilteredProducts,
+                          onClear: $event => ($setup.clearFilter())
+                        }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue", "brands", "onClear"])
                       ]),
-                      __vite_ssr_import_7__.createCommentVNode(" loading-cards "),
+                      __vite_ssr_import_9__.createCommentVNode(" loading-cards "),
                       ($setup.loading)
-                        ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 0,
                             class: "catalog-list flex-grow flex flex-wrap gap-[25px]"
                           }, [
-                            (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList(3, (item) => {
-                              return __vite_ssr_import_7__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
+                            (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList(4, (item) => {
+                              return __vite_ssr_import_9__.createVNode("div", { class: "catalog-list-item font-medium text-[21px] bg-grey w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse" })
                             }), 64 /* STABLE_FRAGMENT */))
                           ]))
-                        : (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, { key: 1 }, [
-                            __vite_ssr_import_7__.createCommentVNode(" products-list "),
-                            __vite_ssr_import_7__.createVNode("div", { class: "catalog-list flex-grow flex flex-wrap gap-[25px]" }, [
-                              (__vite_ssr_import_7__.openBlock(true), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList($setup.dataProducts, (product, index) => {
-                                return (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("div", {
-                                  key: index,
-                                  class: "catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"
-                                }, [
-                                  __vite_ssr_import_7__.createVNode(_component_NuxtLink, {
-                                    to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
-                                    class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
-                                    style: `background-image: url('${$setup.productUrl(product)}')`
-                                  }, null, 8 /* PROPS */, ["to", "style"]),
-                                  __vite_ssr_import_7__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
-                                    __vite_ssr_import_7__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_7__.toDisplayString(product.attributes.title), 1 /* TEXT */),
-                                    __vite_ssr_import_7__.createVNode("div", { class: "flex gap-[5px]" }, [
-                                      __vite_ssr_import_7__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_7__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
-                                      __vite_ssr_import_7__.createVNode("button", {
-                                        class: ["item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center", {
+                        : ($setup.dataProducts && $setup.dataProducts.length)
+                          ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, { key: 1 }, [
+                              __vite_ssr_import_9__.createCommentVNode(" products-list "),
+                              __vite_ssr_import_9__.createVNode("div", { class: "catalog-list flex-grow flex flex-wrap gap-[25px]" }, [
+                                (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.dataProducts, (product, index) => {
+                                  return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
+                                    key: index,
+                                    class: "catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-all"
+                                  }, [
+                                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
+                                      to: `/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`,
+                                      class: "flex item-image bg-center bg-no-repeat bg-cover w-[256px] h-[256px]",
+                                      style: `background-image: url('${$setup.productUrl(product)}')`
+                                    }, null, 8 /* PROPS */, ["to", "style"]),
+                                    __vite_ssr_import_9__.createVNode("div", { class: "item-content flex flex-1 flex-col justify-between text-center" }, [
+                                      __vite_ssr_import_9__.createVNode("div", { class: "flex flex-1 item-title font-medium justify-center items-center" }, __vite_ssr_import_9__.toDisplayString(product.attributes.title), 1 /* TEXT */),
+                                      __vite_ssr_import_9__.createVNode("div", { class: "flex gap-[5px]" }, [
+                                        __vite_ssr_import_9__.createVNode("div", { class: "flex-1 item-button border-[2px] border-primary rounded-[4px] flex justify-center items-center cursor-default select-none" }, __vite_ssr_import_9__.toDisplayString(product.attributes.price) + " ₽ ", 1 /* TEXT */),
+                                        __vite_ssr_import_9__.createVNode("button", {
+                                          class: ["item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center active:scale-95 transition-all", {
                           'hover:bg-white border-[2px] border-primary hover:text-primary':
                             !$setup.productInCart(product),
                           'hover:bg-orange': $setup.productInCart(product),
                         }],
-                                        onClick: $event => ($setup.cartHandler(product))
-                                      }, [
-                                        ($setup.productInCart(product))
-                                          ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("svg", {
-                                              key: 0,
-                                              class: "w-6 h-6",
-                                              fill: "none",
-                                              stroke: "currentColor",
-                                              viewBox: "0 0 24 24",
-                                              xmlns: "http://www.w3.org/2000/svg"
-                                            }, [
-                                              __vite_ssr_import_7__.createVNode("path", {
-                                                "stroke-linecap": "round",
-                                                "stroke-linejoin": "round",
-                                                "stroke-width": "2",
-                                                d: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                                              })
-                                            ]))
-                                          : (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock("svg", {
-                                              key: 1,
-                                              class: "w-6 h-6",
-                                              fill: "none",
-                                              stroke: "currentColor",
-                                              viewBox: "0 0 24 24",
-                                              xmlns: "http://www.w3.org/2000/svg"
-                                            }, [
-                                              __vite_ssr_import_7__.createVNode("path", {
-                                                "stroke-linecap": "round",
-                                                "stroke-linejoin": "round",
-                                                "stroke-width": "2",
-                                                d: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                                              })
-                                            ]))
-                                      ], 10 /* CLASS, PROPS */, ["onClick"])
+                                          onClick: $event => ($setup.cartHandler(product))
+                                        }, [
+                                          ($setup.productInCart(product))
+                                            ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
+                                                key: 0,
+                                                class: "w-6 h-6",
+                                                fill: "none",
+                                                stroke: "currentColor",
+                                                viewBox: "0 0 24 24",
+                                                xmlns: "http://www.w3.org/2000/svg"
+                                              }, [
+                                                __vite_ssr_import_9__.createVNode("path", {
+                                                  "stroke-linecap": "round",
+                                                  "stroke-linejoin": "round",
+                                                  "stroke-width": "2",
+                                                  d: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                                                })
+                                              ]))
+                                            : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
+                                                key: 1,
+                                                class: "w-6 h-6",
+                                                fill: "none",
+                                                stroke: "currentColor",
+                                                viewBox: "0 0 24 24",
+                                                xmlns: "http://www.w3.org/2000/svg"
+                                              }, [
+                                                __vite_ssr_import_9__.createVNode("path", {
+                                                  "stroke-linecap": "round",
+                                                  "stroke-linejoin": "round",
+                                                  "stroke-width": "2",
+                                                  d: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                                                })
+                                              ]))
+                                        ], 10 /* CLASS, PROPS */, ["onClick"])
+                                      ])
                                     ])
-                                  ])
-                                ]))
-                              }), 128 /* KEYED_FRAGMENT */))
-                            ])
-                          ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
+                                  ]))
+                                }), 128 /* KEYED_FRAGMENT */))
+                              ])
+                            ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
+                          : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
+                              key: 2,
+                              class: "flex flex-1 flex-col justify-center items-center font-medium text-secondary"
+                            }, [
+                              __vite_ssr_import_9__.createVNode("span", { class: "text-[26px]" }, "Пусто"),
+                              __vite_ssr_import_9__.createVNode("span", { class: "text-[21px] mb-[25px]" }, "По выбранным параметрам фильтра ничего не найдено"),
+                              __vite_ssr_import_9__.createVNode("div", { class: "text-[21px] text-center" }, "¯\\_(ツ)_/¯")
+                            ]))
                     ]))
-                  : __vite_ssr_import_7__.createCommentVNode("v-if", true),
-                __vite_ssr_import_7__.createCommentVNode(" related-categories "),
+                  : __vite_ssr_import_9__.createCommentVNode("v-if", true),
+                __vite_ssr_import_9__.createCommentVNode(" related-categories "),
                 ($setup.isRelatedCategoriesVisible && $setup.relatedCategories.length)
-                  ? (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, { key: 3 }, [
-                      __vite_ssr_import_7__.createVNode("div", { class: "my-[40px] flex items-center gap-[70px]" }, [
-                        __vite_ssr_import_7__.createVNode("h4", { class: "text-[36px] text-secondary font-bold" }, " Сопутствующие категории "),
-                        __vite_ssr_import_7__.createVNode("div", { class: "section-divider flex-1 h-[2px] bg-grey-light shadow-divider my-[40px] rounded-full" })
+                  ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, { key: 3 }, [
+                      __vite_ssr_import_9__.createVNode("div", { class: "my-[40px] flex items-center gap-[70px]" }, [
+                        __vite_ssr_import_9__.createVNode("h4", { class: "text-[36px] text-secondary font-bold" }, " Сопутствующие категории "),
+                        __vite_ssr_import_9__.createVNode("div", { class: "section-divider flex-1 h-[2px] bg-grey-light shadow-divider my-[40px] rounded-full" })
                       ]),
-                      __vite_ssr_import_7__.createVNode("div", { class: "cards flex items-center gap-[20px]" }, [
-                        (__vite_ssr_import_7__.openBlock(true), __vite_ssr_import_7__.createBlock(__vite_ssr_import_7__.Fragment, null, __vite_ssr_import_7__.renderList($setup.relatedCategories, (category) => {
-                          return (__vite_ssr_import_7__.openBlock(), __vite_ssr_import_7__.createBlock(_component_NuxtLink, {
+                      __vite_ssr_import_9__.createVNode("div", { class: "cards flex items-center gap-[20px]" }, [
+                        (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.relatedCategories, (category) => {
+                          return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(_component_NuxtLink, {
                             to: {
                   path: `/categories/${category.attributes.slug}`,
                 },
                             class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
                           }, {
-                            default: __vite_ssr_import_7__.withCtx(() => [
-                              __vite_ssr_import_7__.createVNode("div", {
+                            default: __vite_ssr_import_9__.withCtx(() => [
+                              __vite_ssr_import_9__.createVNode("div", {
                                 class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                                 style: `background-image: url('${$setup.categoryUrl(category)}')`
                               }, null, 4 /* STYLE */),
-                              __vite_ssr_import_7__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_7__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                              __vite_ssr_import_9__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_9__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                             ]),
                             _: 2 /* DYNAMIC */
                           }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
                         }), 256 /* UNKEYED_FRAGMENT */))
                       ])
                     ], 64 /* STABLE_FRAGMENT */))
-                  : __vite_ssr_import_7__.createCommentVNode("v-if", true)
+                  : __vite_ssr_import_9__.createCommentVNode("v-if", true)
               ])
             ])
           ])
@@ -11783,17 +11189,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_9__.useSSRContext()
+  const ssrContext = __vite_ssr_import_11__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/categories/[slug]/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/[slug]/index.vue"]]);
 }
 
 
@@ -11806,6 +11212,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
+// - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
@@ -11818,7 +11225,10 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
 const _sfc_main = {
@@ -11831,14 +11241,20 @@ let __temp, __restore
 const config = __vite_ssr_import_2__.useRuntimeConfig();
 
 const { data, error } = (
-  ([__temp,__restore] = __vite_ssr_import_4__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData("root-categories", () =>
+  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData("root-categories", () =>
   __vite_ssr_import_3__.GqlGetRootCategories({ type: "section" })
 ))),
   __temp = await __temp,
   __restore(),
   __temp
 );
-const categoriesList = data.value.testCategories?.data;
+
+console.log(data.value);
+const categoriesList = data.value?.categories?.data;
+
+__vite_ssr_import_4__.useHead({
+  title: `Прометей – Все категории`,
+});
 
 const imageUrl = (category) => {
   const url = category.attributes?.image?.data?.attributes?.url;
@@ -11854,17 +11270,17 @@ return __returned__
 }
 
 }
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_6__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_5__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_5__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_6__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="flex-grow"${
           _scopeId
@@ -11875,11 +11291,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="flex items-center"${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_6__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLink, {
           to: "/",
           class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
         }, {
-          default: __vite_ssr_import_5__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${
                 _scopeId
@@ -11890,21 +11306,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }>На главную</span>`)
             } else {
               return [
-                (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("svg", {
+                (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("svg", {
                   class: "w-6 h-6",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_5__.createVNode("path", {
+                  __vite_ssr_import_6__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
                     d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   })
                 ])),
-                __vite_ssr_import_5__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                __vite_ssr_import_6__.createVNode("span", { class: "ml-[5px]" }, "На главную")
               ]
             }
           }),
@@ -11915,33 +11331,33 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><h1 class="flex-grow text-primary text-[36px] font-bold"${
           _scopeId
         }> Все категории </h1></div>`)
-        if ($setup.categoriesList.length) {
+        if ($setup.categoriesList && $setup.categoriesList.length) {
           _push(`<div class="cards flex items-center gap-[20px]"${_scopeId}><!--[-->`)
-          __vite_ssr_import_6__.ssrRenderList($setup.categoriesList, (category) => {
-            _push(__vite_ssr_import_6__.ssrRenderComponent(_component_NuxtLink, {
+          __vite_ssr_import_7__.ssrRenderList($setup.categoriesList, (category) => {
+            _push(__vite_ssr_import_7__.ssrRenderComponent(_component_NuxtLink, {
               to: {
                 path: `/categories/${category.attributes.slug}`,
               },
               class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
             }, {
-              default: __vite_ssr_import_5__.withCtx((_, _push, _parent, _scopeId) => {
+              default: __vite_ssr_import_6__.withCtx((_, _push, _parent, _scopeId) => {
                 if (_push) {
                   _push(`<div class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain" style="${
-                    __vite_ssr_import_6__.ssrRenderStyle(`background-image: url('${$setup.imageUrl(category)}')`)
+                    __vite_ssr_import_7__.ssrRenderStyle(`background-image: url('${$setup.imageUrl(category)}')`)
                   }"${
                     _scopeId
                   }></div><div class="flex flex-grow card-text text-[21px]"${
                     _scopeId
                   }>${
-                    __vite_ssr_import_6__.ssrInterpolate(category.attributes.title)
+                    __vite_ssr_import_7__.ssrInterpolate(category.attributes.title)
                   }</div>`)
                 } else {
                   return [
-                    __vite_ssr_import_5__.createVNode("div", {
+                    __vite_ssr_import_6__.createVNode("div", {
                       class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                       style: `background-image: url('${$setup.imageUrl(category)}')`
                     }, null, 4 /* STYLE */),
-                    __vite_ssr_import_5__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_5__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                    __vite_ssr_import_6__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_6__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                   ]
                 }
               }),
@@ -11965,68 +11381,68 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_5__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_5__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_5__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_5__.createVNode("div", { class: "flex items-center" }, [
-                  __vite_ssr_import_5__.createVNode(_component_NuxtLink, {
+          __vite_ssr_import_6__.createVNode("div", { class: "flex-grow" }, [
+            __vite_ssr_import_6__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_6__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_6__.createVNode("div", { class: "flex items-center" }, [
+                  __vite_ssr_import_6__.createVNode(_component_NuxtLink, {
                     to: "/",
                     class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
                   }, {
-                    default: __vite_ssr_import_5__.withCtx(() => [
-                      (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("svg", {
+                    default: __vite_ssr_import_6__.withCtx(() => [
+                      (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("svg", {
                         class: "w-6 h-6",
                         fill: "none",
                         stroke: "currentColor",
                         viewBox: "0 0 24 24",
                         xmlns: "http://www.w3.org/2000/svg"
                       }, [
-                        __vite_ssr_import_5__.createVNode("path", {
+                        __vite_ssr_import_6__.createVNode("path", {
                           "stroke-linecap": "round",
                           "stroke-linejoin": "round",
                           "stroke-width": "2",
                           d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                         })
                       ])),
-                      __vite_ssr_import_5__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                      __vite_ssr_import_6__.createVNode("span", { class: "ml-[5px]" }, "На главную")
                     ]),
                     _: 1 /* STABLE */
                   })
                 ]),
-                __vite_ssr_import_5__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
-                  __vite_ssr_import_5__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Все категории ")
+                __vite_ssr_import_6__.createVNode("div", { class: "page-header mb-[20px] flex items-center" }, [
+                  __vite_ssr_import_6__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Все категории ")
                 ]),
-                ($setup.categoriesList.length)
-                  ? (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("div", {
+                ($setup.categoriesList && $setup.categoriesList.length)
+                  ? (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("div", {
                       key: 0,
                       class: "cards flex items-center gap-[20px]"
                     }, [
-                      (__vite_ssr_import_5__.openBlock(true), __vite_ssr_import_5__.createBlock(__vite_ssr_import_5__.Fragment, null, __vite_ssr_import_5__.renderList($setup.categoriesList, (category) => {
-                        return (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock(_component_NuxtLink, {
+                      (__vite_ssr_import_6__.openBlock(true), __vite_ssr_import_6__.createBlock(__vite_ssr_import_6__.Fragment, null, __vite_ssr_import_6__.renderList($setup.categoriesList, (category) => {
+                        return (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock(_component_NuxtLink, {
                           to: {
                 path: `/categories/${category.attributes.slug}`,
               },
                           class: "card flex flex-col items-center w-1/5 h-[300px] bg-grey-light rounded-[4px] border-[2px] border-grey-text relative"
                         }, {
-                          default: __vite_ssr_import_5__.withCtx(() => [
-                            __vite_ssr_import_5__.createVNode("div", {
+                          default: __vite_ssr_import_6__.withCtx(() => [
+                            __vite_ssr_import_6__.createVNode("div", {
                               class: "card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain",
                               style: `background-image: url('${$setup.imageUrl(category)}')`
                             }, null, 4 /* STYLE */),
-                            __vite_ssr_import_5__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_5__.toDisplayString(category.attributes.title), 1 /* TEXT */)
+                            __vite_ssr_import_6__.createVNode("div", { class: "flex flex-grow card-text text-[21px]" }, __vite_ssr_import_6__.toDisplayString(category.attributes.title), 1 /* TEXT */)
                           ]),
                           _: 2 /* DYNAMIC */
                         }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
                       }), 256 /* UNKEYED_FRAGMENT */))
                     ]))
-                  : (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("h4", {
+                  : (__vite_ssr_import_6__.openBlock(), __vite_ssr_import_6__.createBlock("h4", {
                       key: 1,
                       class: "text-[26px]"
                     }, [
-                      __vite_ssr_import_5__.createVNode("div", { class: "flex flex-col justify-center items-center font-medium text-secondary" }, [
-                        __vite_ssr_import_5__.createVNode("span", { class: "text-[26px]" }, "Тут пока пусто."),
-                        __vite_ssr_import_5__.createVNode("span", { class: "text-[21px] mb-[25px]" }, "Возвращайтесь сюда позднее!"),
-                        __vite_ssr_import_5__.createVNode("div", { class: "text-[21px] text-center" }, "¯\\_(ツ)_/¯")
+                      __vite_ssr_import_6__.createVNode("div", { class: "flex flex-col justify-center items-center font-medium text-secondary" }, [
+                        __vite_ssr_import_6__.createVNode("span", { class: "text-[26px]" }, "Тут пока пусто."),
+                        __vite_ssr_import_6__.createVNode("span", { class: "text-[21px] mb-[25px]" }, "Возвращайтесь сюда позднее!"),
+                        __vite_ssr_import_6__.createVNode("div", { class: "text-[21px] text-center" }, "¯\\_(ツ)_/¯")
                       ])
                     ]))
               ])
@@ -12040,17 +11456,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_7__.useSSRContext()
+  const ssrContext = __vite_ssr_import_8__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/categories/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_9__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/categories/index.vue"]]);
 }
 
 
@@ -12135,6 +11551,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/store/menu/menu.js");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/assets/images/voleyball.png");
@@ -12169,7 +11586,7 @@ const getLocalBackgroundImageUrl = (name) => {
 };
 
 __vite_ssr_import_3__.useHead({
-  title: `Prometei – Магазин спортивного инвентаря`,
+  title: `Прометей – Магазин спортивного инвентаря`,
 });
 
 const __returned__ = { menuStore, isExpandMenuShow, getLocalBackgroundImageUrl, useMenuToggler: __vite_ssr_import_4__.useMenuToggler, voleyball: __vite_ssr_import_5__.default, basketball: __vite_ssr_import_6__.default, football: __vite_ssr_import_7__.default }
@@ -12196,7 +11613,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
       }, "flex-grow"])
         }"${
           _scopeId
-        }><main class="mt-[136px] mb-[40px] flex-grow"${
+        }><main class="mt-[102px] mb-[40px] flex-grow"${
           _scopeId
         }><div class="max-w-screen-xl w-full mx-auto"${
           _scopeId
@@ -12290,7 +11707,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         'overflow-hidden': $setup.isExpandMenuShow,
       }]
           }, [
-            __vite_ssr_import_8__.createVNode("main", { class: "mt-[136px] mb-[40px] flex-grow" }, [
+            __vite_ssr_import_8__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
               __vite_ssr_import_8__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
                 __vite_ssr_import_8__.createVNode("div", { class: "page-header flex items-center" }, [
                   __vite_ssr_import_8__.createVNode("h1", { class: "flex-grow text-primary text-[36px] font-bold" }, " Популярные категории "),
@@ -12457,6 +11874,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_m
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs ($id_63a2fd8b)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
 // - /components/UI/ImageViewer.vue ($id_9bcbfe6f)
 // - /store/cart/cart.js ($id_08ef3e2f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
@@ -12473,11 +11891,14 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/gql.mjs");
 
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/components/UI/ImageViewer.vue");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/store/cart/cart.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/components/UI/ImageViewer.vue");
+
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/store/cart/cart.js");
 
 
 
@@ -12496,7 +11917,7 @@ const productParams = route.params.params;
 const [productCardSlug, article] = productParams.split("_");
 
 const { data, error } = (
-  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData(
+  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => __vite_ssr_import_2__.useAsyncData(
   `product-card-data-by-slug-${productCardSlug}`,
   () => __vite_ssr_import_3__.GqlProductCardDataBySlug({ slug: productCardSlug })
 ))),
@@ -12511,10 +11932,10 @@ if (!productCard.value) {
   router.push("/404");
 }
 
-const category = productCard.value.attributes.testCategory.data.attributes;
+const category = productCard.value.attributes.category.data.attributes;
 
 const productData = (
-  ([__temp,__restore] = __vite_ssr_import_5__.withAsyncContext(() => __vite_ssr_import_3__.GqlProductByArticle({ article: article }))),
+  ([__temp,__restore] = __vite_ssr_import_6__.withAsyncContext(() => __vite_ssr_import_3__.GqlProductByArticle({ article: article }))),
   __temp = await __temp,
   __restore(),
   __temp
@@ -12668,7 +12089,7 @@ const isCartHandlerDisabled = __vite_ssr_import_4__.computed(
   () => currentProduct.value.attributes.amount <= 0
 );
 
-const cart = __vite_ssr_import_7__.useCart();
+const cart = __vite_ssr_import_8__.useCart();
 
 const cartItem = __vite_ssr_import_4__.computed(() =>
   cart.items.find(
@@ -12749,23 +12170,27 @@ function unique(arr, param) {
   return uniqueArr;
 }
 
-const __returned__ = { router, route, productParams, productCardSlug, article, data, error, productCard, category, productData, currentProduct, productTitle, productPrice, constProductCardImages, productImages, imagesGalery, productArticle, productDescription, productAmount, productCardProducts, productCardColors, productColor, colorIsActive, disabledColor, colorHandler, productCardSizes, productSize, sizeIsActive, disabledSize, sizeHandler, isCartHandlerDisabled, cart, cartItem, productCounter, productInCart, increaseAlowed, addToCart, updateCartStateItem, selectCounter, cartHandler, removeFromStateCart, unique, ImageViewer: __vite_ssr_import_6__.default, useCart: __vite_ssr_import_7__.useCart }
+__vite_ssr_import_5__.useHead({
+  title: `Прометей – ${productCard.value.attributes.title}`,
+});
+
+const __returned__ = { router, route, productParams, productCardSlug, article, data, error, productCard, category, productData, currentProduct, productTitle, productPrice, constProductCardImages, productImages, imagesGalery, productArticle, productDescription, productAmount, productCardProducts, productCardColors, productColor, colorIsActive, disabledColor, colorHandler, productCardSizes, productSize, sizeIsActive, disabledSize, sizeHandler, isCartHandlerDisabled, cart, cartItem, productCounter, productInCart, increaseAlowed, addToCart, updateCartStateItem, selectCounter, cartHandler, removeFromStateCart, unique, ImageViewer: __vite_ssr_import_7__.default, useCart: __vite_ssr_import_8__.useCart }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLayout = __vite_ssr_import_0__.default
   const _component_NuxtLink = __vite_ssr_import_1__.default
 
-  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_8__.mergeProps({ name: "shop" }, _attrs), {
-    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+  _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLayout, __vite_ssr_import_9__.mergeProps({ name: "shop" }, _attrs), {
+    default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
         _push(`<div class="flex-grow" data-v-5076c47e${
           _scopeId
@@ -12778,11 +12203,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="flex items-center" data-v-5076c47e${
           _scopeId
         }>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: "/",
           class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-v-5076c47e${
                 _scopeId
@@ -12793,39 +12218,39 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
               }>На главную</span>`)
             } else {
               return [
-                (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                   class: "w-6 h-6",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
                   xmlns: "http://www.w3.org/2000/svg"
                 }, [
-                  __vite_ssr_import_8__.createVNode("path", {
+                  __vite_ssr_import_9__.createVNode("path", {
                     "stroke-linecap": "round",
                     "stroke-linejoin": "round",
                     "stroke-width": "2",
                     d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   })
                 ])),
-                __vite_ssr_import_8__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                __vite_ssr_import_9__.createVNode("span", { class: "ml-[5px]" }, "На главную")
               ]
             }
           }),
           _: 1 /* STABLE */
         }, _parent, _scopeId))
         _push(`<div class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" data-v-5076c47e${_scopeId}></div>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+        _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
           to: {
                   path: `/categories`,
                 },
           class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
         }, {
-          default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
             if (_push) {
               _push(`<span data-v-5076c47e${_scopeId}>Все категории</span>`)
             } else {
               return [
-                __vite_ssr_import_8__.createVNode("span", null, "Все категории")
+                __vite_ssr_import_9__.createVNode("span", null, "Все категории")
               ]
             }
           }),
@@ -12833,22 +12258,22 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }, _parent, _scopeId))
         if ($setup.category) {
           _push(`<!--[--><div class="divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" data-v-5076c47e${_scopeId}></div>`)
-          _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, {
+          _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, {
             to: {
                     path: `/categories/${$setup.category.slug}`,
                   },
             class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
           }, {
-            default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+            default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
               if (_push) {
                 _push(`<span data-v-5076c47e${
                   _scopeId
                 }>${
-                  __vite_ssr_import_9__.ssrInterpolate($setup.category.title)
+                  __vite_ssr_import_10__.ssrInterpolate($setup.category.title)
                 }</span>`)
               } else {
                 return [
-                  __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
+                  __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.category.title), 1 /* TEXT */)
                 ]
               }
             }),
@@ -12865,7 +12290,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="product-title text-[36px] font-bold text-secondary" data-v-5076c47e${
           _scopeId
         }>${
-          __vite_ssr_import_9__.ssrInterpolate($setup.productTitle)
+          __vite_ssr_import_10__.ssrInterpolate($setup.productTitle)
         }</div><div class="product-content flex items-start justify-between" data-v-5076c47e${
           _scopeId
         }><div class="product-info" data-v-5076c47e${
@@ -12873,19 +12298,19 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><div class="product-article text-grey-text mb-[40px]" data-v-5076c47e${
           _scopeId
         }> Код продукта: ${
-          __vite_ssr_import_9__.ssrInterpolate($setup.productArticle)
+          __vite_ssr_import_10__.ssrInterpolate($setup.productArticle)
         }</div><ul class="product-specifics flex flex-col text-left justify-start items-start gap-[15px]" data-v-5076c47e${
           _scopeId
         }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList($setup.productDescription, (item) => {
+        __vite_ssr_import_10__.ssrRenderList($setup.productDescription, (item) => {
           _push(`<li class="product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" data-v-5076c47e${
             _scopeId
           }>${
-            __vite_ssr_import_9__.ssrInterpolate(item.value)
+            __vite_ssr_import_10__.ssrInterpolate(item.value)
           }</li>`)
         })
         _push(`<!--]--></ul></div><div class="product-image" data-v-5076c47e${_scopeId}>`)
-        _push(__vite_ssr_import_9__.ssrRenderComponent($setup["ImageViewer"], {
+        _push(__vite_ssr_import_10__.ssrRenderComponent($setup["ImageViewer"], {
           modelValue: $setup.imagesGalery,
           "onUpdate:modelValue": $event => (($setup.imagesGalery) = $event)
         }, null, _parent, _scopeId))
@@ -12896,7 +12321,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }><span class="text-[36px] font-bold text-secondary" data-v-5076c47e${
           _scopeId
         }>${
-          __vite_ssr_import_9__.ssrInterpolate($setup.productPrice)
+          __vite_ssr_import_10__.ssrInterpolate($setup.productPrice)
         } руб.</span>`)
         if ($setup.productCardColors && $setup.productCardColors.length) {
           _push(`<div class="divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full" data-v-5076c47e${_scopeId}></div>`)
@@ -12910,9 +12335,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Выберите цвет</span><div class="grid grid-cols-2 gap-[10px]" data-v-5076c47e${
           _scopeId
         }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList($setup.productCardColors, (color) => {
+        __vite_ssr_import_10__.ssrRenderList($setup.productCardColors, (color) => {
           _push(`<button class="${
-            __vite_ssr_import_9__.ssrRenderClass([{
+            __vite_ssr_import_10__.ssrRenderClass([{
                         'opacity-50 disabled': $setup.disabledColor(color),
                         'hover:bg-primary active:bg-opacity-40 active:border-primary active:border-opacity-0':
                           !$setup.disabledColor(color),
@@ -12925,7 +12350,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }" data-v-5076c47e${
             _scopeId
           }><span class="w-[36px] h-[36px] rounded-[4px] shadow-product-color" style="${
-            __vite_ssr_import_9__.ssrRenderStyle({
+            __vite_ssr_import_10__.ssrRenderStyle({
                           backgroundColor: `${color.value}`,
                         })
           }" data-v-5076c47e${
@@ -12933,7 +12358,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }></span><span data-v-5076c47e${
             _scopeId
           }>${
-            __vite_ssr_import_9__.ssrInterpolate(color.title)
+            __vite_ssr_import_10__.ssrInterpolate(color.title)
           }</span></button>`)
         })
         _push(`<!--]--></div></div>`)
@@ -12949,9 +12374,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         }>Выберите размер</span><div class="grid grid-cols-2 gap-[10px]" data-v-5076c47e${
           _scopeId
         }><!--[-->`)
-        __vite_ssr_import_9__.ssrRenderList($setup.productCardSizes, (size) => {
+        __vite_ssr_import_10__.ssrRenderList($setup.productCardSizes, (size) => {
           _push(`<button class="${
-            __vite_ssr_import_9__.ssrRenderClass([{
+            __vite_ssr_import_10__.ssrRenderClass([{
                         'bg-primary text-white border-opacity-90 cursor-default active:bg-opacity-100':
                           $setup.sizeIsActive(size.value),
                         'bg-grey-light': !$setup.sizeIsActive(size.value),
@@ -12964,17 +12389,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }" data-v-5076c47e${
             _scopeId
           }>${
-            __vite_ssr_import_9__.ssrInterpolate(size.value)
+            __vite_ssr_import_10__.ssrInterpolate(size.value)
           }</button>`)
         })
         _push(`<!--]--></div></div><div class="divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full" data-v-5076c47e${_scopeId}></div>`)
         if (!$setup.productInCart) {
           _push(`<button class="${
-            __vite_ssr_import_9__.ssrRenderClass([{
+            __vite_ssr_import_10__.ssrRenderClass([{
                     'bg-grey-text cursor-not-allowed': $setup.isCartHandlerDisabled,
                   }, "bg-primary h-[70px] text-[21px] font-medium text-white rounded-[4px] transition-all flex justify-center items-center"])
           }"${
-            (__vite_ssr_import_9__.ssrIncludeBooleanAttr($setup.isCartHandlerDisabled)) ? " disabled" : ""
+            (__vite_ssr_import_10__.ssrIncludeBooleanAttr($setup.isCartHandlerDisabled)) ? " disabled" : ""
           } data-v-5076c47e${
             _scopeId
           }> Добавить в корзину </button>`)
@@ -12988,25 +12413,25 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
           }><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" data-v-5076c47e${
             _scopeId
           }></path></svg></button>`)
-          _push(__vite_ssr_import_9__.ssrRenderComponent(_component_NuxtLink, { to: "/cart" }, {
-            default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+          _push(__vite_ssr_import_10__.ssrRenderComponent(_component_NuxtLink, { to: "/cart" }, {
+            default: __vite_ssr_import_9__.withCtx((_, _push, _parent, _scopeId) => {
               if (_push) {
-                _push(`уже корзине ( ${__vite_ssr_import_9__.ssrInterpolate($setup.productCounter)} )`)
+                _push(`уже корзине ( ${__vite_ssr_import_10__.ssrInterpolate($setup.productCounter)} )`)
               } else {
                 return [
-                  __vite_ssr_import_8__.createTextVNode("уже корзине ( " + __vite_ssr_import_8__.toDisplayString($setup.productCounter) + " )", 1 /* TEXT */)
+                  __vite_ssr_import_9__.createTextVNode("уже корзине ( " + __vite_ssr_import_9__.toDisplayString($setup.productCounter) + " )", 1 /* TEXT */)
                 ]
               }
             }),
             _: 1 /* STABLE */
           }, _parent, _scopeId))
           _push(`<button class="${
-            __vite_ssr_import_9__.ssrRenderClass([{
+            __vite_ssr_import_10__.ssrRenderClass([{
                       'cursor-not-allowed bg-grey-text hover:bg-grey-text text-grey-light':
                         !$setup.increaseAlowed,
                     }, "h-[30px] w-[30px] p-[2px] text-grey-text transition-colors rounded-[4px] bg-grey-light cursor-pointer hover:bg-primary hover:text-white"])
           }"${
-            (__vite_ssr_import_9__.ssrIncludeBooleanAttr(!$setup.increaseAlowed)) ? " disabled" : ""
+            (__vite_ssr_import_10__.ssrIncludeBooleanAttr(!$setup.increaseAlowed)) ? " disabled" : ""
           } data-v-5076c47e${
             _scopeId
           }><svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-v-5076c47e${
@@ -13023,98 +12448,98 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
         _push(`</div></aside></div></div></main></div>`)
       } else {
         return [
-          __vite_ssr_import_8__.createVNode("div", { class: "flex-grow" }, [
-            __vite_ssr_import_8__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
-              __vite_ssr_import_8__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
-                __vite_ssr_import_8__.createVNode("div", { class: "page-header flex items-center" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "flex items-center" }, [
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+          __vite_ssr_import_9__.createVNode("div", { class: "flex-grow" }, [
+            __vite_ssr_import_9__.createVNode("main", { class: "mt-[102px] mb-[40px] flex-grow" }, [
+              __vite_ssr_import_9__.createVNode("div", { class: "max-w-screen-xl w-full mx-auto" }, [
+                __vite_ssr_import_9__.createVNode("div", { class: "page-header flex items-center" }, [
+                  __vite_ssr_import_9__.createVNode("div", { class: "flex items-center" }, [
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: "/",
                       class: "breadcrumb flex justify-center items-center text-[21px] text-grey-text hover:bg-grey-light hover:text-orange p-[5px] rounded-[4px]"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                           class: "w-6 h-6",
                           fill: "none",
                           stroke: "currentColor",
                           viewBox: "0 0 24 24",
                           xmlns: "http://www.w3.org/2000/svg"
                         }, [
-                          __vite_ssr_import_8__.createVNode("path", {
+                          __vite_ssr_import_9__.createVNode("path", {
                             "stroke-linecap": "round",
                             "stroke-linejoin": "round",
                             "stroke-width": "2",
                             d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                           })
                         ])),
-                        __vite_ssr_import_8__.createVNode("span", { class: "ml-[5px]" }, "На главную")
+                        __vite_ssr_import_9__.createVNode("span", { class: "ml-[5px]" }, "На главную")
                       ]),
                       _: 1 /* STABLE */
                     }),
-                    __vite_ssr_import_8__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
-                    __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                    __vite_ssr_import_9__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
+                    __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                       to: {
                   path: `/categories`,
                 },
                       class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                     }, {
-                      default: __vite_ssr_import_8__.withCtx(() => [
-                        __vite_ssr_import_8__.createVNode("span", null, "Все категории")
+                      default: __vite_ssr_import_9__.withCtx(() => [
+                        __vite_ssr_import_9__.createVNode("span", null, "Все категории")
                       ]),
                       _: 1 /* STABLE */
                     }),
                     ($setup.category)
-                      ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, { key: 0 }, [
-                          __vite_ssr_import_8__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
-                          __vite_ssr_import_8__.createVNode(_component_NuxtLink, {
+                      ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, { key: 0 }, [
+                          __vite_ssr_import_9__.createVNode("div", { class: "divider bg-grey-text ml-[13px] mr-[13px] w-[4px] h-[4px] rounded-full justify-center items-center" }),
+                          __vite_ssr_import_9__.createVNode(_component_NuxtLink, {
                             to: {
                     path: `/categories/${$setup.category.slug}`,
                   },
                             class: "breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
                           }, {
-                            default: __vite_ssr_import_8__.withCtx(() => [
-                              __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString($setup.category.title), 1 /* TEXT */)
+                            default: __vite_ssr_import_9__.withCtx(() => [
+                              __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString($setup.category.title), 1 /* TEXT */)
                             ]),
                             _: 1 /* STABLE */
                           }, 8 /* PROPS */, ["to"])
                         ], 64 /* STABLE_FRAGMENT */))
-                      : __vite_ssr_import_8__.createCommentVNode("v-if", true)
+                      : __vite_ssr_import_9__.createCommentVNode("v-if", true)
                   ])
                 ]),
-                __vite_ssr_import_8__.createVNode("div", { class: "product flex items-start gap-[190px]" }, [
-                  __vite_ssr_import_8__.createVNode("div", { class: "product-card flex-grow" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "product-title text-[36px] font-bold text-secondary" }, __vite_ssr_import_8__.toDisplayString($setup.productTitle), 1 /* TEXT */),
-                    __vite_ssr_import_8__.createVNode("div", { class: "product-content flex items-start justify-between" }, [
-                      __vite_ssr_import_8__.createVNode("div", { class: "product-info" }, [
-                        __vite_ssr_import_8__.createVNode("div", { class: "product-article text-grey-text mb-[40px]" }, " Код продукта: " + __vite_ssr_import_8__.toDisplayString($setup.productArticle), 1 /* TEXT */),
-                        __vite_ssr_import_8__.createVNode("ul", { class: "product-specifics flex flex-col text-left justify-start items-start gap-[15px]" }, [
-                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productDescription, (item) => {
-                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("li", { class: "product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" }, __vite_ssr_import_8__.toDisplayString(item.value), 1 /* TEXT */))
+                __vite_ssr_import_9__.createVNode("div", { class: "product flex items-start gap-[190px]" }, [
+                  __vite_ssr_import_9__.createVNode("div", { class: "product-card flex-grow" }, [
+                    __vite_ssr_import_9__.createVNode("div", { class: "product-title text-[36px] font-bold text-secondary" }, __vite_ssr_import_9__.toDisplayString($setup.productTitle), 1 /* TEXT */),
+                    __vite_ssr_import_9__.createVNode("div", { class: "product-content flex items-start justify-between" }, [
+                      __vite_ssr_import_9__.createVNode("div", { class: "product-info" }, [
+                        __vite_ssr_import_9__.createVNode("div", { class: "product-article text-grey-text mb-[40px]" }, " Код продукта: " + __vite_ssr_import_9__.toDisplayString($setup.productArticle), 1 /* TEXT */),
+                        __vite_ssr_import_9__.createVNode("ul", { class: "product-specifics flex flex-col text-left justify-start items-start gap-[15px]" }, [
+                          (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.productDescription, (item) => {
+                            return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("li", { class: "product-specific px-[13px] py-[10px] border-[2px] rounded-[4px] border-primary text-primary" }, __vite_ssr_import_9__.toDisplayString(item.value), 1 /* TEXT */))
                           }), 256 /* UNKEYED_FRAGMENT */))
                         ])
                       ]),
-                      __vite_ssr_import_8__.createVNode("div", { class: "product-image" }, [
-                        __vite_ssr_import_8__.createVNode($setup["ImageViewer"], {
+                      __vite_ssr_import_9__.createVNode("div", { class: "product-image" }, [
+                        __vite_ssr_import_9__.createVNode($setup["ImageViewer"], {
                           modelValue: $setup.imagesGalery,
                           "onUpdate:modelValue": $event => (($setup.imagesGalery) = $event)
                         }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue"])
                       ])
                     ])
                   ]),
-                  __vite_ssr_import_8__.createVNode("aside", { class: "product-action w-1/5" }, [
-                    __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                      __vite_ssr_import_8__.createVNode("span", { class: "text-[36px] font-bold text-secondary" }, __vite_ssr_import_8__.toDisplayString($setup.productPrice) + " руб.", 1 /* TEXT */),
+                  __vite_ssr_import_9__.createVNode("aside", { class: "product-action w-1/5" }, [
+                    __vite_ssr_import_9__.createVNode("div", { class: "flex flex-col" }, [
+                      __vite_ssr_import_9__.createVNode("span", { class: "text-[36px] font-bold text-secondary" }, __vite_ssr_import_9__.toDisplayString($setup.productPrice) + " руб.", 1 /* TEXT */),
                       ($setup.productCardColors && $setup.productCardColors.length)
-                        ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 0,
                             class: "divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full"
                           }))
-                        : __vite_ssr_import_8__.createCommentVNode("v-if", true),
-                      __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                        __vite_ssr_import_8__.createVNode("span", { class: "text-[21px] text-secondary mb-[10px]" }, "Выберите цвет"),
-                        __vite_ssr_import_8__.createVNode("div", { class: "grid grid-cols-2 gap-[10px]" }, [
-                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productCardColors, (color) => {
-                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("button", {
+                        : __vite_ssr_import_9__.createCommentVNode("v-if", true),
+                      __vite_ssr_import_9__.createVNode("div", { class: "flex flex-col" }, [
+                        __vite_ssr_import_9__.createVNode("span", { class: "text-[21px] text-secondary mb-[10px]" }, "Выберите цвет"),
+                        __vite_ssr_import_9__.createVNode("div", { class: "grid grid-cols-2 gap-[10px]" }, [
+                          (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.productCardColors, (color) => {
+                            return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("button", {
                               class: [{
                         'opacity-50 disabled': $setup.disabledColor(color),
                         'hover:bg-primary active:bg-opacity-40 active:border-primary active:border-opacity-0':
@@ -13127,28 +12552,28 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                       }, "w-[120px] h-[80px] rounded-[4px] flex flex-col justify-center items-center transition-colors"],
                               onClick: $event => ($setup.colorHandler(color))
                             }, [
-                              __vite_ssr_import_8__.createVNode("span", {
+                              __vite_ssr_import_9__.createVNode("span", {
                                 class: "w-[36px] h-[36px] rounded-[4px] shadow-product-color",
                                 style: {
                           backgroundColor: `${color.value}`,
                         }
                               }, null, 4 /* STYLE */),
-                              __vite_ssr_import_8__.createVNode("span", null, __vite_ssr_import_8__.toDisplayString(color.title), 1 /* TEXT */)
+                              __vite_ssr_import_9__.createVNode("span", null, __vite_ssr_import_9__.toDisplayString(color.title), 1 /* TEXT */)
                             ], 10 /* CLASS, PROPS */, ["onClick"]))
                           }), 256 /* UNKEYED_FRAGMENT */))
                         ])
                       ]),
                       ($setup.productCardSizes && $setup.productCardSizes.length)
-                        ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 1,
                             class: "divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full"
                           }))
-                        : __vite_ssr_import_8__.createCommentVNode("v-if", true),
-                      __vite_ssr_import_8__.createVNode("div", { class: "flex flex-col" }, [
-                        __vite_ssr_import_8__.createVNode("span", { class: "text-[21px] text-secondary mb-[10px]" }, "Выберите размер"),
-                        __vite_ssr_import_8__.createVNode("div", { class: "grid grid-cols-2 gap-[10px]" }, [
-                          (__vite_ssr_import_8__.openBlock(true), __vite_ssr_import_8__.createBlock(__vite_ssr_import_8__.Fragment, null, __vite_ssr_import_8__.renderList($setup.productCardSizes, (size) => {
-                            return (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("button", {
+                        : __vite_ssr_import_9__.createCommentVNode("v-if", true),
+                      __vite_ssr_import_9__.createVNode("div", { class: "flex flex-col" }, [
+                        __vite_ssr_import_9__.createVNode("span", { class: "text-[21px] text-secondary mb-[10px]" }, "Выберите размер"),
+                        __vite_ssr_import_9__.createVNode("div", { class: "grid grid-cols-2 gap-[10px]" }, [
+                          (__vite_ssr_import_9__.openBlock(true), __vite_ssr_import_9__.createBlock(__vite_ssr_import_9__.Fragment, null, __vite_ssr_import_9__.renderList($setup.productCardSizes, (size) => {
+                            return (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("button", {
                               class: [{
                         'bg-primary text-white border-opacity-90 cursor-default active:bg-opacity-100':
                           $setup.sizeIsActive(size.value),
@@ -13160,13 +12585,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                           !$setup.disabledSize(size) && !$setup.sizeIsActive(size.value),
                       }, "w-[120px] h-[40px] rounded-[4px] flex flex-col justify-center items-center transition-colors"],
                               onClick: $event => ($setup.sizeHandler(size))
-                            }, __vite_ssr_import_8__.toDisplayString(size.value), 11 /* TEXT, CLASS, PROPS */, ["onClick"]))
+                            }, __vite_ssr_import_9__.toDisplayString(size.value), 11 /* TEXT, CLASS, PROPS */, ["onClick"]))
                           }), 256 /* UNKEYED_FRAGMENT */))
                         ])
                       ]),
-                      __vite_ssr_import_8__.createVNode("div", { class: "divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full" }),
+                      __vite_ssr_import_9__.createVNode("div", { class: "divider my-[20px] w-full h-[2px] bg-grey-light shadow-divider rounded-full" }),
                       (!$setup.productInCart)
-                        ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("button", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("button", {
                             key: 2,
                             class: ["bg-primary h-[70px] text-[21px] font-medium text-white rounded-[4px] transition-all flex justify-center items-center", {
                     'bg-grey-text cursor-not-allowed': $setup.isCartHandlerDisabled,
@@ -13174,22 +12599,22 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                             disabled: $setup.isCartHandlerDisabled,
                             onClick: $event => ($setup.cartHandler())
                           }, " Добавить в корзину ", 10 /* CLASS, PROPS */, ["disabled", "onClick"]))
-                        : (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        : (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 3,
                             class: "h-[70px] text-[18px] flex items-center justify-between"
                           }, [
-                            __vite_ssr_import_8__.createVNode("button", {
+                            __vite_ssr_import_9__.createVNode("button", {
                               class: "h-[30px] w-[30px] p-[2px] text-grey-text transition-colors rounded-[4px] bg-grey-light cursor-pointer hover:text-white hover:bg-orange",
                               onClick: $event => ($setup.selectCounter(-1))
                             }, [
-                              (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                              (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                                 class: "w-full h-full",
                                 fill: "none",
                                 stroke: "currentColor",
                                 viewBox: "0 0 24 24",
                                 xmlns: "http://www.w3.org/2000/svg"
                               }, [
-                                __vite_ssr_import_8__.createVNode("path", {
+                                __vite_ssr_import_9__.createVNode("path", {
                                   "stroke-linecap": "round",
                                   "stroke-linejoin": "round",
                                   "stroke-width": "2",
@@ -13197,13 +12622,13 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                                 })
                               ]))
                             ], 8 /* PROPS */, ["onClick"]),
-                            __vite_ssr_import_8__.createVNode(_component_NuxtLink, { to: "/cart" }, {
-                              default: __vite_ssr_import_8__.withCtx(() => [
-                                __vite_ssr_import_8__.createTextVNode("уже корзине ( " + __vite_ssr_import_8__.toDisplayString($setup.productCounter) + " )", 1 /* TEXT */)
+                            __vite_ssr_import_9__.createVNode(_component_NuxtLink, { to: "/cart" }, {
+                              default: __vite_ssr_import_9__.withCtx(() => [
+                                __vite_ssr_import_9__.createTextVNode("уже корзине ( " + __vite_ssr_import_9__.toDisplayString($setup.productCounter) + " )", 1 /* TEXT */)
                               ]),
                               _: 1 /* STABLE */
                             }),
-                            __vite_ssr_import_8__.createVNode("button", {
+                            __vite_ssr_import_9__.createVNode("button", {
                               class: ["h-[30px] w-[30px] p-[2px] text-grey-text transition-colors rounded-[4px] bg-grey-light cursor-pointer hover:bg-primary hover:text-white", {
                       'cursor-not-allowed bg-grey-text hover:bg-grey-text text-grey-light':
                         !$setup.increaseAlowed,
@@ -13211,14 +12636,14 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                               disabled: !$setup.increaseAlowed,
                               onClick: $event => ($setup.selectCounter(1))
                             }, [
-                              (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("svg", {
+                              (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("svg", {
                                 class: "w-full h-full",
                                 fill: "none",
                                 stroke: "currentColor",
                                 viewBox: "0 0 24 24",
                                 xmlns: "http://www.w3.org/2000/svg"
                               }, [
-                                __vite_ssr_import_8__.createVNode("path", {
+                                __vite_ssr_import_9__.createVNode("path", {
                                   "stroke-linecap": "round",
                                   "stroke-linejoin": "round",
                                   "stroke-width": "2",
@@ -13228,11 +12653,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
                             ], 10 /* CLASS, PROPS */, ["disabled", "onClick"])
                           ])),
                       ($setup.isCartHandlerDisabled)
-                        ? (__vite_ssr_import_8__.openBlock(), __vite_ssr_import_8__.createBlock("div", {
+                        ? (__vite_ssr_import_9__.openBlock(), __vite_ssr_import_9__.createBlock("div", {
                             key: 4,
                             class: "text-center"
                           }, " Товара нет в наличии "))
-                        : __vite_ssr_import_8__.createCommentVNode("v-if", true)
+                        : __vite_ssr_import_9__.createCommentVNode("v-if", true)
                     ])
                   ])
                 ])
@@ -13246,20 +12671,20 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   }, _parent))
 }
 
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/pages/products/[params].vue?vue&type=style&index=0&scoped=true&lang.css");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/pages/products/[params].vue?vue&type=style&index=0&scoped=true&lang.css");
 
 
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_11__.useSSRContext()
+  const ssrContext = __vite_ssr_import_12__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/products/[params].vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_12__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_13__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-5076c47e"],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/products/[params].vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-5076c47e"],['__file',"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/pages/products/[params].vue"]]);
 }
 
 
@@ -13304,6 +12729,7 @@ Object.defineProperty(__vite_ssr_exports__, "namedMiddleware", { enumerable: tru
 // --------------------
 const $id_f53014de = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/vue-demi.mjs");
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/pinia/dist/pinia.mjs");
@@ -14026,7 +13452,7 @@ const __modules__ = {
   "/@id/virtual:nuxt:/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/imports.mjs": $id_0aa4a4c2,
   "/node_modules/nuxt/dist/app/compat/vue-demi.mjs": $id_a8110be7,
   "/node_modules/nuxt/dist/app/compat/capi.mjs": $id_0c5717a4,
-  "/node_modules/nuxt-graphql-client/dist/runtime/composables.mjs": $id_4b9a9333,
+  "/node_modules/nuxt-graphql-client/dist/runtime/composables/index.mjs": $id_0ab5e784,
   "/node_modules/graphql-request/dist/index.js": $id_3c4dd26c,
   "/node_modules/nuxt-graphql-client/dist/runtime/utils.mjs": $id_0876cc71,
   "/.nuxt/gql-sdk.ts": $id_514a6b66,
@@ -14048,8 +13474,10 @@ const __modules__ = {
   "/pages/cart/index.vue?vue&type=style&index=0&lang.css": $id_b6616365,
   "/pages/catalog/[slug].vue?macro=true": $id_365463e7,
   "/pages/catalog/index.vue?macro=true": $id_15c6bef3,
-  "/pages/categories/[slug]/[slug]/index.vue?macro=true": $id_40ab69cf,
   "/pages/categories/[slug]/index.vue?macro=true": $id_b19ac374,
+  "/components/ProductFilter.vue": $id_16ebd3b1,
+  "/components/BrandsSelect.vue": $id_a68b9e82,
+  "/components/PriceSelect.vue": $id_894078cd,
   "/pages/categories/index.vue?macro=true": $id_b04deb14,
   "/pages/delivery/index.vue?macro=true": $id_e1d04ef1,
   "/pages/index.vue?macro=true": $id_5dd70240,
@@ -14064,7 +13492,6 @@ const __modules__ = {
   "/pages/cart/index.vue": $id_3fa45d07,
   "/pages/catalog/[slug].vue": $id_3566c471,
   "/pages/catalog/index.vue": $id_820ec6e4,
-  "/pages/categories/[slug]/[slug]/index.vue": $id_018188d2,
   "/pages/categories/[slug]/index.vue": $id_a38e0b82,
   "/pages/categories/index.vue": $id_8d9b42c9,
   "/pages/delivery/index.vue": $id_6d69d13a,

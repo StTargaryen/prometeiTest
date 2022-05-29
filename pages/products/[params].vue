@@ -246,7 +246,7 @@ if (!productCard.value) {
   router.push("/404");
 }
 
-const category = productCard.value.attributes.testCategory.data.attributes;
+const category = productCard.value.attributes.category.data.attributes;
 
 const productData = await GqlProductByArticle({ article: article });
 
@@ -478,6 +478,10 @@ function unique(arr, param) {
 
   return uniqueArr;
 }
+
+useHead({
+  title: `Прометей – ${productCard.value.attributes.title}`,
+});
 </script>
 
 <style scoped>

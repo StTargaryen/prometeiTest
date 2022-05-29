@@ -1,5 +1,5 @@
 query getRootCategories($type: String) {
-  testCategories(filters: { type: { eq: $type } }) {
+  categories(filters: { type: { eq: $type } }) {
     data {
       attributes {
         slug
@@ -39,13 +39,13 @@ query getRootCategories($type: String) {
 }
 
 query getCategoryBySlug($slug: String) {
-  testCategories(filters: { slug: { eq: $slug } }) {
+  categories(filters: { slug: { eq: $slug } }) {
     data {
       attributes {
         slug
         title
         showProducts
-        showRelatedCategories
+        showRelated
         parent {
           data {
             attributes {
@@ -69,7 +69,7 @@ query getCategoryBySlug($slug: String) {
             }
           }
         }
-        relatedCategories {
+        related {
           data {
             attributes {
               title
@@ -87,4 +87,13 @@ query getCategoryBySlug($slug: String) {
       }
     }
   }
+   brands(filters: { products: { category: { slug: { eq: $slug } } } }) {
+    data {
+      id
+      attributes {
+        title
+      }
+    }
+  }
 }
+

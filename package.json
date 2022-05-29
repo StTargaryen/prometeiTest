@@ -21,7 +21,7 @@
   "dependencies": {
     "@nuxtjs/composition-api": "^0.32.0",
     "@pinia/nuxt": "^0.1.8",
-    "nuxt-graphql-client": "^0.0.22",
+    "nuxt-graphql-client": "^0.0.32",
     "pinia": "^2.0.13",
     "vue": "^3.2.33"
   }

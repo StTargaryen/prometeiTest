@@ -19,9 +19,9 @@ import { createRenderer } from 'file:///Users/andrewstt/Projects/personal/strapi
 import devalue from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/@nuxt/devalue/dist/devalue.mjs';
 import { renderToString } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/vue/server-renderer/index.mjs';
 import { snakeCase } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/scule/dist/index.mjs';
-import htmlTemplate from '/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/views/document.template.mjs';
+import htmlTemplate from '/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/silent/.nuxt/views/document.template.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"API_URL":"https://stt-strapi-test.herokuapp.com","public":{"API_URL":"https://stt-strapi-test.herokuapp.com","GQL_HOST":"https://stt-strapi-test.herokuapp.com/graphql","graphql-client":{"clients":{"default":{"host":"https://stt-strapi-test.herokuapp.com/graphql","token":{"type":"Bearer"}}}}},"graphql-client":{"clients":{}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -78,7 +78,7 @@ function timingMiddleware(_req, res, next) {
   next();
 }
 
-const serverAssets = [{"baseName":"server","dir":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/silent/server/assets"}];
 
 const assets = createStorage();
 
@@ -92,10 +92,10 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/silent","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/silent/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/silent/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/silent/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 const defaultCacheOptions = {
   name: "_",
@@ -312,15 +312,9 @@ const errorHandler = (async function errorhandler(_error, event) {
   event.res.end(html);
 });
 
-const _lazy_241345 = () => Promise.resolve().then(function () { return stuff$1; });
-const _lazy_280418 = () => Promise.resolve().then(function () { return products$1; });
-const _lazy_328615 = () => Promise.resolve().then(function () { return categories; });
 const _lazy_219010 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/stuff', handler: _lazy_241345, lazy: true, middleware: false, method: undefined },
-  { route: '/api/products', handler: _lazy_280418, lazy: true, middleware: false, method: undefined },
-  { route: '/api/categories', handler: _lazy_328615, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_219010, lazy: true, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_219010, lazy: true, middleware: false, method: undefined }
 ];
@@ -396,34 +390,6 @@ server.listen(listenAddress, () => {
   process.on("uncaughtException", (err) => console.error("[nitro] [dev] [uncaughtException]", err));
 }
 
-const stuff = () => {
-  return JSON.stringify({
-    Rachel: "..take a brake",
-    Ross: "Okey"
-  });
-};
-
-const stuff$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': stuff
-});
-
-const products = async (req, res) => {
-  return JSON.stringify({
-    Rachel: "..take a brake",
-    Ross: "Okey"
-  });
-};
-
-const products$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': products
-});
-
-const categories = /*#__PURE__*/Object.freeze({
-  __proto__: null
-});
-
 function buildAssetsURL(...path) {
   return joinURL(publicAssetsURL(), useRuntimeConfig().app.buildAssetsDir, ...path);
 }
@@ -432,8 +398,8 @@ function publicAssetsURL(...path) {
   return path.length ? joinURL(publicBase, ...path) : publicBase;
 }
 
-const getClientManifest = () => import('/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r);
-const getServerEntry = () => import('/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/silent/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/silent/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const clientManifest = await getClientManifest();
   if (!clientManifest) {

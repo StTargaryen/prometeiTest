@@ -50,8 +50,10 @@
         to="/cart"
         class="cart h-[50px] px-[18px] bg-white flex flex-col justify-center items-center rounded-[4px] outline-none transition-colors"
         :class="{
-          'bg-primary text-white cursor-default': $router.currentRoute.value.name === 'cart',
-          'text-secondary hover:bg-grey-light': $router.currentRoute.value.name !== 'cart',
+          'bg-primary text-white cursor-default':
+            $router.currentRoute.value.name === 'cart',
+          'text-secondary hover:bg-grey-light':
+            $router.currentRoute.value.name !== 'cart',
         }"
         :disabled="$router.currentRoute.value.name === 'cart'"
       >
@@ -71,7 +73,7 @@
             ></path>
           </svg>
           <span
-            class="absolute top-[-5px] right-[-10px] font-bold  w-[20px] h-[20px] text-[13px] flex items-center justify-center rounded-full"
+            class="absolute top-[-5px] right-[-10px] font-bold w-[20px] h-[20px] text-[13px] flex items-center justify-center rounded-full"
             :class="{
               'bg-primary text-white':
                 $router.currentRoute.value.name !== 'cart',

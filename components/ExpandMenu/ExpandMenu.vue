@@ -6,6 +6,8 @@ const { data, error } = await useAsyncData(`catalog-menu`, () =>
   GqlCatalogMenu()
 );
 
+console.log(data.value);
+
 const menu = data;
 
 const props = defineProps({
@@ -28,15 +30,15 @@ const isExpandMenuOpen = computed(() => {
       :class="{ hidden: !isExpandMenuOpen }"
     >
       <div class="max-w-screen-xl w-full mx-auto flex items-center">
-        <TabsWrapper column v-if="menu && menu.sections">
+        <TabsWrapper column v-if="menu && menu.categories">
           <Tab
-            v-for="section in menu.sections.data"
-            :settings="section"
+            v-for="category in menu.categories.data"
+            :settings="category"
             :hello="true"
           >
             <ExpandMenuContentItem
-              :title="section.attributes.title"
-              :content="section.attributes"
+              :title="category.attributes.title"
+              :content="category.attributes"
             />
           </Tab>
         </TabsWrapper>

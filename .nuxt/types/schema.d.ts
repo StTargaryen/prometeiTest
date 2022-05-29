@@ -30,8 +30,6 @@ declare module '@nuxt/schema' {
              default: {
                    host: string,
 
-                   schema: any,
-
                    token: {
                           type: string,
                    },

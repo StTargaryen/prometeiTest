@@ -304,7 +304,7 @@ const cartTotalSum = computed(() =>
 );
 
 useHead({
-  title: `Prometei – Корзина`,
+  title: `Прометей – Корзина`,
 });
 </script>
 

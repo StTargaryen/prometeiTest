@@ -23,10 +23,9 @@
                 :key="subcategory.id"
                 class="hover:text-orange mb-[20px]"
               >
-                <nuxt-link
-                  :to="`/categories/${category.attributes.slug}/${subcategory.attributes.slug}`"
-                  >{{ subcategory.attributes.title }}</nuxt-link
-                >
+                <nuxt-link :to="`/categories/${subcategory.attributes.slug}`">{{
+                  subcategory.attributes.title
+                }}</nuxt-link>
               </li>
             </ul>
           </template>

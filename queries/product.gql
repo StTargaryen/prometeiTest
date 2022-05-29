@@ -56,7 +56,7 @@ query ProductCardDataBySlug($slug: String) {
             }
           }
         }
-        testCategory {
+        category {
           data {
             attributes {
               title
@@ -69,8 +69,21 @@ query ProductCardDataBySlug($slug: String) {
   }
 }
 
-query ProductsBySubcategorySlug($slug: String) {
-  products(filters: { parent: { testCategory: { slug: { eq: $slug } } } }) {
+query ProductsBySubcategorySlug(
+  $slug: String
+  $brands: [ID]
+  $priceFrom: Float
+  $priceTo: Float
+) {
+  products(
+    filters: {
+      parent: {
+        category: { slug: { eq: $slug } }
+        brand: { id: { in: $brands } }
+      }
+      and: { price: { gte: $priceFrom, lte: $priceTo } }
+    }
+  ) {
     data {
       attributes {
         title
@@ -86,6 +99,14 @@ query ProductsBySubcategorySlug($slug: String) {
           data {
             attributes {
               slug
+              brand {
+                data {
+                  attributes {
+                    title
+                  }
+                  id
+                }
+              }
             }
           }
         }

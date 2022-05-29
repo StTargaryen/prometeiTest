@@ -88,60 +88,12 @@
           <template v-if="isProductsVisible">
             <div class="flex justify-between items-start gap-[40px]">
               <aside class="catalog-filter min-w-[300px] flex flex-col">
-                <div class="filter-block mb-[20px]">
-                  <div
-                    class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"
-                  >
-                    Бренд
-                  </div>
-                  <!-- <ul class="filter-block-content py-[10px] mx-[30px]">
-                  <li
-                    class="px-[18px] py-[10px] border-2 border-white text-[16px] rounded-[4px] hover:bg-grey-light active:border-primary active:bg-white flex justify-center items-center active:text-primary cursor-pointer"
-                    v-for="brand in brands"
-                  >
-                    <span class="flex-grow">{{ brand.attributes.title }}</span>
-                    <span
-                      ><svg
-                        class="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        ></path></svg
-                    ></span>
-                  </li>
-                </ul> -->
-                </div>
-                <div class="filter-block">
-                  <div
-                    class="filter-block-title bg-grey-light border-[1px] border-grey-text rounded-[4px] h-[60px] flex items-center px-[28px] text-[21px]"
-                  >
-                    Цена, руб.
-                  </div>
-                  <div class="filter-block-content py-[10px] mx-[30px]">
-                    <div
-                      class="mt-[20px] flex justify-between items-center w-full"
-                    >
-                      <input
-                        class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center"
-                        type="text"
-                        placeholder="799"
-                      />
-                      <span class="w-[20px] h-[2px] bg-grey-light"></span>
-                      <input
-                        class="py-[10px] px-[5px] bg-grey-light rounded-[4px] max-w-[100px] text-[16px] shadow-inner outline-none text-center"
-                        type="text"
-                        placeholder="13000"
-                      />
-                    </div>
-                  </div>
-                </div>
+                <ProductFilter
+                  v-model="filterIsActive"
+                  :brands="categoryBrands"
+                  @apply="getFilteredProducts"
+                  @clear="clearFilter()"
+                />
               </aside>
               <!-- loading-cards -->
               <div
@@ -149,19 +101,19 @@
                 v-if="loading"
               >
                 <div
-                  v-for="item in 3"
-                  class="catalog-list-item font-medium text-[21px] bg-[#00000007] w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"
+                  v-for="item in 4"
+                  class="catalog-list-item font-medium text-[21px] bg-grey w-[calc(33.33%-16.7px)] h-[450px] shadow-card rounded-[4px] relative flex flex-col justify-start p-[30px] animate-pulse"
                 ></div>
               </div>
               <!-- products-list -->
               <div
-                v-else
+                v-else-if="dataProducts && dataProducts.length"
                 class="catalog-list flex-grow flex flex-wrap gap-[25px]"
               >
                 <div
                   v-for="(product, index) in dataProducts"
                   :key="index"
-                  class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-shadow"
+                  class="catalog-list-item font-medium text-[21px] h-[450px] shadow-card w-[calc(33.33%-16.7px)] hover:shadow-card-hover rounded-[4px] relative flex flex-col justify-start items-center p-[30px] transition-all"
                 >
                   <NuxtLink
                     :to="`/products/${product.attributes.parent.data.attributes.slug}_${product.attributes.article}`"
@@ -184,7 +136,7 @@
                         {{ product.attributes.price }} ₽
                       </div>
                       <button
-                        class="item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center"
+                        class="item-button py-[4px] w-[70px] h-[40px] bg-primary text-white rounded-[4px] flex justify-center items-center active:scale-95 transition-all"
                         :class="{
                           'hover:bg-white border-[2px] border-primary hover:text-primary':
                             !productInCart(product),
@@ -227,6 +179,16 @@
                   </div>
                 </div>
               </div>
+              <div
+                v-else
+                class="flex flex-1 flex-col justify-center items-center font-medium text-secondary"
+              >
+                <span class="text-[26px]">Пусто</span>
+                <span class="text-[21px] mb-[25px]"
+                  >По выбранным параметрам фильтра ничего не найдено</span
+                >
+                <div class="text-[21px] text-center">¯\_(ツ)_/¯</div>
+              </div>
             </div>
           </template>
 
@@ -268,7 +230,8 @@
 </template>
 
 <script setup>
-import { useCart } from "~~/store/cart/cart";
+import { useCart } from "~/store/cart/cart";
+import ProductFilter from "~/components/ProductFilter";
 
 const config = useRuntimeConfig();
 const route = useRoute();
@@ -280,7 +243,9 @@ const loading = ref(false);
 
 const data = await GqlGetCategoryBySlug({ slug: categorySlug });
 
-const currentCategory = data?.testCategories?.data[0]?.attributes;
+const categoryBrands = computed(() => data.brands.data);
+
+const currentCategory = data?.categories?.data[0]?.attributes;
 
 if (
   !currentCategory.value ||
@@ -300,17 +265,93 @@ const relatedCategories = computed(
 
 const parentCategory = computed(() => currentCategory.parent?.data?.attributes);
 
-const getProducts = async () => {
+const getProducts = async (query) => {
   loading.value = true;
-  const productsData = await GqlProductsBySubcategorySlug({
+  const productsData = ref([]);
+  const toSendData = {
     slug: currentCategory.slug,
-  });
-  console.log(productsData);
-  dataProducts.value = productsData.products.data;
+  };
+
+  if (query) {
+    const brandsList = query.brandsList;
+    const price = query.price;
+
+    if (brandsList && brandsList.length) {
+      toSendData.brands = brandsList;
+    }
+
+    if (price) {
+      if (price.from) {
+        toSendData.priceFrom = Number(price.from);
+      }
+
+      if (price.to) {
+        toSendData.priceTo = Number(price.to);
+      }
+    }
+  }
+  // turn on filter
+  if (Object.keys(toSendData).length > 1) {
+    filterIsActive.value = true;
+  }
+
+  productsData.value = await GqlProductsBySubcategorySlug(toSendData);
+
+  dataProducts.value = productsData.value.products.data;
   loading.value = false;
 };
 
-await getProducts();
+const filterIsActive = ref(false);
+
+const clearFilter = async () => {
+  await getProducts();
+};
+
+const getFilteredProducts = async () => {
+  const query = {};
+  const brands = route.query.brands;
+  const from = route.query.from;
+  const to = route.query.to;
+  if (brands) {
+    query.brandsList = brands.split(",").map((item) => Number(item));
+  }
+
+  if (from) {
+    if (!query.price) {
+      query.price = {};
+    }
+    query.price.from = from;
+  }
+  if (to) {
+    if (!query.price) {
+      query.price = {};
+    }
+    query.price.to = to;
+  }
+
+  await getProducts(query);
+};
+
+const preSearchQuery = ref({});
+if (route.query.from) {
+  if (!preSearchQuery.value.price) {
+    preSearchQuery.value.price = {};
+  }
+  preSearchQuery.value.price.from = route.query.from;
+}
+
+if (route.query.to) {
+  if (!preSearchQuery.value.price) {
+    preSearchQuery.value.price = {};
+  }
+  preSearchQuery.value.price.to = route.query.to;
+}
+
+if (route.query.brands) {
+  preSearchQuery.value.brandsList = route.query.brands.split(",");
+}
+
+await getProducts(preSearchQuery.value);
 
 const categoryUrl = (category) => {
   const url = category.attributes?.image?.data?.attributes?.url;
@@ -359,4 +400,8 @@ const cartHandler = (product) => {
     });
   }
 };
+
+useHead({
+  title: `Прометей – ${data.categories.data[0].attributes.title}`,
+});
 </script>

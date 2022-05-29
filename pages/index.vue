@@ -6,7 +6,7 @@
         'overflow-hidden': isExpandMenuShow,
       }"
     >
-      <main class="mt-[136px] mb-[40px] flex-grow">
+      <main class="mt-[102px] mb-[40px] flex-grow">
         <div class="max-w-screen-xl w-full mx-auto">
           <div class="page-header flex items-center">
             <h1 class="flex-grow text-primary text-[36px] font-bold">
@@ -110,6 +110,6 @@ const getLocalBackgroundImageUrl = (name) => {
 };
 
 useHead({
-  title: `Prometei – Магазин спортивного инвентаря`,
+  title: `Прометей – Магазин спортивного инвентаря`,
 });
 </script>

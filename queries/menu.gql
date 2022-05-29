@@ -1,5 +1,7 @@
 query CatalogMenu {
-  sections(filters: { showInNav: { eq: true } }) {
+  categories(
+    filters: { showInNav: { eq: true }, and: { type: { eq: "section" } } }
+  ) {
     data {
       id
       attributes {
@@ -11,13 +13,23 @@ query CatalogMenu {
             }
           }
         }
-        items(filters: { showInNav: { eq: true } }) {
+        items(
+          filters: {
+            showInNav: { eq: true }
+            and: { type: { eq: "category" } }
+          }
+        ) {
           data {
             id
             attributes {
               title
               slug
-              items(filters: { showInNav: { eq: true } }) {
+              items(
+                filters: {
+                  showInNav: { eq: true }
+                  and: { type: { eq: "subcategory" } }
+                }
+              ) {
                 data {
                   id
                   attributes {
