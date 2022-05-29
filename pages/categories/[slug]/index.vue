@@ -256,11 +256,11 @@ if (
 
 const isProductsVisible = computed(() => currentCategory.showProducts);
 const isRelatedCategoriesVisible = computed(
-  () => currentCategory.showRelatedCategories
+  () => currentCategory.showRelated
 );
 
 const relatedCategories = computed(
-  () => currentCategory.relatedCategories.data
+  () => currentCategory.related.data
 );
 
 const parentCategory = computed(() => currentCategory.parent?.data?.attributes);
