@@ -44,7 +44,7 @@
                   :to="{
                     path: `/categories/${category.slug}`,
                   }"
-                  class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
+                  class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange capitalize"
                 >
                   <span>{{ category.title }}</span>
                 </NuxtLink>
@@ -54,7 +54,7 @@
 
           <div class="product flex items-start gap-[190px]">
             <div class="product-card flex-grow">
-              <div class="product-title text-[36px] font-bold text-secondary">
+              <div class="product-title text-[36px] font-bold text-secondary capitalize">
                 {{ productTitle }}
               </div>
               <div class="product-content flex items-start justify-between">

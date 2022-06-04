@@ -6,6 +6,7 @@ declare module 'vue' {
     'ProductFilter': typeof import("../components/ProductFilter.vue")['default'],
     'PrometeiFooter': typeof import("../components/PrometeiFooter.vue")['default'],
     'PrometeiHeader': typeof import("../components/PrometeiHeader.vue")['default'],
+    'SearchBar': typeof import("../components/SearchBar.vue")['default'],
     'ExpandMenu': typeof import("../components/ExpandMenu/ExpandMenu.vue")['default'],
     'ExpandMenuContentItem': typeof import("../components/ExpandMenu/ExpandMenuContentItem.vue")['default'],
     'UIAmountCounter': typeof import("../components/UI/AmountCounter.vue")['default'],
@@ -23,6 +24,7 @@ declare module 'vue' {
     'LazyProductFilter': typeof import("../components/ProductFilter.vue")['default'],
     'LazyPrometeiFooter': typeof import("../components/PrometeiFooter.vue")['default'],
     'LazyPrometeiHeader': typeof import("../components/PrometeiHeader.vue")['default'],
+    'LazySearchBar': typeof import("../components/SearchBar.vue")['default'],
     'LazyExpandMenu': typeof import("../components/ExpandMenu/ExpandMenu.vue")['default'],
     'LazyExpandMenuContentItem': typeof import("../components/ExpandMenu/ExpandMenuContentItem.vue")['default'],
     'LazyUIAmountCounter': typeof import("../components/UI/AmountCounter.vue")['default'],
@@ -42,6 +44,7 @@ export const PriceSelect: typeof import("../components/PriceSelect.vue")['defaul
 export const ProductFilter: typeof import("../components/ProductFilter.vue")['default']
 export const PrometeiFooter: typeof import("../components/PrometeiFooter.vue")['default']
 export const PrometeiHeader: typeof import("../components/PrometeiHeader.vue")['default']
+export const SearchBar: typeof import("../components/SearchBar.vue")['default']
 export const ExpandMenu: typeof import("../components/ExpandMenu/ExpandMenu.vue")['default']
 export const ExpandMenuContentItem: typeof import("../components/ExpandMenu/ExpandMenuContentItem.vue")['default']
 export const UIAmountCounter: typeof import("../components/UI/AmountCounter.vue")['default']
@@ -59,6 +62,7 @@ export const LazyPriceSelect: typeof import("../components/PriceSelect.vue")['de
 export const LazyProductFilter: typeof import("../components/ProductFilter.vue")['default']
 export const LazyPrometeiFooter: typeof import("../components/PrometeiFooter.vue")['default']
 export const LazyPrometeiHeader: typeof import("../components/PrometeiHeader.vue")['default']
+export const LazySearchBar: typeof import("../components/SearchBar.vue")['default']
 export const LazyExpandMenu: typeof import("../components/ExpandMenu/ExpandMenu.vue")['default']
 export const LazyExpandMenuContentItem: typeof import("../components/ExpandMenu/ExpandMenuContentItem.vue")['default']
 export const LazyUIAmountCounter: typeof import("../components/UI/AmountCounter.vue")['default']

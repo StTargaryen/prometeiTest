@@ -21,7 +21,7 @@ import { renderToString } from 'file:///Users/andrewstt/Projects/personal/strapi
 import { snakeCase } from 'file:///Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/node_modules/scule/dist/index.mjs';
 import htmlTemplate from '/Users/andrewstt/Projects/personal/strapi/eccomerce-preview/ui/.nuxt/views/document.template.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"API_URL":"https://stt-strapi-test.herokuapp.com","public":{"API_URL":"https://stt-strapi-test.herokuapp.com","GQL_HOST":"https://stt-strapi-test.herokuapp.com/graphql","graphql-client":{"clients":{"default":{"host":"https://stt-strapi-test.herokuapp.com/graphql","token":{"type":"Bearer"}}}}},"graphql-client":{"clients":{}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"API_URL":"http://localhost:1337","public":{"API_URL":"http://localhost:1337","GQL_HOST":"http://localhost:1337/graphql","graphql-client":{"clients":{"default":{"host":"http://localhost:1337/graphql","token":{"type":"Bearer"}}}}},"graphql-client":{"clients":{}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {

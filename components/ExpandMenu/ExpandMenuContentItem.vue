@@ -1,6 +1,6 @@
 <template>
   <div class="mt-[60px] text-secondary">
-    <div class="text-[36px] text-primary font-bold mb-[35px]">
+    <div class="text-[36px] text-primary font-bold mb-[35px] capitalize">
       {{ title }}
     </div>
     <div class="subcategory">
@@ -12,6 +12,7 @@
                 :to="{
                   path: `/categories/${category.attributes.slug}`,
                 }"
+                class="capitalize"
               >
                 {{ category.attributes.title }}
               </nuxt-link>
@@ -23,9 +24,11 @@
                 :key="subcategory.id"
                 class="hover:text-orange mb-[20px]"
               >
-                <nuxt-link :to="`/categories/${subcategory.attributes.slug}`">{{
-                  subcategory.attributes.title
-                }}</nuxt-link>
+                <nuxt-link
+                  :to="`/categories/${subcategory.attributes.slug}`"
+                  class="capitalize"
+                  >{{ subcategory.attributes.title }}</nuxt-link
+                >
               </li>
             </ul>
           </template>

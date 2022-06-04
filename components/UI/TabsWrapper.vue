@@ -21,7 +21,7 @@
               backgroundImage: `url(${tabIcon(tab.attributes.navIcon)})`,
             }"
           ></div>
-          <div class="text text-left grow mr-[10px]">
+          <div class="text text-left grow mr-[10px] capitalize">
             {{ tab.attributes.title }}
           </div>
 

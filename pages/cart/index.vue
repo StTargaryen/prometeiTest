@@ -68,7 +68,7 @@
                             Артикул {{ item.article }}
                           </span>
                           <span
-                            class="text-[21px] text-secondary leading-[25px] font-medium"
+                            class="text-[21px] text-secondary leading-[25px] font-medium capitalize"
                           >
                             {{ item.title }}
                           </span>

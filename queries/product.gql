@@ -72,8 +72,8 @@ query ProductCardDataBySlug($slug: String) {
 query ProductsBySubcategorySlug(
   $slug: String
   $brands: [ID]
-  $priceFrom: Float
-  $priceTo: Float
+  $priceFrom: Int
+  $priceTo: Int
 ) {
   products(
     filters: {

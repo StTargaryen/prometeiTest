@@ -45,3 +45,54 @@ query CatalogMenu {
     }
   }
 }
+
+query SearchEntitiesByTitle($value: String) {
+  categories(filters: { title: { contains: $value } }) {
+    data {
+      id
+      attributes {
+        title
+        slug
+      }
+    }
+  }
+  products(filters: { title: { contains: $value } }) {
+    data {
+      id
+      attributes {
+        title
+        article
+        parent {
+          data {
+            attributes {
+              slug
+            }
+          }
+        }
+      }
+    }
+  }
+}
+query MainSearch($value: String) {
+  products(filters: { article: { eq: $value } }) {
+    data {
+      attributes {
+        article
+        parent {
+          data {
+            attributes {
+              slug
+            }
+          }
+        }
+      }
+    }
+  }
+  categories(filters: { title: { contains: $value } }) {
+    data {
+      attributes {
+        slug
+      }
+    }
+  }
+}

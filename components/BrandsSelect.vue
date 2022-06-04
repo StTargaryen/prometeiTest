@@ -40,7 +40,7 @@ const brandHandler = (brand) => {
         v-for="brand in list"
         :key="brand.id"
       >
-        <span class="flex-grow">{{ brand.attributes.title }}</span>
+        <span class="flex-grow capitalize">{{ brand.attributes.title }}</span>
         <span v-if="isActive(brand)"
           ><svg
             class="w-6 h-6"

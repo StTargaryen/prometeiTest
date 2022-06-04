@@ -105,19 +105,19 @@ export type ComponentProductSettingsColorInput = {
   value?: InputMaybe<Scalars['String']>;
 };
 
-export type ComponentProductSettingsSizeInput = {
+export type ComponentProductSettingsDescriptionFiltersInput = {
+  and?: InputMaybe<Array<InputMaybe<ComponentProductSettingsDescriptionFiltersInput>>>;
+  not?: InputMaybe<ComponentProductSettingsDescriptionFiltersInput>;
+  or?: InputMaybe<Array<InputMaybe<ComponentProductSettingsDescriptionFiltersInput>>>;
+  value?: InputMaybe<StringFilterInput>;
+};
+
+export type ComponentProductSettingsDescriptionInput = {
   id?: InputMaybe<Scalars['ID']>;
   value?: InputMaybe<Scalars['String']>;
 };
 
-export type ComponentProductSettingsTagsFiltersInput = {
-  and?: InputMaybe<Array<InputMaybe<ComponentProductSettingsTagsFiltersInput>>>;
-  not?: InputMaybe<ComponentProductSettingsTagsFiltersInput>;
-  or?: InputMaybe<Array<InputMaybe<ComponentProductSettingsTagsFiltersInput>>>;
-  value?: InputMaybe<StringFilterInput>;
-};
-
-export type ComponentProductSettingsTagsInput = {
+export type ComponentProductSettingsSizeInput = {
   id?: InputMaybe<Scalars['ID']>;
   value?: InputMaybe<Scalars['String']>;
 };
@@ -277,6 +277,7 @@ export type ProductCardFiltersInput = {
   not?: InputMaybe<ProductCardFiltersInput>;
   or?: InputMaybe<Array<InputMaybe<ProductCardFiltersInput>>>;
   publishedAt?: InputMaybe<DateTimeFilterInput>;
+  showImages?: InputMaybe<BooleanFilterInput>;
   slug?: InputMaybe<StringFilterInput>;
   title?: InputMaybe<StringFilterInput>;
   updatedAt?: InputMaybe<DateTimeFilterInput>;
@@ -288,6 +289,7 @@ export type ProductCardInput = {
   images?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   items?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   publishedAt?: InputMaybe<Scalars['DateTime']>;
+  showImages?: InputMaybe<Scalars['Boolean']>;
   slug?: InputMaybe<Scalars['String']>;
   title?: InputMaybe<Scalars['String']>;
 };
@@ -301,7 +303,7 @@ export type ProductFiltersInput = {
   not?: InputMaybe<ProductFiltersInput>;
   or?: InputMaybe<Array<InputMaybe<ProductFiltersInput>>>;
   parent?: InputMaybe<ProductCardFiltersInput>;
-  price?: InputMaybe<FloatFilterInput>;
+  price?: InputMaybe<IntFilterInput>;
   publishedAt?: InputMaybe<DateTimeFilterInput>;
   title?: InputMaybe<StringFilterInput>;
   updatedAt?: InputMaybe<DateTimeFilterInput>;
@@ -311,10 +313,10 @@ export type ProductInput = {
   amount?: InputMaybe<Scalars['Int']>;
   article?: InputMaybe<Scalars['String']>;
   color?: InputMaybe<ComponentProductSettingsColorInput>;
-  description?: InputMaybe<Array<InputMaybe<ComponentProductSettingsTagsInput>>>;
+  description?: InputMaybe<Array<InputMaybe<ComponentProductSettingsDescriptionInput>>>;
   images?: InputMaybe<Array<InputMaybe<Scalars['ID']>>>;
   parent?: InputMaybe<Scalars['ID']>;
-  price?: InputMaybe<Scalars['Float']>;
+  price?: InputMaybe<Scalars['Int']>;
   publishedAt?: InputMaybe<Scalars['DateTime']>;
   size?: InputMaybe<ComponentProductSettingsSizeInput>;
   title?: InputMaybe<Scalars['String']>;
@@ -482,29 +484,43 @@ export type CatalogMenuQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type CatalogMenuQuery = { categories?: { data: Array<{ id?: string | null, attributes?: { title: string, navIcon?: { data?: { attributes?: { url: string } | null } | null } | null, items?: { data: Array<{ id?: string | null, attributes?: { title: string, slug: string, items?: { data: Array<{ id?: string | null, attributes?: { title: string, slug: string } | null }> } | null } | null }> } | null } | null }> } | null };
 
+export type SearchEntitiesByTitleQueryVariables = Exact<{
+  value?: InputMaybe<Scalars['String']>;
+}>;
+
+
+export type SearchEntitiesByTitleQuery = { categories?: { data: Array<{ id?: string | null, attributes?: { title: string, slug: string } | null }> } | null, products?: { data: Array<{ id?: string | null, attributes?: { title: string, article: string, parent?: { data?: { attributes?: { slug: string } | null } | null } | null } | null }> } | null };
+
+export type MainSearchQueryVariables = Exact<{
+  value?: InputMaybe<Scalars['String']>;
+}>;
+
+
+export type MainSearchQuery = { products?: { data: Array<{ attributes?: { article: string, parent?: { data?: { attributes?: { slug: string } | null } | null } | null } | null }> } | null, categories?: { data: Array<{ attributes?: { slug: string } | null }> } | null };
+
 export type ProductByArticleQueryVariables = Exact<{
   article?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type ProductByArticleQuery = { products?: { data: Array<{ attributes?: { article: string, title: string, price?: number | null, amount: number, description?: Array<{ value?: string | null } | null> | null, color: { value: string, title: string }, size: { value: string }, images?: { data: Array<{ attributes?: { url: string } | null }> } | null } | null }> } | null };
+export type ProductByArticleQuery = { products?: { data: Array<{ attributes?: { article: string, title: string, price: number, amount: number, description?: Array<{ value: string } | null> | null, color: { value: string, title: string }, size: { value: string }, images?: { data: Array<{ attributes?: { url: string } | null }> } | null } | null }> } | null };
 
 export type ProductCardDataBySlugQueryVariables = Exact<{
   slug?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type ProductCardDataBySlugQuery = { productCards?: { data: Array<{ attributes?: { title: string, slug: string, images: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> }, items?: { data: Array<{ attributes?: { article: string, color: { title: string, value: string }, size: { value: string } } | null }> } | null, category?: { data?: { attributes?: { title: string, slug: string } | null } | null } | null } | null }> } | null };
+export type ProductCardDataBySlugQuery = { productCards?: { data: Array<{ attributes?: { title: string, slug: string, images?: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> } | null, items?: { data: Array<{ attributes?: { article: string, color: { title: string, value: string }, size: { value: string } } | null }> } | null, category?: { data?: { attributes?: { title: string, slug: string } | null } | null } | null } | null }> } | null };
 
 export type ProductsBySubcategorySlugQueryVariables = Exact<{
   slug?: InputMaybe<Scalars['String']>;
   brands?: InputMaybe<Array<InputMaybe<Scalars['ID']>> | InputMaybe<Scalars['ID']>>;
-  priceFrom?: InputMaybe<Scalars['Float']>;
-  priceTo?: InputMaybe<Scalars['Float']>;
+  priceFrom?: InputMaybe<Scalars['Int']>;
+  priceTo?: InputMaybe<Scalars['Int']>;
 }>;
 
 
-export type ProductsBySubcategorySlugQuery = { products?: { data: Array<{ attributes?: { title: string, article: string, price?: number | null, color: { title: string }, size: { value: string }, parent?: { data?: { attributes?: { slug: string, brand?: { data?: { id?: string | null, attributes?: { title: string } | null } | null } | null } | null } | null } | null, images?: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> } | null } | null }> } | null };
+export type ProductsBySubcategorySlugQuery = { products?: { data: Array<{ attributes?: { title: string, article: string, price: number, color: { title: string }, size: { value: string }, parent?: { data?: { attributes?: { slug: string, brand?: { data?: { id?: string | null, attributes?: { title: string } | null } | null } | null } | null } | null } | null, images?: { data: Array<{ id?: string | null, attributes?: { url: string } | null }> } | null } | null }> } | null };
 
 
 export const GetRootCategoriesDocument = gql`
@@ -645,6 +661,60 @@ export const CatalogMenuDocument = gql`
   }
 }
     `;
+export const SearchEntitiesByTitleDocument = gql`
+    query SearchEntitiesByTitle($value: String) {
+  categories(filters: {title: {contains: $value}}) {
+    data {
+      id
+      attributes {
+        title
+        slug
+      }
+    }
+  }
+  products(filters: {title: {contains: $value}}) {
+    data {
+      id
+      attributes {
+        title
+        article
+        parent {
+          data {
+            attributes {
+              slug
+            }
+          }
+        }
+      }
+    }
+  }
+}
+    `;
+export const MainSearchDocument = gql`
+    query MainSearch($value: String) {
+  products(filters: {article: {eq: $value}}) {
+    data {
+      attributes {
+        article
+        parent {
+          data {
+            attributes {
+              slug
+            }
+          }
+        }
+      }
+    }
+  }
+  categories(filters: {title: {contains: $value}}) {
+    data {
+      attributes {
+        slug
+      }
+    }
+  }
+}
+    `;
 export const ProductByArticleDocument = gql`
     query ProductByArticle($article: String) {
   products(filters: {article: {eq: $article}}) {
@@ -719,7 +789,7 @@ export const ProductCardDataBySlugDocument = gql`
 }
     `;
 export const ProductsBySubcategorySlugDocument = gql`
-    query ProductsBySubcategorySlug($slug: String, $brands: [ID], $priceFrom: Float, $priceTo: Float) {
+    query ProductsBySubcategorySlug($slug: String, $brands: [ID], $priceFrom: Int, $priceTo: Int) {
   products(
     filters: {parent: {category: {slug: {eq: $slug}}, brand: {id: {in: $brands}}}, and: {price: {gte: $priceFrom, lte: $priceTo}}}
   ) {
@@ -778,6 +848,12 @@ export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = 
     },
     CatalogMenu(variables?: CatalogMenuQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<CatalogMenuQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<CatalogMenuQuery>(CatalogMenuDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'CatalogMenu', 'query');
+    },
+    SearchEntitiesByTitle(variables?: SearchEntitiesByTitleQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<SearchEntitiesByTitleQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<SearchEntitiesByTitleQuery>(SearchEntitiesByTitleDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'SearchEntitiesByTitle', 'query');
+    },
+    MainSearch(variables?: MainSearchQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<MainSearchQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<MainSearchQuery>(MainSearchDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'MainSearch', 'query');
     },
     ProductByArticle(variables?: ProductByArticleQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<ProductByArticleQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<ProductByArticleQuery>(ProductByArticleDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'ProductByArticle', 'query');

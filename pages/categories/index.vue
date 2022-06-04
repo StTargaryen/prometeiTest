@@ -45,7 +45,7 @@
                 class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain"
                 :style="`background-image: url('${imageUrl(category)}')`"
               ></div>
-              <div class="flex flex-grow card-text text-[21px]">
+              <div class="flex flex-grow card-text text-[21px] text-secondary capitalize">
                 {{ category.attributes.title }}
               </div>
             </NuxtLink>

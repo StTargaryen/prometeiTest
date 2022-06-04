@@ -43,14 +43,14 @@
                 :to="{
                   path: `/categories/${parentCategory.slug}`,
                 }"
-                class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange"
+                class="breadcrumb flex items-center text-[21px] text-grey-text hover:text-orange capitalize"
               >
                 <span>{{ parentCategory.title }}</span>
               </NuxtLink>
             </template>
           </div>
           <div class="page-header mb-[20px] flex items-center">
-            <h1 class="flex-grow text-primary text-[36px] font-bold">
+            <h1 class="flex-grow text-primary text-[36px] font-bold capitalize">
               {{ currentCategory.title }}
             </h1>
           </div>
@@ -72,7 +72,7 @@
                 class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain"
                 :style="`background-image: url('${categoryUrl(category)}')`"
               ></div>
-              <div class="flex flex-grow card-text text-[21px]">
+              <div class="flex flex-grow card-text text-[21px] text-secondary capitalize">
                 {{ category.attributes.title }}
               </div>
             </NuxtLink>
@@ -124,7 +124,7 @@
                     class="item-content flex flex-1 flex-col justify-between text-center"
                   >
                     <div
-                      class="flex flex-1 item-title font-medium justify-center items-center"
+                      class="flex flex-1 item-title font-medium justify-center items-center capitalize capitalize"
                     >
                       {{ product.attributes.title }}
                     </div>
@@ -217,7 +217,7 @@
                   class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain"
                   :style="`background-image: url('${categoryUrl(category)}')`"
                 ></div>
-                <div class="flex flex-grow card-text text-[21px]">
+                <div class="flex flex-grow card-text text-[21px] capitalize">
                   {{ category.attributes.title }}
                 </div>
               </NuxtLink>

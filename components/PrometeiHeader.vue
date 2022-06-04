@@ -31,20 +31,7 @@
             </svg>
           </span>
         </button>
-        <div
-          class="h-[50px] w-[500px] flex justify-between items-center border-primary border-[2px] rounded-[4px]"
-        >
-          <input
-            type="text"
-            class="w-[360px] ml-[21px] rounded-[4px] outline-none placeholder:text-grey-text"
-            placeholder="Поиск товаров"
-          />
-          <button
-            class="m-[-1px] h-[50px] px-[27px] rounded-r-[4px] flex justify-center items-center text-white bg-primary"
-          >
-            Найти
-          </button>
-        </div>
+       <SearchBar />
       </div>
       <NuxtLink
         to="/cart"
@@ -94,6 +81,7 @@
 
 <script setup>
 import ExpandMenu from "./ExpandMenu/ExpandMenu.vue";
+import SearchBar from "./SearchBar.vue";
 
 import { useMenuToggler } from "~/store/menu/menu";
 import { useCart } from "~/store/cart/cart";
