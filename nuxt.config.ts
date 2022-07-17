@@ -3,6 +3,7 @@ import { defineNuxtConfig } from "nuxt";
 export default defineNuxtConfig({
   buildModules: ["@pinia/nuxt", "@nuxtjs/tailwindcss"],
   modules: ["nuxt-graphql-client"],
+  plugins: ["maska"],
   build: {
     transpile: ["ts-invariant/process"],
   },
