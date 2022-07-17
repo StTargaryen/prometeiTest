@@ -1395,6 +1395,11 @@
   dependencies:
     "@types/node" "*"
 
+"@vee-validate/rules@^4.6.1":
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/@vee-validate/rules/-/rules-4.6.1.tgz#4774b3e9dc5c504c5921bd5b661b823c3c5ee79b"
+  integrity sha512-L9nZob9EFHGz5r07tVaen6QOsL/c+LJpKu5LCtGRhx0S+M3mIIVOTzGbYK5qJrcLSgazXv/IKRWQwdahKw5RlQ==
+
 "@vercel/nft@^0.18.2":
   version "0.18.2"
   resolved "https://registry.yarnpkg.com/@vercel/nft/-/nft-0.18.2.tgz#46ab17e1d631220bfc21c8fe299d10e36514e897"
@@ -4650,6 +4655,11 @@ map-cache@^0.2.0:
   resolved "https://registry.yarnpkg.com/map-cache/-/map-cache-0.2.2.tgz#c32abd0bd6525d9b051645bb4f26ac5dc98a0dbf"
   integrity sha1-wyq9C9ZSXZsFFkW7TyasXcmKDb8=
 
+maska@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/maska/-/maska-1.5.0.tgz#6e2f6386d290ab7dc8b44cfc04f34891e06a1e25"
+  integrity sha512-BwZXzs5gHeu6wtn3iWFqrKRtcsM3sTpkHvfAngVNVNlN7tl9ZyQUeHTz11s9Sy7Bq1MoQ+xyR/+IzghY8nR84Q==
+
 mdn-data@2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
@@ -7126,6 +7136,13 @@ vary@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+vee-validate@^4.6.1:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.6.1.tgz#c86192ef96da528f3a5423de2d960fe744f0b5bf"
+  integrity sha512-8IVy8PHpezerEEsvSBArFXmAN/hymeYzCA8RdDsMiX+NmYtKnkLlgtHS86j6RZ/wGQRKoStNjBOZG07ZVNr53Q==
+  dependencies:
+    "@vue/devtools-api" "^6.1.4"
 
 vite-node@^0.12.7:
   version "0.12.9"

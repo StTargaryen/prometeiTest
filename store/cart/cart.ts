@@ -5,10 +5,13 @@ export const useCart = defineStore("cart", {
     return {
       cartItems: [],
       selectedDelivery: "delivery",
+      orderStatus: false,
+      orderBody: null,
     };
   },
   getters: {
     items: ({ cartItems }) => cartItems,
+    cartIsEmpty: ({ cartItems }) => !cartItems.length,
   },
   actions: {
     updateDelivery(value) {
@@ -16,6 +19,9 @@ export const useCart = defineStore("cart", {
     },
     initCart(cartData) {
       this.cartItems = cartData;
+    },
+    toggleOrderStatus(value) {
+      this.orderStatus = value;
     },
     addToCart(product) {
       const newArr = JSON.parse(JSON.stringify(this.cartItems));
@@ -41,7 +47,6 @@ export const useCart = defineStore("cart", {
           newArr.push(item);
         }
       }
-      // console.log(newArr);
       this.cartItems = newArr;
     },
   },

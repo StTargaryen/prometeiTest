@@ -88,6 +88,7 @@ query ProductsBySubcategorySlug(
       attributes {
         title
         article
+        amount
         price
         color {
           title

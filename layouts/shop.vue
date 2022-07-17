@@ -57,4 +57,24 @@ watch(route, () => {
 body {
   font-family: "Exo 2", sans-serif;
 }
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-longer-enter-active,
+.fade-longer-leave-active {
+  transition: all 0.5s ease;
+}
+
+.fade-longer-enter-from,
+.fade-longer-leave-to {
+  opacity: 0;
+}
 </style>

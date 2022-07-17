@@ -34,7 +34,7 @@
       class="w-[54px] h-[54px] p-[12px] flex justify-center items-center text-grey-text transition-colors rounded-[4px] bg-grey-light"
       :class="{
         'cursor-pointer hover:bg-primary hover:text-white': !increaseDisabled,
-        'bg-grey-text text-grey-light': increaseDisabled,
+        'bg-grey-text text-grey-light cursor-not-allowed': increaseDisabled,
       }"
       :disabled="increaseDisabled"
       @click="increaseCounter()"

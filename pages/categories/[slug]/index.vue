@@ -72,7 +72,9 @@
                 class="card-image flex-grow w-[200px] h-[200px] bg-no-repeat bg-center bg-contain"
                 :style="`background-image: url('${categoryUrl(category)}')`"
               ></div>
-              <div class="flex flex-grow card-text text-[21px] text-secondary capitalize">
+              <div
+                class="flex flex-grow card-text text-[21px] text-secondary capitalize"
+              >
                 {{ category.attributes.title }}
               </div>
             </NuxtLink>
@@ -255,13 +257,9 @@ if (
 }
 
 const isProductsVisible = computed(() => currentCategory.showProducts);
-const isRelatedCategoriesVisible = computed(
-  () => currentCategory.showRelated
-);
+const isRelatedCategoriesVisible = computed(() => currentCategory.showRelated);
 
-const relatedCategories = computed(
-  () => currentCategory.related.data
-);
+const relatedCategories = computed(() => currentCategory.related.data);
 
 const parentCategory = computed(() => currentCategory.parent?.data?.attributes);
 
@@ -396,7 +394,7 @@ const cartHandler = (product) => {
       title: product.attributes.title,
       price: product.attributes.price,
       imageUrl: product.attributes.images.data[0]?.attributes?.url,
-      productCard: product.attributes.parent.slug,
+      productCard: product.attributes.parent.data.attributes.slug,
     });
   }
 };
